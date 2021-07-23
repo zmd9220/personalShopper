@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Main</router-link> |
       <router-link to="/Ad">Ad</router-link> |
+      <router-link to="/AdClient">AdClient</router-link> |
       <router-link to="/Barcode">Barcode</router-link> |
       <router-link to="/PersonalShopper">PersonalShopper</router-link> |
     </div>
