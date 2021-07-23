@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Main from '@/views/Main/Main'
 import Ad from '@/views/Ad/Ad'
+import AdClient from '@/views/Ad/AdClient'
 import Barcode from '@/views/Barcode/Barcode' 
 import PersonalShopper from '@/views/PersonalShopper/PersonalShopper'
 
@@ -17,6 +18,11 @@ const routes = [
     path: '/Ad',
     name: 'Ad',
     component: Ad
+  },
+  {
+    path: '/AdClient',
+    name: 'AdClient',
+    component: AdClient
   },
   {
     path: '/Barcode',
