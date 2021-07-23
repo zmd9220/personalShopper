@@ -1,5 +1,5 @@
 <template>
-  <h4>Ad</h4>
+  <h4>Ad test</h4>
 </template>
 
 <script>
