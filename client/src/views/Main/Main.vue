@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="row">
-      <img alt="zara logo" src="https://cdn.iconscout.com/icon/free/png-512/zara-3215529-2673947.png">
+    <div class="main-column">
+      <img src="@/assets/logo.png" alt="logo" class="main-logo">
       <div class="button-text">
         <div>
           <button class="button button-main" button @click="goToBarcode()">
@@ -22,11 +22,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
+  name: 'Main',
   components: {
   },
   methods:{
@@ -41,6 +38,12 @@ export default {
 </script>
 
 <style scoped>
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   border: none;
   border-radius: 20px;
@@ -62,4 +65,9 @@ export default {
   width: 90px;
 }
 
+.main-logo {
+  display: flex;
+  width: 600px;
+  align-self: center;
+}
 </style>
