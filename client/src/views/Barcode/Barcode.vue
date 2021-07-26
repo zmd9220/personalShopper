@@ -1,10 +1,10 @@
 <template>
   <div>
     <Nav/>
-    <div class="BlankBox"></div>
+    <div class="blank-box"></div>
     <h4>상품의 바코드를</h4>
     <h4>인식기에 보여주세요</h4>
-    <div class="BlankBox"></div>
+    <div class="blank-box"></div>
     <h4>PersonalShopper의 추천</h4>
     <FooterAd/>
   </div>
@@ -23,8 +23,8 @@ export default {
 }
 </script>
 
-<style>
-.BlankBox {
+<style scoped>
+.blank-box {
   height: 15rem;
 }
 </style>
