@@ -1,0 +1,22 @@
+{
+   {
+    "model": "products.product",
+    "pk": 101,
+    "fields":{
+"product_id" : 101,
+    "product_name": "플로랄 프린트 오버롤",
+    "gender": "F",
+    "product_image": "101.png",
+    "style_image": "1001.png",
+    "color": "멀티컬러",
+    "season": "SS",
+    "style_products": "102",
+    "product_description": "길이 조절 가능한 넓은 어깨끈이 달린 스트레이트 네크라인 오버롤. 앞면과 뒷면 패치 포켓. 와이드 레그 디자인. 메탈 버튼으로 여밈.",
+    "product_type": 2,
+    "price": 89000,
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%94%8C%EB%A1%9C%EB%9E%84-%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%98%A4%EB%B2%84%EB%A1%A4-p08335388.html?v1=119040168&v2=1604706",
+    "location": "D"
+}
+  },
+}
