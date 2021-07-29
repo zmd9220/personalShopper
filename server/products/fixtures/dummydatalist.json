@@ -1,348 +1,369 @@
+[ 
+  {
+  "model": "products.product",
+  "fields": {
+  "product_id": 101,
+  "product_name": "플로랄 프린트 오버롤", 
+  "gender": "F",
+  "product_image": "101.png",
+  "style_image": "1001.png",
+  "color": "멀티컬러",
+  "season": "SS",
+  "style_products": "102, 103, 104",
+  "product_description": "길이 조절 가능한 넓은 어깨끈이 달린 스트레이트 네크라인 오버롤. 앞면과 뒷면 패치 포켓. 와이드 레그 디자인. 메탈 버튼으로 여밈.",
+  "product_type": 2,
+  "price": "89000",
+  "usage": "casual",
+  "product_link": "https://www.zara.com/kr/ko/%ED%94%8C%EB%A1%9C%EB%9E%84-%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%98%A4%EB%B2%84%EB%A1%A4-p08335388.html?v1=119040168&v2=1604706",
+  "location": "D"
+  }
+},
 {
-  "101": {
-    "productname": "플로랄 프린트 오버롤",
+  "model": "products.product",
+  "fields": {
+  "product_id": 102,
+  "product_name": "펀칭 자수 블라우스", 
+  "gender": "F",
+  "product_image": "102.png",
+  "style_image": "1001.png",
+  "color": "화이트",
+  "season": "SS",
+  "style_products": "101, 103, 104",
+  "product_description": "BLOUSE WITH A ROUND NECKLINE AND LONG BALLOON SLEEVES. FEATURING MATCHING CUTWORK EMBROIDERY DETAIL AND A BUTTONED OPENING AT THE BACK.",
+  "product_type": 1,
+  "price": "49000",
+  "usage": "casual",
+  "product_link": "https://www.zara.com/kr/ko/%ED%8E%80%EC%B9%AD-%EC%9E%90%EC%88%98-%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4-p05598029.html?v1=108944917&v2=1604706",
+  "location": "C"
+  }
+},
+{
+  "model": "products.product",
+  "fields": {
+  "product_id": 103,
+  "product_name": "밴드 디테일 햇", 
+  "gender": "F",
+  "product_image": "103.png",
+  "style_image": "1001.png",
+  "color": "워터 그린",
+  "season": "SS",
+  "style_products": "101, 102, 104",
+  "product_description": "챙을 구부려서 다양하게 연출할 수 있는 브레이드 마감 모자.",
+  "product_type": 4,
+  "price": "39000",
+  "usage": "casual",
+  "product_link": "https://www.zara.com/kr/ko/%EB%B0%B4%EB%93%9C-%EB%94%94%ED%85%8C%EC%9D%BC-%ED%96%87-p00653204.html?v1=108953665&v2=1604706",
+  "location": "F"
+  }
+},
+{
+  "model": "products.product",
+  "fields": {
+  "product_id": 104,
+  "product_name": "매듭 스트랩 플랫 샌들", 
+  "gender": "F",
+  "product_image": "104.png",
+  "style_image": "1001.png",
+  "color": "블랙",
+  "season": "SS",
+  "style_products": "101, 102, 103",
+  "product_description": "매듭이 달린 튜브 스트랩이 매치된 샌들 스타일 플랫슈즈. 스티치 디테일 패딩 마감 안창. 발가락 모양의 토우캡 마감.\n안창 높이: 1CM.",
+  "product_type": 3,
+  "price": "59000",
+  "usage": "casual",
+  "product_link": "https://www.zara.com/kr/ko/%EB%A7%A4%EB%93%AD-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%ED%94%8C%EB%9E%AB-%EC%83%8C%EB%93%A4-p13620810.html?v1=108926495&v2=1604706",
+  "location": "F"
+  }
+},
+{
+  "model": "products.product",
+  "fields": {
+  "product_id": 105,
+  "product_name": "자수 코튼 블라우스", 
+  "gender": "F",
+  "product_image": "105.png",
+  "style_image": "1002.png",
+  "color": "스크래치 화이트",
+  "season": "SS",
+  "style_products": "106, 107",
+  "product_description": "100% 면 소재 짧은 블라우스. 브이넥 7부 소매 디자인. 배색된 자수 디테일. 앞면 버튼 여밈.",
+  "product_type": 1,
+  "price": "59000",
+  "usage": "casual",
+  "product_link": "https://www.zara.com/kr/ko/%EC%9E%90%EC%88%98-%EC%BD%94%ED%8A%BC-%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4-p05107247.html?v1=109007511&v2=1604706",
+  "location": "C"
+  }
+},
+{
+  "model": "products.product",
+  "fields": {
+  "product_id": 106,
+  "product_name": "패턴 미니 스커트", 
+  "gender": "F",
+  "product_image": "106.png",
+  "style_image": "1002.png",
+  "color": "로즈핑크",
+  "season": "SS",
+  "style_products": "105, 107",
+  "product_description": "HIGH-WAIST SHORT SKIRT WITH A KNOT DETAIL ON THE FRONT AND INVISIBLE ZIP FASTENING AT THE BACK.",
+  "product_type": 2,
+  "price": "49000",
+  "usage": "casual",
+  "product_link": "https://www.zara.com/kr/ko/%ED%8C%A8%ED%84%B4-%EB%AF%B8%EB%8B%88-%EC%8A%A4%EC%BB%A4%ED%8A%B8-p08046041.html?v1=111497109&v2=1604706",
+  "location": "D"
+  }
+},
+{
+  "model": "products.product",
+  "fields": {
+  "product_id": 107,
+  "product_name": "우드 레더 클로그", 
+  "gender": "F",
+  "product_image": "107.png",
+  "style_image": "1002.png",
+  "color": "초콜릿 브라운",
+  "season": "SS",
+  "style_products": "105, 106",
+  "product_description": "브라운 컬러 가죽 소재 클로그 스타일 슈즈. 스터드 디테일이 매치된 가죽 소재 외피 디자인. 나무 소재 밑창.",
+  "product_type": 3,
+  "price": "169000",
+  "usage": "casual",
+  "product_link": "hhttps://www.zara.com/kr/ko/%EC%9A%B0%EB%93%9C-%EB%A0%88%EB%8D%94-%ED%81%B4%EB%A1%9C%EA%B7%B8-p11210810.html?v1=115765608&v2=1604706",
+  "location": "F"
+  }
+},
+  {
+    "model": "products.product",
+    "fields":{
+    "product_id" : 200,
+    "product_name": "자카드 가디건",
     "gender": "F",
-    "productimage": "101.png",
-    "productstyle": "1001.png",
-    "color": "멀티컬러",
-    "season": "SS",
-    "styleproducts": [
-      102,
-      103,
-      104
-    ],
-    "productdescription": "길이 조절 가능한 넓은 어깨끈이 달린 스트레이트 네크라인 오버롤. 앞면과 뒷면 패치 포켓. 와이드 레그 디자인. 메탈 버튼으로 여밈.",
-    "producttype": 2,
-    "price": 89000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%ED%94%8C%EB%A1%9C%EB%9E%84-%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%98%A4%EB%B2%84%EB%A1%A4-p08335388.html?v1=119040168&v2=1604706",
-    "productlocation": "D"
-  },
-  "102": {
-    "productname": "펀칭 자수 블라우스",
-    "gender": "F",
-    "productimage": "102.png",
-    "productstyle": "1001.png",
-    "color": "화이트",
-    "season": "SS",
-    "styleproducts": [
-      101,
-      103,
-      104
-    ],
-    "productdescription": "BLOUSE WITH A ROUND NECKLINE AND LONG BALLOON SLEEVES. FEATURING MATCHING CUTWORK EMBROIDERY DETAIL AND A BUTTONED OPENING AT THE BACK.",
-    "producttype": 1,
-    "price": 49000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%ED%8E%80%EC%B9%AD-%EC%9E%90%EC%88%98-%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4-p05598029.html?v1=108944917&v2=1604706",
-    "productlocation": "C"
-  },
-  "103": {
-    "productname": "밴드 디테일 햇",
-    "gender": "F",
-    "productimage": "103.png",
-    "productstyle": "1001.png",
-    "color": "워터 그린",
-    "season": "SS",
-    "styleproducts": [
-      101,
-      102,
-      104
-    ],
-    "productdescription": "챙을 구부려서 다양하게 연출할 수 있는 브레이드 마감 모자.",
-    "producttype": 4,
-    "price": 39000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EB%B0%B4%EB%93%9C-%EB%94%94%ED%85%8C%EC%9D%BC-%ED%96%87-p00653204.html?v1=108953665&v2=1604706",
-    "productlocation": "F"
-  },
-  "104": {
-    "productname": "매듭 스트랩 플랫 샌들",
-    "gender": "F",
-    "productimage": "104.png",
-    "productstyle": "1001.png",
-    "color": "블랙",
-    "season": "SS",
-    "styleproducts": [
-      101,
-      102,
-      103
-    ],
-    "productdescription": "매듭이 달린 튜브 스트랩이 매치된 샌들 스타일 플랫슈즈. 스티치 디테일 패딩 마감 안창. 발가락 모양의 토우캡 마감.\n안창 높이: 1CM.",
-    "producttype": 3,
-    "price": 59000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EB%A7%A4%EB%93%AD-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%ED%94%8C%EB%9E%AB-%EC%83%8C%EB%93%A4-p13620810.html?v1=108926495&v2=1604706",
-    "productlocation": "F"
-  },
-  "105": {
-    "productname": "자수 코튼 블라우스",
-    "gender": "F",
-    "productimage": "105.png",
-    "productstyle": "1002.png",
-    "color": "스크래치 화이트",
-    "season": "SS",
-    "styleproducts": [
-      106,
-      107
-    ],
-    "productdescription": "100% 면 소재 짧은 블라우스. 브이넥 7부 소매 디자인. 배색된 자수 디테일. 앞면 버튼 여밈.",
-    "producttype": 1,
-    "price": 59000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EC%9E%90%EC%88%98-%EC%BD%94%ED%8A%BC-%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4-p05107247.html?v1=109007511&v2=1604706",
-    "productlocation": "C"
-  },
-  "106": {
-    "productname": "패턴 미니 스커트",
-    "gender": "F",
-    "productimage": "106.png",
-    "productstyle": "1002.png",
-    "color": "로즈핑크",
-    "season": "SS",
-    "styleproducts": [
-      105,
-      107
-    ],
-    "productdescription": "HIGH-WAIST SHORT SKIRT WITH A KNOT DETAIL ON THE FRONT AND INVISIBLE ZIP FASTENING AT THE BACK.",
-    "producttype": 2,
-    "price": 49000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%ED%8C%A8%ED%84%B4-%EB%AF%B8%EB%8B%88-%EC%8A%A4%EC%BB%A4%ED%8A%B8-p08046041.html?v1=111497109&v2=1604706",
-    "productlocation": "D"
-  },
-  "107": {
-    "productname": "우드 레더 클로그",
-    "gender": "F",
-    "productimage": "107.png",
-    "productstyle": "1002.png",
-    "color": "초콜릿 브라운",
-    "season": "SS",
-    "styleproducts": [
-      105,
-      106
-    ],
-    "productdescription": "브라운 컬러 가죽 소재 클로그 스타일 슈즈. 스터드 디테일이 매치된 가죽 소재 외피 디자인. 나무 소재 밑창.",
-    "producttype": 3,
-    "price": 169000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EC%9A%B0%EB%93%9C-%EB%A0%88%EB%8D%94-%ED%81%B4%EB%A1%9C%EA%B7%B8-p11210810.html?v1=115765608&v2=1604706",
-    "productlocation": "F"
-  },
-  "200": {
-    "productname": "자카드 가디건",
-    "gender": "F",
-    "productimage": "200.png",
-    "productstyle": "1200.png",
+    "style_image": "1200.png",
+    "product_image": "200.png",
     "color": "머스터드",
     "season": "FW",
-    "styleproducts": [
-      201,
-      202
-    ],
-    "productdescription": "라펠 칼라 긴소매 가디건. 배색된 콤비 리브드 마감. 앞면 버튼 여밈.",
-    "producttype": 1,
-    "price": 49000,
+    "style_products": "201, 202",
+    "product_description": "라펠 칼라 긴소매 가디건. 배색된 콤비 리브드 마감. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "49000",
     "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EC%9E%90%EC%B9%B4%EB%93%9C-%EA%B0%80%EB%94%94%EA%B1%B4-p05039429.html?v1=111174892&v2=1882207",
-    "productlocation": "C"
+    "product_link": "https://www.zara.com/kr/ko/%EC%9E%90%EC%B9%B4%EB%93%9C-%EA%B0%80%EB%94%94%EA%B1%B4-p05039429.html?v1=111174892&v2=1882207",
+    "location": "C"
+    }
   },
-  "201": {
-    "productname": "와이드 레그 진",
-    "gender": "F",
-    "productimage": "201.png",
-    "productstyle": "1200.png",
-    "color": "보라",
-    "season": "FW",
-    "styleproducts": [
-      200,
-      202
-    ],
-    "productdescription": "HIGH-WAIST RIGID JEANS WITH FIVE POCKETS. EXTRA LONG WIDE LEG. ZIP FLY AND METAL BUTTON FASTENING.",
-    "producttype": 2,
-    "price": 59000,
-    "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EC%99%80%EC%9D%B4%EB%93%9C-%EB%A0%88%EA%B7%B8-%EC%A7%84-p06688224.html?v1=125045487&v2=1882207",
-    "productlocation": "D"
+ {
+  "model": "products.product",
+  "fields":{
+  "product_id" : 201,
+  "product_name": "와이드 레그 진",
+  "gender": "F",
+  "style_image": "1200.png",
+  "product_image": "201.png",
+  "color": "보라",
+  "season": "FW",
+  "style_products": "200, 202",
+  "product_description": "HIGH-WAIST RIGID JEANS WITH FIVE POCKETS. EXTRA LONG WIDE LEG. ZIP FLY AND METAL BUTTON FASTENING.",
+  "product_type": 2,
+  "price": "59000",
+  "usage": "casual",
+  "product_link": "https://www.zara.com/kr/ko/%EC%99%80%EC%9D%B4%EB%93%9C-%EB%A0%88%EA%B7%B8-%EC%A7%84-p06688224.html?v1=125045487&v2=1882207",
+  "location": "D"
+    } 
   },
-  "202": {
-    "productname": "주트 크로셰 플랫 샌들",
+  {
+    "model": "products.product",
+    "fields":{
+    "product_id" : 202,
+    "product_name": "주트 크로셰 플랫 샌들",
     "gender": "F",
-    "productimage": "202.png",
-    "productstyle": "1200.png",
+    "style_image": "1200.png",
+    "product_image": "202.png",
     "color": "내추럴",
     "season": "FW",
-    "styleproducts": [
-      200,
-      201
-    ],
-    "productdescription": "주트 안창이 매치된 크로셰 플랫 샌들. 스퀘어 토 마감. 발목에서 끈으로 매듭을 지어 여밈.",
-    "producttype": 3,
-    "price": 109000,
+    "style_products": "200, 201",
+    "product_description": "주트 안창이 매치된 크로셰 플랫 샌들. 스퀘어 토 마감. 발목에서 끈으로 매듭을 지어 여밈.",
+    "product_type": 3,
+    "price": "109000",
     "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EC%A3%BC%ED%8A%B8-%ED%81%AC%EB%A1%9C%EC%85%B0-%ED%94%8C%EB%9E%AB-%EC%83%8C%EB%93%A4-p11654810.html?v1=109014408&v2=1882207",
-    "productlocation": "F"
+    "product_link": "https://www.zara.com/kr/ko/%EC%A3%BC%ED%8A%B8-%ED%81%AC%EB%A1%9C%EC%85%B0-%ED%94%8C%EB%9E%AB-%EC%83%8C%EB%93%A4-p11654810.html?v1=109014408&v2=1882207",
+    "location": "F"
+    } 
   },
-  "203": {
-    "productname": "패턴 니트 티셔츠",
+  {
+    "model": "products.product",
+    "fields":{
+    "product_id" : 203,
+    "product_name": "패턴 니트 티셔츠",
     "gender": "M",
-    "productimage": "203.png",
-    "productstyle": "1201.png",
+    "style_image": "1201.png",
+    "product_image": "203.png",
     "color": "블랙",
     "season": "SS",
-    "styleproducts": [
-      204,
-      205
-    ],
-    "productdescription": "면 소재 우븐 니트 티셔츠. 라운드넥 반소매 디자인.",
-    "producttype": 1,
-    "price": 39000,
+    "style_products": "204, 205",
+    "product_description": "면 소재 우븐 니트 티셔츠. 라운드넥 반소매 디자인.",
+    "product_type": 1,
+    "price": "39000",
     "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%ED%8C%A8%ED%84%B4-%EB%8B%88%ED%8A%B8-%ED%8B%B0%EC%85%94%EC%B8%A0-p04805305.html?v1=123838525&v2=1886294",
-    "productlocation": "A"
+    "product_link": "https://www.zara.com/kr/ko/%ED%8C%A8%ED%84%B4-%EB%8B%88%ED%8A%B8-%ED%8B%B0%EC%85%94%EC%B8%A0-p04805305.html?v1=123838525&v2=1886294",
+    "location": "A"
+    } 
   },
-  "204": {
-    "productname": "스트럭처 버뮤다 팬츠",
+  {
+    "model": "products.product",
+    "fields":{
+    "product_id" : 204,
+    "product_name": "스트럭처 버뮤다 팬츠",
     "gender": "M",
-    "productimage": "204.png",
-    "productstyle": "1201.png",
+    "style_image": "1201.png",
+    "product_image": "204.png",
     "color": "스크래치 화이트",
     "season": "SS",
-    "styleproducts": [
-      203,
-      205
-    ],
-    "productdescription": "신축성이 뛰어난 면 소재 버뮤다 팬츠. 앞면 포켓과 버튼이 달린 뒷면 파이핑 포켓 디테일. 앞면 지퍼와 버튼 여밈.",
-    "producttype": 2,
-    "price": 49000,
+    "style_products": "203, 205",
+    "product_description": "신축성이 뛰어난 면 소재 버뮤다 팬츠. 앞면 포켓과 버튼이 달린 뒷면 파이핑 포켓 디테일. 앞면 지퍼와 버튼 여밈.",
+    "product_type": 2,
+    "price": "49000",
     "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EB%B2%84%EB%AE%A4%EB%8B%A4-%ED%8C%AC%EC%B8%A0-p02649452.html?v1=108971930&v2=1886294",
-    "productlocation": "B"
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EB%B2%84%EB%AE%A4%EB%8B%A4-%ED%8C%AC%EC%B8%A0-p02649452.html?v1=108971930&v2=1886294",
+    "location": "B"
+    } 
   },
-  "205": {
-    "productname": "리브드 스트럭처 삭스",
+  {
+    "model": "products.product",
+    "fields":{
+    "product_id" : 205,
+    "product_name": "리브드 스트럭처 삭스",
     "gender": "M",
-    "productimage": "205.png",
-    "productstyle": "1201.png",
+    "style_image": "1201.png",
+    "product_image": "205.png",
     "color": "화이트",
     "season": "SS",
-    "styleproducts": [
-      203,
-      204
-    ],
-    "productdescription": "신축성 있는 리브드 마감 니트 양말.",
-    "producttype": 3,
-    "price": 10000,
+    "style_products": "203, 204",
+    "product_description": "신축성 있는 리브드 마감 니트 양말.",
+    "product_type": 3,
+    "price": "10000",
     "usage": "casual",
-    "productlink": "https://www.zara.com/kr/ko/%EB%A6%AC%EB%B8%8C%EB%93%9C-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EC%82%AD%EC%8A%A4-p00348430.html?v1=113495491&v2=1886294",
-    "productlocation": "F"
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%AC%EB%B8%8C%EB%93%9C-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EC%82%AD%EC%8A%A4-p00348430.html?v1=113495491&v2=1886294",
+    "location": "F"
+    } 
   },
-  "300": {
-    "productname": "더블 브레스트 수트 블레이저",
+  {
+    "model": "products.product",
+
+    "fields": {
+    "product_id": 300,
+    "product_name": "더블 브레스트 수트 블레이저",
     "gender": "M",
-    "productimage": "300.png",
-    "productstyle": "1300.png",
+    "product_image": "300.png",
+    "style_image": "1300.png",
     "color": "블랙",
     "season": "SS",
-    "styleproducts": [
-      301,
-      302
-    ],
-    "productdescription": "피크 라펠 칼라 블레이저. 긴소매 디자인. 골반 부분 파이핑 포켓. 내부 포켓 디테일. 더블 브레스트 스타일 앞면 버튼 여밈.",
-    "producttype": 1,
+    "style_products":"301, 302",
+    "product_description": "피크 라펠 칼라 블레이저. 긴소매 디자인. 골반 부분 파이핑 포켓. 내부 포켓 디테일. 더블 브레스트 스타일 앞면 버튼 여밈.",
+    "product_type": 1,
     "price": 169000,
     "usage": "formal",
-    "productlink": "https://www.zara.com/kr/ko/%EB%8D%94%EB%B8%94-%EB%B8%8C%EB%A0%88%EC%8A%A4%ED%8A%B8-%EC%88%98%ED%8A%B8-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p04501722.html?v1=124501826&v2=1886922",
-    "productlocation": "A"
-  },
-  "301": {
-    "productname": "헤비웨이트 베이직 티셔츠",
-    "gender": "M",
-    "productimage": "301.png",
-    "productstyle": "1300.png",
-    "color": "블랙",
-    "season": "SS",
-    "styleproducts": [
-      300,
-      302
-    ],
-    "productdescription": "컴팩트 면 소재의 와이드핏 티셔츠. 라운드넥 반소매 디자인.",
-    "producttype": 1,
-    "price": 25000,
-    "usage": "formal",
-    "productlink": "https://www.zara.com/kr/ko/%ED%97%A4%EB%B9%84%EC%9B%A8%EC%9D%B4%ED%8A%B8-%EB%B2%A0%EC%9D%B4%EC%A7%81-%ED%8B%B0%EC%85%94%EC%B8%A0-p00526310.html?v1=118607060&v2=1886922",
-    "productlocation": "A"
-  },
-  "302": {
-    "productname": "수트 팬츠",
-    "gender": "M",
-    "productimage": "302.png",
-    "productstyle": "1300.png",
-    "color": "블랙",
-    "season": "SS",
-    "styleproducts": [
-      301,
-      302
-    ],
-    "productdescription": "신축성 있는 스트럭처 소재의 슬림핏 팬츠. 앞면 포켓과 뒷면 파이핑 포켓 디테일. 앞면 지퍼와 버튼 여밈.",
-    "producttype": 2,
-    "price": 89000,
-    "usage": "formal",
-    "productlink": "https://www.zara.com/kr/ko/%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p04502722.html?v1=123837502&v2=1886922",
-    "productlocation": "B"
-  },
-  "303": {
-    "productname": "슬림 수트 블레이저",
-    "gender": "M",
-    "productimage": "303.png",
-    "productstyle": "1301.png",
-    "color": "블루",
-    "season": "SS",
-    "styleproducts": [
-      304,
-      305
-    ],
-    "productdescription": "피크 라펠 칼라 블레이저. 버튼 디테일 커프스 마감 긴소매 디자인. 가슴 부분 파이핑 포켓과 골반 부분 플랩 포켓. 내부 포켓 디테일. 앞면 버튼 여밈.",
-    "producttype": 1,
-    "price": 129000,
-    "usage": "formal",
-    "productlink": "https://www.zara.com/kr/ko/%EC%8A%AC%EB%A6%BC-%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p01564411.html?v1=124500924&v2=1886922",
-    "productlocation": "A"
-  },
-  "304": {
-    "productname": "슬림 수트 팬츠",
-    "gender": "M",
-    "productimage": "304.png",
-    "productstyle": "1301.png",
-    "color": "블루",
-    "season": "SS",
-    "styleproducts": [
-      303,
-      305
-    ],
-    "productdescription": "앞면 포켓과 더블 파이핑 처리된 뒷면 포켓이 매치된 슬림핏 팬츠. 앞면 지퍼와 버튼 여밈.",
-    "producttype": 2,
-    "price": 59000,
-    "usage": "formal",
-    "productlink": "https://www.zara.com/kr/ko/%EC%8A%AC%EB%A6%BC-%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p01564411.html?v1=124500924&v2=1886922",
-    "productlocation": "B"
-  },
-  "305": {
-    "productname": "앤틱 레더 슈즈",
-    "gender": "M",
-    "productimage": "305.png",
-    "productstyle": "1301.png",
-    "color": "블랙",
-    "season": "SS",
-    "styleproducts": [
-      303,
-      304
-    ],
-    "productdescription": "앤틱 마감된 가죽 소재의 블루처 스타일 슈즈. 블랙과 브라운 컬러 중 선택 가능. 끈을 넣는 구멍이 4개씩 있음. 클래식한 스타일.",
-    "producttype": 3,
-    "price": 129000,
-    "usage": "formal",
-    "productlink": "https://www.zara.com/kr/ko/%EC%95%A4%ED%8B%B1-%EB%A0%88%EB%8D%94-%EC%8A%88%EC%A6%88-p12411820.html?v1=110050008&v2=1886922",
-    "productlocation": "F"
-  }
-}
+    "product_link": "https://www.zara.com/kr/ko/%EB%8D%94%EB%B8%94-%EB%B8%8C%EB%A0%88%EC%8A%A4%ED%8A%B8-%EC%88%98%ED%8A%B8-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p04501722.html?v1=124501826&v2=1886922",
+    "location": "A"
+      }
+    },
+    {
+      "model": "products.product",
+  
+      "fields": {
+      "product_id": 301,
+      "product_name": "헤비웨이트 베이직 티셔츠",
+      "gender": "M",
+      "product_image": "301.png",
+      "style_image": "1300.png",
+      "color": "블랙",
+      "season": "SS",
+      "style_products":"300, 302",
+      "product_description": "컴팩트 면 소재의 와이드핏 티셔츠. 라운드넥 반소매 디자인.",
+      "product_type": 1,
+      "price": 25000,
+      "usage": "formal",
+      "product_link": "https://www.zara.com/kr/ko/%ED%97%A4%EB%B9%84%EC%9B%A8%EC%9D%B4%ED%8A%B8-%EB%B2%A0%EC%9D%B4%EC%A7%81-%ED%8B%B0%EC%85%94%EC%B8%A0-p00526310.html?v1=118607060&v2=1886922",
+      "location": "A"
+      }
+    },
+    {
+      "model": "products.product",
+  
+      "fields": {
+      "product_id": 302,
+      "product_name": "수트 팬츠",
+      "gender": "M",
+      "product_image": "302.png",
+      "style_image": "1300.png",
+      "color": "블랙",
+      "season": "SS",
+      "style_products":"301, 302",
+      "product_description": "신축성 있는 스트럭처 소재의 슬림핏 팬츠. 앞면 포켓과 뒷면 파이핑 포켓 디테일. 앞면 지퍼와 버튼 여밈.",
+      "product_type": 2,
+      "price": 89000,
+      "usage": "formal",
+      "product_link": "https://www.zara.com/kr/ko/%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p04502722.html?v1=123837502&v2=1886922",
+      "location": "B"
+      }
+    },
+    {
+      "model": "products.product",
+  
+      "fields": {
+      "product_id": 303,
+      "product_name": "슬림 수트 블레이저",
+      "gender": "M",
+      "product_image": "303.png",
+      "style_image": "1301.png",
+      "color": "블루",
+      "season": "SS",
+      "style_products":"304, 305",
+      "product_description": "피크 라펠 칼라 블레이저. 버튼 디테일 커프스 마감 긴소매 디자인. 가슴 부분 파이핑 포켓과 골반 부분 플랩 포켓. 내부 포켓 디테일. 앞면 버튼 여밈.",
+      "product_type": 1,
+      "price": 129000,
+      "usage": "formal",
+      "product_link": "https://www.zara.com/kr/ko/%EC%8A%AC%EB%A6%BC-%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p01564411.html?v1=124500924&v2=1886922",
+      "location": "A"
+      }
+    },
+    {
+      "model": "products.product",
+  
+      "fields": {
+      "product_id": 304,
+      "product_name": "슬림 수트 팬츠",
+      "gender": "M",
+      "product_image": "304.png",
+      "style_image": "1301.png",
+      "color": "블루",
+      "season": "SS",
+      "style_products":"303, 305",
+      "product_description": "앞면 포켓과 더블 파이핑 처리된 뒷면 포켓이 매치된 슬림핏 팬츠. 앞면 지퍼와 버튼 여밈.",
+      "product_type": 2,
+      "price": 59000,
+      "usage": "formal",
+      "product_link": "https://www.zara.com/kr/ko/%EC%8A%AC%EB%A6%BC-%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p01564411.html?v1=124500924&v2=1886922",
+      "location": "B"
+      }
+    },
+    {
+      "model": "products.product",
+  
+      "fields": {
+      "product_id": 305,
+      "product_name": "앤틱 레더 슈즈",
+      "gender": "M",
+      "product_image": "305.png",
+      "style_image": "1301.png",
+      "color": "블랙",
+      "season": "SS",
+      "style_products":"303, 304",
+      "product_description": "앤틱 마감된 가죽 소재의 블루처 스타일 슈즈. 블랙과 브라운 컬러 중 선택 가능. 끈을 넣는 구멍이 4개씩 있음. 클래식한 스타일.",
+      "product_type": 3,
+      "price": 129000,
+      "usage": "formal",
+      "product_link": "https://www.zara.com/kr/ko/%EC%95%A4%ED%8B%B1-%EB%A0%88%EB%8D%94-%EC%8A%88%EC%A6%88-p12411820.html?v1=110050008&v2=1886922",
+      "location": "F"
+      }
+    }
+]
