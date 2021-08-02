@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     
     'rest_framework',
     
+    'corsheaders', # cors 설정
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +46,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', # <- 가능한 높게 위치시켜야 한다. cors 설정
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -52,6 +56,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST = (
+    "http://localhost:8080",     # vuejs 설정.
+    "http://localhost:8081", 
+)
+
+
 
 ROOT_URLCONF = 'server.urls'
 
