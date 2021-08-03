@@ -11,7 +11,7 @@ from .serializers import ProductSerializer, CustomerSerializer, StockSerializer
 from .models import Product, Customer, Stock
 
 @api_view(['GET'])
-def product_index(request):
+def products(request):
     if request.method == 'GET':
         products = Product.objects.all()
         serializers = ProductSerializer(products, many=True)
@@ -24,3 +24,11 @@ def product_detail(request, product_id):
         product = get_object_or_404(Product, product_id = product_id)
         serializer = ProductSerializer(product)
         return Response(serializer.data)
+
+
+@api_view(['GET'])
+def product_stock(request, product_id):
+    if request.method == 'GET':
+        stocks = get_object_or_404(Stock, product_id = product_id)
+        serializers = StockSerializer(stocks)
+        return Response(serializers.data)
