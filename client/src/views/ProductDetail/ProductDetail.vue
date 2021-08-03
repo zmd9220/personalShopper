@@ -7,7 +7,51 @@
         <!-- 상품이름 연동필요 -->
         <h2 class="text-box-title">{{ productDetail.product_name }}</h2> 
         <h2>재고정보</h2>
-        <div class="size-box"></div>
+        <div class="size-box">
+          
+            <!-- 남자 상의 -->
+          <ul v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 1">
+            <li v-for="stock in stocks" :key="stock">{{stock}}</li>
+          </ul>
+        
+        
+          <!-- 남자 하의 -->
+          <ul v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 2">
+            <li v-for="stock in stocks" :key="stock">{{stock}}</li>
+          </ul>
+                  
+        
+          <!-- 여자 상의 -->
+          <ul v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 1">
+            <li v-for="stock in stocks" :key="stock">{{stock}}</li>
+          </ul>
+        
+        
+          <!-- 여자 하의 -->
+          <ul v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 2">
+            <li v-for="stock in stocks" :key="stock">{{stock}}</li>
+          </ul>
+        
+        
+          <!-- 남자 신발 -->
+          <ul v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 3">
+            <li v-for="stock in stocks" :key="stock">{{stock}}</li>
+          </ul>
+        
+        
+          <!-- 여자 신발 -->
+          <ul v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 3">
+            <li v-for="stock in stocks" :key="stock">{{stock}}</li>
+          </ul>
+                  
+        
+          <!-- 악세서리 -->
+          <ul v-if="`${productDetail.product_type }` == 4">
+            <li v-for="stock in stocks" :key="stock">{{stock}}</li>
+          </ul>
+          
+  
+        </div>
         <h2 @click="goToSizeRecommend()">사이즈 추천받기</h2>
         <h2 @click="goToSizeChart()">사이즈표</h2>
         <h2 @click="goToLocation()">상품위치 정보</h2>
@@ -33,6 +77,7 @@ export default {
     return {
       productDetail: '',
       productImage: '',
+      stocks: '',
     }
   },
   methods :{
@@ -45,8 +90,8 @@ export default {
     goToLocation(){
       this.$router.push('/ProductDetailLocation'); 
     },
-    getItem: function() {
-      axios.get('http://127.0.0.1:8000/product/101/')
+    getProduct: function() {
+      axios.get('http://127.0.0.1:8000/product/301/')
         .then((res) => {
           console.log(res);
           this.productDetail = res.data;
@@ -56,9 +101,20 @@ export default {
           console.log(err)
         })
     },
+    getStock: function() {
+      axios.get('http://127.0.0.1:8000/product/301/stocks/')
+        .then((res) => {
+          console.log(res);
+          this.stocks = res.data.stock;       // stock모델은 size가 필요없다. 바꿔야한다.
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
   },
   created: function () {
-    this.getItem()    
+    this.getProduct()
+    this.getStock()
   }
 }
 
