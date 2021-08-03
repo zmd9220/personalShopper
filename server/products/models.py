@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Product(models.Model):
-    product_id = models.IntegerField()
+    product_id = models.IntegerField(primary_key=True)
     product_name = models.CharField(max_length=50)
     gender = models.CharField(max_length=1)
     style_image = models.TextField()
@@ -27,5 +27,5 @@ class Customer(models.Model):
 
 class Stock(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    size = models.IntegerField() # 프론트에서 바꿔준다. ex) 신발 의류 바지 사이즈가 다양하기 떄문
-    stock = models.IntegerField()
+    size = models.JSONField() # 프론트에서 바꿔준다. ex) 신발 의류 바지 사이즈가 다양하기 떄문
+    stock = models.JSONField()
