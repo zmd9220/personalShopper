@@ -2,7 +2,7 @@
   <div>
     <Nav/>
     <div class="product-box container">
-      <img class="product-detail-img" src="@/assets/dummydata/productDetail.product_image" alt="item1" style="width:45%">
+        <img class="product-detail-img" :src="`${productImage}`" alt="item1" style="width:45%">
       <div class="text-box">
         <!-- 상품이름 연동필요 -->
         <h2 class="text-box-title">{{ productDetail.product_name }}</h2> 
@@ -11,11 +11,8 @@
         <h2 @click="goToSizeRecommend()">사이즈 추천받기</h2>
         <h2 @click="goToSizeChart()">사이즈표</h2>
         <h2 @click="goToLocation()">상품위치 정보</h2>
-        <button @click="getItem()">이걸눌러라</button>
       </div>
     </div>
-
-    
     <h4>PersonalShopper의 추천</h4>
     <FooterAd/>
   </div>
@@ -35,6 +32,7 @@ export default {
   data: function() {
     return {
       productDetail: '',
+      productImage: '',
     }
   },
   methods :{
@@ -51,7 +49,8 @@ export default {
       axios.get('http://127.0.0.1:8000/product/101/')
         .then((res) => {
           console.log(res);
-          this.productDetail = res.data
+          this.productDetail = res.data;
+          this.productImage = require("@/assets/dummydata/" + res.data.product_image)
         })
         .catch((err) => {
           console.log(err)
