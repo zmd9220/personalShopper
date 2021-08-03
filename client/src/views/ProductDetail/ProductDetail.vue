@@ -8,84 +8,58 @@
         <h2 class="text-box-title">{{ productDetail.product_name }}</h2> 
         <h2>재고정보</h2>
         <div class="size-box">
-   
-          <!-- <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 1">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">{{manTopSize[i]}} : {{stock}}</li>
-          </ul> -->
 
-            <!-- 남자 상의 -->
-            <!-- <li v-for="size, idx in man_upper_size" :key="idx">{{size[i]}}</li> -->
+          <!-- 남자 상의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 1">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+              <!-- 삼항연산자 stock(재고)유무에 따라 css속성을 바꾼다. 있으면 앞, 없으면 뒤 -->
               <div>
-
                 <span style="text-align: start" >{{manTopSize[i]}}</span>
                 <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
               </div>
             </li>
           </ul>
         
-        
-          <!-- <ul v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 2">
-            <li v-for="stock, i in stocks" :key="i">{{stock}}</li>
-          </ul> -->
-
           <!-- 남자 하의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 2">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div>
-
                 <span style="text-align: start" >{{manBottomSize[i]}}</span>
                 <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
               </div>
             </li>
           </ul>                  
-        
-          <!-- <ul v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 1">
-            <li v-for="stock, i in stocks" :key="i">{{stock}}</li>
-          </ul> -->
+
           <!-- 여자 상의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 1">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div>
-
                 <span style="text-align: start" >{{womanTopSize[i]}}</span>
                 <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
               </div>
             </li>
           </ul>        
-        
-          <!-- <ul v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 2">
-            <li v-for="stock, i in stocks" :key="i">{{stock}}</li>
-          </ul> -->
+
           <!-- 여자 하의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 2">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div>
-
                 <span style="text-align: start" >{{womanBottomSize[i]}}</span>
                 <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
               </div>
             </li>
           </ul>
-        
-          <!-- <ul v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 3">
-            <li v-for="stock, i in stocks" :key="i">{{stock}}</li>
-          </ul> -->
+
           <!-- 남자 신발 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 3">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div>
-
                 <span style="text-align: start" >{{manShoesSize[i]}}</span>
                 <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
               </div>
             </li>
           </ul>        
-        
-          <!-- <ul v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 3">
-            <li v-for="stock, i in stocks" :key="i">{{stock}}</li>
-          </ul> -->
+
           <!-- 여자 신발 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 3">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
@@ -96,10 +70,7 @@
               </div>
             </li>
           </ul>                  
-        
-          <!-- <ul v-if="`${productDetail.product_type }` == 4">
-            <li v-for="stock, i in stocks" :key="i">{{stock}}</li>
-          </ul> -->
+
           <!-- 악세서리 -->
           <ul class="size-stock" v-if="`${productDetail.product_type }` == 4">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
@@ -118,7 +89,7 @@
       </div>
     </div>
     <h4>PersonalShopper의 추천</h4>
-    <FooterAd :style_products = "productDetail.style_products" :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3"/>
+    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3"/>
   </div>
 </template>
 
@@ -138,10 +109,10 @@ export default {
       productDetail: '',
       productImage: '',
       stocks: '',
-      productRecommend1: '',    // 리팩토링 필요 (slice => split, props 넘겨주는걸 Array)
+      productRecommend1: '',    // 리팩토링 필요 (slice => split, props 넘겨주는걸 Array), 추천 1, 2, 3 항목에 해당.
       productRecommend2: '',
       productRecommend3: '',
-      manTopSize: ['XS (KR 90)', 'S (KR 95)', 'M (KR 95-100)', 'L (KR 100-105)', 'XL (KR 105-110)'],
+      manTopSize: ['XS (KR 90)', 'S (KR 95)', 'M (KR 95-100)', 'L (KR 100-105)', 'XL (KR 105-110)'], // 사이즈별 데이터
       womanTopSize: ['XS (KR 44)', 'S (KR 55)', 'M (KR 66)', 'L (KR 77)', 'XL (KR 88)'],
       manBottomSize: ['XS (KR 28)', 'S (KR 30)', 'M (KR 31)', 'L (KR 32)', 'XL (KR 34)'],
       womanBottomSize: ['XS (KR 24)', 'S (KR 26)', 'M (KR 28)', 'L (KR 30)', 'XL (KR 32)'],
@@ -163,10 +134,9 @@ export default {
     goToLocation(){
       this.$router.push('/ProductDetailLocation'); 
     },
-    getProduct: function() {
+    getProduct: function() { // 상품정보를 받아오는 axios
       axios.get('http://127.0.0.1:8000/product/103/')
         .then((res) => {
-          // console.log(res);
           this.productDetail = res.data;
           this.productImage = require("@/assets/dummydata/" + res.data.product_image)
           console.log(res.data.style_products.slice(0,3));
@@ -180,10 +150,9 @@ export default {
           console.log(err)
         })
     },
-    getStock: function() {
+    getStock: function() { // 재고정보를 받아오는 axios
       axios.get('http://127.0.0.1:8000/product/103/stocks/')
         .then((res) => {
-          console.log(res);
           this.stocks = res.data.stock;       // stock모델은 size가 필요없다. 바꿔야한다.
         })
         .catch((err) => {
@@ -191,7 +160,7 @@ export default {
         })
     },
   },
-  created: function () {
+  created: function () { // created로 선언하여 데이터를 갱신한다.
     this.getProduct()
     this.getStock()
   }
