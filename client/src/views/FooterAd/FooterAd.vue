@@ -1,14 +1,7 @@
 <template>
   <div>
-
-    <div class="footer-row" v-if="!style_products">
-
-
-
-    </div>
-
-    
     <div class="footer-row">
+      <!-- 추천항목이 있을시 보여주고 없으면 디폴트데이터 보여주기. 리팩토링가능해보임. v-if 빼고 기본을 디폴트 데이터가 넘어오면 덮어씌우는형식으로 -->
       <div class="column" v-if="productRecommend1">
         <img :src="`${productRecommend1}`" alt="item3" style="width: 100%">
       </div>
@@ -40,10 +33,7 @@
 <script>
 export default {
   props: {
-    style_products: {
-      type: String,
-    },
-    productRecommend1 : {
+    productRecommend1 : { // 추천 1,2,3
       type: String,
     },
     productRecommend2 : {
