@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav/>
-    <div class="product-box container">
+    <div class="product-box container" :key="productId">
         <img class="product-detail-img" :src="`${productImage}`" alt="item1" style="width:45%">
       <div class="text-box">
         <!-- 상품이름 연동필요 -->
@@ -64,7 +64,6 @@
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 3">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div>
-
                 <span style="text-align: start" >{{womanShoesSize[i]}}</span>
                 <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
               </div>
@@ -75,7 +74,6 @@
           <ul class="size-stock" v-if="`${productDetail.product_type }` == 4">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div>
-
                 <span style="text-align: start" >{{accessory[i]}}</span>
                 <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
               </div>
@@ -143,11 +141,8 @@ export default {
         .then((res) => {
           this.productDetail = res.data;
           this.productImage = require("@/assets/dummydata/" + res.data.product_image)
-          console.log(res.data.style_products.slice(0,3));
           this.productRecommend1 = require("@/assets/dummydata/" + res.data.style_products.slice(0,3) + '.png')
-          console.log(res.data.style_products.slice(5,8));
           this.productRecommend2 = require("@/assets/dummydata/" + res.data.style_products.slice(5,8) + '.png')
-          console.log(res.data.style_products.slice(10,14));
           this.productRecommend3 = require("@/assets/dummydata/" + res.data.style_products.slice(10,14) + '.png')
         })
         .catch((err) => {
@@ -167,15 +162,19 @@ export default {
     },
     changeProductId: function(selectedProductId) {
       console.log(selectedProductId)
-      // this.productId = selectedProductId
+      this.productId = selectedProductId;
+      this.getProduct();
+      this.getStock();
     }
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
     this.getProduct();
     this.getStock();
   },
-  updated: function(selectedProductId) {
-    this.productId = selectedProductId
+  updated: function() {
+    // this.productId = selectedProductId
+    // this.getProduct();
+    // this.getStock();
   }
 }
 
