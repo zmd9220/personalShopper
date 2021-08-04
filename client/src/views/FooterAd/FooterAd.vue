@@ -3,27 +3,27 @@
     <div class="footer-row">
       <!-- 추천항목이 있을시 보여주고 없으면 디폴트데이터 보여주기. 리팩토링가능해보임. v-if 빼고 기본을 디폴트 데이터가 넘어오면 덮어씌우는형식으로 -->
       <div class="column" v-if="productRecommend1">
-        <img :src="`${productRecommend1}`" alt="item3" style="width: 100%">
+        <img :src="`${productRecommend1}`" alt="item3" style="width: 100%" @click="gotoDetail1()" >
       </div>
 
       <div class="column" v-if="!productRecommend1">
-        <img src="@/assets/item1.png" alt="item1" style="width: 100%">
+        <img src="@/assets/dummydata/101.png" alt="item1" style="width: 100%" @click="gotoDetailDefault1()" >
       </div>
 
       <div class="column" v-if="productRecommend2">
-        <img :src="`${productRecommend2}`" alt="item3" style="width: 100%">
+        <img :src="`${productRecommend2}`" alt="item3" style="width: 100%" @click="gotoDetail2()" >
       </div>
 
       <div class="column" v-if="!productRecommend2">
-        <img src="@/assets/item2.png" alt="item2" style="width: 100%">
+        <img src="@/assets/dummydata/102.png" alt="item2" style="width: 100%" @click="gotoDetailDefault2()" >
       </div>
 
       <div class="column" v-if="productRecommend3">
-        <img :src="`${productRecommend3}`" alt="item3" style="width: 100%">
+        <img :src="`${productRecommend3}`" alt="item3" style="width: 100%" @click="gotoDetail3()" >
       </div>
 
       <div class="column" v-if="!productRecommend3">
-        <img src="@/assets/item3.png" alt="item3" style="width: 100%">
+        <img src="@/assets/dummydata/103.png" alt="item3" style="width: 100%" @click="gotoDetailDefault3()" >
       </div>
     </div>
   </div>
@@ -43,6 +43,29 @@ export default {
       type: String,
     },
   },
+  methods:{
+    gotoDetail1: function() {                 //리팩토링 필요
+      const productId = this.productRecommend1.slice(5,8);
+      this.$emit('selectedProductId', productId);
+    },
+    gotoDetail2: function() {                 //리팩토링 필요
+      const productId = this.productRecommend2.slice(5,8);
+      this.$emit('selectedProductId', productId);
+    },
+    gotoDetail3: function() {                 //리팩토링 필요
+      const productId = this.productRecommend3.slice(5,8);
+      this.$emit('selectedProductId', productId);
+    },
+    gotoDetailDefault1: function() {                 //리팩토링 필요
+      this.$emit('selectedProductId', '101');
+    },
+    gotoDetailDefault2: function() {                 //리팩토링 필요
+      this.$emit('selectedProductId', '102');
+    },
+    gotoDetailDefault3: function() {                 //리팩토링 필요
+      this.$emit('selectedProductId', '103');
+    },
+  }
 }
 </script>
 
