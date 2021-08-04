@@ -1,0 +1,256 @@
+{
+    "FaceDetails": [
+        {
+            "BoundingBox": {
+                "Width": 0.507577121257782,
+                "Height": 0.6734297275543213,
+                "Left": 0.37239977717399597,
+                "Top": 0.1292392462491989
+            },
+            "AgeRange": {
+                "Low": 12,
+                "High": 22
+            },
+            "Smile": {
+                "Value": false,
+                "Confidence": 72.81588745117188
+            },
+            "Eyeglasses": {
+                "Value": false,
+                "Confidence": 99.726806640625
+            },
+            "Sunglasses": {
+                "Value": false,
+                "Confidence": 99.82525634765625
+            },
+            "Gender": {
+                "Value": "Female",
+                "Confidence": 99.4444808959961
+            },
+            "Beard": {
+                "Value": false,
+                "Confidence": 99.51091766357422
+            },
+            "Mustache": {
+                "Value": false,
+                "Confidence": 99.82514190673828
+            },
+            "EyesOpen": {
+                "Value": true,
+                "Confidence": 76.3292465209961
+            },
+            "MouthOpen": {
+                "Value": false,
+                "Confidence": 95.05079650878906
+            },
+            "Emotions": [
+                {
+                    "Type": "CALM",
+                    "Confidence": 52.932918548583984
+                },
+                {
+                    "Type": "HAPPY",
+                    "Confidence": 44.21188735961914
+                },
+                {
+                    "Type": "SAD",
+                    "Confidence": 1.500828504562378
+                },
+                {
+                    "Type": "CONFUSED",
+                    "Confidence": 0.584703803062439
+                },
+                {
+                    "Type": "ANGRY",
+                    "Confidence": 0.23995454609394073
+                },
+                {
+                    "Type": "FEAR",
+                    "Confidence": 0.21458818018436432
+                },
+                {
+                    "Type": "DISGUSTED",
+                    "Confidence": 0.16811533272266388
+                },
+                {
+                    "Type": "SURPRISED",
+                    "Confidence": 0.1470050811767578
+                }
+            ],
+            "Landmarks": [
+                {
+                    "Type": "eyeLeft",
+                    "X": 0.4523814618587494,
+                    "Y": 0.33222493529319763
+                },
+                {
+                    "Type": "eyeRight",
+                    "X": 0.6701573133468628,
+                    "Y": 0.3504541218280792
+                },
+                {
+                    "Type": "mouthLeft",
+                    "X": 0.44820886850357056,
+                    "Y": 0.558663010597229
+                },
+                {
+                    "Type": "mouthRight",
+                    "X": 0.630988359451294,
+                    "Y": 0.5741736888885498
+                },
+                {
+                    "Type": "nose",
+                    "X": 0.5356845259666443,
+                    "Y": 0.47973328828811646
+                },
+                {
+                    "Type": "leftEyeBrowLeft",
+                    "X": 0.3814227879047394,
+                    "Y": 0.2679736912250519
+                },
+                {
+                    "Type": "leftEyeBrowRight",
+                    "X": 0.44009023904800415,
+                    "Y": 0.2555317282676697
+                },
+                {
+                    "Type": "leftEyeBrowUp",
+                    "X": 0.49919193983078003,
+                    "Y": 0.27583548426628113
+                },
+                {
+                    "Type": "rightEyeBrowLeft",
+                    "X": 0.6232057213783264,
+                    "Y": 0.2859237492084503
+                },
+                {
+                    "Type": "rightEyeBrowRight",
+                    "X": 0.6897818446159363,
+                    "Y": 0.2760236859321594
+                },
+                {
+                    "Type": "rightEyeBrowUp",
+                    "X": 0.7583745718002319,
+                    "Y": 0.2990525960922241
+                },
+                {
+                    "Type": "leftEyeLeft",
+                    "X": 0.41543278098106384,
+                    "Y": 0.3258751928806305
+                },
+                {
+                    "Type": "leftEyeRight",
+                    "X": 0.49519670009613037,
+                    "Y": 0.3381335437297821
+                },
+                {
+                    "Type": "leftEyeUp",
+                    "X": 0.45203402638435364,
+                    "Y": 0.3218589425086975
+                },
+                {
+                    "Type": "leftEyeDown",
+                    "X": 0.4522140622138977,
+                    "Y": 0.34251895546913147
+                },
+                {
+                    "Type": "rightEyeLeft",
+                    "X": 0.6264975666999817,
+                    "Y": 0.3490474820137024
+                },
+                {
+                    "Type": "rightEyeRight",
+                    "X": 0.7101615071296692,
+                    "Y": 0.35056328773498535
+                },
+                {
+                    "Type": "rightEyeUp",
+                    "X": 0.6704320907592773,
+                    "Y": 0.3400433361530304
+                },
+                {
+                    "Type": "rightEyeDown",
+                    "X": 0.6677827835083008,
+                    "Y": 0.3605627417564392
+                },
+                {
+                    "Type": "noseLeft",
+                    "X": 0.5006410479545593,
+                    "Y": 0.49033647775650024
+                },
+                {
+                    "Type": "noseRight",
+                    "X": 0.580957293510437,
+                    "Y": 0.4971332550048828
+                },
+                {
+                    "Type": "mouthUp",
+                    "X": 0.5346320867538452,
+                    "Y": 0.5485652089118958
+                },
+                {
+                    "Type": "mouthDown",
+                    "X": 0.5300756096839905,
+                    "Y": 0.6142393946647644
+                },
+                {
+                    "Type": "leftPupil",
+                    "X": 0.4523814618587494,
+                    "Y": 0.33222493529319763
+                },
+                {
+                    "Type": "rightPupil",
+                    "X": 0.6701573133468628,
+                    "Y": 0.3504541218280792
+                },
+                {
+                    "Type": "upperJawlineLeft",
+                    "X": 0.34551388025283813,
+                    "Y": 0.29904821515083313
+                },
+                {
+                    "Type": "midJawlineLeft",
+                    "X": 0.3647726774215698,
+                    "Y": 0.5487340688705444
+                },
+                {
+                    "Type": "chinBottom",
+                    "X": 0.5255219340324402,
+                    "Y": 0.7228787541389465
+                },
+                {
+                    "Type": "midJawlineRight",
+                    "X": 0.7473949193954468,
+                    "Y": 0.5809054970741272
+                },
+                {
+                    "Type": "upperJawlineRight",
+                    "X": 0.8172731399536133,
+                    "Y": 0.337932288646698
+                }
+            ],
+            "Pose": {
+                "Roll": 5.205291748046875,
+                "Yaw": -2.6274759769439697,
+                "Pitch": -9.636489868164062
+            },
+            "Quality": {
+                "Brightness": 87.22433471679688,
+                "Sharpness": 83.14741516113281
+            },
+            "Confidence": 100.0
+        }
+    ],
+    "ResponseMetadata": {
+        "RequestId": "76224529-f437-479c-a112-28e04b76edf5",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "content-type": "application/x-amz-json-1.1",
+            "date": "Wed, 04 Aug 2021 04:46:35 GMT",
+            "x-amzn-requestid": "76224529-f437-479c-a112-28e04b76edf5",
+            "content-length": "3331",
+            "connection": "keep-alive"
+        },
+        "RetryAttempts": 0
+    }
+}
