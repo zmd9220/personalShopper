@@ -7,7 +7,37 @@
       <img class="ProductDetailImg" src="@/assets/item1.png" alt="item1" style="width:45%">
       <div class="TextBox">       
       </div>
+
       <div class="slider">
+      <div class="modal-info-box">
+        <div>
+          <b-button v-b-modal.modal-center>Launch centered modal</b-button>
+
+          <b-modal id="modal-center" size="xl" centered title="BootstrapVue" class="modal">
+            <div style="height:5vh">
+            </div>
+            <h3>키</h3>
+            <b-button-group>
+              <b-button pill>~165cm</b-button>
+              <b-button pill>165~170cm</b-button>
+              <b-button pill>170~175cm</b-button>
+              <b-button pill>175~180cm</b-button>
+              <b-button pill>180cm~</b-button>
+            </b-button-group>
+            <div style="height:3vh">
+            </div>
+            <h3>몸무게</h3>
+            <b-button-group>
+              <b-button>~50kg</b-button>
+              <b-button>50~60kg</b-button>
+              <b-button>60~70kg</b-button>
+              <b-button>70~80kg</b-button>
+              <b-button>80kg~</b-button>
+            </b-button-group>
+            <p class="my-4">Vertically centered modal!</p>
+          </b-modal>
+        </div>
+      </div>
         <label for="range-1" class="question-text">어떤 핏을 원하세요?</label>
         <b-form-input class="silder-bar" id="range-1" v-model="value" type="range" min="0" max="2"></b-form-input>
         <div v-if="this.value === '0'">
@@ -80,6 +110,17 @@ export default {
 
 .TextBox {
   text-align: center;
+}
+
+.modal-info-box {
+  width: 100%;
+  height: 20vh;
+}
+
+.modal {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider {
