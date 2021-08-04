@@ -89,7 +89,7 @@
       </div>
     </div>
     <h4>PersonalShopper의 추천</h4>
-    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3"/>
+    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" @selectedProductId="changeProductId"/>
   </div>
 </template>
 
@@ -97,6 +97,7 @@
 import FooterAd from '@/views/FooterAd/FooterAd'
 import Nav from '@/views/Nav/Nav'
 import axios from 'axios'
+
 
 export default {
   name: 'ProductDetail',
@@ -119,7 +120,7 @@ export default {
       manShoesSize: ['KR 250', 'KR 260', 'KR 270', 'KR 280','KR 290'],
       womanShoesSize: ['KR 230', 'KR 240', 'KR 250', 'KR 260','KR 270'],
       accessory: ['freesize'],
-
+      productId : '301',
 
       // isActive: False,
     }
@@ -135,7 +136,10 @@ export default {
       this.$router.push('/ProductDetailLocation'); 
     },
     getProduct: function() { // 상품정보를 받아오는 axios
-      axios.get('http://127.0.0.1:8000/product/103/')
+      const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const productURL = localURL + this.productId + '/'; //
+      
+      axios.get(productURL) // 리팩토링 필요.
         .then((res) => {
           this.productDetail = res.data;
           this.productImage = require("@/assets/dummydata/" + res.data.product_image)
@@ -151,7 +155,9 @@ export default {
         })
     },
     getStock: function() { // 재고정보를 받아오는 axios
-      axios.get('http://127.0.0.1:8000/product/103/stocks/')
+      const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const stockURL = localURL + this.productId + '/' + 'stocks' +'/';
+      axios.get(stockURL)
         .then((res) => {
           this.stocks = res.data.stock;       // stock모델은 size가 필요없다. 바꿔야한다.
         })
@@ -159,10 +165,17 @@ export default {
           console.log(err)
         })
     },
+    changeProductId: function(selectedProductId) {
+      console.log(selectedProductId)
+      // this.productId = selectedProductId
+    }
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
-    this.getProduct()
-    this.getStock()
+    this.getProduct();
+    this.getStock();
+  },
+  updated: function(selectedProductId) {
+    this.productId = selectedProductId
   }
 }
 
