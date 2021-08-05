@@ -13,28 +13,30 @@
         <div>
           <b-button v-b-modal.modal-center>Launch centered modal</b-button>
 
-          <b-modal id="modal-center" size="xl" centered title="BootstrapVue" class="modal">
+          <b-modal id="modal-center" size="xl" centered title="알맞은 정보를 선택해주세요" >
             <div style="height:5vh">
             </div>
             <h3>키</h3>
-            <b-button-group>
-              <b-button pill>~165cm</b-button>
-              <b-button pill>165~170cm</b-button>
-              <b-button pill>170~175cm</b-button>
-              <b-button pill>175~180cm</b-button>
-              <b-button pill>180cm~</b-button>
-            </b-button-group>
-            <div style="height:3vh">
+            <div class="modal-button">
+              <b-button-group size="lg">
+                <b-button class="button-option" pill>~165cm</b-button>
+                <b-button class="button-option" pill>170~175cm</b-button>
+                <b-button class="button-option" pill>165~170cm</b-button>
+                <b-button class="button-option" pill>175~180cm</b-button>
+                <b-button class="button-option" pill>180cm~</b-button>
+              </b-button-group>
             </div>
+            <div style="height:3vh"></div>
             <h3>몸무게</h3>
-            <b-button-group>
-              <b-button>~50kg</b-button>
-              <b-button>50~60kg</b-button>
-              <b-button>60~70kg</b-button>
-              <b-button>70~80kg</b-button>
-              <b-button>80kg~</b-button>
-            </b-button-group>
-            <p class="my-4">Vertically centered modal!</p>
+            <div class="modal-button">
+              <b-button-group size="lg">
+                <b-button class="button-option2">~50kg</b-button>
+                <b-button class="button-option2">50~60kg</b-button>
+                <b-button class="button-option2">60~70kg</b-button>
+                <b-button class="button-option2">70~80kg</b-button>
+                <b-button class="button-option2">80kg~</b-button>
+              </b-button-group>
+            </div>
           </b-modal>
         </div>
       </div>
@@ -87,7 +89,14 @@ export default {
 
   data() {
     return {
-      value: '2'
+      value: '2',
+      selected: 'A',
+        options: [
+          { item: 'A', name: 'Option A' },
+          { item: 'B', name: 'Option B' },
+          { item: 'D', name: 'Option C', notEnabled: true },
+          { item: { d: 1 }, name: 'Option D' }
+        ]
     }
   },
 }
@@ -117,10 +126,10 @@ export default {
   height: 20vh;
 }
 
-.modal {
-  display: flexbox;
+.modal-button {
+  display: flex;
   justify-content: center;
-  align-items: center;
+
 }
 
 .slider {
@@ -148,6 +157,15 @@ export default {
 .selected-size {
   font-weight: bold;
   font-size: 2rem;
+}
+
+.button-option {
+  margin-right: 2rem;
+}
+
+.button-option2 {
+  border-color: rgb(255, 255, 255);
+  border-width: 0.2rem;
 }
 </style>
 
