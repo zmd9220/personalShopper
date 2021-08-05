@@ -7,4 +7,7 @@ urlpatterns = [
     path('products/', views.products),
     path('product/<int:product_id>/', views.product_detail),
     path('product/<int:product_id>/stocks/', views.product_stock),
+
+    # path('product/fetch/', views.product_fetch),
+    # path('product/save/', views.product_save),
 ]
