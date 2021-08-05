@@ -9,12 +9,12 @@ url = "https://openapi.naver.com/v1/vision/face"
 headers = {'X-Naver-Client-Id': client_id, 'X-Naver-Client-Secret': client_secret }
 
 sys.stdout = open('stdout.txt', 'w')
-for i in range(1, 27):
+for i in range(1, 26):
     if i < 10:
         string = '0'+str(i)
     else:
         string = str(i)
-    files = {'image': open('img2/{}.jpg'.format(string), 'rb')}
+    files = {'image': open('../img/{}.jpg'.format(string), 'rb')}
     response = requests.post(url,  files=files, headers=headers)
     rescode = response.status_code
 

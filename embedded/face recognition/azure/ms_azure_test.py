@@ -12,8 +12,8 @@ CF.Key.set(KEY)
 BASE_URL = 'https://koreacentral.api.cognitive.microsoft.com/face/v1.0/' # 자신의 지역에 해당하는 URL
 CF.BaseUrl.set(BASE_URL)
 
-for i in range(1 , 31):
-    img_url = 'img2/{}.jpg'.format(str (i))  # 이미지 파일의 경로
+for i in range(1 , 26):
+    img_url = '../img/{}.jpg'.format(str (i))  # 이미지 파일의 경로
     faces = CF.face.detect(img_url, True, False, 'age,gender')  # 중요!
     # detect 함수는 4가지의 매개변수를 갖는다.
     # 첫 번째 인자 : 이미지파일
