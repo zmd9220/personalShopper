@@ -87,7 +87,7 @@
       </div>
     </div>
     <h4>PersonalShopper의 추천</h4>
-    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" @selectedProductId="changeProductId"/>
+    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
   </div>
 </template>
 
@@ -118,7 +118,10 @@ export default {
       manShoesSize: ['KR 250', 'KR 260', 'KR 270', 'KR 280','KR 290'],
       womanShoesSize: ['KR 230', 'KR 240', 'KR 250', 'KR 260','KR 270'],
       accessory: ['freesize'],
-      productId : '101',
+      productId : '301',
+      productId1 : 0,
+      productId2 : 0,
+      productId3 : 0,
 
       // isActive: False,
     }
@@ -143,11 +146,38 @@ export default {
           this.productDetail = res.data;
           // this.productImage = require("@/assets/dummydata/" + res.data.product_image)
           this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/';
-          this.productRecommend2 = res.data.style_products.slice(5,8)
-          this.productRecommend3 = res.data.style_products.slice(10,14)
+          this.productRecommend2 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/';
+          this.productRecommend3 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/';
         })
-        .catch((err) => {
-          console.log(err)
+        .then(()=>{
+          axios.get(this.productRecommend1)
+          .then((res)=>{
+            this.productId1 = res.data.product_id;
+            this.productRecommend1 = res.data.product_image;
+          })
+        })
+        .then(()=>{
+          axios.get(this.productRecommend2)
+          .then((res)=>{
+            this.productId2 = res.data.product_id;
+            this.productRecommend2 = res.data.product_image;
+          })
+          .catch(() => {
+            // console.log(err)
+          })
+        })
+        .then(()=>{
+          axios.get(this.productRecommend3)
+          .then((res)=>{
+            this.productId3 = res.data.product_id;
+            this.productRecommend3 = res.data.product_image;
+          })
+          .catch(() => {
+            // console.log(err)
+          })
+        })
+        .catch(() => {
+          // console.log(err)
         })
     },
     getStock: function() { // 재고정보를 받아오는 axios
