@@ -2,7 +2,7 @@
   <div>
     <Nav/>
     <div class="product-box container" :key="productId">
-        <img class="product-detail-img" :src="`${productImage}`" alt="item1" style="width:45%">
+        <img class="product-detail-img" :src=" productDetail.product_image " alt="item1" style="width:45%">
       <div class="text-box">
         <!-- 상품이름 연동필요 -->
         <h2 class="text-box-title">{{ productDetail.product_name }}</h2> 
@@ -84,10 +84,18 @@
         <h2 @click="goToSizeRecommend()">사이즈 추천받기</h2>
         <h2 @click="goToSizeChart()">사이즈표</h2>
         <h2 @click="goToLocation()">상품위치 정보</h2>
+        <div>
+          <b-button v-b-modal.modal-xl variant="primary">xl modal</b-button>
+          <b-modal id="modal-xl" size="xl" title="Extra Large Modal">
+            <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map">
+            <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map">
+            <h2>해당 상품은 {{this.productLocation}}구역에있습니다.</h2>
+          </b-modal>
+        </div>
       </div>
     </div>
     <h4>PersonalShopper의 추천</h4>
-    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" @selectedProductId="changeProductId"/>
+    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
   </div>
 </template>
 
@@ -119,6 +127,11 @@ export default {
       womanShoesSize: ['KR 230', 'KR 240', 'KR 250', 'KR 260','KR 270'],
       accessory: ['freesize'],
       productId : '301',
+      productId1 : 0,
+      productId2 : 0,
+      productId3 : 0,
+      productLocation : '',
+      locationPicture : '',
 
       // isActive: False,
     }
@@ -139,14 +152,45 @@ export default {
       
       axios.get(productURL) // 리팩토링 필요.
         .then((res) => {
+          // console.log(res.data)
           this.productDetail = res.data;
-          this.productImage = require("@/assets/dummydata/" + res.data.product_image)
-          this.productRecommend1 = require("@/assets/dummydata/" + res.data.style_products.slice(0,3) + '.png')
-          this.productRecommend2 = require("@/assets/dummydata/" + res.data.style_products.slice(5,8) + '.png')
-          this.productRecommend3 = require("@/assets/dummydata/" + res.data.style_products.slice(10,14) + '.png')
+          this.productLocation = res.data.location;
+          this.locationPicture = require('@/assets/location/' + res.data.location + '.png');
+          // console.log(this.LocationPicture)
+          // this.productImage = require("@/assets/dummydata/" + res.data.product_image)
+          this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/';
+          this.productRecommend2 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/';
+          this.productRecommend3 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/';
         })
-        .catch((err) => {
-          console.log(err)
+        .then(()=>{
+          axios.get(this.productRecommend1)
+          .then((res)=>{
+            this.productId1 = res.data.product_id;
+            this.productRecommend1 = res.data.product_image;
+          })
+        })
+        .then(()=>{
+          axios.get(this.productRecommend2)
+          .then((res)=>{
+            this.productId2 = res.data.product_id;
+            this.productRecommend2 = res.data.product_image;
+          })
+          .catch(() => {
+            // console.log(err)
+          })
+        })
+        .then(()=>{
+          axios.get(this.productRecommend3)
+          .then((res)=>{
+            this.productId3 = res.data.product_id;
+            this.productRecommend3 = res.data.product_image;
+          })
+          .catch(() => {
+            // console.log(err)
+          })
+        })
+        .catch(() => {
+          // console.log(err)
         })
     },
     getStock: function() { // 재고정보를 받아오는 axios
@@ -225,5 +269,9 @@ export default {
   margin: 0;
   font-weight: bold;
   font-size: 3rem;
+}
+
+.shop-map {
+  width: 100%;
 }
 </style>
