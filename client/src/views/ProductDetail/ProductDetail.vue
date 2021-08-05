@@ -84,6 +84,14 @@
         <h2 @click="goToSizeRecommend()">사이즈 추천받기</h2>
         <h2 @click="goToSizeChart()">사이즈표</h2>
         <h2 @click="goToLocation()">상품위치 정보</h2>
+        <div>
+          <b-button v-b-modal.modal-xl variant="primary">xl modal</b-button>
+          <b-modal id="modal-xl" size="xl" title="Extra Large Modal">
+            <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map">
+            <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map">
+            <h2>해당 상품은 {{this.productLocation}}구역에있습니다.</h2>
+          </b-modal>
+        </div>
       </div>
     </div>
     <h4>PersonalShopper의 추천</h4>
@@ -122,6 +130,8 @@ export default {
       productId1 : 0,
       productId2 : 0,
       productId3 : 0,
+      productLocation : '',
+      locationPicture : '',
 
       // isActive: False,
     }
@@ -144,6 +154,9 @@ export default {
         .then((res) => {
           // console.log(res.data)
           this.productDetail = res.data;
+          this.productLocation = res.data.location;
+          this.locationPicture = require('@/assets/location/' + res.data.location + '.png');
+          // console.log(this.LocationPicture)
           // this.productImage = require("@/assets/dummydata/" + res.data.product_image)
           this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/';
           this.productRecommend2 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/';
@@ -256,5 +269,9 @@ export default {
   margin: 0;
   font-weight: bold;
   font-size: 3rem;
+}
+
+.shop-map {
+  width: 100%;
 }
 </style>
