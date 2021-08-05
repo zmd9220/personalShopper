@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   props: {
     productRecommend1 : { // 추천 1,2,3
@@ -42,6 +44,11 @@ export default {
     productRecommend3 : {
       type: String,
     },
+  },
+  data: function() {
+    return {
+      Recommend1: this.productRecommend1,
+    }
   },
   methods:{
     gotoDetail1: function() {                 //리팩토링 필요
@@ -65,7 +72,28 @@ export default {
     gotoDetailDefault3: function() {                 //리팩토링 필요
       this.$emit('selectedProductId', '103');
     },
-  }
+    getProduct1: function() { // 상품정보를 받아오는 axios
+      // const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      // const productURL = localURL + this.Recommend1 + '/'; //
+      console.log(this.Recommend1)
+      console.log(this.productRecommend1)
+      axios.get(this.productRecommend1) // 리팩토링 필요.
+        .then((res) => {
+          console.log(res.data)
+          this.productDetail = res.data;
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
+  },
+  created: function () { // created로 선언하여 데이터를 갱신한다.
+    // console.log(this.productRecommend1)
+    this.Recommend1 = this.productRecommend1
+    this.getProduct1();
+    // this.getProduct(this.productRecommend2);
+    // this.getProduct(this.productRecommend3);
+  },
 }
 </script>
 
