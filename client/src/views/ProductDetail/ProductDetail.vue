@@ -2,7 +2,7 @@
   <div>
     <Nav/>
     <div class="product-box container" :key="productId">
-        <img class="product-detail-img" :src="`${productImage}`" alt="item1" style="width:45%">
+        <img class="product-detail-img" :src=" productDetail.product_image " alt="item1" style="width:45%">
       <div class="text-box">
         <!-- 상품이름 연동필요 -->
         <h2 class="text-box-title">{{ productDetail.product_name }}</h2> 
@@ -118,7 +118,7 @@ export default {
       manShoesSize: ['KR 250', 'KR 260', 'KR 270', 'KR 280','KR 290'],
       womanShoesSize: ['KR 230', 'KR 240', 'KR 250', 'KR 260','KR 270'],
       accessory: ['freesize'],
-      productId : '301',
+      productId : '101',
 
       // isActive: False,
     }
@@ -139,11 +139,12 @@ export default {
       
       axios.get(productURL) // 리팩토링 필요.
         .then((res) => {
+          // console.log(res.data)
           this.productDetail = res.data;
-          this.productImage = require("@/assets/dummydata/" + res.data.product_image)
-          this.productRecommend1 = require("@/assets/dummydata/" + res.data.style_products.slice(0,3) + '.png')
-          this.productRecommend2 = require("@/assets/dummydata/" + res.data.style_products.slice(5,8) + '.png')
-          this.productRecommend3 = require("@/assets/dummydata/" + res.data.style_products.slice(10,14) + '.png')
+          // this.productImage = require("@/assets/dummydata/" + res.data.product_image)
+          this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/';
+          this.productRecommend2 = res.data.style_products.slice(5,8)
+          this.productRecommend3 = res.data.style_products.slice(10,14)
         })
         .catch((err) => {
           console.log(err)
