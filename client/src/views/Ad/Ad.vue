@@ -5,17 +5,19 @@
     </header>
 
     <section>
-      <VideoDetail :selectedVideo="selectedVideo"/>
+      <VideoDetail :selectedVideo="selectedVideo" @selectedVideoURL="passVideoURL"/>
       <VideoList :videoList="videoList" @select-video="onSelectedVideo"/>
     </section>
+    <AdClient :selectedVideoURL="selectedVideoURL"/>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import SearchBar from '@/views/Ad/SearchBar.vue'
-import VideoList from '@/views/Ad/VideoList.vue'
-import VideoDetail from '@/views/Ad/VideoDetail.vue'
+import SearchBar from '@/views/Ad/SearchBar'
+import VideoList from '@/views/Ad/VideoList'
+import VideoDetail from '@/views/Ad/VideoDetail'
+import AdClient from '@/views/Ad/AdClient'
 
 export default {
   name: 'Ad',
@@ -23,11 +25,13 @@ export default {
     SearchBar,
     VideoList,
     VideoDetail,
+    AdClient,
   },
   data: function () {
     return {
       videoList: [],
       selectedVideo: null,
+      selectedVideoURL: '',
     }
   },
   methods: {
@@ -55,7 +59,11 @@ export default {
     },
     onSelectedVideo: function (video) {
       this.selectedVideo = video
-    }
+    },
+    passVideoURL: function(selectedVideoURL) {
+      this.selectedVideoURL = selectedVideoURL
+      console.log(this.selectedVideoURL)
+    },
   }
 }
 </script>

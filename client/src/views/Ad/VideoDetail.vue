@@ -22,11 +22,30 @@ export default {
       type: Object,
     }
   },
+  data : function() {
+    return {
+      selectedVideoURL: '',
+    }
+  }, 
   computed: {
     videoURI: function () {
-      const videoId = this.selectedVideo.id.videoId
+      const videoId = this.selectedVideo.id.videoId;
       return `https://www.youtube.com/embed/${videoId}`
     },
+  },
+  methods: {
+    emitURL() {
+      this.$emit('selectedVideoURL', this.selectedVideoURL);
+      // console.log(this.selectedVideoURL);
+    }
+  },
+  updated: function() {
+    this.selectedVideoURL = 'https://www.youtube.com/embed/' + this.selectedVideo.id.videoId + '/';
+    this.emitURL();
+    // this.$emit('selectedVideoURL', this.selectedVideoURL);
+  },
+  created: function() {
+    
   }
 }
 </script>
