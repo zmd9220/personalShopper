@@ -31,7 +31,6 @@
 </template>
 
 <script>
-// import axios from 'axios'
 
 export default {
   props: {
@@ -44,7 +43,7 @@ export default {
     productRecommend3 : {
       type: String,
     },
-    productId1 : {
+    productId1 : { // 추천 ID 1,2,3
       type: Number,
     }, 
     productId2 : {
@@ -62,67 +61,28 @@ export default {
     }
   },
   methods:{
-    gotoDetail1: function() {                 //리팩토링 필요
+    gotoDetail1: function() {                 //리팩토링 예정 (디폴트 데이터가 넘어오면 덮어씌우는형식으로)
       const productId1 = this.productId1;
       this.$emit('selectedProductId', productId1);
     },
-    gotoDetail2: function() {                 //리팩토링 필요
+    gotoDetail2: function() {                 //리팩토링 예정
       const productId2 = this.productId2;
       this.$emit('selectedProductId', productId2);
     },
-    gotoDetail3: function() {                 //리팩토링 필요
+    gotoDetail3: function() {                 //리팩토링 예정
       const productId3 = this.productId3;
       this.$emit('selectedProductId', productId3);
     },
-    gotoDetailDefault1: function() {                 //리팩토링 필요
+    gotoDetailDefault1: function() {                 //리팩토링 예정
       this.$emit('selectedProductId', '101');
     },
-    gotoDetailDefault2: function() {                 //리팩토링 필요
+    gotoDetailDefault2: function() {                 //리팩토링 예정
       this.$emit('selectedProductId', '102');
     },
-    gotoDetailDefault3: function() {                 //리팩토링 필요
+    gotoDetailDefault3: function() {                 //리팩토링 예정
       this.$emit('selectedProductId', '103');
     },
-    // getProduct1: function() { // 상품정보를 받아오는 axios
-      // const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      // const productURL = localURL + this.Recommend1 + '/'; //
-      // console.log(this.productRecommend1)
-      // console.log(this.productRecommend2)
-      // console.log(this.productRecommend3)
-      // axios.get(this.productRecommend1) // 리팩토링 필요.
-      //   .then((res) => {
-      //     console.log(res.data.product_image);
-      //     this.Recommend1 = res.data.product_image;
-      //   })
-      //   .catch((err) => {
-      //     console.log(err)
-      //   });
-      // axios.get(this.productRecommend2) // 리팩토링 필요.
-      //   .then((res) => {
-      //     // console.log(res.data.product_image)
-      //     // this.productDetail = res.data;
-      //     this.Recommend2 = res.data.product_image;
-      //   })
-      //   .catch((err) => {
-      //     console.log(err)
-      //   });
-      // axios.get(this.productRecommend3) // 리팩토링 필요.
-      //   .then((res) => {
-      //     // console.log(res.data.product_image)
-      //     // this.productDetail = res.data;
-      //     this.Recommend3 = res.data.product_image;
-      //   })
-      //   .catch((err) => {
-      //     console.log(err)
-      //   })
-    // },
   },
-  // mounted: function () { // created로 선언하여 데이터를 갱신한다.
-  //   // console.log(this.productRecommend1)
-  //   // this.getProduct1();
-  //   // this.getProduct(this.productRecommend2);
-  //   // this.getProduct(this.productRecommend3);
-  // },
 }
 </script>
 
