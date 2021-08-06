@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- 개발용 라우터 뷰 -->
     <div id="nav">
       <router-link to="/">Main</router-link> |
       <router-link to="/Ad">Ad</router-link> |

@@ -23,7 +23,7 @@ export default {
     },
   },
   methods: {
-    onSelectedVideo: function (video) {
+    onSelectedVideo: function (video) { // 선택된 비디오정보를 올려주기 위한 함수
       this.$emit('select-video', video)
     }
   }

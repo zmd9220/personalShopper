@@ -16,47 +16,47 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/',  // 메인 페이지
     name: 'Main',
     component: Main
   },
   {
-    path: '/Ad',
+    path: '/Ad', // 매장관리용 광고 검색 페이지
     name: 'Ad',
     component: Ad
   },
   {
-    path: '/AdClient',
+    path: '/AdClient', // 고객용 광고 페이지
     name: 'AdClient',
     component: AdClient
   },
   {
-    path: '/Barcode',
+    path: '/Barcode', // 바코드 페이지
     name: 'Barcode',
     component: Barcode
   },
   {
-    path: '/PersonalShopper',
+    path: '/PersonalShopper', // 의류 추천 페이지
     name: 'PersonalShopper',
     component: PersonalShopper
   },
   {
-    path: '/ProductDetail',
+    path: '/ProductDetail', // 상품 상세정보 페이지
     name: 'ProductDetail',
     component: ProductDetail
   },
   {
-    path: '/ProductSizeChart',
+    path: '/ProductSizeChart', // 상품 사이즈표 페이지
     name: 'ProductSizeChart',
     component: ProductSizeChart
   },
   {
-    path: '/ProductDetailLocation',
+    path: '/ProductDetailLocation', // 상품 위치 페이지
     name: 'ProductDetailLocation',
     component: ProductDetailLocation  
   },
   {
-    path: '/ProductSizeRecommand',
+    path: '/ProductSizeRecommand', // 상품 사이즈 추천 페이지
     name: 'ProductSizeRecommand',
     component: ProductSizeRecommand  
   },

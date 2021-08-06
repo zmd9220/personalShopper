@@ -113,9 +113,9 @@ export default {
   },
   data: function() {
     return {
-      productDetail: '',
-      productImage: '',
-      stocks: '',
+      productDetail: '',  // 상품정보
+      productImage: '',  // 상품 이미지
+      stocks: '',       // 상품 재고
       productRecommend1: '',    // 리팩토링 필요 (slice => split, props 넘겨주는걸 Array), 추천 1, 2, 3 항목에 해당.
       productRecommend2: '',
       productRecommend3: '',
@@ -126,14 +126,13 @@ export default {
       manShoesSize: ['KR 250', 'KR 260', 'KR 270', 'KR 280','KR 290'],
       womanShoesSize: ['KR 230', 'KR 240', 'KR 250', 'KR 260','KR 270'],
       accessory: ['freesize'],
-      productId : '301',
-      productId1 : 0,
+      productId : '301', // 상품 ID
+      productId1 : 0,  // 추천 상품 ID
       productId2 : 0,
       productId3 : 0,
-      productLocation : '',
-      locationPicture : '',
+      productLocation : '', // 상품위치
+      locationPicture : '', // 매장 지도
 
-      // isActive: False,
     }
   },
   methods :{
@@ -150,26 +149,23 @@ export default {
       const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
       const productURL = localURL + this.productId + '/'; //
       
-      axios.get(productURL) // 리팩토링 필요.
+      axios.get(productURL) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
-          // console.log(res.data)
-          this.productDetail = res.data;
-          this.productLocation = res.data.location;
-          this.locationPicture = require('@/assets/location/' + res.data.location + '.png');
-          // console.log(this.LocationPicture)
-          // this.productImage = require("@/assets/dummydata/" + res.data.product_image)
-          this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/';
+          this.productDetail = res.data; // 상품 상세 정보
+          this.productLocation = res.data.location;  // 상품 위치정보 따로 저장
+          this.locationPicture = require('@/assets/location/' + res.data.location + '.png'); // 상품 위치정보에 쓸 매장 지도
+          this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/'; // api 호출에 쓸 연관 추천 상품 주소
           this.productRecommend2 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/';
           this.productRecommend3 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/';
         })
-        .then(()=>{
-          axios.get(this.productRecommend1)
+        .then(()=>{ 
+          axios.get(this.productRecommend1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
           .then((res)=>{
             this.productId1 = res.data.product_id;
             this.productRecommend1 = res.data.product_image;
           })
         })
-        .then(()=>{
+        .then(()=>{                         // 두번째 아이템 호출(리팩토링예정)
           axios.get(this.productRecommend2)
           .then((res)=>{
             this.productId2 = res.data.product_id;
@@ -179,7 +175,7 @@ export default {
             // console.log(err)
           })
         })
-        .then(()=>{
+        .then(()=>{                   // 세번쨰 아이템 호출(리팩토링예정)
           axios.get(this.productRecommend3)
           .then((res)=>{
             this.productId3 = res.data.product_id;
@@ -204,7 +200,7 @@ export default {
           console.log(err)
         })
     },
-    changeProductId: function(selectedProductId) {
+    changeProductId: function(selectedProductId) { // 연관 상품 조회시 그 상품 조회 페이지로 이동.
       console.log(selectedProductId)
       this.productId = selectedProductId;
       this.getProduct();
@@ -212,14 +208,9 @@ export default {
     }
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
-    this.getProduct();
-    this.getStock();
+    this.getProduct(); // 상품정보
+    this.getStock(); // 재고정보
   },
-  updated: function() {
-    // this.productId = selectedProductId
-    // this.getProduct();
-    // this.getStock();
-  }
 }
 
 </script>
@@ -243,7 +234,6 @@ export default {
   display: inline-block;
   width: 100%;
   height: 40%;
-  /* background: rgba(66, 60, 60, 0.781); */
 }
 
 .size-stock {
