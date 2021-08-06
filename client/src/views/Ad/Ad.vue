@@ -1,9 +1,8 @@
 <template>
-  <div >
+  <div>
     <header>
       <SearchBar @search="onSearch"/>
     </header>
-
     <section>
       <VideoDetail :selectedVideo="selectedVideo" @selectedVideoURL="passVideoURL"/>
       <VideoList :videoList="videoList" @select-video="onSelectedVideo"/>
@@ -35,7 +34,7 @@ export default {
     }
   },
   methods: {
-    onSearch: function (query) {
+    onSearch: function (query) { // 검색정보를 받아오는 함수.
       this.query = query
       const API_KEY = process.env.VUE_APP_YOUTUBE_API_KEY
       const API_URL = 'https://www.googleapis.com/youtube/v3/search'
@@ -47,7 +46,7 @@ export default {
         q: query,
       }
 
-      axios({
+      axios({ // 유튜브 api 요청
         method: 'GET',
         url: API_URL,
         params,
@@ -57,12 +56,11 @@ export default {
         console.log(error)
       })
     },
-    onSelectedVideo: function (video) {
+    onSelectedVideo: function (video) { // 변수저장용
       this.selectedVideo = video
     },
-    passVideoURL: function(selectedVideoURL) {
+    passVideoURL: function(selectedVideoURL) { // 변수저장용
       this.selectedVideoURL = selectedVideoURL
-      console.log(this.selectedVideoURL)
     },
   }
 }
