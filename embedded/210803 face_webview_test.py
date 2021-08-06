@@ -3,10 +3,21 @@ import RPi.GPIO as GPIO
 import time
 import cv2
 
-import os
-import sys
 import requests
 from pprint import pprint
+
+# Orange : GPIO Pin 12 : 18(Trig) 송신부
+TRIG = 18
+# Red : GPIO Pin 18 : 24(Echo) 수신부
+ECHO = 24
+
+# raspbarry 핀 세팅
+GPIO.setmode(GPIO.BCM)
+
+# 18번 핀 out으로 설정 - 송신
+GPIO.setup(TRIG, GPIO.OUT)
+# 24번 핀 in 으로 설정 = 수신
+GPIO.setup(ECHO, GPIO.IN)
 
 
 def photo_shot():
@@ -62,8 +73,6 @@ def on_shown():
 def on_loaded():
     # unsubscribe event listener
     webview.windows[0].loaded -= on_loaded
-    # 웹뷰가 켜지면 광고(구글) 이 뜸
-#     webview.windows[0].load_url('https://google.com')
     
     # 사람 인식 후 광고로 돌아가기 위한 플래그
     is_ad = True
@@ -86,7 +95,7 @@ def on_loaded():
             while GPIO.input(ECHO) == 1:
                 stop = time.time()
 
-            # 초음파가 되돌아오는 시간차로 거리를 계산한다
+            # 초음파가 되돌아오는 시간차로 거리를 계산
             time_interval = stop - start
             distance = time_interval * 17000
             distance = round(distance, 2)
@@ -95,8 +104,18 @@ def on_loaded():
             if distance <= 50:
                 cnt += 1
                 print("거리 => ", distance, "범위 이내 Count : ", cnt)
+            # 사람이 인식되지 않을 경우 cnt 초기화
+            else:
+                print("거리 => ", distance, "범위 초과")
+                cnt = 0
+                # 사람이 있다가 떠나면 다시 광고 페이지 호출
+                if not is_ad:
+                    is_ad = True
+                    # 광고 페이지(AdClient)
+                    webview.windows[0].load_url('http://localhost:8080/AdClient')
+
             # 사람이 키오스크 앞에 3초 서 있는 상황
-            elif cnt == 3:
+            if cnt == 3:
                 # 광고 페이지 이동 막기
                 is_ad = False
                 # 메인 페이지 호출 (localhost)
@@ -105,17 +124,7 @@ def on_loaded():
                 photo_shot()
                 # 얼굴 인식, 측정 하는 코드
                 pprint(clova_face_recognition())
-            # 사람이 인식되지 않을 경우 cnt 초기화
-            else:
-                print("거리 => ", distance, "범위 초과")
-                cnt = 0
-                # 사람이 있다가 떠나면 다시 광고 페이지 호출
-                if not is_ad:
-                    is_ad = True
-                    print(is_ad)
-                    # 광고 페이지(AdClient)
-                    webview.windows[0].load_url('http://localhost:8080/AdClient')
-
+            
             time.sleep(1)
     # ctrl + c (이걸로 안닫고 stop을 누르면 다음 실행 시 pin 입출력이 초기화가 안되서 warning 메세지가 뜸)
     except KeyboardInterrupt:
@@ -123,19 +132,6 @@ def on_loaded():
         # pin 초기화
         GPIO.cleanup()
 
-
-# Orange : GPIO Pin 12 : 18(Trig)
-TRIG = 18
-# Red : GPIO Pin 18 : 24(Echo)
-ECHO = 24
-
-# raspbarry 핀 세팅
-GPIO.setmode(GPIO.BCM)
-
-# 18번 핀 out으로 설정
-GPIO.setup(TRIG, GPIO.OUT)
-# 24번 핀 in 으로 설정
-GPIO.setup(ECHO, GPIO.IN)
 
 
 if __name__ == '__main__':
