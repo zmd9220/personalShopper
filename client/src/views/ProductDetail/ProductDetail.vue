@@ -85,11 +85,13 @@
         <h2 @click="goToSizeChart()">사이즈표</h2>
         <h2 @click="goToLocation()">상품위치 정보</h2>
         <div>
-          <b-button v-b-modal.modal-xl variant="primary">xl modal</b-button>
-          <b-modal id="modal-xl" size="xl" title="Extra Large Modal">
-            <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map">
-            <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map">
-            <h2>해당 상품은 {{this.productLocation}}구역에있습니다.</h2>
+          <b-button v-b-modal.modal-xl variant="primary">상품위치</b-button>
+          <b-modal id="modal-xl" size="xl" title="상품위치">
+            <div class="modal-img-box">
+              <!-- <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map background-shop-map"> -->
+              <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map blink-shop-map blinking">
+            </div>
+            <h2 class="modal-h2">해당 상품은 {{this.productLocation}}구역에있습니다.</h2>
           </b-modal>
         </div>
       </div>
@@ -260,8 +262,30 @@ export default {
   font-weight: bold;
   font-size: 3rem;
 }
-
+.modal-img-box{
+  background-image: url("../../assets/location/totalShop.png");
+  background-size: 100% 100%;
+}
 .shop-map {
   width: 100%;
+  position: absolute;
 }
+
+.modal-h2 {
+  text-align: center;
+}
+
+.blink-shop-map{
+  position: relative;
+}
+
+
+.blinking{ 
+  animation:blink 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate; 
+} 
+
+@keyframes blink{ 
+  0% {opacity:0;} 100% {opacity:1;} 
+}
+
 </style>
