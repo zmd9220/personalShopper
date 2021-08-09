@@ -9,7 +9,7 @@ import ProductDetail from '@/views/ProductDetail/ProductDetail'
 import ProductSizeChart from '@/views/ProductDetail/ProductSizeChart' 
 import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
-
+import MainTest from '@/views/Main/MainTest'
 
 
 Vue.use(VueRouter)
@@ -19,6 +19,12 @@ const routes = [
     path: '/',  // 메인 페이지
     name: 'Main',
     component: Main
+  },
+  {
+    path: '/:age/:gen',  // 메인 페이지 + 나이, 성별 정보
+    name: 'MainTest',
+    component: MainTest,
+    props: true,
   },
   {
     path: '/Ad', // 매장관리용 광고 검색 페이지
