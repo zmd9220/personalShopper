@@ -1,9 +1,9 @@
 <template>
   <div>
-
     <section>
       <VideoDetail :selectedVideo="selectedVideo"/>
     </section>
+      <!-- 자동재생, 전체화면을 위한 iframe -->
       <iframe
         id="ytplayer"
         src="https://www.youtube.com/embed/gKCmezkfWbE?autoplay=1&loop=1&playlist=gKCmezkfWbE"

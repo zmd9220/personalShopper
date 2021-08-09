@@ -8,7 +8,6 @@
         frameborder="0">
       </iframe>
     </div>
-
   </div>
 </template>
 
@@ -36,17 +35,13 @@ export default {
   methods: {
     emitURL() {
       this.$emit('selectedVideoURL', this.selectedVideoURL);
-      // console.log(this.selectedVideoURL);
     }
   },
   updated: function() {
     this.selectedVideoURL = 'https://www.youtube.com/embed/' + this.selectedVideo.id.videoId + '/';
     this.emitURL();
-    // this.$emit('selectedVideoURL', this.selectedVideoURL);
   },
-  created: function() {
-    
-  }
+
 }
 </script>
 
