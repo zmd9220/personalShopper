@@ -89,14 +89,6 @@ export default {
 
   data() {
     return {
-      value: '2',
-      selected: 'A',
-        options: [
-          { item: 'A', name: 'Option A' },
-          { item: 'B', name: 'Option B' },
-          { item: 'D', name: 'Option C', notEnabled: true },
-          { item: { d: 1 }, name: 'Option D' }
-        ]
     }
   },
 }
