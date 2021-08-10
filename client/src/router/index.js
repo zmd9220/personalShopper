@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Main from '@/views/Main/Main'
 import Ad from '@/views/Ad/Ad'
+import Admin from '@/views/Admin/Admin'
 import AdClient from '@/views/Ad/AdClient'
 import Barcode from '@/views/Barcode/Barcode' 
 import PersonalShopper from '@/views/PersonalShopper/PersonalShopper' 
@@ -19,6 +20,11 @@ const routes = [
     path: '/',  // 메인 페이지
     name: 'Main',
     component: Main
+  },
+  {
+    path: '/Admin',  // 메인 페이지
+    name: 'Admin',
+    component: Admin
   },
   {
     path: '/Ad', // 매장관리용 광고 검색 페이지
@@ -60,7 +66,6 @@ const routes = [
     name: 'ProductSizeRecommand',
     component: ProductSizeRecommand  
   },
-
 ]
 
 const router = new VueRouter({

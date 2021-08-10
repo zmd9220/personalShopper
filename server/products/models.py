@@ -19,6 +19,7 @@ class Product(models.Model):
 
 
 
+
 class Customer(models.Model):
     gender = models.CharField(max_length=1)
     age = models.IntegerField()
