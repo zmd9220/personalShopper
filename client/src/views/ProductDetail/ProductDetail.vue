@@ -81,7 +81,7 @@
           </ul>          
   
         </div>
-        <h2 @click="goToSizeRecommend()">사이즈 추천받기</h2>
+        <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2>
         <h2 @click="goToSizeChart()">사이즈표</h2>
         <h2 @click="goToLocation()">상품위치 정보</h2>
         <div>
@@ -139,7 +139,17 @@ export default {
   },
   methods :{
     goToSizeRecommend(){
-      this.$router.push('/ProductSizeRecommand'); 
+      this.$router.push({
+        name:'ProductSizeRecommand', 
+        params: {
+          productRecommend_1: this.productRecommend1,
+          productRecommend_2: this.productRecommend2,
+          productRecommend_3: this.productRecommend3,
+          productId_1: this.productId1,
+          productId_2: this.productId2,
+          productId_3: this.productId3,
+          productDetail: this.productDetail,
+        }});
     },
     goToSizeChart(){
       this.$router.push('/ProductSizeChart'); 
