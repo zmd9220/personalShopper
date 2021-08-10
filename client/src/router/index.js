@@ -65,7 +65,8 @@ const routes = [
   {
     path: '/ProductSizeRecommand', // 상품 사이즈 추천 페이지
     name: 'ProductSizeRecommand',
-    component: ProductSizeRecommand  
+    component: ProductSizeRecommand,
+    props: true
   },
   {
     path: '/Payment', // 카카오페이 결제
