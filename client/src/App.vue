@@ -3,6 +3,7 @@
     <!-- 개발용 라우터 뷰 -->
     <div id="nav">
       <router-link to="/">Main</router-link> |
+      <router-link to="/Admin">Admin</router-link> | 
       <router-link to="/Ad">Ad</router-link> |
       <router-link to="/AdClient">AdClient</router-link> |
       <router-link to="/Barcode">Barcode</router-link> |
