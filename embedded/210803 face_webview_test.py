@@ -3,6 +3,8 @@ import RPi.GPIO as GPIO
 import time
 import cv2
 
+import os.path 
+
 import requests
 from pprint import pprint
 
@@ -99,6 +101,13 @@ def on_loaded():
             time_interval = stop - start
             distance = time_interval * 17000
             distance = round(distance, 2)
+
+
+            file = 'C:\\Users\\multicampus\\Downloads\\barcode.txt'     # 예제 Textfile
+
+            if os.path.isfile(file):
+               print("Yes. it is a file")
+
 
             # 50cm 안에 사람이 있을 경우 cnt++
             if distance <= 50:
