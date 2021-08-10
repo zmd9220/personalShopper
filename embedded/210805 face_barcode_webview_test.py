@@ -86,8 +86,8 @@ def barcode_scan():
 #             print(text)
             # cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
         
-        if len(barcode_data)==13:
-            break;
+        if len(barcode_data) == 13:
+            break
         # cv2.imshow('img', img)
         
 #         key = cv2.waitKey(1)
@@ -107,8 +107,6 @@ def barcode_scan():
 def on_loaded():
     # unsubscribe event listener
     webview.windows[0].loaded -= on_loaded
-    # 웹뷰가 켜지면 광고(구글) 이 뜸
-    # webview.windows[0].load_url('https://google.com')
     
     is_ad = False		# 사람 인식 후 광고로 돌아가기 위한 플래그
     cnt = 0		# 사람을 인식한 시간(s)
@@ -145,7 +143,7 @@ def on_loaded():
             if os.path.isfile(file):
                 print("Yes. it is a file")
                 barcode_scan()
-                os.remove(file);
+                os.remove(file)
 
             # print("Distance => ", distance, "cm")
             # 50cm 안에 사람이 있을 경우 cnt++

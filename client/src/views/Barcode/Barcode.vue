@@ -22,6 +22,8 @@ export default {
     Nav,
   },
   mounted() {
+    // 바코드 페이지 렌더링이 끝나고 나서, makeStatus를 통해 서버에 barcode.txt 파일을 생성하도록 요청하고
+    // 해당 파일이 생성되면 임베디드 python 코드에서 인식해서 barcode_scan 함수를 실행시킴
     const postURL = 'http://127.0.0.1:8000/makeStatus/'
     axios.get(postURL)
       .then((res) => {
