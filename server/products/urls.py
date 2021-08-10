@@ -9,7 +9,7 @@ urlpatterns = [
     path('product/<int:product_id>/', views.product_detail), # 특정 상품 조회
     path('product/<int:product_id>/stocks/', views.product_stock), # 특정 상품 재고 조회
     path('kakaoPay/', views.kakaoPay), # 카카오페이 결제
-    
+    path('makeStatus/', views.make_status),
 ]
 
 

@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -53,3 +54,19 @@ def kakaoPay(request):
     response = requests.post(url+"/v1/payment/ready", params=params, headers=headers)
     response = json.loads(response.text)
     return Response(response)
+
+@api_view(['GET'])
+def make_status(request):
+    module_dir = os.path.abspath('../embedded/status')
+    print(os.path.abspath('../embedded/status'))
+    file_path = os.path.join(module_dir, 'barcode.txt')
+    with open(file_path, 'a+', encoding='utf-8') as txtfile:
+        tmp_str = '생성 완료'
+        txtfile.write(tmp_str)
+    print(file_path)
+    # os.remove(file_path)
+    if os.path.isfile(file_path): 
+        return Response(status=200)
+    else:
+        return Response(status=404)
+  
