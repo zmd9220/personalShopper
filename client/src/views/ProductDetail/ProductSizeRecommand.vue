@@ -2,9 +2,9 @@
   <div>
     <Nav/>
     <!-- 상품이름 연동필요 -->
-    <h1 class="text-box-title">스트럭처 셔츠</h1>
+    <h1 class="text-box-title">{{ productDetail.product_name }}</h1>
     <div class="ProductBox container">
-      <img class="ProductDetailImg" src="@/assets/item1.png" alt="item1" style="width:45%">
+      <img class="ProductDetailImg" :src=" productDetail.product_image " alt="item1" style="width:45%">
       <div class="TextBox">       
       </div>
 
@@ -19,22 +19,22 @@
             <h3>키</h3>
             <div class="modal-button">
               <b-button-group size="lg">
-                <b-button class="button-option" pill>~165cm</b-button>
-                <b-button class="button-option" pill>170~175cm</b-button>
-                <b-button class="button-option" pill>165~170cm</b-button>
-                <b-button class="button-option" pill>175~180cm</b-button>
-                <b-button class="button-option" pill>180cm~</b-button>
+                <b-button class="button-option" pill @click="height_change(0)">~{{ this.manHeight }}cm</b-button>
+                <b-button class="button-option" pill @click="height_change(1)">{{ this.manHeight }}~{{ this.manHeight+5 }}cm</b-button>
+                <b-button class="button-option" pill @click="height_change(2)">{{ this.manHeight+5 }}~{{ this.manHeight+10 }}cm</b-button>
+                <b-button class="button-option" pill @click="height_change(3)">{{ this.manHeight+10 }}~{{ this.manHeight+15 }}cm</b-button>
+                <b-button class="button-option" pill @click="height_change(4)">{{ this.manHeight+15 }}cm~</b-button>
               </b-button-group>
             </div>
             <div style="height:3vh"></div>
             <h3>몸무게</h3>
             <div class="modal-button">
               <b-button-group size="lg">
-                <b-button class="button-option2">~50kg</b-button>
-                <b-button class="button-option2">50~60kg</b-button>
-                <b-button class="button-option2">60~70kg</b-button>
-                <b-button class="button-option2">70~80kg</b-button>
-                <b-button class="button-option2">80kg~</b-button>
+                <b-button class="button-option2" @click="weight_change(0)">~{{ this.manWeight }}kg</b-button>
+                <b-button class="button-option2" @click="weight_change(1)">{{ this.manWeight }}~{{ this.manWeight+10 }}kg</b-button>
+                <b-button class="button-option2" @click="weight_change(2)">{{ this.manWeight+10 }}~{{ this.manWeight+20 }}kg</b-button>
+                <b-button class="button-option2" @click="weight_change(3)">{{ this.manWeight+20 }}~{{ this.manWeight+30 }}kg</b-button>
+                <b-button class="button-option2" @click="weight_change(4)">{{ this.manWeight+30 }}kg~</b-button>
               </b-button-group>
             </div>
           </b-modal>
@@ -63,15 +63,15 @@
             <span class="select-text">헐렁하게</span>
           </div>
         </div>
-        <div class="mt-2 selected-size" v-if="this.value === '0'">S (KR 90)</div>
-        <div class="mt-2 selected-size" v-if="this.value === '1'">M (KR 95-100)</div>
-        <div class="mt-2 selected-size" v-if="this.value === '2'">L (KR 100-105)</div>
+        <div class="mt-2 selected-size" v-if="this.value === '0'">{{ this.sizeconvert[this.sizeconvertNum -1] }}</div>
+        <div class="mt-2 selected-size" v-if="this.value === '1'">{{ this.sizeconvert[this.sizeconvertNum] }}</div>
+        <div class="mt-2 selected-size" v-if="this.value === '2'">{{ this.sizeconvert[this.sizeconvertNum +1] }}</div>
       </div>
 
     </div>
 
     <h4>PersonalShopper의 추천</h4>
-    <FooterAd/>
+    <FooterAd  :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" />
   </div>
 </template>
 
@@ -86,11 +86,75 @@ export default {
     FooterAd,
     Nav,
   },
-
+  props: {
+    productRecommend_1 : { // 추천 1,2,3
+      type: String,
+    },
+    productRecommend_2 : {
+      type: String,
+    },
+    productRecommend_3 : {
+      type: String,
+    },
+    productId_1 : { // 추천 ID 1,2,3
+      type: Number,
+    }, 
+    productId_2 : {
+      type: Number,
+    }, 
+    productId_3 : {
+      type: Number,
+    }, 
+    productDetail : {
+      type: Object,
+    },
+  },
   data() {
     return {
+      value: '0',
+      height: 0,
+      weight: 0,
+      sizetable : [[1,2,3,4,5],[2,3,3,4,5],[3,4,4,5,6],[2,3,4,5,6],[3,3,4,5,6]],
+      sizeconvert : '',
+      sizeconvertNum : 1,
+      selectedSize: '',
+      productRecommend1: this.productRecommend_1,
+      productRecommend2: this.productRecommend_2,
+      productRecommend3: this.productRecommend_3,
+      productId1: this.productId_1,
+      productId2: this.productId_2,
+      productId3: this.productId_3,
+      manWeight: 50,
+      manHeight: 165,
     }
   },
+  methods : {
+    height_change(num){
+      this.height = num
+      this.sizeconvertNum = this.sizetable[this.height][this.weight]
+    },
+    weight_change(num){
+      this.weight = num
+      this.sizeconvertNum = this.sizetable[this.height][this.weight]
+    },
+  },
+  mounted : function(){
+    if (this.productDetail.gender != 'M'){
+      this.manWeight = this.manWeight -10
+      this.manHeight = this.manHeight -15
+    }
+    if (this.productDetail.gender == 'M' && this.productDetail.product_type == 1){
+      this.sizeconvert = ["XS (KR 90)","S (KR 95)","S (KR 95)","M (KR 95-100)","L (KR 100-105)","XL (KR 110-115)","XL (KR 110-115)","XL (KR 110-115)"]
+    }
+    else if (this.productDetail.gender == 'M' && this.productDetail.product_type == 2){
+      this.sizeconvert = ["XS (KR 28)","S (KR 30)","S (KR 30)","M (KR 31)","L (KR 32)","XL (KR 34)","XL (KR 34)","XL (KR 34)"]
+    }
+    else if (this.productDetail.gender == 'F' && this.productDetail.product_type == 1){
+      this.sizeconvert = ["XS (KR 44)","S (KR 55)","S (KR 55)","M (KR 66)","M (KR 66)","L (KR 77)","XL (KR 88)","XL (KR 88)"]
+    } else {
+      this.sizeconvert = ["XS (KR 24)","S (KR 26)","S (KR 26)","M (KR 28)","L (KR 30)","L (KR 30)","XL (KR 32)","XL (KR 32)"]
+    }
+  }
 }
 </script>
 
@@ -115,7 +179,7 @@ export default {
 
 .modal-info-box {
   width: 100%;
-  height: 20vh;
+  /* height: 20vh; */
 }
 
 .modal-button {
