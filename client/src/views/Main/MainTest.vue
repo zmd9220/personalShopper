@@ -41,6 +41,9 @@ export default {
       this.$router.push('/PersonalShopper'); 
     }
   },
+  mounted: {
+    // vuex state
+  }
 }
 </script>
 

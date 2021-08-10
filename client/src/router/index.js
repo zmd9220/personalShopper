@@ -10,12 +10,9 @@ import ProductDetail from '@/views/ProductDetail/ProductDetail'
 import ProductSizeChart from '@/views/ProductDetail/ProductSizeChart' 
 import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
-<<<<<<< HEAD
 import MainTest from '@/views/Main/MainTest'
-=======
 import Payment from '@/views/Payment/Payment'
 
->>>>>>> 73666ddcc571b32de1e2a712939235f6c2d4a9d8
 
 
 Vue.use(VueRouter)
@@ -27,16 +24,15 @@ const routes = [
     component: Main
   },
   {
-<<<<<<< HEAD
     path: '/:age/:gen',  // 메인 페이지 + 나이, 성별 정보
     name: 'MainTest',
     component: MainTest,
     props: true,
-=======
+  },
+  {
     path: '/Admin',  // 메인 페이지
     name: 'Admin',
     component: Admin
->>>>>>> 73666ddcc571b32de1e2a712939235f6c2d4a9d8
   },
   {
     path: '/Ad', // 매장관리용 광고 검색 페이지
