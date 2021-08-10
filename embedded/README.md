@@ -190,3 +190,18 @@ pi@raspberrypi:~ $ sudo apt-get install python3-pyqt5.qtwebkit # pywebview는 �
     - 재민 - 바코드 페이지 카메라 키기 - js로 파일 생성하는 법 찾는 중
     - 병진 - 웹페이지에 사용자 정보 넘기기 - vue 다이나믹 라우팅으로 진행 중 (거의 된 거 같음)
 
+
+
+- 210810 작업 내역
+  - 오전
+    - 라이브 강의 + 미팅 1시간
+    - 바코드 파일 생성, 제거 찾기 - 
+      - js 다운로드 기능을 통해 하려고 했으나 pywebview에서는 아직 다운로드 기능을 제대로 지원하지 못함
+      - 다음으로 js를 통해 텍스트 파일을 읽어서 수정 후 저장으로 진행하려고 했으나 js 상에서 파일 쓰기는 안된다고 해서 장고는 python이고 서버이므로 axios 요청을 통해 해결하기로 함
+  - 오후
+    - 장고를 통해 url, view 생성
+      - 문제점 - 현재 barcode.txt를 생성하는 위치가 python manage.py를 실행하는 위치에 따라서 오류가 발생할 여지를 가지고 있음 (server/embedded/status/barcode.txt vs embedded/status/barcode.txt)
+      - 현재로써는 git로컬폴더/server에서 python manage.py runserver를 하는 것을 권장함..
+    - vue에 해당 장고 url로 axios 연결 및 테스트 - 성공적 (파일 생성이 잘 됨)
+    - 원래 사용하던 임베디드 코드에 파일이 있으면 barcode_scan 함수를 실행 후 해당 파일을 삭제하도록 함(1번만 실행되도록) 
+    - 총 테스트 결과 느리지만 정상적으로 원하는 로직이 구현 완료됨
