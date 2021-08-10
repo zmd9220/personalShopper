@@ -13,12 +13,20 @@
 <script>
 import FooterAd from '@/views/FooterAd/FooterAd'
 import Nav from '@/views/Nav/Nav'
+import axios from 'axios'
 
 export default {
   name: 'Barcode',
   components: {
     FooterAd,
     Nav,
+  },
+  mounted() {
+    const postURL = 'http://127.0.0.1:8000/makeStatus/'
+    axios.get(postURL)
+      .then((res) => {
+        console.log(res.status)
+      })
   },
 }
 </script>
