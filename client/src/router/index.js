@@ -10,6 +10,7 @@ import ProductDetail from '@/views/ProductDetail/ProductDetail'
 import ProductSizeChart from '@/views/ProductDetail/ProductSizeChart' 
 import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
+import Payment from '@/views/Payment/Payment'
 
 
 
@@ -65,6 +66,11 @@ const routes = [
     path: '/ProductSizeRecommand', // 상품 사이즈 추천 페이지
     name: 'ProductSizeRecommand',
     component: ProductSizeRecommand  
+  },
+  {
+    path: '/Payment', // 카카오페이 결제
+    name: 'Payment',
+    component: Payment  
   },
 ]
 
