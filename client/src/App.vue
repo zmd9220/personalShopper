@@ -11,7 +11,7 @@
       <router-link to="/ProductSizeChart">ProductSizeChart</router-link> | 
       <router-link to="/ProductDetailLocation">ProductDetailLocation</router-link> | 
       <router-link to="/ProductSizeRecommand">ProductSizeRecommand</router-link> | 
-      <router-link to="/PersonalShopper">PersonalShopper</router-link> | 
+      <router-link to="/Payment">Payment</router-link> | 
     </div>
     <router-view/>
   </div>
