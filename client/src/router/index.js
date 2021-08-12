@@ -12,7 +12,8 @@ import ProductSizeChart from '@/views/ProductDetail/ProductSizeChart'
 import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
 import Payment from '@/views/Payment/Payment'
-
+import OrderComplete from '@/views/Payment/OrderComplete'
+import isApprove from '@/views/Payment/isApprove'
 
 
 Vue.use(VueRouter)
@@ -75,10 +76,20 @@ const routes = [
     component: ProductSizeRecommand  
   },
   {
-    path: '/Payment', // 카카오페이 결제
+    path: '/Payment', // 고른 상품 재확인 및 결제 요청 연결 페이지
     name: 'Payment',
     component: Payment,
     props: true
+  },
+  {
+    path: '/isApprove', // 카카오페이 결제 승인까지 완료 (성공적인 구매 완료) 페이지
+    name: 'isApprove',
+    component: isApprove,
+  },
+  {
+    path: '/OrderComplete', // 카카오페이 결제 승인까지 완료 (성공적인 구매 완료) 페이지
+    name: 'OrderComplete',
+    component: OrderComplete,
   },
 ]
 
