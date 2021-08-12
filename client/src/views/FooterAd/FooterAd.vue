@@ -1,19 +1,24 @@
 <template>
   <div>
-    <div class="footer-row">
-
-      <div class="column">
-        <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
+    <div class="footer">
+      <div class="footer-text">
+        <p>PersonalShopper의 추천</p>
       </div>
+      <div class="footer-row">
+        
+        <div class="column">
+          <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
+        </div>
 
-      <div class="column">
-        <img :src="this.$store.state.productRecommend_2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
+        <div class="column">
+          <img :src="this.$store.state.productRecommend_2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
+        </div>
+
+        <div class="column">
+          <img :src="this.$store.state.productRecommend_3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
+        </div>
+
       </div>
-
-      <div class="column">
-        <img :src="this.$store.state.productRecommend_3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
-      </div>
-
     </div>
   </div>
 
@@ -75,13 +80,29 @@ export default {
 
 <style scoped>
 
+.footer {
+  display:contents;
+
+}
+
+.footer-text {
+  font-size: 5em;
+  position: fixed;
+  bottom: 30%;
+  left: 0%;
+  right: 0%;
+}
+
 .footer-row {
   display: flex;
-  content: "";
-  clear: both;
+  /* content: ""; */
+  /* clear: both; */
   width: 100%;
-  /* position: fixed;
-  bottom: 0%; */
+  position: fixed;
+  bottom: 0%;
+  font-size: 5em;
+  /* left: 0%;
+  right: 0%; */
 }
 
 .column {
