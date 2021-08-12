@@ -78,32 +78,50 @@
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div class="size-text-box">
                 <span>{{accessory[i]}}</span>
-                <span v-if="stock == 0"> Coming soon</span>
+                <span v-if="stock == 0 && i == 0"> Coming soon</span>
               </div>
             </li>
           </ul>          
   
         </div>
         <div class="button-box">
-          <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2>
+          <!-- <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2> -->
           <b-button @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2" 
             variant="primary" class="button-size">사이즈 추천 받기</b-button>
-          <h2 @click="goToSizeChart()">사이즈표</h2>
+          <!-- <h2 @click="goToSizeChart()">사이즈표</h2> -->
           <!-- <h2 @click="goToLocation()">상품 위치 정보</h2> -->
-          <b-button v-b-modal.modal-xl variant="primary" class="button-location">상품 위치</b-button>
-          <b-modal id="modal-xl" size="xl" title="상품 위치" class="location-modal">
+          <b-button v-b-modal.modal-xl variant="primary" class="button-location" @click="show=true">상품 위치</b-button>
+          <b-modal v-model="show" id="modal-xl" footer="lg" header="test"
+            centered size="xl" class="location-modal">
+            <template #modal-header>
+              <div class="mx-auto">
+                <p>상품 위치</p>
+              </div>
+            </template>
+
             <div class="modal-img-box">
               <!-- <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map background-shop-map"> -->
               <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map blink-shop-map blinking">
             </div>
-            <h2 class="modal-h2">해당 상품은 {{this.productLocation}}구역에있습니다.</h2>
+            <p class="modal-h2">해당 상품은 {{this.productLocation}}구역에있습니다.</p>
+
+            <template #modal-footer>
+              <div class="w-100">
+                <b-button
+                  variant="primary"
+                  size="lg"
+                  class="float-right modal-close"
+                  @click="show=false"
+                >
+                  <p>Close</p>
+                </b-button>
+              </div>
+            </template>
           </b-modal>
         </div>
       </div>
     </div>
     <div class="footer-row">
-      <p>PersonalShopper의 추천</p>
-      <br>
       <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
     </div>
   </div>
@@ -142,6 +160,9 @@ export default {
       productId3 : 0,
       productLocation : '', // 상품위치
       locationPicture : '', // 매장 지도
+      headerBgVariant: 'dark',
+      headerTextVariant: 'light',
+      show: false,
     }
   },
   computed: {
@@ -337,6 +358,8 @@ export default {
 
 .modal-h2 {
   text-align: center;
+  font-size: 2.5em;
+  /* font-weight: bold; */
 }
 
 .blink-shop-map{
@@ -352,18 +375,13 @@ export default {
   0% {opacity:0;} 100% {opacity:1;} 
 }
 
-
-.location-modal {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.mx-auto {
+  font-size: 3em;
+  font-weight: bold;
 }
 
-.footer-row {
-  position: fixed;
-  bottom: 0%;
-  font-size: 5em;
+.modal-close {
+  font-size: 3em;
 }
 
 </style>

@@ -1,29 +1,34 @@
 <template>
   <div>
-    <div class="footer-row">
-      <!-- 추천항목이 있을시 보여주고 없으면 디폴트데이터 보여주기. 리팩토링가능해보임. v-if 빼고 기본을 디폴트 데이터가 넘어오면 덮어씌우는형식으로 -->
-      <div class="column" v-if="productRecommend1.slice(0,5) == 'https'">
-        <img :src="productRecommend1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
+    <div class="footer">
+      <div class="footer-text">
+        <p>PersonalShopper의 추천</p>
       </div>
+      <div class="footer-row">
+        <!-- 추천항목이 있을시 보여주고 없으면 디폴트데이터 보여주기. 리팩토링가능해보임. v-if 빼고 기본을 디폴트 데이터가 넘어오면 덮어씌우는형식으로 -->
+        <div class="column" v-if="productRecommend1.slice(0,5) == 'https'">
+          <img :src="productRecommend1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
+        </div>
 
-      <div class="column" v-if="productRecommend1.slice(0,5) != 'https'">
-        <img src="@/assets/dummydata/101.png" alt="item1" style="width: 100%" @click="gotoDetailDefault1()" >
-      </div>
+        <div class="column" v-if="productRecommend1.slice(0,5) != 'https'">
+          <img src="@/assets/dummydata/101.png" alt="item1" style="width: 100%" @click="gotoDetailDefault1()" >
+        </div>
 
-      <div class="column" v-if="productRecommend2.slice(0,5) == 'https'">
-        <img :src="this.productRecommend2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
-      </div>
+        <div class="column" v-if="productRecommend2.slice(0,5) == 'https'">
+          <img :src="this.productRecommend2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
+        </div>
 
-      <div class="column" v-if="productRecommend2.slice(0,5) != 'https'">
-        <img src="@/assets/dummydata/102.png" alt="item2" style="width: 100%" @click="gotoDetailDefault2()" >
-      </div>
+        <div class="column" v-if="productRecommend2.slice(0,5) != 'https'">
+          <img src="@/assets/dummydata/102.png" alt="item2" style="width: 100%" @click="gotoDetailDefault2()" >
+        </div>
 
-      <div class="column" v-if="productRecommend3.slice(0,5) == 'https'">
-        <img :src="this.productRecommend3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
-      </div>
+        <div class="column" v-if="productRecommend3.slice(0,5) == 'https'">
+          <img :src="this.productRecommend3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
+        </div>
 
-      <div class="column" v-if="productRecommend3.slice(0,5) != 'https'">
-        <img src="@/assets/dummydata/103.png" alt="item3" style="width: 100%" @click="gotoDetailDefault3()" >
+        <div class="column" v-if="productRecommend3.slice(0,5) != 'https'">
+          <img src="@/assets/dummydata/103.png" alt="item3" style="width: 100%" @click="gotoDetailDefault3()" >
+        </div>
       </div>
     </div>
   </div>
@@ -130,13 +135,29 @@ export default {
 
 <style scoped>
 
+.footer {
+  display:contents;
+
+}
+
+.footer-text {
+  font-size: 5em;
+  position: fixed;
+  bottom: 30%;
+  left: 0%;
+  right: 0%;
+}
+
 .footer-row {
   display: flex;
-  content: "";
-  clear: both;
+  /* content: ""; */
+  /* clear: both; */
   width: 100%;
-  /* position: fixed;
-  bottom: 0%; */
+  position: fixed;
+  bottom: 0%;
+  font-size: 5em;
+  /* left: 0%;
+  right: 0%; */
 }
 
 .column {
