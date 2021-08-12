@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Main from '@/views/Main/Main'
 import Ad from '@/views/Ad/Ad'
 import Admin from '@/views/Admin/Admin'
+import ProductForm from '@/views/Admin/ProductForm'
+import ProductUpdateForm from '@/views/Admin/ProductUpdateForm'
 import AdClient from '@/views/Ad/AdClient'
 import Barcode from '@/views/Barcode/Barcode' 
 import PersonalShopper from '@/views/PersonalShopper/PersonalShopper' 
@@ -10,6 +12,8 @@ import ProductDetail from '@/views/ProductDetail/ProductDetail'
 import ProductSizeChart from '@/views/ProductDetail/ProductSizeChart' 
 import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
+import Signup from '@/views/accounts/Signup'
+import Login from '@/views/accounts/Login'
 import Payment from '@/views/Payment/Payment'
 
 
@@ -25,7 +29,17 @@ const routes = [
   {
     path: '/Admin',  // 메인 페이지
     name: 'Admin',
-    component: Admin
+    component: Admin,
+  },
+  {
+    path: '/ProductForm',  // 메인 페이지
+    name: 'ProductForm',
+    component: ProductForm
+  },
+  {
+    path: '/ProductUpdateForm',  // 메인 페이지
+    name: 'ProductUpdateForm',
+    component: ProductUpdateForm
   },
   {
     path: '/Ad', // 매장관리용 광고 검색 페이지
@@ -72,6 +86,16 @@ const routes = [
     path: '/Payment', // 카카오페이 결제
     name: 'Payment',
     component: Payment  
+  },
+  {
+    path: '/accounts/signup',
+    name: 'Signup',
+    component: Signup,
+  },
+  {
+    path: '/accounts/login',
+    name: 'Login',
+    component: Login, 
   },
 ]
 
