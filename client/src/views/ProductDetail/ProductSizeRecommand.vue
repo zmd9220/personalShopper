@@ -2,45 +2,43 @@
   <div>
     <Nav/>
     <!-- 상품이름 연동필요 -->
-    <h1 class="text-box-title">{{ productDetail.product_name }}</h1>
-    <div class="ProductBox container">
-      <img class="ProductDetailImg" :src=" productDetail.product_image " alt="item1" style="width:45%">
-      <div class="TextBox">       
-      </div>
+    <p class="text-box-title">{{ productDetail.product_name }}</p>
+    <div class="ProductBox">
+      <img class="ProductDetailImg" :src=" productDetail.product_image " alt="item1">
 
       <div class="slider">
-      <div class="modal-info-box">
-        <div>
-          <b-button v-b-modal.modal-center>Launch centered modal</b-button>
-
-          <b-modal id="modal-center" size="xl" centered title="알맞은 정보를 선택해주세요" >
-            <div style="height:5vh">
-            </div>
-            <h3>키</h3>
-            <div class="modal-button">
-              <b-button-group size="lg">
-                <b-button class="button-option" pill @click="height_change(0)">~{{ this.manHeight }}cm</b-button>
-                <b-button class="button-option" pill @click="height_change(1)">{{ this.manHeight }}~{{ this.manHeight+5 }}cm</b-button>
-                <b-button class="button-option" pill @click="height_change(2)">{{ this.manHeight+5 }}~{{ this.manHeight+10 }}cm</b-button>
-                <b-button class="button-option" pill @click="height_change(3)">{{ this.manHeight+10 }}~{{ this.manHeight+15 }}cm</b-button>
-                <b-button class="button-option" pill @click="height_change(4)">{{ this.manHeight+15 }}cm~</b-button>
-              </b-button-group>
-            </div>
-            <div style="height:3vh"></div>
-            <h3>몸무게</h3>
-            <div class="modal-button">
-              <b-button-group size="lg">
-                <b-button class="button-option2" @click="weight_change(0)">~{{ this.manWeight }}kg</b-button>
-                <b-button class="button-option2" @click="weight_change(1)">{{ this.manWeight }}~{{ this.manWeight+10 }}kg</b-button>
-                <b-button class="button-option2" @click="weight_change(2)">{{ this.manWeight+10 }}~{{ this.manWeight+20 }}kg</b-button>
-                <b-button class="button-option2" @click="weight_change(3)">{{ this.manWeight+20 }}~{{ this.manWeight+30 }}kg</b-button>
-                <b-button class="button-option2" @click="weight_change(4)">{{ this.manWeight+30 }}kg~</b-button>
-              </b-button-group>
-            </div>
-          </b-modal>
-        </div>
-      </div>
         <label for="range-1" class="question-text">어떤 핏을 원하세요?</label>
+        <div class="modal-info-box">
+          <div>
+            <b-button v-b-modal.modal-center variant="info" class="size-modal-button">내 정보 입력하기</b-button>
+
+            <b-modal id="modal-center" size="xl" centered title="알맞은 정보를 선택해주세요" >
+              <div style="height:5vh">
+              </div>
+              <h3>키</h3>
+              <div class="modal-button">
+                <b-button-group size="lg">
+                  <b-button class="button-option" pill @click="height_change(0)">~{{ this.manHeight }}cm</b-button>
+                  <b-button class="button-option" pill @click="height_change(1)">{{ this.manHeight }}~{{ this.manHeight+5 }}cm</b-button>
+                  <b-button class="button-option" pill @click="height_change(2)">{{ this.manHeight+5 }}~{{ this.manHeight+10 }}cm</b-button>
+                  <b-button class="button-option" pill @click="height_change(3)">{{ this.manHeight+10 }}~{{ this.manHeight+15 }}cm</b-button>
+                  <b-button class="button-option" pill @click="height_change(4)">{{ this.manHeight+15 }}cm~</b-button>
+                </b-button-group>
+              </div>
+              <div style="height:3vh"></div>
+              <h3>몸무게</h3>
+              <div class="modal-button">
+                <b-button-group size="lg">
+                  <b-button class="button-option2" @click="weight_change(0)">~{{ this.manWeight }}kg</b-button>
+                  <b-button class="button-option2" @click="weight_change(1)">{{ this.manWeight }}~{{ this.manWeight+10 }}kg</b-button>
+                  <b-button class="button-option2" @click="weight_change(2)">{{ this.manWeight+10 }}~{{ this.manWeight+20 }}kg</b-button>
+                  <b-button class="button-option2" @click="weight_change(3)">{{ this.manWeight+20 }}~{{ this.manWeight+30 }}kg</b-button>
+                  <b-button class="button-option2" @click="weight_change(4)">{{ this.manWeight+30 }}kg~</b-button>
+                </b-button-group>
+              </div>
+            </b-modal>
+          </div>
+        </div>
         <b-form-input class="silder-bar" id="range-1" v-model="value" type="range" min="0" max="2"></b-form-input>
         <div v-if="this.value === '0'">
           <div class="size-text-container">
@@ -69,9 +67,11 @@
       </div>
 
     </div>
-
-    <h4>PersonalShopper의 추천</h4>
-    <FooterAd  :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" />
+    <div class="footer-row">
+      <p>PersonalShopper의 추천</p>
+      <br>
+      <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
+    </div>
   </div>
 </template>
 
@@ -126,6 +126,7 @@ export default {
       productId3: this.productId_3,
       manWeight: 50,
       manHeight: 165,
+      PassProductId: '',
     }
   },
   methods : {
@@ -137,6 +138,26 @@ export default {
       this.weight = num
       this.sizeconvertNum = this.sizetable[this.height][this.weight]
     },
+    changeProductId(payload) { // 연관 상품 조회시 그 상품 조회 페이지로 이동.
+      this.PassProductId = payload
+      console.log(this.PassProductId)
+      // this.PassProductId = selectedProductId;
+      this.$router.push({
+        name:'ProductDetail', 
+        params: {
+      //     // console.log()
+          passProductID: this.PassProductId,
+      //     // productRecommend_2: this.productRecommend2,
+      //     // productRecommend_3: this.productRecommend3,
+      //     // productId_1: this.productId1,
+      //     // productId_2: this.productId2,
+      //     // productId_3: this.productId3,
+      //     // productDetail: this.productDetail,
+        }});
+      // this.$emit('selectedProductId', selectedProductId);
+      // this.getProduct();
+      // this.getStock();
+    }
   },
   mounted : function(){
     if (this.productDetail.gender != 'M'){
@@ -154,23 +175,29 @@ export default {
     } else {
       this.sizeconvert = ["XS (KR 24)","S (KR 26)","S (KR 26)","M (KR 28)","L (KR 30)","L (KR 30)","XL (KR 32)","XL (KR 32)"]
     }
-  }
+  },
 }
 </script>
 
 <style scoped>
 .ProductBox {
   display: flex;
-  margin-bottom: 5rem;
+  margin-bottom: 5em;
+  position: absolute;
+  bottom: 40%;
+  left: 5%;
+  width: 90%;
 }
 
 .text-box-title {
   font-weight: bold;
-  margin-bottom: 3rem;
+  font-size: 5em;
+  margin-bottom: 3em;
 }
 
 .ProductDetailImg {
-  margin-right: 5rem;
+  margin-right: 5em;
+  width: 60%;
 }
 
 .TextBox {
@@ -182,6 +209,11 @@ export default {
   /* height: 20vh; */
 }
 
+.size-modal-button {
+  width: 40%;
+  font-size: 2.5em;
+}
+
 .modal-button {
   display: flex;
   justify-content: center;
@@ -189,21 +221,27 @@ export default {
 }
 
 .slider {
+  display: flex;
+  flex-direction: column;
+  align-self:center;
   width: 100%;
 }
 
 .question-text {
-  font-size: 3vh;
+  font-size: 6em;
+  margin-bottom: 1em;
 }
 
 .silder-bar {
-  margin-top: 1rem;
+  margin-top: 5em;
+  margin-bottom: 2em;
 }
 
 .size-text-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 3em;
+  font-size: 2.5em;
 }
 
 .size-text-container .select-text {
@@ -212,16 +250,22 @@ export default {
 
 .selected-size {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 5em;
 }
 
 .button-option {
-  margin-right: 2rem;
+  margin-right: 2em;
 }
 
 .button-option2 {
   border-color: rgb(255, 255, 255);
-  border-width: 0.2rem;
+  border-width: 0.2em;
+}
+
+.footer-row {
+  position: fixed;
+  bottom: 0%;
+  font-size: 5em;
 }
 </style>
 
