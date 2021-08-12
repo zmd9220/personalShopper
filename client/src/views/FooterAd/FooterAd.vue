@@ -5,30 +5,19 @@
         <p>PersonalShopper의 추천</p>
       </div>
       <div class="footer-row">
-        <!-- 추천항목이 있을시 보여주고 없으면 디폴트데이터 보여주기. 리팩토링가능해보임. v-if 빼고 기본을 디폴트 데이터가 넘어오면 덮어씌우는형식으로 -->
-        <div class="column" v-if="productRecommend1.slice(0,5) == 'https'">
-          <img :src="productRecommend1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
+        
+        <div class="column">
+          <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
         </div>
 
-        <div class="column" v-if="productRecommend1.slice(0,5) != 'https'">
-          <img src="@/assets/dummydata/101.png" alt="item1" style="width: 100%" @click="gotoDetailDefault1()" >
+        <div class="column">
+          <img :src="this.$store.state.productRecommend_2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
         </div>
 
-        <div class="column" v-if="productRecommend2.slice(0,5) == 'https'">
-          <img :src="this.productRecommend2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
+        <div class="column">
+          <img :src="this.$store.state.productRecommend_3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
         </div>
 
-        <div class="column" v-if="productRecommend2.slice(0,5) != 'https'">
-          <img src="@/assets/dummydata/102.png" alt="item2" style="width: 100%" @click="gotoDetailDefault2()" >
-        </div>
-
-        <div class="column" v-if="productRecommend3.slice(0,5) == 'https'">
-          <img :src="this.productRecommend3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
-        </div>
-
-        <div class="column" v-if="productRecommend3.slice(0,5) != 'https'">
-          <img src="@/assets/dummydata/103.png" alt="item3" style="width: 100%" @click="gotoDetailDefault3()" >
-        </div>
       </div>
     </div>
   </div>
