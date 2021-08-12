@@ -10,5 +10,6 @@ urlpatterns = [
     path('', include('products.urls')), # 상품관련 url
     path('api/', include(router.urls)),
     path('article', TemplateView.as_view(template_name='index.html')),
+    path('accounts/', include('accounts.urls')),
 ]
 
