@@ -96,8 +96,11 @@
         </div>
       </div>
     </div>
-    <h4>PersonalShopper의 추천</h4>
-    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
+    <div class="footer-row">
+      <p>PersonalShopper의 추천</p>
+      <br>
+      <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
+    </div>
   </div>
 </template>
 
@@ -218,7 +221,6 @@ export default {
         })
     },
     changeProductId: function(selectedProductId) { // 연관 상품 조회시 그 상품 조회 페이지로 이동.
-      console.log(selectedProductId)
       this.productId = selectedProductId;
       this.getProduct();
       this.getStock();
