@@ -78,7 +78,7 @@
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
               <div class="size-text-box">
                 <span>{{accessory[i]}}</span>
-                <span v-if="stock == 0 && i == 0"> Coming soon</span>
+                <span v-if="stock == 0 && i == 0 "> Coming soon</span>
               </div>
             </li>
           </ul>          
@@ -86,7 +86,7 @@
         </div>
         <div class="button-box">
           <!-- <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2> -->
-          <b-button @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2" 
+          <b-button @click="goToSizeRecommend()" v-if="this.$store.state.productDetail.product_type == 1 || this.$store.state.productDetail.product_type == 2" 
             variant="primary" class="button-size">사이즈 추천 받기</b-button>
           <!-- <h2 @click="goToSizeChart()">사이즈표</h2> -->
           <!-- <h2 @click="goToLocation()">상품 위치 정보</h2> -->
@@ -103,7 +103,7 @@
               <!-- <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map background-shop-map"> -->
               <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map blink-shop-map blinking">
             </div>
-            <p class="modal-h2">해당 상품은 {{this.productLocation}}구역에있습니다.</p>
+            <p class="modal-h2">해당 상품은 {{this.$store.state.productLocation}}구역에있습니다.</p>
 
             <template #modal-footer>
               <div class="w-100">
