@@ -1,21 +1,24 @@
 <template>
   <div>
     <Nav/>
-    <div class="product-box container" :key="productId">
-        <img class="product-detail-img" :src=" productDetail.product_image " alt="item1" style="width:45%">
+    <div class="product-box" :key="productId">
+      <img class="product-detail-img" :src=" productDetail.product_image " alt="item1">
       <div class="text-box">
         <!-- 상품이름 연동필요 -->
-        <h2 class="text-box-title">{{ productDetail.product_name }}</h2> 
-        <h2>재고정보</h2>
+        <div >
+          <p class="text-box-title">{{ productDetail.product_name }}</p> 
+          <h2 style="margin-bottom: 0.5em">재고정보</h2>
+        </div>
         <div class="size-box">
 
           <!-- 남자 상의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 1">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" 
+              v-for="stock, i in stocks" :key="i" class="size-text">
               <!-- 삼항연산자 stock(재고)유무에 따라 css속성을 바꾼다. 있으면 앞, 없으면 뒤 -->
-              <div>
-                <span style="text-align: start" >{{manTopSize[i]}}</span>
-                <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
+              <div class="size-text-box">
+                <span >{{manTopSize[i]}}</span>
+                <span v-if="stock == 0" > Coming soon</span>
               </div>
             </li>
           </ul>
@@ -23,9 +26,9 @@
           <!-- 남자 하의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 2">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
-              <div>
-                <span style="text-align: start" >{{manBottomSize[i]}}</span>
-                <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
+              <div class="size-text-box">
+                <span>{{manBottomSize[i]}}</span>
+                <span v-if="stock == 0"> Coming soon</span>
               </div>
             </li>
           </ul>                  
@@ -33,9 +36,9 @@
           <!-- 여자 상의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 1">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
-              <div>
-                <span style="text-align: start" >{{womanTopSize[i]}}</span>
-                <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
+              <div class="size-text-box">
+                <span>{{womanTopSize[i]}}</span>
+                <span v-if="stock == 0"> Coming soon</span>
               </div>
             </li>
           </ul>        
@@ -43,9 +46,9 @@
           <!-- 여자 하의 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 2">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
-              <div>
-                <span style="text-align: start" >{{womanBottomSize[i]}}</span>
-                <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
+              <div class="size-text-box">
+                <span>{{womanBottomSize[i]}}</span>
+                <span v-if="stock == 0"> Coming soon</span>
               </div>
             </li>
           </ul>
@@ -53,9 +56,9 @@
           <!-- 남자 신발 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 3">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
-              <div>
-                <span style="text-align: start" >{{manShoesSize[i]}}</span>
-                <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
+              <div class="size-text-box">
+                <span>{{manShoesSize[i]}}</span>
+                <span v-if="stock == 0"> Coming soon</span>
               </div>
             </li>
           </ul>        
@@ -63,9 +66,9 @@
           <!-- 여자 신발 -->
           <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 3">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
-              <div>
-                <span style="text-align: start" >{{womanShoesSize[i]}}</span>
-                <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
+              <div class="size-text-box">
+                <span>{{womanShoesSize[i]}}</span>
+                <span v-if="stock == 0"> Coming soon</span>
               </div>
             </li>
           </ul>                  
@@ -73,20 +76,22 @@
           <!-- 악세서리 -->
           <ul class="size-stock" v-if="`${productDetail.product_type }` == 4">
             <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
-              <div>
-                <span style="text-align: start" >{{accessory[i]}}</span>
-                <span v-if="stock == 0" class="coming-soon"> Coming soon</span>
+              <div class="size-text-box">
+                <span>{{accessory[i]}}</span>
+                <span v-if="stock == 0"> Coming soon</span>
               </div>
             </li>
           </ul>          
   
         </div>
-        <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2>
-        <h2 @click="goToSizeChart()">사이즈표</h2>
-        <h2 @click="goToLocation()">상품위치 정보</h2>
-        <div>
-          <b-button v-b-modal.modal-xl variant="primary">상품위치</b-button>
-          <b-modal id="modal-xl" size="xl" title="상품위치">
+        <div class="button-box">
+          <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2>
+          <b-button @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2" 
+            variant="primary" class="button-size">사이즈 추천 받기</b-button>
+          <h2 @click="goToSizeChart()">사이즈표</h2>
+          <!-- <h2 @click="goToLocation()">상품 위치 정보</h2> -->
+          <b-button v-b-modal.modal-xl variant="primary" class="button-location">상품 위치</b-button>
+          <b-modal id="modal-xl" size="xl" title="상품 위치" class="location-modal">
             <div class="modal-img-box">
               <!-- <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map background-shop-map"> -->
               <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map blink-shop-map blinking">
@@ -96,8 +101,11 @@
         </div>
       </div>
     </div>
-    <h4>PersonalShopper의 추천</h4>
-    <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
+    <div class="footer-row">
+      <p>PersonalShopper의 추천</p>
+      <br>
+      <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
+    </div>
   </div>
 </template>
 
@@ -231,46 +239,87 @@ export default {
 <style scoped>
 .product-box {
   display: flex;
-  margin-bottom: 5rem;
+  margin-bottom: 5em;
+  position: absolute;
+  bottom: 35%;
+  left: 5%;
+  width: 90%;
 }
 
 .product-detail-img {
-  margin-right: 5rem;
+  margin-right: 5em;
+  width: 60%;
 }
 
 .text-box {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
   text-align: center;
+  width: 40%;
+}
+
+/* .title-text-area1 {
 }
 
 .size-box {
-  display: inline-block;
-  width: 100%;
-  height: 40%;
-}
+} */
 
 .size-stock {
+  display: flex;
+  flex-direction: column;
   list-style:none;
   padding-left:0px;
-  font-size: 2rem;
+  font-size: 2.5em;
+  /* align-self:center; */
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-.size-stock li {
-  display: flexbox;
+.size-text {
+  justify-content: center;
 }
 
-.size-stock .coming-soon {
+.size-box {
+  margin-bottom: 1.5em;
+}
+
+.size-text-box {
   display: flex;
-  align-self: end ;
+  justify-content: space-between;
+  /* width: 90%; */
+  margin: 0 1.5em 0.5em 1.5em;
 }
 
 .text-box h2 {
-  margin: 2rem 0;
+  margin: 0 0 2em 0;
+}
+
+.text-box-title {
+  margin: 0 0 1em 0;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-size {
+  margin: 0 0 2em 0;
+  font-size: 2em;
+  width: 40%;
+}
+
+.button-location {
+  font-size: 2em;
+  width: 30%;
 }
 
 .text-box .text-box-title {
-  margin: 0;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 5em;
 }
 .modal-img-box{
   background-image: url("../../assets/location/totalShop.png");
@@ -296,6 +345,20 @@ export default {
 
 @keyframes blink{ 
   0% {opacity:0;} 100% {opacity:1;} 
+}
+
+
+.location-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-row {
+  position: fixed;
+  bottom: 0%;
+  font-size: 5em;
 }
 
 </style>
