@@ -93,6 +93,8 @@ export default {
   content: "";
   clear: both;
   width: 100%;
+  /* position: fixed;
+  bottom: 0%; */
 }
 
 .column {
