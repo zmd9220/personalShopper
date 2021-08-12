@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Product(models.Model):
     product_id = models.IntegerField(primary_key=True)
+    barcode = models.IntegerField()
     product_name = models.CharField(max_length=50)
     gender = models.CharField(max_length=1)
     style_image = models.TextField()

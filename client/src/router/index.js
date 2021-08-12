@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Main from '@/views/Main/Main'
+import MainTest from '@/views/Main/MainTest'
 import Ad from '@/views/Ad/Ad'
 import Admin from '@/views/Admin/Admin'
 import AdClient from '@/views/Ad/AdClient'
@@ -21,6 +22,12 @@ const routes = [
     path: '/',  // 메인 페이지
     name: 'Main',
     component: Main
+  },
+  {
+    path: '/:age/:gen',  // 메인 페이지 + 나이, 성별 정보
+    name: 'MainTest',
+    component: MainTest,
+    props: true,
   },
   {
     path: '/Admin',  // 메인 페이지
@@ -65,8 +72,7 @@ const routes = [
   {
     path: '/ProductSizeRecommand', // 상품 사이즈 추천 페이지
     name: 'ProductSizeRecommand',
-    component: ProductSizeRecommand,
-    props: true
+    component: ProductSizeRecommand  
   },
   {
     path: '/Payment', // 카카오페이 결제
