@@ -94,6 +94,9 @@
             <h2 class="modal-h2">해당 상품은 {{this.productLocation}}구역에있습니다.</h2>
           </b-modal>
         </div>
+        <div>
+          <b-button @click="goToPayment" variant="primary">구매하기</b-button>
+        </div>
       </div>
     </div>
     <h4>PersonalShopper의 추천</h4>
@@ -217,6 +220,9 @@ export default {
       this.productId = selectedProductId;
       this.getProduct();
       this.getStock();
+    },
+    goToPayment: function () {
+      this.$router.push({name:'Payment', params: {product: this.productDetail}})
     }
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
