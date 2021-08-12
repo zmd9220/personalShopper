@@ -95,7 +95,7 @@
           </b-modal>
         </div>
         <div>
-          <b-button @click="goToPayment" variant="primary">구매하기</b-button>
+          <b-button @click="goToPayment()" variant="primary">구매하기</b-button>
         </div>
       </div>
     </div>

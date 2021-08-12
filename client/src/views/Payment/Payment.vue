@@ -4,8 +4,8 @@
     <span>{{ $route.params.product }}</span>
 
 
-    <!-- <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt=""></b-button> -->
-    <b-button @click="pay()" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
+    <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt=""></b-button>
+    <b-button @click="pay()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
 
     <b-modal
       v-model="show"
@@ -76,15 +76,26 @@ export default {
           let baseUrl = "http://127.0.0.1:8000/"
           // let form = new FormData()
           // form.append('amount', this.value)
+          let productData = this.product
+          if (!localStorage.getItem('orderNumber')) {
+            localStorage.setItem('orderNumber', 0)
+          } else {
+            localStorage.setItem('orderNumber', Number(localStorage.getItem('orderNumber')) + 1)  
+          }          
+          productData.orderNumber = Number(localStorage.getItem('orderNumber'))
           axios({
             method: 'POST',
-            url: baseUrl + "kakaoPay/",
-            data: this.product,
+            url: baseUrl + "kakaoPayReady/",
+            data: productData,
           }).then((res) =>{
               let payUrl = res.data.next_redirect_pc_url
+              localStorage.setItem('tid', res.data.tid)
+              localStorage.setItem('orderedProduct', productData)
               console.log(res)
               console.log(payUrl)
               location.href = payUrl
+              // OpenWin_variety(payUrl,'결제 페이지')
+              // window.open(payUrl, '_parent', 'width=800, height=600')
           })
           .catch((error) =>{
               alert("에러가 발생했습니다. 다시 시도해주세요")
