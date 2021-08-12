@@ -3,12 +3,12 @@
     <!-- 개발용 라우터 뷰 -->
     <div id="nav">
       <router-link to="/">Main</router-link> |
-      <router-link to="/Ad">Ad</router-link> |
-      <router-link to="/AdClient">AdClient</router-link> |
+      <!-- <router-link to="/Ad">Ad</router-link> | -->
+      <!-- <router-link to="/AdClient">AdClient</router-link> | -->
       <router-link to="/Barcode">Barcode</router-link> |
       <router-link to="/ProductDetail">ProductDetail</router-link> |
-      <router-link to="/ProductSizeChart">ProductSizeChart</router-link> | 
-      <router-link to="/ProductDetailLocation">ProductDetailLocation</router-link> | 
+      <!-- <router-link to="/ProductSizeChart">ProductSizeChart</router-link> |  -->
+      <!-- <router-link to="/ProductDetailLocation">ProductDetailLocation</router-link> |  -->
       <router-link to="/ProductSizeRecommand">ProductSizeRecommand</router-link> | 
       <router-link to="/PersonalShopper">PersonalShopper</router-link> | 
       <!-- <span v-if="isLogin"> -->
