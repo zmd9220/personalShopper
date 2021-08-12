@@ -78,7 +78,7 @@
 <script>
 import FooterAd from '@/views/FooterAd/FooterAd'
 import Nav from '@/views/Nav/Nav'
-
+import {mapState} from 'vuex'
 
 export default {
   name: 'ProductSizeRecommand',
@@ -86,28 +86,19 @@ export default {
     FooterAd,
     Nav,
   },
-  props: {
-    productRecommend_1 : { // 추천 1,2,3
-      type: String,
-    },
-    productRecommend_2 : {
-      type: String,
-    },
-    productRecommend_3 : {
-      type: String,
-    },
-    productId_1 : { // 추천 ID 1,2,3
-      type: Number,
-    }, 
-    productId_2 : {
-      type: Number,
-    }, 
-    productId_3 : {
-      type: Number,
-    }, 
-    productDetail : {
-      type: Object,
-    },
+  computed: {
+    ...mapState({
+      selectedProductID: state => state.selectedProductID,
+      productDetail: state => state.productDetail,
+      productLocation: state => state.productLocation,
+      productRecommend_1:  state => state.productRecommend_1,
+      productRecommend_2:  state => state.productRecommend_2,
+      productRecommend_3:  state => state.productRecommend_3,
+      productId_1:  state => state.productId_1,
+      productId_2:  state => state.productId_2,
+      productId_3:  state => state.productId_3,
+      stock: state => state.stock,
+    })
   },
   data() {
     return {
@@ -118,15 +109,16 @@ export default {
       sizeconvert : '',
       sizeconvertNum : 1,
       selectedSize: '',
-      productRecommend1: this.productRecommend_1,
-      productRecommend2: this.productRecommend_2,
-      productRecommend3: this.productRecommend_3,
-      productId1: this.productId_1,
-      productId2: this.productId_2,
-      productId3: this.productId_3,
+      productRecommend1: this.$store.state.productRecommend_1,
+      productRecommend2: this.$store.state.productRecommend_2,
+      productRecommend3: this.$store.state.productRecommend_3,
+      productId1: this.$store.state.productId_1,
+      productId2: this.$store.state.productId_2,
+      productId3: this.$store.state.productId_3,
       manWeight: 50,
       manHeight: 165,
       PassProductId: '',
+      productDetail: this.$store.state.productDetail,
     }
   },
   methods : {
@@ -147,16 +139,9 @@ export default {
         params: {
       //     // console.log()
           passProductID: this.PassProductId,
-      //     // productRecommend_2: this.productRecommend2,
-      //     // productRecommend_3: this.productRecommend3,
-      //     // productId_1: this.productId1,
-      //     // productId_2: this.productId2,
-      //     // productId_3: this.productId3,
-      //     // productDetail: this.productDetail,
+
         }});
-      // this.$emit('selectedProductId', selectedProductId);
-      // this.getProduct();
-      // this.getStock();
+
     }
   },
   mounted : function(){
