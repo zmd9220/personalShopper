@@ -11,14 +11,20 @@ export default new Vuex.Store({
 
   state: {
     selectedProductID: '301',
+    user: [],
   },
   mutations: {
     selectProductID: function (state, payload) {
       state.selectedProductID = payload;
-    }
+    },
+    createData: function(state, userData) {
+      state.user.push(userData)
+    },
   },
   actions: {
-
+    createUserData: function({ commit }, userData) {
+      commit('createData', userData)
+    }
   },
   modules: {
   }
