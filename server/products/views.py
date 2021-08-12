@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import ProductSerializer, StockSerializer
-from .models import Product, Stock
+from .models import Product, Stock, Recommend
 import json, requests
 
 from rest_framework import status
@@ -58,6 +58,41 @@ def kakaoPay(request):
     response = requests.post(url+"/v1/payment/ready", params=params, headers=headers)
     response = json.loads(response.text)
     return Response(response)
+
+
+@api_view(['POST']) # 추천 알고리즘
+def recommended(request):
+    age = request.POST.get('age')
+    gen = request.POST.get('gen')
+    
+    if int(age) < 20:
+        recommend_age = Recommend.objects.all().order_by('-week_sale10','-month_sale10','-visit10')
+    elif 20 <= int(age) < 30:
+        recommend_age = Recommend.objects.all().order_by('-week_sale20','-month_sale20','-visit20')
+    elif 30 <= int(age) < 40:
+        recommend_age = Recommend.objects.all().order_by('-week_sale30','-month_sale30','-visit30')
+    elif 40 <= int(age) < 50:
+        recommend_age = Recommend.objects.all().order_by('-week_sale40','-month_sale40','-visit40')
+    elif 50 <= int(age) < 60:
+       recommend_age = Recommend.objects.all().order_by('-week_sale50','-month_sale50','-visit50')
+    else :
+        recommend_age = Recommend.objects.all().order_by('-week_sale60','-month_sale60','-visit60')
+
+    products_gen = Product.objects.filter(gender=gen)    
+    result = []
+    for i in recommend_age:
+        for j in products_gen:
+            if i.product_id == j.product_id:
+                result.append(str(j.product_id))
+    recommend_data = {
+        "A": result[0],
+        "B": result[1],
+        "C": result[2],
+        "D": result[3],
+    }
+    response = json.dumps(recommend_data)
+    return Response(response)
+
 
 @api_view(['GET', 'POST'])
 # JWT 을 활용한 인증을 할 때 JWT 자체를 검증한 인증 여부와 상관 없이 JWT가 유효한 지 여부만 파악
