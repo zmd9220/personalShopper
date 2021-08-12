@@ -1,82 +1,44 @@
 <template>
   <div>
-    <!-- <Nav/> -->
-    <h2> Product Table </h2>
-    <br>
-    <div class="overflow-auto table-products">
-      <b-table hover responsive :items="products" :fields="fields" 
-        :per-page="perPage"
-        :current-page="currentPage"
-        large
-        @row-clicked="goDetail"
-      >
-        <template v-slot:cell(edit)>
-          <b-button v-b-modal.modal-1>EDIT</b-button>
-        </template>
-        <template v-slot:cell(delete)>
-          <b-button v-b-modal.modal-2>DELETE</b-button>
-        </template>
-      </b-table>
-      
-      <!-- Modal  -->
-      <b-modal ref="mymodal" title="BootstrapVue">
-        <p class="my-4">Hello from modal!</p>
-      </b-modal>
-      <b-modal id="modal-1" title="BootstrapVue">
-        <form id="demo">
-          <!-- text -->
-          <p>
-            age: <input type="number" v-model="age" number>
-          </p>
-          <p>
-            msg: <input type="text" v-model="msg">
-          </p>
-          <p><pre>data: {{$data | json 2}}</pre></p>
-        </form>
-      </b-modal>
-      <b-modal id="modal-2" title="BootstrapVue">
-        <p class="my-4">Delete!</p>
-      </b-modal>
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <b-pagination
-              v-model="currentPage"
-              :total-rows="rows"
-              :per-page="perPage"
-              aria-controls="my-table"
-              class="pages-products">
-            </b-pagination>
-            
-            <p class="mt-3">Current Page: {{ currentPage }}</p>
-          </div>
-        </div>
+    <Nav/> 
+    <b-button class="new-product" router-link to="/ProductForm" variant="success">새 상품 등록</b-button>
+    <div class="table-products">
+      <h2>Product List</h2>
+      <br>
+      <div>
+        <b-list-group hover>
+          <b-list-group-item 
+            v-for="(product, idx) in products" :key="idx"
+            class="d-flex justify-content-between align-items-center"
+          >
+            <span>상품ID : {{ product.product_id }} </span>
+            <span>{{ product.product_name }} </span>
+            <div class="button-list">
+              <b-button @click="updateProductStatus(product)" class="product-btn" variant="warning">EDIT</b-button>
+              <b-button @click="deleteProduct(product)" class="product-btn" variant="danger">DELETE</b-button>
+            </div>
+          </b-list-group-item>
+        </b-list-group>
       </div>
-
     </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-// import Nav from '@/views/Nav/Nav'
+import Nav from '@/views/Nav/Nav'
 
 export default {
   name: 'Admin',
-  // components: {
-  //   Nav,
-  // },
+  components: {
+    Nav,
+  },
+  props: {
+    selectedProduct: Object
+  },
   data: function() {
     return {
-      age : '0',
-      msg : 'hi',
-      edit: null,
-      perPage: 10,
-      currentPage: 1,
       products: null,
-      fields: ['product_id', 'product_name', 'edit', 'delete'],
-      // fields: [],
     }
   },
   methods :{
@@ -92,6 +54,43 @@ export default {
           console.log(err)
         })
     },
+    deleteProduct: function (product) {
+      console.log(product)
+      axios({
+        method: 'delete',
+        url: `http://127.0.0.1:8000/product/${product.product_id}/update/`,
+        // headers: this.setToken()
+      })
+        .then((res) => {
+          console.log(res)
+          this.getProducts()
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
+    updateProductStatus: function (product) {
+      console.log(product)
+      const selectedProduct = {
+        product_id: product.product_id,
+        product_name: product.product_name,
+        gender: product.gender,
+        style_image: product.style_image,
+        product_image: product.product_image,
+        color: product.color,
+        season: product.season,
+        style_products: product.style_products,
+        product_type: product.product_type,
+        product_description: product.product_description,
+        price: product.price,
+        usage: product.usage,
+        product_link: product.product_link,
+        location: product.location,
+      }
+      console.log(selectedProduct)
+      this.$emit('selectedProduct', selectedProduct)
+      this.$router.push({ name: 'ProductUpdateForm' })
+    }
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
     this.getProducts(); // 상품정보
@@ -112,11 +111,16 @@ export default {
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 70%;
 }
 
-.pages-products {
-  justify-content: center;
+/* .button-list {
+
+} */
+
+.new-product {
+  float: right;
+  margin-bottom: 3rem;
 }
 
 </style>
