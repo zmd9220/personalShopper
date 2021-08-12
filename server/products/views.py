@@ -37,19 +37,30 @@ def kakaoPay(request):
         'Authorization': "KakaoAK " + "4595b53acfdd636260c962e7fd4c8dd0", # admin key 처리 해야함
         'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     }
+    # print(request.data)
+    # print(request)
     params = {
         'cid': "TC0ONETIME",
         'partner_order_id': '1001',
         'partner_user_id': 'ssafy',
-        'item_name': '포인트',
+        # 상품 이름
+        'item_name': request.data['product_name'],
+        # 갯수
         'quantity': 1,
-        'total_amount': 201, # 'total_amount' >  'vat_amount'
-        'vat_amount': 200,
+        # 총 가격
+        'total_amount': request.data['price'], # 'total_amount' >  'vat_amount'
+        # 부가세 국내에선 포함 가격일 듯
+        'vat_amount': 0,
+        # 면세
         'tax_free_amount': 0,
+        # 성공시 반환할 url
         'approval_url': 'http://localhost:8080',
+        # 실패시 반환할 url
         'fail_url': 'http://localhost:8080',
+        # 취소시 반환할 url
         'cancel_url': 'http://localhost:8080',
     }
     response = requests.post(url+"/v1/payment/ready", params=params, headers=headers)
     response = json.loads(response.text)
+    print(response)
     return Response(response)

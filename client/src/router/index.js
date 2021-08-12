@@ -77,7 +77,8 @@ const routes = [
   {
     path: '/Payment', // 카카오페이 결제
     name: 'Payment',
-    component: Payment  
+    component: Payment,
+    props: true
   },
 ]
 

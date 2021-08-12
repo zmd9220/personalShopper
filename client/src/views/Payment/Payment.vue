@@ -1,6 +1,11 @@
 <template>
   <div>
-    <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt=""></b-button>
+    <Nav/>
+    <span>{{ $route.params.product }}</span>
+
+
+    <!-- <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt=""></b-button> -->
+    <b-button @click="pay()" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
 
     <b-modal
       v-model="show"
@@ -53,32 +58,40 @@
 
 <script>
 import axios from 'axios'
+import Nav from '../Nav/Nav.vue'
 
 export default {
-    name: 'Payment',
-    data: () => ({
-      show: false,
-      items: [5000, 10000, 20000],
-      value: ''
-    }),
-    methods:{
-        pay(){
-            let baseUrl = "http://127.0.0.1:8000/"
-            let form = new FormData()
-            form.append('amount', this.value)
-            axios.post(baseUrl+"kakaoPay/", form)
-            .then(res =>{
-                let payUrl = res.data.next_redirect_pc_url
-                console.log(res)
-                console.log(payUrl)
-                location.href = payUrl
-            })
-            .catch(error =>{
-                alert("에러가 발생했습니다. 다시 시도해주세요")
-                console.log(error)
-                this.$router.push('/')
-            })
-        }
-    }
+  components: { Nav },
+  name: 'Payment',
+  props: {
+    product: Object,
+  },
+  data: () => ({
+    show: false,
+    items: [5000, 10000, 20000],
+    value: ''
+  }),
+  methods:{
+      pay(){
+          let baseUrl = "http://127.0.0.1:8000/"
+          // let form = new FormData()
+          // form.append('amount', this.value)
+          axios({
+            method: 'POST',
+            url: baseUrl + "kakaoPay/",
+            data: this.product,
+          }).then((res) =>{
+              let payUrl = res.data.next_redirect_pc_url
+              console.log(res)
+              console.log(payUrl)
+              location.href = payUrl
+          })
+          .catch((error) =>{
+              alert("에러가 발생했습니다. 다시 시도해주세요")
+              console.log(error)
+              // this.$router.push('/')
+          })
+      }
+  }
 }
 </script>
