@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 
 export default {
   props: {
@@ -60,27 +61,68 @@ export default {
       Recommend3: '',
     }
   },
+  computed: {
+    ...mapState({
+      selectedProductID: state => state.selectedProductID
+    })
+  },
   methods:{
     gotoDetail1: function() {                 //리팩토링 예정 (디폴트 데이터가 넘어오면 덮어씌우는형식으로)
-      const productId1 = this.productId1;
-      this.$emit('selectedProductId', productId1);
+      const productId1 = this.productId1.toString();
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectProductID', productId1);
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectProductID', productId1);
+        this.$emit('selectedProductId', productId1);
+      }
     },
     gotoDetail2: function() {                 //리팩토링 예정
-      const productId2 = this.productId2;
-      this.$emit('selectedProductId', productId2);
+      const productId2 = this.productId2.toString();
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectProductID', productId2);
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectProductID', productId2);
+        this.$emit('selectedProductId', productId2);
+      }
     },
     gotoDetail3: function() {                 //리팩토링 예정
-      const productId3 = this.productId3;
-      this.$emit('selectedProductId', productId3);
+      const productId3 = this.productId3.toString();
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectProductID', productId3);
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectProductID', productId3);
+        this.$emit('selectedProductId', productId3);
+      }
     },
     gotoDetailDefault1: function() {                 //리팩토링 예정
-      this.$emit('selectedProductId', '101');
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectProductID', '101');
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectProductID', '101');
+        this.$emit('selectedProductId', '101');
+      }
     },
     gotoDetailDefault2: function() {                 //리팩토링 예정
-      this.$emit('selectedProductId', '102');
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectProductID', '102');
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectProductID', '102');
+        this.$emit('selectedProductId', '102');
+      }
     },
     gotoDetailDefault3: function() {                 //리팩토링 예정
-      this.$emit('selectedProductId', '103');
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectProductID', '103');
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectProductID', '103');
+        this.$emit('selectedProductId', '103');
+      }
     },
   },
 }
@@ -93,6 +135,8 @@ export default {
   content: "";
   clear: both;
   width: 100%;
+  /* position: fixed;
+  bottom: 0%; */
 }
 
 .column {

@@ -29,5 +29,5 @@ class Customer(models.Model):
 
 class Stock(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    size = models.JSONField() # 프론트에서 바꿔준다. ex) 신발 의류 바지 사이즈가 다양하기 떄문
+    # size = models.JSONField() # 프론트에서 바꿔준다. ex) 신발 의류 바지 사이즈가 다양하기 떄문
     stock = models.JSONField()
