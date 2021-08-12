@@ -105,7 +105,7 @@
 import FooterAd from '@/views/FooterAd/FooterAd'
 import Nav from '@/views/Nav/Nav'
 import axios from 'axios'
-
+import {mapState} from 'vuex'
 
 export default {
   name: 'ProductDetail',
@@ -134,8 +134,12 @@ export default {
       productId3 : 0,
       productLocation : '', // 상품위치
       locationPicture : '', // 매장 지도
-
     }
+  },
+  computed: {
+    ...mapState({
+      selectedProductID: state => state.selectedProductID
+    })
   },
   methods :{
     goToSizeRecommend(){
@@ -152,14 +156,15 @@ export default {
         }});
     },
     goToSizeChart(){
-      this.$router.push('/ProductSizeChart'); 
+      this.$store.commit('selectProductID', '301');
+      // this.$router.push('/ProductSizeChart'); 
     },
     goToLocation(){
       this.$router.push('/ProductDetailLocation'); 
     },
     getProduct: function() { // 상품정보를 받아오는 axios
       const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL = localURL + this.productId + '/'; //
+      const productURL = localURL + this.$store.state.selectedProductID + '/'; //
       
       axios.get(productURL) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
@@ -220,6 +225,7 @@ export default {
     }
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
+    // this.productId = '201';
     this.getProduct(); // 상품정보
     this.getStock(); // 재고정보
   },

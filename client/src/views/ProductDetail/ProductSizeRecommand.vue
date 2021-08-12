@@ -71,7 +71,7 @@
     </div>
 
     <h4>PersonalShopper의 추천</h4>
-    <FooterAd  :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" />
+    <FooterAd  :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
   </div>
 </template>
 
@@ -126,6 +126,7 @@ export default {
       productId3: this.productId_3,
       manWeight: 50,
       manHeight: 165,
+      PassProductId: '',
     }
   },
   methods : {
@@ -137,6 +138,26 @@ export default {
       this.weight = num
       this.sizeconvertNum = this.sizetable[this.height][this.weight]
     },
+    changeProductId(payload) { // 연관 상품 조회시 그 상품 조회 페이지로 이동.
+      this.PassProductId = payload
+      console.log(this.PassProductId)
+      // this.PassProductId = selectedProductId;
+      this.$router.push({
+        name:'ProductDetail', 
+        params: {
+      //     // console.log()
+          passProductID: this.PassProductId,
+      //     // productRecommend_2: this.productRecommend2,
+      //     // productRecommend_3: this.productRecommend3,
+      //     // productId_1: this.productId1,
+      //     // productId_2: this.productId2,
+      //     // productId_3: this.productId3,
+      //     // productDetail: this.productDetail,
+        }});
+      // this.$emit('selectedProductId', selectedProductId);
+      // this.getProduct();
+      // this.getStock();
+    }
   },
   mounted : function(){
     if (this.productDetail.gender != 'M'){
@@ -154,7 +175,7 @@ export default {
     } else {
       this.sizeconvert = ["XS (KR 24)","S (KR 26)","S (KR 26)","M (KR 28)","L (KR 30)","L (KR 30)","XL (KR 32)","XL (KR 32)"]
     }
-  }
+  },
 }
 </script>
 
