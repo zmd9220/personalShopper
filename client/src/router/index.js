@@ -4,6 +4,8 @@ import Main from '@/views/Main/Main'
 import MainTest from '@/views/Main/MainTest'
 import Ad from '@/views/Ad/Ad'
 import Admin from '@/views/Admin/Admin'
+import ProductForm from '@/views/Admin/ProductForm'
+import ProductUpdateForm from '@/views/Admin/ProductUpdateForm'
 import AdClient from '@/views/Ad/AdClient'
 import Barcode from '@/views/Barcode/Barcode' 
 import PersonalShopper from '@/views/PersonalShopper/PersonalShopper' 
@@ -11,6 +13,8 @@ import ProductDetail from '@/views/ProductDetail/ProductDetail'
 import ProductSizeChart from '@/views/ProductDetail/ProductSizeChart' 
 import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
+import Signup from '@/views/accounts/Signup'
+import Login from '@/views/accounts/Login'
 import Payment from '@/views/Payment/Payment'
 import OrderComplete from '@/views/Payment/OrderComplete'
 import isApprove from '@/views/Payment/isApprove'
@@ -33,7 +37,17 @@ const routes = [
   {
     path: '/Admin',  // 메인 페이지
     name: 'Admin',
-    component: Admin
+    component: Admin,
+  },
+  {
+    path: '/ProductForm',  // 메인 페이지
+    name: 'ProductForm',
+    component: ProductForm
+  },
+  {
+    path: '/ProductUpdateForm',  // 메인 페이지
+    name: 'ProductUpdateForm',
+    component: ProductUpdateForm
   },
   {
     path: '/Ad', // 매장관리용 광고 검색 페이지
@@ -90,6 +104,16 @@ const routes = [
     path: '/OrderComplete', // 카카오페이 결제 승인까지 완료 (성공적인 구매 완료) 페이지
     name: 'OrderComplete',
     component: OrderComplete,
+  },
+  {
+    path: '/accounts/signup',
+    name: 'Signup',
+    component: Signup,
+  },
+  {
+    path: '/accounts/login',
+    name: 'Login',
+    component: Login, 
   },
 ]
 
