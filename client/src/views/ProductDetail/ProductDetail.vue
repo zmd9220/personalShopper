@@ -1,19 +1,19 @@
 <template>
   <div>
     <Nav/>
-    <div class="product-box" :key="productId">
-      <img class="product-detail-img" :src=" productDetail.product_image " alt="item1">
+    <div class="product-box" :key="this.$store.state.selectedProductID">
+      <img class="product-detail-img" :src=" this.$store.state.productDetail.product_image " alt="item1">
       <div class="text-box">
         <!-- 상품이름 연동필요 -->
         <div >
-          <p class="text-box-title">{{ productDetail.product_name }}</p> 
+          <p class="text-box-title">{{ this.$store.state.productDetail.product_name }}</p> 
           <h2 style="margin-bottom: 0.5em">재고정보</h2>
         </div>
         <div class="size-box">
 
           <!-- 남자 상의 -->
-          <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 1">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" 
+          <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'M' && `${this.$store.state.productDetail.product_type }` == 1">
+            <li :style="[this.$store.state.stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" 
               v-for="stock, i in stocks" :key="i" class="size-text">
               <!-- 삼항연산자 stock(재고)유무에 따라 css속성을 바꾼다. 있으면 앞, 없으면 뒤 -->
               <div class="size-text-box">
@@ -24,8 +24,8 @@
           </ul>
         
           <!-- 남자 하의 -->
-          <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 2">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+          <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'M' && `${this.$store.state.productDetail.product_type }` == 2">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <div class="size-text-box">
                 <span>{{manBottomSize[i]}}</span>
                 <span v-if="stock == 0"> Coming soon</span>
@@ -34,8 +34,8 @@
           </ul>                  
 
           <!-- 여자 상의 -->
-          <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 1">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+          <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'F' && `${this.$store.state.productDetail.product_type }` == 1">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <div class="size-text-box">
                 <span>{{womanTopSize[i]}}</span>
                 <span v-if="stock == 0"> Coming soon</span>
@@ -44,8 +44,8 @@
           </ul>        
 
           <!-- 여자 하의 -->
-          <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 2">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+          <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'F' && `${this.$store.state.productDetail.product_type }` == 2">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <div class="size-text-box">
                 <span>{{womanBottomSize[i]}}</span>
                 <span v-if="stock == 0"> Coming soon</span>
@@ -54,8 +54,8 @@
           </ul>
 
           <!-- 남자 신발 -->
-          <ul class="size-stock" v-if="`${productDetail.gender }` == 'M' && `${productDetail.product_type }` == 3">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+          <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'M' && `${this.$store.state.productDetail.product_type }` == 3">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <div class="size-text-box">
                 <span>{{manShoesSize[i]}}</span>
                 <span v-if="stock == 0"> Coming soon</span>
@@ -64,8 +64,8 @@
           </ul>        
 
           <!-- 여자 신발 -->
-          <ul class="size-stock" v-if="`${productDetail.gender }` == 'F' && `${productDetail.product_type }` == 3">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+          <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'F' && `${this.$store.state.productDetail.product_type }` == 3">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <div class="size-text-box">
                 <span>{{womanShoesSize[i]}}</span>
                 <span v-if="stock == 0"> Coming soon</span>
@@ -75,7 +75,7 @@
 
           <!-- 악세서리 -->
           <ul class="size-stock" v-if="`${productDetail.product_type }` == 4">
-            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in stocks" :key="i">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <div class="size-text-box">
                 <span>{{accessory[i]}}</span>
                 <span v-if="stock == 0 && i == 0 "> Coming soon</span>
@@ -158,7 +158,6 @@ export default {
       productId1 : 0,  // 추천 상품 ID
       productId2 : 0,
       productId3 : 0,
-      productLocation : '', // 상품위치
       locationPicture : '', // 매장 지도
       headerBgVariant: 'dark',
       headerTextVariant: 'light',
@@ -167,7 +166,16 @@ export default {
   },
   computed: {
     ...mapState({
-      selectedProductID: state => state.selectedProductID
+      selectedProductID: state => state.selectedProductID,
+      productDetail: state => state.productDetail,
+      productLocation: state => state.productLocation,
+      productRecommend_1:  state => state.productRecommend_1,
+      productRecommend_2:  state => state.productRecommend_2,
+      productRecommend_3:  state => state.productRecommend_3,
+      productId_1:  state => state.productId_1,
+      productId_2:  state => state.productId_2,
+      productId_3:  state => state.productId_3,
+      stock: state => state.stock,
     })
   },
   methods :{
@@ -198,34 +206,46 @@ export default {
       axios.get(productURL) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail = res.data; // 상품 상세 정보
-          this.productLocation = res.data.location;  // 상품 위치정보 따로 저장
-          this.locationPicture = require('@/assets/location/' + res.data.location + '.png'); // 상품 위치정보에 쓸 매장 지도
-          this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/'; // api 호출에 쓸 연관 추천 상품 주소
-          this.productRecommend2 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/';
-          this.productRecommend3 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/';
+          this.$store.commit('productDetail', res.data); // 상품 상세정보
+          this.$store.commit('productLocation', res.data.location);
+          this.locationPicture = require('@/assets/location/' + this.$store.state.productLocation + '.png'); // 상품 위치정보에 쓸 매장 지도
+
+          // this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/'; // api 호출에 쓸 연관 추천 상품 주소
+          this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/');
+
+          // this.productRecommend2 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/';
+          this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/');
+          
+          // this.productRecommend3 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/';
+          this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/');
         })
         .then(()=>{ 
-          axios.get(this.productRecommend1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
+          axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
           .then((res)=>{
-            this.productId1 = res.data.product_id;
-            this.productRecommend1 = res.data.product_image;
+            // this.productId1 = res.data.product_id;
+            this.$store.commit('productId_1', res.data.product_id);
+            this.$store.commit('productRecommend_1', res.data.product_image);
           })
         })
         .then(()=>{                         // 두번째 아이템 호출(리팩토링예정)
-          axios.get(this.productRecommend2)
+          axios.get(this.$store.state.productRecommend_2)
           .then((res)=>{
-            this.productId2 = res.data.product_id;
-            this.productRecommend2 = res.data.product_image;
+            // this.productId2 = res.data.product_id;
+            // this.productRecommend2 = res.data.product_image;
+            this.$store.commit('productId_2', res.data.product_id);
+            this.$store.commit('productRecommend_2', res.data.product_image);
           })
           .catch(() => {
             // console.log(err)
           })
         })
         .then(()=>{                   // 세번쨰 아이템 호출(리팩토링예정)
-          axios.get(this.productRecommend3)
+          axios.get(this.$store.state.productRecommend_3)
           .then((res)=>{
-            this.productId3 = res.data.product_id;
-            this.productRecommend3 = res.data.product_image;
+            // this.productId3 = res.data.product_id;
+            // this.productRecommend3 = res.data.product_image;
+            this.$store.commit('productId_3', res.data.product_id);
+            this.$store.commit('productRecommend_3', res.data.product_image);
           })
           .catch(() => {
             // console.log(err)
@@ -237,10 +257,11 @@ export default {
     },
     getStock: function() { // 재고정보를 받아오는 axios
       const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const stockURL = localURL + this.productId + '/' + 'stocks' +'/';
+      const stockURL = localURL + this.$store.state.selectedProductID + '/' + 'stocks' +'/';
       axios.get(stockURL)
         .then((res) => {
-          this.stocks = res.data.stock;       // stock모델은 size가 필요없다. 바꿔야한다.
+          // this.stocks = res.data.stock;       // stock모델은 size가 필요없다. 바꿔야한다.
+          this.$store.commit('stock', res.data.stock);
         })
         .catch((err) => {
           console.log(err)
