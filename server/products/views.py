@@ -94,10 +94,11 @@ def kakaoPay_approve(request):
     response = requests.post(url+"/v1/payment/approve", params=params, headers=headers)
     print(response)
     print(response.status_code)
-    print(response.json())
-    response = json.loads(response.text)
-    print(response)
-    return Response(response)
+    # print(response.json())
+    response_data = json.loads(response.text)
+    response_data['status_code'] = response.status_code
+    print(response_data)
+    return Response(response_data)
 
 
 @api_view(['POST']) # 추천 알고리즘

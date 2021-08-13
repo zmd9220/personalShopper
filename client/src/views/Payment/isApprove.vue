@@ -30,12 +30,14 @@ export default {
         url: baseUrl + "kakaoPayApprove/",
         data: this.paymentData,
       }).then((res) =>{
-          let payUrl = res.data
-          console.log(res)
-          console.log(payUrl)
-          // location.href = payUrl
-          // OpenWin_variety(payUrl,'결제 페이지')
-          // window.open(payUrl, '_parent', 'width=800, height=600')
+          let responseData = res.data
+          if (responseData.status_code === 200) {
+            this.$router.push({name: 'OrderComplete', params: {responseData: responseData}})
+          } else {
+            alert('Error code : ' + responseData.code + '\n' + responseData.extras.method_result_message)
+            this.$router.push({name: 'Cart'})
+          }
+        
       })
       .catch((error) =>{
           alert("에러가 발생했습니다. 다시 시도해주세요")
@@ -55,8 +57,8 @@ export default {
     },
   },
   mounted: function () {
-    // 정상적으로 토큰이 발급된 경우
     if (this.$route.query.pg_token) {
+      // 정상적으로 토큰이 발급된 경우
       console.log(this.$route.query)
       this.paymentData.pg_token = this.$route.query.pg_token
       // this.makeData().then(() => {
@@ -65,11 +67,11 @@ export default {
       // })
       this.makeData()
       this.approve()
-      // this.makeData()
-    // 정상적으로 토큰이 발급되지 않은 경우 (결제 취소)   
     } else {
+      // 정상적으로 토큰이 발급되지 않은 경우 (결제 취소)   
       alert('결제를 취소했습니다.')
-      this.$router.push({name:'Payment', params: {product: localStorage.getItem('orderedProduct')}})
+      // this.$router.push({name:'Payment', params: {product: localStorage.getItem('orderedProduct')}})
+      this.$router.push({name: 'Cart'})
     }
   }
 }

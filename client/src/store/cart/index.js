@@ -8,6 +8,7 @@ export default {
       const cartItems = state.items.filter(cartItem => cartItem.product_id === item.product_id);
       if (cartItems.length === 0) {
         state.items.push(item);
+        console.log(state.items)
       }
     },
     delItem(state, product_id) {

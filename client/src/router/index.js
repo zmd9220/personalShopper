@@ -112,7 +112,7 @@ const routes = [
   {
     path: '/PaymentPage', // 카카오페이 결제
     name: 'PaymentPage',
-    component: PaymentPage  
+    component: PaymentPage,
   },
   {
     path: '/accounts/signup',
