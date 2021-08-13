@@ -23,6 +23,7 @@
       <!-- </span> -->
       <!-- <router-view @login="isLogin = true"/> -->
       <router-link to="/Payment">Payment</router-link> | 
+      <router-link to="/PaymentPage">PaymentPage</router-link> | 
     </div>
     <router-view/>
   </div>

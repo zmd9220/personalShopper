@@ -17,120 +17,133 @@
             placeholder="Enter product_id"
             required
           ></b-form-input>
-        
         </b-form-group>
-
-        <b-form-group id="input-group-2" label="Product Name " label-for="input-2">
+        
+        <b-form-group
+          id="input-group-2"
+          label="Product barcode"
+          label-for="input-2"
+        >
           <b-form-input
             id="input-2"
+            v-model="form.barcode"
+            type="number"
+            placeholder="Enter barcode"
+            required
+          ></b-form-input>
+        </b-form-group>
+
+        <b-form-group id="input-group-3" label="Product Name " label-for="input-3">
+          <b-form-input
+            id="input-3"
             v-model="form.product_name"
             placeholder="Enter product_name"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-3" label="Gender " label-for="input-3">
+        <b-form-group id="input-group-4" label="Gender " label-for="input-4">
           <b-form-select
-            id="input-3"
+            id="input-4"
             v-model="form.gender"
             :options="genders"
             required
           ></b-form-select>
         </b-form-group>
 
-        <b-form-group id="input-group-4" label="style_image " label-for="input-4">
+        <b-form-group id="input-group-5" label="style_image " label-for="input-5">
           <b-form-input
-            id="input-4"
+            id="input-5"
             v-model="form.style_image"
             placeholder="Enter style_image"
             required
           ></b-form-input>
         </b-form-group>
         
-        <b-form-group id="input-group-5" label="product_image " label-for="input-5">
+        <b-form-group id="input-group-6" label="product_image " label-for="input-6">
           <b-form-input
-            id="input-5"
+            id="input-6"
             v-model="form.product_image"
             placeholder="Enter product_image"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-6" label="color " label-for="input-6">
+        <b-form-group id="input-group-7" label="color " label-for="input-7">
           <b-form-input
-            id="input-6"
+            id="input-7"
             v-model="form.color"
             placeholder="Enter color"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-7" label="season " label-for="input-7">
+        <b-form-group id="input-group-8" label="season " label-for="input-8">
           <b-form-select
-            id="input-7"
+            id="input-8"
             v-model="form.season"
             :options="seasons"
             required
           ></b-form-select>
         </b-form-group>
 
-        <b-form-group id="input-group-8" label="style_products " label-for="input-8">
+        <b-form-group id="input-group-9" label="style_products " label-for="input-9">
           <b-form-input
-            id="input-8"
+            id="input-9"
             v-model="form.style_products"
             placeholder="Enter style_products"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-9" label="product_description " label-for="input-9">
+        <b-form-group id="input-group-10" label="product_description " label-for="input-10">
           <b-form-input
-            id="input-9"
+            id="input-10"
             v-model="form.product_description"
             placeholder="Enter product_description"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-10" label="product_type " label-for="input-10">
+        <b-form-group id="input-group-11" label="product_type " label-for="input-11">
           <b-form-select
-            id="input-10"
+            id="input-11"
             v-model="form.product_type"
             :options="product_types"
             required
           ></b-form-select>
         </b-form-group>
 
-        <b-form-group id="input-group-11" label="price " label-for="input-11">
+        <b-form-group id="input-group-12" label="price " label-for="input-12">
           <b-form-input
-            id="input-11"
+            id="input-12"
             v-model="form.price"
             placeholder="Enter price"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-12" label="usage " label-for="input-12">
+        <b-form-group id="input-group-13" label="usage " label-for="input-13">
           <b-form-input
-            id="input-12"
+            id="input-13"
             v-model="form.usage"
             placeholder="Enter usage"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-13" label="product_link " label-for="input-13">
+        <b-form-group id="input-group-14" label="product_link " label-for="input-14">
           <b-form-input
-            id="input-13"
+            id="input-14"
             v-model="form.product_link"
             placeholder="Enter product_link"
             required
           ></b-form-input>
         </b-form-group>
 
-        <b-form-group id="input-group-14" label="location " label-for="input-14">
+        <b-form-group id="input-group-15" label="location " label-for="input-15">
           <b-form-select
-            id="input-14"
+            id="input-15"
             v-model="form.location"
             :options="locations"
             required
@@ -159,6 +172,7 @@ export default {
     return {
       form: {
         product_id: '',
+        barcode: '',
         product_name: '',
         gender: null,
         style_image: '',
@@ -219,6 +233,7 @@ export default {
       event.preventDefault()
       // Reset our form values
       this.form.product_id = ''
+      this.form.barcode = ''
       this.form.product_name = ''
       this.form.gender = null
       this.form.style_image = ''
