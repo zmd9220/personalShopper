@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import createPersistedState from "vuex-persistedstate"
+// import createPersistedState from "vuex-persistedstate"
 import cart from './cart/index';
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  plugins: [
-    createPersistedState(),
-  ],
+  // plugins: [
+  //   createPersistedState(),
+  // ],
   state: {
     selectedProductID: '301',
     productRecommend_1: 'https://static.zara.net/photos///2021/I/0/1/p/8612/743/020/2/w/563/8612743020_6_1_1.jpg?ts=1627914450425',
