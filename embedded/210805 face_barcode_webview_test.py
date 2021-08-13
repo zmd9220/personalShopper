@@ -4,6 +4,8 @@ import time
 import cv2
 import pyzbar.pyzbar as pyzbar
 
+import os.path 
+
 import os
 import sys
 import requests
@@ -71,7 +73,7 @@ def barcode_scan():
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         decoded = pyzbar.decode(gray)
-
+        barcode_data = ''
         for d in decoded:
             x, y, w, h = d.rect
 
@@ -81,27 +83,30 @@ def barcode_scan():
             # cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
             text = '%s (%s)' % (barcode_data, barcode_type)
-            print(text)
+#             print(text)
             # cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
-
-        # cv2.imshow('img', img)
-
-        key = cv2.waitKey(1)
-        if key == ord('q'):  # 종료
+        
+        if len(barcode_data) == 13:
             break
-        elif key == ord('s'):  # 캡쳐
-            i += 1
-            cv2.imwrite('c_%03d.jpg' % i, img)
+        # cv2.imshow('img', img)
+        
+#         key = cv2.waitKey(1)
+#         if key == ord('q'):  # 종료
+#             break
+#         elif key == ord('s'):  # 캡쳐
+#             i += 1
+#             cv2.imwrite('c_%03d.jpg' % i, img)
 
     cap.release()
     cv2.destroyAllWindows()
+    
+    webview.windows[0].load_url('http://localhost:8080/ProductDetail/{}'.format(barcode_data))
+
 
 # webview 켜진 후 이벤트
 def on_loaded():
     # unsubscribe event listener
     webview.windows[0].loaded -= on_loaded
-    # 웹뷰가 켜지면 광고(구글) 이 뜸
-    # webview.windows[0].load_url('https://google.com')
     
     is_ad = False		# 사람 인식 후 광고로 돌아가기 위한 플래그
     cnt = 0		# 사람을 인식한 시간(s)
@@ -129,9 +134,16 @@ def on_loaded():
             distance = time_interval * 17000
             distance = round(distance, 2)
 
-            print(webview.windows[0].get_current_url())
+#             print(webview.windows[0].get_current_url())
                 # barcode_scan()
                 # continue
+            
+            file = './status/barcode.txt'  # 예제 Textfile
+
+            if os.path.isfile(file):
+                print("Yes. it is a file")
+                barcode_scan()
+                os.remove(file)
 
             # print("Distance => ", distance, "cm")
             # 50cm 안에 사람이 있을 경우 cnt++
@@ -149,14 +161,14 @@ def on_loaded():
                     print(is_ad)
                     # 광고 페이지(구글)
                     # webview.windows[0].load_url('http://localhost:8080/Ad')
-                    webview.windows[0].load_url('https://google.com')
+                    webview.windows[0].load_url('http://localhost:8080/AdClient')
 
             # 사람이 키오스크 앞에 3초 서 있는 상황
             if cnt == 3:
                 is_ad = True
                 # 메인 페이지 호출 (네이버)
-                # webview.windows[0].load_url('http://localhost:8080/')
-                webview.windows[0].load_url('https://naver.com')
+                webview.windows[0].load_url('http://localhost:8080')
+#                 webview.windows[0].load_url('https://naver.com')
                 # 사진 찍는 코드
                 photo_shot()
                 # 측정하는 코드
@@ -186,7 +198,7 @@ GPIO.setup(ECHO, GPIO.IN)			# 24번 핀 in 으로 설정
 if __name__ == '__main__':
     # Create a standard webview window
     # 켜지는 중 (없어도 상관x) shown 이벤트에서 호출 됨
-    window = webview.create_window('Test browser', 'https://google.com/')
+    window = webview.create_window('Test browser', 'http://localhost:8080/AdClient')
     window.closed += on_closed		# 닫힌 후 이벤트
     window.closing += on_closing		# 닫히는 중 이벤트
     window.shown += on_shown		# 열리는 중 이벤트
