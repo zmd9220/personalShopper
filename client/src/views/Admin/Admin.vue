@@ -73,6 +73,7 @@ export default {
       console.log(product)
       const selectedProduct = {
         product_id: product.product_id,
+        barcode: product.barcode,
         product_name: product.product_name,
         gender: product.gender,
         style_image: product.style_image,
