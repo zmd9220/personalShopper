@@ -11,30 +11,39 @@
         <div class="modal-info-box">
           <div>
             <b-button v-b-modal.modal-center variant="info" class="size-modal-button">내 정보 입력하기</b-button>
-
-            <b-modal id="modal-center" size="xl" centered title="알맞은 정보를 선택해주세요" >
-              <div style="height:5vh">
-              </div>
-              <h3>키</h3>
-              <div class="modal-button">
-                <b-button-group size="lg">
-                  <b-button class="button-option" pill @click="height_change(0)">~{{ this.manHeight }}cm</b-button>
-                  <b-button class="button-option" pill @click="height_change(1)">{{ this.manHeight }}~{{ this.manHeight+5 }}cm</b-button>
-                  <b-button class="button-option" pill @click="height_change(2)">{{ this.manHeight+5 }}~{{ this.manHeight+10 }}cm</b-button>
-                  <b-button class="button-option" pill @click="height_change(3)">{{ this.manHeight+10 }}~{{ this.manHeight+15 }}cm</b-button>
-                  <b-button class="button-option" pill @click="height_change(4)">{{ this.manHeight+15 }}cm~</b-button>
-                </b-button-group>
+            <b-modal id="modal-center" size="xl" centered title="알맞은 정보를 선택해주세요">
+              <template #modal-header>
+                <div class="mx-auto size-header">
+                  <p>알맞은 정보를 선택해주세요</p>
+                </div>
+              </template>
+              <div style="height:3vh"></div>  
+              <div class="height-area">
+                <p>키 정보를 입력해주세요</p>
+                <br>
+                <div class="modal-button">
+                  <b-button-group>
+                    <b-button class="button-option" pill @click="height_change(0)">~{{ this.manHeight }}cm</b-button>
+                    <b-button class="button-option" pill @click="height_change(1)">{{ this.manHeight }}~{{ this.manHeight+5 }}cm</b-button>
+                    <b-button class="button-option" pill @click="height_change(2)">{{ this.manHeight+5 }}~{{ this.manHeight+10 }}cm</b-button>
+                    <b-button class="button-option" pill @click="height_change(3)">{{ this.manHeight+10 }}~{{ this.manHeight+15 }}cm</b-button>
+                    <b-button class="button-option" pill @click="height_change(4)">{{ this.manHeight+15 }}cm~</b-button>
+                  </b-button-group>
+                </div>
               </div>
               <div style="height:3vh"></div>
-              <h3>몸무게</h3>
-              <div class="modal-button">
-                <b-button-group size="lg">
-                  <b-button class="button-option2" @click="weight_change(0)">~{{ this.manWeight }}kg</b-button>
-                  <b-button class="button-option2" @click="weight_change(1)">{{ this.manWeight }}~{{ this.manWeight+10 }}kg</b-button>
-                  <b-button class="button-option2" @click="weight_change(2)">{{ this.manWeight+10 }}~{{ this.manWeight+20 }}kg</b-button>
-                  <b-button class="button-option2" @click="weight_change(3)">{{ this.manWeight+20 }}~{{ this.manWeight+30 }}kg</b-button>
-                  <b-button class="button-option2" @click="weight_change(4)">{{ this.manWeight+30 }}kg~</b-button>
-                </b-button-group>
+              <div class="weight-area">
+                <p>몸무게 정보를 입력해주세요</p>
+                <br>
+                <div class="modal-button">
+                  <b-button-group>
+                    <b-button class="button-option2" @click="weight_change(0)">~{{ this.manWeight }}kg</b-button>
+                    <b-button class="button-option2" @click="weight_change(1)">{{ this.manWeight }}~{{ this.manWeight+10 }}kg</b-button>
+                    <b-button class="button-option2" @click="weight_change(2)">{{ this.manWeight+10 }}~{{ this.manWeight+20 }}kg</b-button>
+                    <b-button class="button-option2" @click="weight_change(3)">{{ this.manWeight+20 }}~{{ this.manWeight+30 }}kg</b-button>
+                    <b-button class="button-option2" @click="weight_change(4)">{{ this.manWeight+30 }}kg~</b-button>
+                  </b-button-group>
+                </div>
               </div>
             </b-modal>
           </div>
@@ -189,6 +198,10 @@ export default {
   text-align: center;
 }
 
+.size-header {
+  font-size: 2.5em;
+}
+
 .modal-info-box {
   width: 100%;
   /* height: 20vh; */
@@ -202,7 +215,6 @@ export default {
 .modal-button {
   display: flex;
   justify-content: center;
-
 }
 
 .slider {
@@ -210,6 +222,16 @@ export default {
   flex-direction: column;
   align-self:center;
   width: 100%;
+}
+
+.height-area {
+  text-align: center;
+  font-size: 2em;
+}
+
+.weight-area {
+  text-align: center;
+  font-size: 2em;
 }
 
 .question-text {
@@ -239,18 +261,21 @@ export default {
 }
 
 .button-option {
-  margin-right: 2em;
+  margin-right: 1em;
+  width: 8em;
+  font-size: 0.75em;
 }
 
 .button-option2 {
   border-color: rgb(255, 255, 255);
   border-width: 0.2em;
+  width: 8em;
+  font-size: 0.75em;
 }
 
 .footer-row {
   position: fixed;
   bottom: 0%;
-  font-size: 5em;
 }
 </style>
 
