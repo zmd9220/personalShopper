@@ -16,6 +16,7 @@ import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
 import Signup from '@/views/accounts/Signup'
 import Login from '@/views/accounts/Login'
 import Payment from '@/views/Payment/Payment'
+import PaymentPage from '@/views/Payment/PaymentPage'
 
 
 
@@ -92,6 +93,11 @@ const routes = [
     path: '/Payment', // 카카오페이 결제
     name: 'Payment',
     component: Payment  
+  },
+  {
+    path: '/PaymentPage', // 카카오페이 결제
+    name: 'PaymentPage',
+    component: PaymentPage  
   },
   {
     path: '/accounts/signup',
