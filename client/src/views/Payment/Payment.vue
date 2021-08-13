@@ -4,9 +4,11 @@
     <span>{{ $route.params.product }}</span>
 
 
-    <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt=""></b-button>
-    <b-button @click="pay()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
-
+    <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="">최초 결제</b-button>
+    <b-button @click="pay()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button">원래 하던 결제</b-button>
+    <b-button @click="pay2()" variant="primary">장바구니 결제 연결</b-button>
+    <span>{{ orderItems }}</span>
+    <span>{{ totalCartPrice }}</span>
     <b-modal
       v-model="show"
       title="결제하기"
@@ -59,6 +61,7 @@
 <script>
 import axios from 'axios'
 import Nav from '../Nav/Nav.vue'
+import {mapState, mapGetters} from 'vuex'
 
 export default {
   components: { Nav },
@@ -102,7 +105,48 @@ export default {
               console.log(error)
               // this.$router.push('/')
           })
+      },
+      pay2(){
+          let baseUrl = "http://127.0.0.1:8000/"
+          if (!localStorage.getItem('orderNumber')) {
+            localStorage.setItem('orderNumber', 0)
+          } else {
+            localStorage.setItem('orderNumber', Number(localStorage.getItem('orderNumber')) + 1)  
+          } 
+          let requestData = {
+            product_name: (this.orderItems.length > 1) ? this.orderItems[0].product_name + ' 외 ' + String(this.orderItems.length-1) + '건' : this.orderItems[0].product_name,
+            price: this.totalCartPrice,
+            orderNumber: 0,
+          }
+          requestData.orderNumber = Number(localStorage.getItem('orderNumber'))
+          axios({
+            method: 'POST',
+            url: baseUrl + "kakaoPayReady/",
+            data: requestData,
+          }).then((res) =>{
+              let payUrl = res.data.next_redirect_pc_url
+              localStorage.setItem('tid', res.data.tid)
+              // localStorage.setItem('orderedProduct', productData)
+              console.log(res)
+              console.log(payUrl)
+              location.href = payUrl
+              // OpenWin_variety(payUrl,'결제 페이지')
+              // window.open(payUrl, '_parent', 'width=800, height=600')
+          })
+          .catch((error) =>{
+              alert("에러가 발생했습니다. 다시 시도해주세요")
+              console.log(error)
+              // this.$router.push('/')
+          })
       }
+  },
+  computed: {
+    ...mapGetters('cart',{
+      totalCartPrice: 'totalPrice',
+    }),
+    ...mapState('cart',{
+      orderItems: 'items',
+    }),
   }
 }
 </script>
