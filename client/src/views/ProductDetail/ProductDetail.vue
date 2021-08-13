@@ -121,6 +121,9 @@
             </template>
           </b-modal>
         </div>
+        <div>
+          <b-button @click="goToPayment()" variant="primary">구매하기</b-button>
+        </div>
       </div>
     </div>
     
@@ -275,13 +278,16 @@ export default {
       this.getProduct();
       this.getStock();
     },
+    goToPayment: function () {
+      this.$router.push({name:'Payment', params: {product: this.productDetail}})
+    },
     addToCart(productDetail) {
       this.$store.dispatch('cart/addItem', productDetail);
     },
     buyNow(productDetail) {
       this.$store.dispatch('cart/addItem', productDetail);
       this.$router.push({name:'Cart'})
-    }
+    },
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
     // this.productId = '201';
