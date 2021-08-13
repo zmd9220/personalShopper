@@ -15,7 +15,7 @@
       <p>나이 - {{ age }}, 성별 - {{ gen }}</p>
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="[goToPersonalShopper(), recommendData()], createUserData()">Personal<br />Shopper</button>
+          <button class="button button-main" button @click="[recommendData(), goToPersonalShopper()]">Personal<br />Shopper</button>
         </div>
         상품 추천 서비스
       </div>
@@ -38,10 +38,11 @@ export default {
   data: function() {
     return {
       userData: [{age: this.age}, {gen: this.gen}],
+      recomendData: [],
     }
   },
   computed: {
-    ...mapState (['user']),
+    ...mapState (['personalData']),
     },
   methods:{
     goToBarcode(){
@@ -63,7 +64,7 @@ export default {
         .post(localURL, fm)
         .then((res) => {
           console.log(res);
-          console.log(this.userData);
+          localStorage.setItem("recommendData", res.data);
         })
         .catch((error) => {
           console.log(error);
