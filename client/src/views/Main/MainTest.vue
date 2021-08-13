@@ -25,7 +25,7 @@
 
 <script>
 import { mapState  } from 'vuex'
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
 
@@ -53,22 +53,22 @@ export default {
     createUserData:function () {
       this.$store.dispatch('createUserData', this.userData)
     },
-    recommendData() {
-      const localURL = "http://127.0.0.1:8000/recommended/";
-      const fm = new FormData();
-      fm.append("age", this.age);
-      fm.append("gen", this.gen);
+    // recommendData() {
+    //   const localURL = "http://127.0.0.1:8000/recommended/";
+    //   const fm = new FormData();
+    //   fm.append("age", this.age);
+    //   fm.append("gen", this.gen);
 
-      axios
-        .post(localURL, fm)
-        .then((res) => {
-          console.log(res);
-          console.log(this.userData);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
+    //   axios
+    //     .post(localURL, fm)
+    //     .then((res) => {
+    //       console.log(res);
+    //       // console.log(this.userData);
+    //     })
+    //     .catch((error) => {
+    //       console.log(error);
+    //     });
+    // },
   },
 }
 </script>
