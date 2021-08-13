@@ -23,6 +23,8 @@
       <!-- </span> -->
       <!-- <router-view @login="isLogin = true"/> -->
       <router-link to="/Payment">Payment</router-link> | 
+      <router-link :to="{ name: 'PersonalShopperDetail' }">PersonalShopperDetail</router-link> |
+      <router-link :to="{ name: 'Cart' }">Cart</router-link> |
     </div>
     <router-view/>
   </div>
