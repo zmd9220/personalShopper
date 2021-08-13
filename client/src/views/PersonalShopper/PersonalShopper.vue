@@ -22,6 +22,7 @@
 <script>
 import FooterAd from '@/views/FooterAd/FooterAd'
 import { mapState } from 'vuex'
+import axios from 'axios'
 
 export default {
   components: {
@@ -32,6 +33,27 @@ export default {
       return this.$refs.video;
     }, 
     ...mapState(['user'])
+  },
+  methods: {
+    recommendData() {
+      const localURL = "http://127.0.0.1:8000/recommended/";
+      const fm = new FormData();
+      fm.append("age", this.age);
+      fm.append("gen", this.gen);
+
+      axios
+        .post(localURL, fm)
+        .then((res) => {
+          console.log(res);
+          // console.log(this.userData);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
+  created: function() {
+    this.recommendData()
   }
 }
 </script>

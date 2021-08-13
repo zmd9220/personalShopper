@@ -4,7 +4,9 @@
       <b-card-text>
         <div class="container">
           <div class="product-name">{{ item.product_name }}</div>
-          <div class="product-size">수정요망</div>
+          <div class="product-size">
+            <b-form-select v-model="item.selectedSize" :options="item.options"></b-form-select>
+          </div>
           <div class="product-price">{{ item.price }}</div>
           <div class="products-delete"><b-icon icon="trash" variant="danger" @click="delItem(item.product_id)"></b-icon></div>
         </div>
