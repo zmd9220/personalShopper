@@ -7,13 +7,6 @@ export default {
   },
   mutations: {
     addItem(state, item) {
-<<<<<<< HEAD
-      const cartItems = state.items.filter(cartItem => cartItem.product_id === item.product_id);
-      if (cartItems.length === 0) {
-        state.items.push(item);
-        console.log(state.items)
-      }
-=======
       const cartItems = state.items.filter(cartItem => cartItem.product_id === item.product_id); // 중복체크
 
       const manTopSize = ['XS (KR 90)', 'S (KR 95)', 'M (KR 95-100)', 'L (KR 100-105)', 'XL (KR 105-110)']; // 사이즈별 데이터
@@ -96,7 +89,6 @@ export default {
           state.items.push(item);
         }
       })
->>>>>>> 1ac3ae30b61b5908631412eba78bd2dceb2d49f9
     },
     delItem(state, product_id) {
       state.items = state.items.filter(item => item.product_id !== product_id);
