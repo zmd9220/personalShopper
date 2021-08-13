@@ -86,7 +86,7 @@ export default {
 }
 
 .footer-text {
-  font-size: 5em;
+  font-size: 5rem;
   position: fixed;
   bottom: 30%;
   left: 0%;

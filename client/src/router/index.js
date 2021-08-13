@@ -16,8 +16,8 @@ import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
 import Signup from '@/views/accounts/Signup'
 import Login from '@/views/accounts/Login'
 import Payment from '@/views/Payment/Payment'
-
-
+import PersonalShopperDetail from '@/views/PersonalShopper/PersonalShopperDetail'
+import Cart from '@/views/Cart/Cart'
 
 Vue.use(VueRouter)
 
@@ -102,6 +102,16 @@ const routes = [
     path: '/accounts/login',
     name: 'Login',
     component: Login, 
+  },
+  {
+    path: '/PersonalShopperDetail',
+    name: 'PersonalShopperDetail',
+    component: PersonalShopperDetail,
+  },
+  {
+    path: '/Cart',
+    name: 'Cart',
+    component: Cart,
   },
 ]
 

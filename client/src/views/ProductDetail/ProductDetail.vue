@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav/>
-    <div class="product-box" :key="this.$store.state.selectedProductID">
+    <div class="product-box" :key="selectedProductID">
       <img class="product-detail-img" :src=" this.$store.state.productDetail.product_image " alt="item1">
       <div class="text-box">
         <!-- 상품이름 연동필요 -->
@@ -86,6 +86,8 @@
         </div>
         <div class="button-box">
           <!-- <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2> -->
+          <b-button variant="primary" class="button-size" @click="buyNow(productDetail)">바로 구매</b-button>
+          <b-button variant="primary" class="button-size" @click="addToCart(productDetail)">카트 추가</b-button>
           <b-button @click="goToSizeRecommend()" v-if="this.$store.state.productDetail.product_type == 1 || this.$store.state.productDetail.product_type == 2" 
             variant="primary" class="button-size">사이즈 추천 받기</b-button>
           <!-- <h2 @click="goToSizeChart()">사이즈표</h2> -->
@@ -121,6 +123,7 @@
         </div>
       </div>
     </div>
+    
     <div class="footer-row">
       <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
     </div>
@@ -271,6 +274,13 @@ export default {
       this.productId = selectedProductId;
       this.getProduct();
       this.getStock();
+    },
+    addToCart(productDetail) {
+      this.$store.dispatch('cart/addItem', productDetail);
+    },
+    buyNow(productDetail) {
+      this.$store.dispatch('cart/addItem', productDetail);
+      this.$router.push({name:'Cart'})
     }
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
