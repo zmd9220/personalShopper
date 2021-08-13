@@ -4,7 +4,7 @@
       <img src="@/assets/logo.png" alt="logo" class="main-logo">
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="goToBarcode()">
+          <button class="button button-main" button @click="[goToBarcode()]">
             <img class="img-Barcode" alt="Barcode" src="https://www.pngkey.com/png/full/11-115159_barcode-no-digits-barcode-transparent.png" />
           </button>
         </div>

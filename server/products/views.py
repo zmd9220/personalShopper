@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -70,6 +71,23 @@ def kakaoPay_ready(request):
     print(response)
     return Response(response)
 
+@api_view(['GET'])
+def make_status(request):
+    # /server 에서 장고를 실행했을 때, 정상적으로 돌아감.. 안그러면 문제가 발생
+    module_dir = os.path.abspath('../embedded/status')
+    # module_dir까지의 경로/barcode.txt 로 경로 문자열 생성
+    file_path = os.path.join(module_dir, 'barcode.txt')
+    # txt 파일 생성 후 저장
+    with open(file_path, 'a+', encoding='utf-8') as txtfile:
+        tmp_str = '생성 완료'
+        txtfile.write(tmp_str)
+    # os.remove(file_path)
+    # 현재 파일 경로에 잘 생성 되었으면 200 아니면 404
+    if os.path.isfile(file_path): 
+        return Response(status=200)
+    else:
+        return Response(status=404)
+  
 @api_view(['POST'])     # 카카오페이 결제 승인 요청 
 def kakaoPay_approve(request):
     url = "https://kapi.kakao.com"
