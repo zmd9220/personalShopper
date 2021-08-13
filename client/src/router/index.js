@@ -18,6 +18,9 @@ import Login from '@/views/accounts/Login'
 import Payment from '@/views/Payment/Payment'
 import PersonalShopperDetail from '@/views/PersonalShopper/PersonalShopperDetail'
 import Cart from '@/views/Cart/Cart'
+import PaymentPage from '@/views/Payment/PaymentPage'
+
+
 
 Vue.use(VueRouter)
 
@@ -92,6 +95,11 @@ const routes = [
     path: '/Payment', // 카카오페이 결제
     name: 'Payment',
     component: Payment  
+  },
+  {
+    path: '/PaymentPage', // 카카오페이 결제
+    name: 'PaymentPage',
+    component: PaymentPage  
   },
   {
     path: '/accounts/signup',

@@ -93,7 +93,7 @@
           <!-- <h2 @click="goToSizeChart()">사이즈표</h2> -->
           <!-- <h2 @click="goToLocation()">상품 위치 정보</h2> -->
           <b-button v-b-modal.modal-xl variant="primary" class="button-location" @click="show=true">상품 위치</b-button>
-          <b-modal v-model="show" id="modal-xl" footer="lg" header="test"
+          <b-modal v-model="show" id="modal-xl" header="test"
             centered size="xl" class="location-modal">
             <template #modal-header>
               <div class="mx-auto">
