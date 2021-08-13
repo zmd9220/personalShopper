@@ -8,7 +8,8 @@ class ProductAdmin(admin.ModelAdmin): # 상품정보관리
     list_display = ['product_id', 'product_name' ]
 
 class StockAdmin(admin.ModelAdmin): # 상품재고관리
-    list_display = ['product', 'size', 'stock' ]
+    list_display = ['product', 'stock' ]
+    # list_display = ['product', 'size', 'stock' ]
 
 
 admin.site.register(Product, ProductAdmin)

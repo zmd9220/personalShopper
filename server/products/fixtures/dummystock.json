@@ -1,159 +1,1562 @@
-[ 
-  {
-  "model": "products.stock",
-  "fields": {
-  "product_id": 101,
-  "size": [1, 2, 3, 4, 5],
-  "stock": [10, 8, 5, 0, 0]
-  }
-  },
+[
   {
     "model": "products.stock",
     "fields": {
-    "product_id": 102,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [8, 5, 6, 0, 0]
-  }
-  },
-  {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 103,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [0, 8, 6, 7, 0]
-  }
-  },
-  {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 104,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [0, 9, 5, 5, 5]
-  }
-  },
-  {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 105,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [9, 7, 8, 6, 10]
-  }
-  },
-  {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 106,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [5, 7, 8, 9, 9]
-  }
-  },
-  {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 107,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [5, 7, 8, 5, 0]
-  }
-  },
-  {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 200,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [8, 6, 2, 0, 4]
+      "product_id": 101,
+      "stock": [
+        5,
+        9,
+        6,
+        2,
+        0
+      ]
     }
-    },
-  
-    {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 201,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [5, 3, 2, 1, 4]
-    }
-    },
-  
-   {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 202,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [8, 6, 0, 1, 7]
-    }
-    },
-  
-    {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 203,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [6, 5, 3, 1, 2]
-    }
-    },
-  
-    {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 204,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [6, 3, 2, 0, 2]
-    }
-    },
-  
-    {
-    "model": "products.stock",
-    "fields": {
-    "product_id": 205,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [5, 5, 5, 5, 5]
-    }
-    },
+  },
   {
     "model": "products.stock",
     "fields": {
-    "product_id": 300,
-    "size": [1, 2, 3, 4, 5],
-    "stock": [10, 0, 9, 5, 6]
-     }
-    },
-    {
-      "model": "products.stock",
-      "fields": {
+      "product_id": 102,
+      "stock": [
+        7,
+        8,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 103,
+      "stock": [
+        8,
+        1,
+        4,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 104,
+      "stock": [
+        1,
+        8,
+        3,
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 105,
+      "stock": [
+        9,
+        8,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 106,
+      "stock": [
+        1,
+        6,
+        6,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 107,
+      "stock": [
+        1,
+        9,
+        7,
+        8,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 108,
+      "stock": [
+        2,
+        7,
+        8,
+        8,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 109,
+      "stock": [
+        0,
+        4,
+        6,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 110,
+      "stock": [
+        9,
+        3,
+        4,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 111,
+      "stock": [
+        5,
+        5,
+        1,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 112,
+      "stock": [
+        5,
+        1,
+        8,
+        9,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 113,
+      "stock": [
+        8,
+        3,
+        1,
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 114,
+      "stock": [
+        6,
+        2,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 115,
+      "stock": [
+        1,
+        4,
+        2,
+        8,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 116,
+      "stock": [
+        4,
+        8,
+        6,
+        4,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 117,
+      "stock": [
+        8,
+        9,
+        6,
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 118,
+      "stock": [
+        3,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 119,
+      "stock": [
+        1,
+        1,
+        3,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 120,
+      "stock": [
+        1,
+        7,
+        4,
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 121,
+      "stock": [
+        0,
+        1,
+        6,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 122,
+      "stock": [
+        9,
+        9,
+        8,
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 123,
+      "stock": [
+        8,
+        3,
+        0,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 124,
+      "stock": [
+        1,
+        3,
+        3,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 201,
+      "stock": [
+        4,
+        7,
+        4,
+        6,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 202,
+      "stock": [
+        3,
+        7,
+        4,
+        4,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 203,
+      "stock": [
+        0,
+        1,
+        2,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 204,
+      "stock": [
+        9,
+        9,
+        0,
+        8,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 205,
+      "stock": [
+        2,
+        1,
+        5,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 206,
+      "stock": [
+        9,
+        5,
+        4,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 207,
+      "stock": [
+        0,
+        9,
+        7,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 208,
+      "stock": [
+        9,
+        4,
+        0,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 209,
+      "stock": [
+        2,
+        4,
+        5,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 210,
+      "stock": [
+        7,
+        3,
+        5,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 211,
+      "stock": [
+        2,
+        0,
+        6,
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 212,
+      "stock": [
+        5,
+        0,
+        5,
+        7,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 213,
+      "stock": [
+        0,
+        5,
+        0,
+        7,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 214,
+      "stock": [
+        6,
+        8,
+        0,
+        7,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 215,
+      "stock": [
+        3,
+        3,
+        2,
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 216,
+      "stock": [
+        3,
+        9,
+        5,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 217,
+      "stock": [
+        0,
+        8,
+        8,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 218,
+      "stock": [
+        1,
+        4,
+        3,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 219,
+      "stock": [
+        4,
+        6,
+        1,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 220,
+      "stock": [
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 221,
+      "stock": [
+        1,
+        0,
+        4,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 222,
+      "stock": [
+        1,
+        5,
+        3,
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 223,
+      "stock": [
+        7,
+        1,
+        0,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 224,
+      "stock": [
+        7,
+        0,
+        8,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
       "product_id": 301,
-      "size": [1, 2, 3, 4, 5],
-      "stock": [0, 1, 8, 4, 0]
-      }
-    },
-    {
-      "model": "products.stock",
-      "fields": {
-      "product_id": 302,
-      "size": [1, 2, 3, 4, 5],
-      "stock": [2, 1, 8, 4, 3]
-      }
-    },
-    {
-      "model": "products.stock",
-      "fields": {
-      "product_id": 303,
-      "size": [1, 2, 3, 4, 5],
-      "stock": [2, 1, 8, 4, 3]
-      }
-    },
-    {
-      "model": "products.stock",
-      "fields": {
-      "product_id": 304,
-      "size": [1, 2, 3, 4, 5],
-      "stock": [0, 10, 9, 4, 4]
-      }
-    },
-    {
-      "model": "products.stock",
-      "fields": {
-      "product_id": 305,
-      "size": [1, 2, 3, 4, 5],
-      "stock": [5, 5, 5, 5, 5]
-      }
+      "stock": [
+        3,
+        2,
+        4,
+        9,
+        3
+      ]
     }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 302,
+      "stock": [
+        4,
+        2,
+        4,
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 303,
+      "stock": [
+        3,
+        7,
+        0,
+        3,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 304,
+      "stock": [
+        5,
+        5,
+        3,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 305,
+      "stock": [
+        2,
+        9,
+        0,
+        7,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 306,
+      "stock": [
+        9,
+        2,
+        6,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 307,
+      "stock": [
+        6,
+        6,
+        9,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 308,
+      "stock": [
+        9,
+        5,
+        1,
+        1,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 309,
+      "stock": [
+        4,
+        3,
+        3,
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 310,
+      "stock": [
+        2,
+        1,
+        0,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 311,
+      "stock": [
+        6,
+        3,
+        5,
+        5,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 312,
+      "stock": [
+        1,
+        3,
+        0,
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 313,
+      "stock": [
+        3,
+        2,
+        0,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 314,
+      "stock": [
+        5,
+        4,
+        8,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 315,
+      "stock": [
+        3,
+        5,
+        3,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 316,
+      "stock": [
+        7,
+        1,
+        7,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 317,
+      "stock": [
+        7,
+        5,
+        4,
+        7,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 318,
+      "stock": [
+        0,
+        7,
+        3,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 319,
+      "stock": [
+        8,
+        5,
+        4,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 320,
+      "stock": [
+        4,
+        1,
+        8,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 321,
+      "stock": [
+        9,
+        1,
+        2,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 322,
+      "stock": [
+        0,
+        0,
+        6,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 323,
+      "stock": [
+        2,
+        6,
+        0,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 324,
+      "stock": [
+        3,
+        3,
+        4,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 401,
+      "stock": [
+        7,
+        1,
+        1,
+        8,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 402,
+      "stock": [
+        1,
+        4,
+        7,
+        9,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 403,
+      "stock": [
+        4,
+        9,
+        5,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 404,
+      "stock": [
+        7,
+        4,
+        7,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 405,
+      "stock": [
+        9,
+        6,
+        0,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 406,
+      "stock": [
+        6,
+        0,
+        0,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 407,
+      "stock": [
+        6,
+        1,
+        1,
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 408,
+      "stock": [
+        4,
+        8,
+        5,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 409,
+      "stock": [
+        4,
+        3,
+        2,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 410,
+      "stock": [
+        0,
+        7,
+        1,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 411,
+      "stock": [
+        9,
+        4,
+        0,
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 412,
+      "stock": [
+        1,
+        0,
+        5,
+        0,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 413,
+      "stock": [
+        2,
+        5,
+        5,
+        2,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 414,
+      "stock": [
+        5,
+        5,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 415,
+      "stock": [
+        4,
+        1,
+        0,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 416,
+      "stock": [
+        9,
+        7,
+        4,
+        8,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 417,
+      "stock": [
+        4,
+        1,
+        1,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 418,
+      "stock": [
+        1,
+        5,
+        5,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 419,
+      "stock": [
+        6,
+        6,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 420,
+      "stock": [
+        6,
+        5,
+        8,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 421,
+      "stock": [
+        6,
+        7,
+        1,
+        7,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 422,
+      "stock": [
+        3,
+        0,
+        9,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 423,
+      "stock": [
+        1,
+        1,
+        6,
+        9,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 424,
+      "stock": [
+        5,
+        1,
+        7,
+        8,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 501,
+      "stock": [
+        2,
+        4,
+        2,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 502,
+      "stock": [
+        7,
+        4,
+        9,
+        0,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 503,
+      "stock": [
+        3,
+        2,
+        5,
+        9,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 504,
+      "stock": [
+        3,
+        2,
+        6,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 505,
+      "stock": [
+        5,
+        4,
+        7,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 506,
+      "stock": [
+        3,
+        9,
+        9,
+        0,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 507,
+      "stock": [
+        1,
+        7,
+        4,
+        5,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 508,
+      "stock": [
+        6,
+        7,
+        7,
+        5,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 509,
+      "stock": [
+        3,
+        4,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 510,
+      "stock": [
+        3,
+        2,
+        0,
+        9,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 511,
+      "stock": [
+        1,
+        4,
+        0,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 512,
+      "stock": [
+        0,
+        8,
+        2,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 513,
+      "stock": [
+        1,
+        9,
+        4,
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 514,
+      "stock": [
+        5,
+        9,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 515,
+      "stock": [
+        9,
+        3,
+        6,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 516,
+      "stock": [
+        5,
+        7,
+        6,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 517,
+      "stock": [
+        8,
+        6,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 518,
+      "stock": [
+        4,
+        3,
+        3,
+        8,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 519,
+      "stock": [
+        9,
+        4,
+        0,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 520,
+      "stock": [
+        1,
+        2,
+        5,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 521,
+      "stock": [
+        0,
+        5,
+        0,
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 522,
+      "stock": [
+        7,
+        7,
+        2,
+        9,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 523,
+      "stock": [
+        2,
+        9,
+        4,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 524,
+      "stock": [
+        5,
+        7,
+        7,
+        2,
+        0
+      ]
+    }
+  }
 ]
