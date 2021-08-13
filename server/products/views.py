@@ -92,6 +92,9 @@ def kakaoPay_approve(request):
         'pg_token': request.data['pg_token'],
     }
     response = requests.post(url+"/v1/payment/approve", params=params, headers=headers)
+    print(response)
+    print(response.status_code)
+    print(response.json())
     response = json.loads(response.text)
     print(response)
     return Response(response)
