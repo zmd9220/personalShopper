@@ -15,7 +15,7 @@
       <p>나이 - {{ age }}, 성별 - {{ gen }}</p>
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="[goToPersonalShopper(), recommendData()], createUserData()">Personal<br />Shopper</button>
+          <button class="button button-main" button @click="[recommendData(), goToPersonalShopper()]">Personal<br />Shopper</button>
         </div>
         상품 추천 서비스
       </div>
@@ -25,7 +25,7 @@
 
 <script>
 import { mapState  } from 'vuex'
-// import axios from 'axios';
+import axios from 'axios';
 
 export default {
 
@@ -38,10 +38,11 @@ export default {
   data: function() {
     return {
       userData: [{age: this.age}, {gen: this.gen}],
+      recomendData: [],
     }
   },
   computed: {
-    ...mapState (['user']),
+    ...mapState (['personalData']),
     },
   methods:{
     goToBarcode(){
@@ -53,22 +54,22 @@ export default {
     createUserData:function () {
       this.$store.dispatch('createUserData', this.userData)
     },
-    // recommendData() {
-    //   const localURL = "http://127.0.0.1:8000/recommended/";
-    //   const fm = new FormData();
-    //   fm.append("age", this.age);
-    //   fm.append("gen", this.gen);
+    recommendData() {
+      const localURL = "http://127.0.0.1:8000/recommended/";
+      const fm = new FormData();
+      fm.append("age", this.age);
+      fm.append("gen", this.gen);
 
-    //   axios
-    //     .post(localURL, fm)
-    //     .then((res) => {
-    //       console.log(res);
-    //       // console.log(this.userData);
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //     });
-    // },
+      axios
+        .post(localURL, fm)
+        .then((res) => {
+          console.log(res);
+          localStorage.setItem("recommendData", res.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 }
 </script>
