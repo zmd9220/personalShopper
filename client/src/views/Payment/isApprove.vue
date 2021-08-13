@@ -49,6 +49,8 @@ export default {
         let nowOrderNumber = localStorage.getItem('orderNumber')
         this.paymentData.tid = nowTid
         this.paymentData.orderNumber = nowOrderNumber
+        console.log(this.paymentData.tid)
+        console.log(this.paymentData.orderNumber)
       })
     },
   },
@@ -57,9 +59,13 @@ export default {
     if (this.$route.query.pg_token) {
       console.log(this.$route.query)
       this.paymentData.pg_token = this.$route.query.pg_token
-      this.makeData.then(() => {
-        this.approve()
-      })
+      // this.makeData().then(() => {
+      //   console.log('makeData com')
+      //   this.approve()
+      // })
+      this.makeData()
+      this.approve()
+      // this.makeData()
     // 정상적으로 토큰이 발급되지 않은 경우 (결제 취소)   
     } else {
       alert('결제를 취소했습니다.')
