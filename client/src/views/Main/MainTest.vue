@@ -15,7 +15,7 @@
       <p>나이 - {{ age }}, 성별 - {{ gen }}</p>
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="goToPersonalShopper()">Personal<br />Shopper</button>
+          <button class="button button-main" button @click="[recommendData(), goToPersonalShopper()]">Personal<br />Shopper</button>
         </div>
         상품 추천 서비스
       </div>
@@ -24,26 +24,53 @@
 </template>
 
 <script>
+import { mapState  } from 'vuex'
+import axios from 'axios';
+
 export default {
+
   name: 'MainTest',
   // age - 나이, gen - 성별
   props: {
     age: String,
     gen: String,
   },
-  components: {
+  data: function() {
+    return {
+      userData: [{age: this.age}, {gen: this.gen}],
+      recomendData: [],
+    }
   },
+  computed: {
+    ...mapState (['personalData']),
+    },
   methods:{
     goToBarcode(){
       this.$router.push('/Barcode'); 
     },
     goToPersonalShopper(){
       this.$router.push('/PersonalShopper'); 
-    }
+    },
+    createUserData:function () {
+      this.$store.dispatch('createUserData', this.userData)
+    },
+    recommendData() {
+      const localURL = "http://127.0.0.1:8000/recommended/";
+      const fm = new FormData();
+      fm.append("age", this.age);
+      fm.append("gen", this.gen);
+
+      axios
+        .post(localURL, fm)
+        .then((res) => {
+          console.log(res);
+          localStorage.setItem("recommendData", res.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
-  mounted: {
-    // vuex state
-  }
 }
 </script>
 
