@@ -15,7 +15,7 @@
       <p>나이 - {{ age }}, 성별 - {{ gen }}</p>
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="[recommendData(), goToPersonalShopper()]">Personal<br />Shopper</button>
+          <button class="button button-main" button @click="recommendData()">Personal<br />Shopper</button>
         </div>
         상품 추천 서비스
       </div>
@@ -68,7 +68,10 @@ export default {
         })
         .catch((error) => {
           console.log(error);
-        });
+        })
+        .finally(() => {
+          this.goToPersonalShopper()
+        })
     },
   },
 }

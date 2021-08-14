@@ -3,10 +3,10 @@
     <h4>PersonalShopper</h4>
     <!-- <div>{{this.$store.state.user}}</div> -->
 
-    <img class="product-detail-img" :src=" this.productDetail1.style_image" alt="personal1" style="width:50%"> 
-    <img class="product-detail-img" :src=" this.productDetail2.style_image" alt="personal1" style="width:50%">
-    <img class="product-detail-img" :src=" this.productDetail3.style_image" alt="personal1" style="width:50%">
-    <img class="product-detail-img" :src=" this.productDetail4.style_image" alt="personal1" style="width:50%">
+    <img class="product-detail-img" :src=" this.productDetail1.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail1()"> 
+    <img class="product-detail-img" :src=" this.productDetail2.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail2()">
+    <img class="product-detail-img" :src=" this.productDetail3.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail3()">
+    <img class="product-detail-img" :src=" this.productDetail4.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail4()">
 
     <!-- <video autoplay >
       <source src="@/assets/ad/y2mate.com - ZARA WOMAN  Spring Summer 2021 Campaign_1080p.mp4">
@@ -22,10 +22,6 @@
 <script>
 import axios from 'axios'
 
-const recommendProductData = JSON.parse(localStorage.getItem('recommendData'))
-
-
-
 export default {
   data: function() {
     return {
@@ -33,13 +29,8 @@ export default {
       productDetail2: '',  // 상품정보
       productDetail3: '',  // 상품정보
       productDetail4: '',  // 상품정보
-      recommendProductId: recommendProductData,
+      recommendProductId: JSON.parse(localStorage.getItem('recommendData')),
     }
-  },
-  computed: {
-    videoElement () {
-      return this.$refs.video;
-    }, 
   },
   methods: {
     getProduct: function() { // 상품정보를 받아오는 axios
@@ -49,7 +40,6 @@ export default {
       axios.get(productURL1) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail1 = res.data; // 상품 상세 정보
-          this.$store.commit('1', res.data); // 상품 상세정보
         })
         .catch(() => {
           // console.log(err)
@@ -61,7 +51,6 @@ export default {
       axios.get(productURL2) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail2 = res.data; // 상품 상세 정보
-          this.$store.commit('productDetail', res.data); // 상품 상세정보
         })
         .catch(() => {
           // console.log(err)
@@ -73,7 +62,6 @@ export default {
       axios.get(productURL3) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail3 = res.data; // 상품 상세 정보
-          this.$store.commit('productDetail', res.data); // 상품 상세정보
         })
         .catch(() => {
           // console.log(err)
@@ -85,11 +73,38 @@ export default {
       axios.get(productURL4) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail4 = res.data; // 상품 상세 정보
-          this.$store.commit('productDetail', res.data); // 상품 상세정보
         })
         .catch(() => {
           // console.log(err)
         })
+    },
+    goToPersonalShopperDetail1(){
+      this.$router.push('/PersonalShopperDetail'); 
+      this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail1.style_products.slice(0,3) + '/');
+      this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail1.style_products.slice(5,8) + '/');
+      this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail1.style_products.slice(10,14) + '/');
+      this.$store.commit('productDetail', this.productDetail1); // 상품 상세정보
+    },
+    goToPersonalShopperDetail2(){
+      this.$router.push('/PersonalShopperDetail'); 
+      this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail2.style_products.slice(0,3) + '/');     
+      this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail2.style_products.slice(5,8) + '/');    
+      this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail2.style_products.slice(10,14) + '/');
+      this.$store.commit('productDetail', this.productDetail2); // 상품 상세정보
+    },
+    goToPersonalShopperDetail3(){
+      this.$router.push('/PersonalShopperDetail'); 
+      this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail3.style_products.slice(0,3) + '/');         
+      this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail3.style_products.slice(5,8) + '/');    
+      this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail3.style_products.slice(10,14) + '/');
+      this.$store.commit('productDetail', this.productDetail3); // 상품 상세정보
+    },
+    goToPersonalShopperDetail4(){
+      this.$router.push('/PersonalShopperDetail'); 
+      this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail4.style_products.slice(0,3) + '/');         
+      this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail4.style_products.slice(5,8) + '/');    
+      this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail4.style_products.slice(10,14) + '/');
+      this.$store.commit('productDetail', this.productDetail4); // 상품 상세정보
     },
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.

@@ -32,12 +32,16 @@
 <script>
 import Nav from '@/views/Nav/Nav'
 import {mapState} from 'vuex';
-// import axios from 'axios'
+import axios from 'axios'
 
 export default {
   name: 'PersonalShopperDetail',
   components : {
     Nav,
+  },
+  created: function () { // created로 선언하여 데이터를 갱신한다.
+    // this.productId = '201';
+    this.getProduct(); // 상품정보
   },
   computed: {
     ...mapState(
@@ -48,6 +52,27 @@ export default {
   methods: {
     addToCart(productDetail) {
       this.$store.dispatch('cart/addItem', productDetail);
+    },
+    getProduct: function() { // 상품정보를 받아오는 axios      
+     axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
+      .then((res)=>{
+        this.$store.commit('productId_1', res.data.product_id);
+        this.$store.commit('productRecommend_1', res.data.product_image);
+      })
+    axios.get(this.$store.state.productRecommend_2)
+      .then((res)=>{
+        this.$store.commit('productId_2', res.data.product_id);
+        this.$store.commit('productRecommend_2', res.data.product_image);
+      })
+    axios.get(this.$store.state.productRecommend_3)
+      .then((res)=>{
+        this.$store.commit('productId_3', res.data.product_id);
+        this.$store.commit('productRecommend_3', res.data.product_image);
+      })
+      .catch(() => {
+            // console.log(err)
+          })
+        
     },
   }
 }
