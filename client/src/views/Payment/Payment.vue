@@ -1,14 +1,17 @@
 <template>
   <div>
-    <Nav/>
+    <!-- <Nav/> -->
     <span>{{ $route.params.product }}</span>
 
 
-    <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="">최초 결제</b-button>
-    <b-button @click="pay()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button">원래 하던 결제</b-button>
-    <b-button @click="pay2()" variant="primary">장바구니 결제 연결</b-button>
-    <span>{{ orderItems }}</span>
-    <span>{{ totalCartPrice }}</span>
+    <!-- <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="">최초 결제</b-button> -->
+    <!-- <b-button @click="pay()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button">원래 하던 결제</b-button> -->
+    <b-button @click="pay2()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
+    <p class="pay-text">카카오 페이로 결제</p>
+    <!-- <div>
+      <span>{{ orderItems }}</span>
+      <span>{{ totalCartPrice }}</span>
+    </div> -->
     <b-modal
       v-model="show"
       title="결제하기"
@@ -60,11 +63,12 @@
 
 <script>
 import axios from 'axios'
-import Nav from '../Nav/Nav.vue'
+// import Nav from '../Nav/Nav.vue'
 import {mapState, mapGetters} from 'vuex'
 
 export default {
-  components: { Nav },
+  // components: { Nav },
+  components: {  },
   name: 'Payment',
   props: {
     product: Object,
@@ -150,3 +154,12 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.pay-text {
+  margin-top: 0.5em;
+  font-size: 3em;
+}
+
+</style>
