@@ -19,10 +19,10 @@
       </div>
       <br>
       <div class="class=look-items">
-        <img class="look-item" :src="productDetail.product_image" alt="item1">
-        <img class="look-item" :src="this.$store.state.productRecommend_1" alt="item2">
-        <img class="look-item" :src="this.$store.state.productRecommend_2" alt="item3">
-        <img class="look-item" :src="this.$store.state.productRecommend_3" alt="item4">
+        <img class="look-item" @click="goToProductDetail(productDetail.product_id)" :src="productDetail.product_image" alt="item1">
+        <img class="look-item" @click="goToProductDetail(this.productId_1)" :src="this.$store.state.productRecommend_1" alt="item2">
+        <img class="look-item" @click="goToProductDetail(this.productId_2)" :src="this.$store.state.productRecommend_2" alt="item3">
+        <img class="look-item" @click="goToProductDetail(this.productId_3)" :src="this.$store.state.productRecommend_3" alt="item4">
       </div>
     </div>
     <!-- <FooterAd/> -->
@@ -43,10 +43,20 @@ export default {
     // this.productId = '201';
     this.getProduct(); // 상품정보
   },
+  data: function() {
+    return {
+      
+    }
+  },
   computed: {
     ...mapState(
-      ['productDetail'],
+      ['productDetail',
       'productRecommend_1',
+      'productRecommend_2',
+      'productRecommend_3',
+      'selectedProductID'
+      ],
+      
     ),
   },
   methods: {
@@ -59,12 +69,12 @@ export default {
         this.$store.commit('productId_1', res.data.product_id);
         this.$store.commit('productRecommend_1', res.data.product_image);
       })
-    axios.get(this.$store.state.productRecommend_2)
+      axios.get(this.$store.state.productRecommend_2)
       .then((res)=>{
         this.$store.commit('productId_2', res.data.product_id);
         this.$store.commit('productRecommend_2', res.data.product_image);
       })
-    axios.get(this.$store.state.productRecommend_3)
+     axios.get(this.$store.state.productRecommend_3)
       .then((res)=>{
         this.$store.commit('productId_3', res.data.product_id);
         this.$store.commit('productRecommend_3', res.data.product_image);
@@ -72,7 +82,10 @@ export default {
       .catch(() => {
             // console.log(err)
           })
-        
+    },
+    goToProductDetail: function(res) {
+      this.$store.commit('selectedProductID', res);
+      this.$router.push('/ProductDetail')
     },
   }
 }
