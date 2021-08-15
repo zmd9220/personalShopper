@@ -101,6 +101,7 @@ export default {
       this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail2.style_products.slice(5,8) + '/');    
       this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail2.style_products.slice(10,14) + '/');
       this.$store.commit('productDetail', this.productDetail2); // 상품 상세정보
+      this.$store.commit('selectedProductID', this.productDetail2.product_id);
     },
     goToPersonalShopperDetail3(){
       this.$router.push('/PersonalShopperDetail'); 
@@ -108,6 +109,7 @@ export default {
       this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail3.style_products.slice(5,8) + '/');    
       this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail3.style_products.slice(10,14) + '/');
       this.$store.commit('productDetail', this.productDetail3); // 상품 상세정보
+      this.$store.commit('selectedProductID', this.productDetail3.product_id);
     },
     goToPersonalShopperDetail4(){
       this.$router.push('/PersonalShopperDetail'); 
@@ -115,6 +117,7 @@ export default {
       this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail4.style_products.slice(5,8) + '/');    
       this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail4.style_products.slice(10,14) + '/');
       this.$store.commit('productDetail', this.productDetail4); // 상품 상세정보
+      this.$store.commit('selectedProductID', this.productDetail4.product_id);
     },
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
