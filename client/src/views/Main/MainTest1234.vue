@@ -15,7 +15,7 @@
       <p>나이 - {{ age }}, 성별 - {{ gen }}</p>
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="goToPersonalShopper()">Personal<br />Shopper</button>
+          <button class="button button-main" button @click="recommendData()">Personal<br />Shopper</button>
         </div>
         상품 추천 서비스
       </div>
@@ -42,31 +42,10 @@ export default {
     }
   },
   computed: {
-    ...mapState ({
-
-      selectedProductID: state => state.selectedProductID,
-      productId_1: state => state.productId_1,
-      productId_2: state => state.productId_2,
-      productId_3: state => state.productId_3,
-      }
-    ),
+    ...mapState (['personalData']),
     },
   methods:{
     goToBarcode(){
-      // const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      // const productURL = localURL + this.$store.state.selectedProductID + '/'; //
-
-      // axios.get(localURL)
-      //   .then((res) => {
-      //     // console.log(res);
-      //     // localStorage.setItem("recommendData", res.data);
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //   })
-      //   .finally(()=>{
-      //     this.goToPersonalShopper()
-      //   })
       this.$router.push('/Barcode'); 
     },
     goToPersonalShopper(){
@@ -84,25 +63,16 @@ export default {
       axios
         .post(localURL, fm)
         .then((res) => {
-
-          this.$store.commit('selectedProductID', Number(res.data.slice(7,10)));
-
-          this.$store.commit('productId_1', Number(res.data.slice(19,22)));
-
-          this.$store.commit('productId_2', Number(res.data.slice(31,34)));
-
-          this.$store.commit('productId_3', Number(res.data.slice(43,46)));
+          console.log(res);
+          localStorage.setItem("recommendData", res.data);
         })
         .catch((error) => {
           console.log(error);
         })
-        // .finally(()=>{
-        //   this.goToPersonalShopper()
-        // })
+        .finally(() => {
+          this.goToPersonalShopper()
+        })
     },
-  },
-  created : function() {
-    this.recommendData();
   },
 }
 </script>

@@ -49,28 +49,28 @@ export default {
   methods:{
     gotoDetail1: function() {                
       if (this.$route.path !== '/ProductDetail' ) {
-        this.$store.commit('selectProductID', this.$store.state.productId_1);
+        this.$store.commit('selectedProductID', this.$store.state.productId_1);
         this.$router.push({name:'ProductDetail'});
       } else {
-        this.$store.commit('selectProductID', this.$store.state.productId_1);
+        this.$store.commit('selectedProductID', this.$store.state.productId_1);
         this.$emit('selectedProductId', this.$store.state.productId_1);
       }
     },
     gotoDetail2: function() {                 
       if (this.$route.path !== '/ProductDetail' ) {
-        this.$store.commit('selectProductID', this.$store.state.productId_2);
+        this.$store.commit('selectedProductID', this.$store.state.productId_2);
         this.$router.push({name:'ProductDetail'});
       } else {
-        this.$store.commit('selectProductID', this.$store.state.productId_2);
+        this.$store.commit('selectedProductID', this.$store.state.productId_2);
         this.$emit('selectedProductId', this.$store.state.productId_2);
       }
     },
     gotoDetail3: function() {                 
       if (this.$route.path !== '/ProductDetail' ) {
-        this.$store.commit('selectProductID', this.$store.state.productId_3);
+        this.$store.commit('selectedProductID', this.$store.state.productId_3);
         this.$router.push({name:'ProductDetail'});
       } else {
-        this.$store.commit('selectProductID', this.$store.state.productId_3);
+        this.$store.commit('selectedProductID', this.$store.state.productId_3);
         this.$emit('selectedProductId', this.$store.state.productId_3);
       }
     },

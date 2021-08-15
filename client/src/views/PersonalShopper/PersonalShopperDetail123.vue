@@ -1,0 +1,138 @@
+<template>
+  <div>
+    <Nav/>
+    <p class="title">"Look" for you</p>  
+    <div class="image-area">
+      <b-icon class="img-switch-prev" icon="arrow-left-circle-fill" aria-hidden="true"></b-icon>
+      <img :src="productDetail.style_image" alt="look1" class="look-detail">
+      <b-icon class="img-switch-next" icon="arrow-right-circle-fill" aria-hidden="true"></b-icon>
+    </div>
+    <div class="look-items-area">
+      <p>룩 완성하기</p>
+      <div>
+        <p>
+          <b-button class="add-items-cart" variant="primary"
+            @click="addToCart(productDetail); addToCart(productDetail);
+            addToCart(productDetail); addToCart(productDetail);">
+            <span class="button-text">룩 세트로 구매 <b-icon icon="credit-card" aria-hidden="true"></b-icon></span></b-button>
+        </p>
+      </div>
+      <br>
+      <div class="class=look-items">
+        <img class="look-item" @click="goToProductDetail(this.productDetail.product_id)" :src="productDetail.product_image" alt="item1">
+        <img class="look-item" @click="goToProductDetail(this.productId_1)" :src="this.$store.state.productRecommend_1" alt="item2">
+        <img class="look-item" @click="goToProductDetail(this.productId_2)" :src="this.$store.state.productRecommend_2" alt="item3">
+        <img class="look-item" @click="goToProductDetail(this.productId_3)" :src="this.$store.state.productRecommend_3" alt="item4">
+      </div>
+    </div>
+    <!-- <FooterAd/> -->
+  </div>
+</template>
+
+<script>
+import Nav from '@/views/Nav/Nav'
+import {mapState} from 'vuex';
+import axios from 'axios'
+
+export default {
+  name: 'PersonalShopperDetail',
+  components : {
+    Nav,
+  },
+  created: function () { // created로 선언하여 데이터를 갱신한다.
+    // this.productId = '201';
+    this.getProduct(); // 상품정보
+  },
+  data: function() {
+    return {
+      
+    }
+  },
+  computed: {
+    ...mapState(
+      ['productDetail',
+      'productRecommend_1',
+      'productRecommend_2',
+      'productRecommend_3',
+      'selectedProductID'
+      ],
+      
+    ),
+  },
+  methods: {
+    addToCart(productDetail) {
+      this.$store.dispatch('cart/addItem', productDetail);
+    },
+    getProduct: function() { // 상품정보를 받아오는 axios      
+     axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
+      .then((res)=>{
+        this.$store.commit('productId_1', res.data.product_id);
+        this.$store.commit('productRecommend_1', res.data.product_image);
+      })
+      axios.get(this.$store.state.productRecommend_2)
+      .then((res)=>{
+        this.$store.commit('productId_2', res.data.product_id);
+        this.$store.commit('productRecommend_2', res.data.product_image);
+      })
+     axios.get(this.$store.state.productRecommend_3)
+      .then((res)=>{
+        this.$store.commit('productId_3', res.data.product_id);
+        this.$store.commit('productRecommend_3', res.data.product_image);
+      })
+      .catch(() => {
+            // console.log(err)
+          })
+    },
+    goToProductDetail: function(res) {
+      console.log(res)
+      this.$store.commit('selectedProductID', String(res));
+      this.$router.push('/ProductDetail')
+    },
+  }
+}
+</script>
+
+<style>
+.title {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.img-switch-prev {
+  margin: 0 2em 0 0;
+  font-size: 5.5em;
+}
+
+.img-switch-next {
+  margin: 0 0 0 2em;
+  font-size: 5.5em;
+}
+
+.look-detail {
+  width: 60%;
+}
+
+.add-items-cart {
+  width: 25%;
+  position: fixed;
+  right: 10%;
+}
+
+.button-text {
+  font-size: 3.25em;
+}
+
+.look-items-area {
+  position: fixed;
+  bottom: 0%;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.look-item {
+  display: inline;
+  float: left;
+  width: 25%;
+  /* margin: 0 0 0 0.2em; */
+}
+</style>

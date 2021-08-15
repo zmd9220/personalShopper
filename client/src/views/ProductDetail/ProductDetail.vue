@@ -196,7 +196,7 @@ export default {
         }});
     },
     goToSizeChart(){
-      this.$store.commit('selectProductID', '301');
+      this.$store.commit('selectedProductID', '301');
       // this.$router.push('/ProductSizeChart'); 
     },
     goToLocation(){

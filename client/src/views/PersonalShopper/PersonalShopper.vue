@@ -21,6 +21,7 @@
 
 <script>
 import axios from 'axios'
+import { mapState  } from 'vuex'
 
 export default {
   data: function() {
@@ -29,13 +30,22 @@ export default {
       productDetail2: '',  // 상품정보
       productDetail3: '',  // 상품정보
       productDetail4: '',  // 상품정보
-      recommendProductId: JSON.parse(localStorage.getItem('recommendData')),
     }
   },
+  computed: {
+    ...mapState ({
+
+      selectedProductID: state => state.selectedProductID,
+      productId_1: state => state.productId_1,
+      productId_2: state => state.productId_2,
+      productId_3: state => state.productId_3,
+      }
+    ),
+    },
   methods: {
     getProduct: function() { // 상품정보를 받아오는 axios
       const localURL1 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL1 = localURL1 + this.recommendProductId['A'] + '/'; //
+      const productURL1 = localURL1 + this.selectedProductID + '/'; //
       
       axios.get(productURL1) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
@@ -46,7 +56,7 @@ export default {
         })
 
       const localURL2 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL2 = localURL2 + this.recommendProductId['B'] + '/'; //
+      const productURL2 = localURL2 + this.productId_1 + '/'; //
       
       axios.get(productURL2) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
@@ -57,7 +67,7 @@ export default {
         })
 
       const localURL3 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL3 = localURL3 + this.recommendProductId['C'] + '/'; //
+      const productURL3 = localURL3 + this.productId_2 + '/'; //
       
       axios.get(productURL3) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
@@ -68,7 +78,7 @@ export default {
         })
 
       const localURL4 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL4 = localURL4 + this.recommendProductId['D'] + '/'; //
+      const productURL4 = localURL4 + this.productId_3 + '/'; //
       
       axios.get(productURL4) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {

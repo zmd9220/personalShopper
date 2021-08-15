@@ -22,7 +22,7 @@ export default new Vuex.Store({
     user: [],
   },
   mutations: {
-    selectProductID: function (state, payload) {
+    selectedProductID: function (state, payload) {
       state.selectedProductID = payload;
     },
     productRecommend_1: function (state, payload) {
