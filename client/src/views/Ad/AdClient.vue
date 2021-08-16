@@ -20,7 +20,13 @@ export default {
     selectedVideoURL : { // 추천 1,2,3
       type: String,
     },
+  },
+  mounted: {
+    removeData: function() {
+      localStorage.clear()
+    }
   }
+
 }
 </script>
 

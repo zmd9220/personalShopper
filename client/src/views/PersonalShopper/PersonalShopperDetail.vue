@@ -12,17 +12,16 @@
       <div>
         <p>
           <b-button class="add-items-cart" variant="primary"
-            @click="addToCart(productDetail); addToCart(productDetail);
-            addToCart(productDetail); addToCart(productDetail);">
+            @click="BuyAllItems()">
             <span class="button-text">룩 세트로 구매 <b-icon icon="credit-card" aria-hidden="true"></b-icon></span></b-button>
         </p>
       </div>
       <br>
       <div class="class=look-items">
-        <img class="look-item" :src="productDetail.product_image" alt="item1" @click="gotoDetail1()" >
-        <img class="look-item" :src="this.$store.state.productRecommend_1" alt="item2" @click="gotoDetail2()" >
-        <img class="look-item" :src="this.$store.state.productRecommend_2" alt="item3" @click="gotoDetail3()" >
-        <img class="look-item" :src="this.$store.state.productRecommend_3" alt="item4" @click="gotoDetail4()" >
+        <img class="look-item" @click="goToProductDetail1()" :src="productDetail.product_image" alt="item1">
+        <img class="look-item" @click="goToProductDetail2(productId_1)" :src="this.$store.state.productRecommend_1" alt="item2">
+        <img class="look-item" @click="goToProductDetail2(productId_2)" :src="this.$store.state.productRecommend_2" alt="item3">
+        <img class="look-item" @click="goToProductDetail2(productId_3)" :src="this.$store.state.productRecommend_3" alt="item4">
       </div>
     </div>
     <!-- <FooterAd/> -->
@@ -32,22 +31,82 @@
 <script>
 import Nav from '@/views/Nav/Nav'
 import {mapState} from 'vuex';
-// import axios from 'axios'
+import axios from 'axios'
 
 export default {
   name: 'PersonalShopperDetail',
   components : {
     Nav,
   },
+  created: function () { // created로 선언하여 데이터를 갱신한다.
+    // this.productId = '201';
+    this.getProduct(); // 상품정보
+  },
+  data: function() {
+    return {
+      
+    }
+  },
   computed: {
     ...mapState(
-      ['productDetail'],
+      ['productDetail',
       'productRecommend_1',
+      'productRecommend_2',
+      'productRecommend_3',
+      'selectedProductID',
+      'productId_1',
+      'productId_2',
+      'productId_3',
+      ],
+      
     ),
   },
   methods: {
-    addToCart(productDetail) {
-      this.$store.dispatch('cart/addItem', productDetail);
+    getProduct: function() { // 상품정보를 받아오는 axios      
+     axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
+      .then((res)=>{
+        this.$store.commit('productId_1', res.data.product_id);
+        this.$store.commit('productRecommend_1', res.data.product_image);
+      })
+      axios.get(this.$store.state.productRecommend_2)
+      .then((res)=>{
+        this.$store.commit('productId_2', res.data.product_id);
+        this.$store.commit('productRecommend_2', res.data.product_image);
+      })
+     axios.get(this.$store.state.productRecommend_3)
+      .then((res)=>{
+        this.$store.commit('productId_3', res.data.product_id);
+        this.$store.commit('productRecommend_3', res.data.product_image);
+      })
+      .catch(() => {
+            // console.log(err)
+          })
+    },
+    goToProductDetail1: function() {
+      this.$router.push('/ProductDetail')
+    },
+    goToProductDetail2: function(product_id) {
+      this.$store.commit('selectedProductID', product_id);
+      this.$router.push('/ProductDetail')
+    },
+    addToCart: function(product_id) { // 상품정보를 받아오는 axios
+      const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const productURL = localURL + product_id + '/'; //
+      
+      axios.get(productURL) // 리팩토링 필요. (async await로 변경예정)
+        .then((res) => {
+          this.$store.dispatch('cart/addItem', res.data);
+        })
+        .catch(() => {
+          // console.log(err)
+        })
+    },
+    BuyAllItems(){
+      this.$store.dispatch('cart/addItem', this.$store.state.productDetail);
+      this.addToCart(this.$store.state.productId_1);
+      this.addToCart(this.$store.state.productId_2);
+      this.addToCart(this.$store.state.productId_3);
+      this.$router.push({name:'Cart'});
     },
     gotoDetail1: function() {                
       if (this.$route.path !== '/ProductDetail' ) {
