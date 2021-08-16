@@ -1,5 +1,6 @@
 import os
 from django.shortcuts import get_object_or_404
+from requests.api import get
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import ProductSerializer, StockSerializer
@@ -12,8 +13,15 @@ from rest_framework.decorators import authentication_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-ages = ['10', '20', '30', '40', '50', '60']
-# sizes = []
+# stock 테이블에 사이즈 접근을 위한 dictionary
+sizes = {
+    'M1': ['XS (KR 90)', 'S (KR 95)', 'M (KR 95-100)', 'L (KR 100-105)', 'XL (KR 105-110)'],
+    'F1': ['XS (KR 44)', 'S (KR 55)', 'M (KR 66)', 'L (KR 77)', 'XL (KR 88)'],
+    'M2': ['XS (KR 28)', 'S (KR 30)', 'M (KR 31)', 'L (KR 32)', 'XL (KR 34)'],
+    'F2': ['XS (KR 24)', 'S (KR 26)', 'M (KR 28)', 'L (KR 30)', 'XL (KR 32)'],
+    'M3': ['KR 250', 'KR 260', 'KR 270', 'KR 280', 'KR 290'],
+    'F3': ['KR 230', 'KR 240', 'KR 250', 'KR 260', 'KR 270'],
+}
 
 @api_view(['GET'])       # 전체 상품 조회
 def products(request):
@@ -23,12 +31,35 @@ def products(request):
         return Response(serializers.data)
 
 
-@api_view(['GET'])                  # 특정 상품 조회
+@api_view(['GET', 'POST'])                  # 특정 상품 조회
 def product_detail(request, product_id):
-    if request.method == 'GET':
-        product = get_object_or_404(Product, product_id = product_id)
-        serializer = ProductSerializer(product)
-        return Response(serializer.data)
+    # GET - 데이터 조회만
+    # 조회할 상품 데이터 가져오기
+    product = get_object_or_404(Product, product_id = product_id)
+    # POST - 데이터 조회 및 recommend 테이블의 visit'연령' 컬럼에 +1
+    if request.method == 'POST':
+        # visit를 수정할 해당 상품 recommend 테이블의 row 가져오기
+        visit = get_object_or_404(Recommend, product_id = product_id)
+        age = int(request.data['age'])
+        # 나이 대에 맞추어 변경
+        if age < 20:
+            visit.visit10 += 1
+        elif age < 30:
+            visit.visit20 += 1
+        elif age < 40:
+            visit.visit30 += 1
+        elif age < 50:
+            visit.visit40 += 1
+        elif age < 60:
+            visit.visit50 += 1
+        else:
+            visit.visit60 += 1
+        # 변경 내역 저장
+        visit.save()        
+    # 직렬화를 통해 json화
+    serializer = ProductSerializer(product)
+    # 데이터 클라이언트로 전달
+    return Response(serializer.data)
 
 
 @api_view(['GET'])                # 특정 상품 재고 조회
@@ -41,16 +72,20 @@ def product_stock(request, product_id):
     
 @api_view(['POST'])     # 카카오페이 결제 준비
 def kakaoPay_ready(request):
+    # 카카오 페이 api url
     url = "https://kapi.kakao.com"
+    # 헤더 - api key와 타입 지정
     headers = {
         'Authorization': "KakaoAK " + "4595b53acfdd636260c962e7fd4c8dd0", # admin key 처리 해야함
         'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     }
-    # print(request.data)
-    # print(request)
+    # 요청에 필요한 파라미터 값 지정
     params = {
+        # 가맹점 코드
         'cid': "TC0ONETIME",
+        # 상품 결제 번호(우리 측) - 고유 번호
         'partner_order_id': request.data['orderNumber'],
+        # 상품 회원 id 
         'partner_user_id': 'ssafy',
         # 상품 이름
         'item_name': request.data['product_name'],
@@ -69,9 +104,11 @@ def kakaoPay_ready(request):
         # 취소시 반환할 url
         'cancel_url': 'http://localhost:8080/isApprove',
     }
+    # 요청 보냄
     response = requests.post(url+"/v1/payment/ready", params=params, headers=headers)
+    # 응답 받기 - 카카오 페이 측에서 이상이 없는 이상 200으로 올 것
+    # 받은 데이터를 json으로 변경 후 클라이언트로 전달
     response = json.loads(response.text)
-    print(response)
     return Response(response)
 
 @api_view(['GET'])
@@ -93,13 +130,14 @@ def make_status(request):
   
 @api_view(['POST'])     # 카카오페이 결제 승인 요청 
 def kakaoPay_approve(request):
+    # 카카오 페이 api url
     url = "https://kapi.kakao.com"
+    # 헤더 - api key와 타입 지정
     headers = {
         'Authorization': "KakaoAK " + "4595b53acfdd636260c962e7fd4c8dd0", # admin key 처리 해야함
         'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     }
-    # print(request.data)
-    # print(request)
+    # 요청에 필요한 파라미터 값 지정
     params = {
         # 가맹점 코드
         'cid': "TC0ONETIME",
@@ -112,41 +150,55 @@ def kakaoPay_approve(request):
         # 결제 승인을 요청하는 토큰
         'pg_token': request.data['pg_token'],
     }
+    # 요청 보냄
     response = requests.post(url+"/v1/payment/approve", params=params, headers=headers)
+    # 응답 코드가 200 = 정상적으로 승인이 완료 되었음 -> DB에 재고 -1, 판매 +1
     if response.status_code == 200:
-        print(request.data)
+        # 현재 키오스크를 보고 있는 유저 정보
         user_data = request.data['userData']
+        # 현재 구매한 장바구니 상품들
         order_items = request.data['orderItems']
+        # 각 상품 별로 DB에 반영
         for item in order_items:
-            stock = get_object_or_404(Stock, product_id=item['product_id'])
+            # recommend 테이블에 해당 상품 row
             sales = get_object_or_404(Recommend, product_id=item['product_id'])
-            if user_data['age'] in ages:
-                age = user_data['age']
-                if age == 10:
-                    sales.week_sale10 += 1
-                    sales.month_sale10 += 1
-                elif age == 20:
-                    sales.week_sale20 += 1
-                    sales.month_sale20 += 1
-                elif age == 30:
-                    sales.week_sale30 += 1
-                    sales.month_sale30 += 1
-                elif age == 40:
-                    sales.week_sale40 += 1
-                    sales.month_sale40 += 1
-                elif age == 50:
-                    sales.week_sale50 += 1
-                    sales.month_sale50 += 1
-                else:
-                    sales.week_sale60 += 1
-                    sales.month_sale60 += 1
+            age = int(user_data['age'])
+            # 유저의 나이대에 맞추어 해당 제품 판매량 갱신
+            if age < 20:
+                sales.week_sale10 += 1
+                sales.month_sale10 += 1
+            elif age < 30:
+                sales.week_sale20 += 1
+                sales.month_sale20 += 1
+            elif age < 40:
+                sales.week_sale30 += 1
+                sales.month_sale30 += 1
+            elif age < 50:
+                sales.week_sale40 += 1
+                sales.month_sale40 += 1
+            elif age < 60:
+                sales.week_sale50 += 1
+                sales.month_sale50 += 1
+            else:
+                sales.week_sale60 += 1
+                sales.month_sale60 += 1
+            # stock 테이블에 해당 상품 row
+            stock = get_object_or_404(Stock, product_id=item['product_id'])
+            # sizes 딕셔너리를 접근하기 위한 키값 생성 - 'M1, F1, M2, F2, M3, F3, M4, F4' 중 하나 생성됨
+            product_type = item['gender']+str(item['product_type'])
+            # M4, F4를 제외하면 경우는 모두 사이즈가 별도로 있으므로 접근하여 -1
+            if product_type in sizes:
+                stock.stock[sizes[product_type].index(item['selectedSize'])] -= 1
+            else: # 악세서리(M4, F4) 인 경우 프리 스타일이므로 0번 인덱스로 접근
+                stock.stock[0] -= 1
+            # DB에 실제 저장
             sales.save()
-        print(user_data)
-        print(order_items)
-        
+            stock.save()
+    # 응답 받은 데이터를 json화
     response_data = json.loads(response.text)
+    # 클라이언트에서 상태 코드를 기반으로 분기를 나누기 때문에 상태 코드를 추가
     response_data['status_code'] = response.status_code
-    # print(response_data)
+    # 클라이언트에 전달
     return Response(response_data)
 
 

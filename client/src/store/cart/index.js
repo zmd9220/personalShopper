@@ -113,7 +113,10 @@ export default {
     },
     clearCart({ commit }) {
       commit('clearCart');
-    }
+    },
+    cartReload({ commit }, reloadItems) {
+      commit('cartReload', reloadItems)
+    },
   },
   getters: {
     totalPrice(state) {
