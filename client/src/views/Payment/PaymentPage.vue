@@ -1,8 +1,12 @@
 <template>
   <div>
     <Nav/>
-
-    <div class="pay-card">
+  <div>
+    <video class="iframe" autoplay >
+      <source src="@/assets/ad/y2mate.com - Adidas Orignals Superpower  1st vertical mobile ad commercial_1080p.mp4">
+    </video>
+  </div>
+    <!-- <div class="pay-card">
       <b-card no-body class="overflow-hidden" style="max-width: 540px;">
         <b-row no-gutters>
           <b-col md="6">
@@ -24,7 +28,7 @@
           Some quick example text to build on the card and make up the bulk of the card's content.
         </b-card-text>
       </b-card>
-    </div>
+    </div> -->
 
   </div>
 </template>
@@ -112,5 +116,17 @@ export default {
   /* display: ; */
   width: 80%;
   
+}
+
+.iframe {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+background-size: cover;
 }
 </style>
