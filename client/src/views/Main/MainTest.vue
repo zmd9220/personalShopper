@@ -106,9 +106,6 @@ export default {
         .catch((error) => {
           console.log(error);
         })
-        .finally(() => {
-          this.goToPersonalShopper();
-        });
     },
     recommendDataBarcode() {
       const localURL = "http://127.0.0.1:8000/recommended/";
@@ -126,17 +123,15 @@ export default {
           console.log(error);
         })
         .finally(() => {
-          this.goToBarcode();
-        });
+          this.goToBarcode()
+        })
+
     },
   },
   mounted: function () {
     this.createUserData()
-        // .finally(()=>{
-        //   this.goToPersonalShopper()
-        // })
+
     },
-  },
   created : function() {
     this.recommendData();
   },

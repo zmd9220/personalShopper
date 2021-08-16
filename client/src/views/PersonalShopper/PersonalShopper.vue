@@ -52,9 +52,6 @@ export default {
           // console.log(err)
         });
 
-      const localURL2 = "http://127.0.0.1:8000/product/"; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL2 = localURL2 + this.recommendProductId["B"] + "/"; //
-
       const localURL2 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
       const productURL2 = localURL2 + this.productId_1 + '/'; //
       
@@ -65,9 +62,6 @@ export default {
         .catch(() => {
           // console.log(err)
         });
-
-      const localURL3 = "http://127.0.0.1:8000/product/"; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL3 = localURL3 + this.recommendProductId["C"] + "/"; //
 
       const localURL3 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
       const productURL3 = localURL3 + this.productId_2 + '/'; //
