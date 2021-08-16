@@ -182,7 +182,8 @@ export default {
       productId_2:  state => state.productId_2,
       productId_3:  state => state.productId_3,
       stock: state => state.stock,
-    })
+      userData: 'user',
+    }),
   },
   methods :{
     goToSizeRecommend(){
@@ -209,7 +210,8 @@ export default {
       const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
       const productURL = localURL + this.$store.state.selectedProductID + '/'; //
       
-      axios.get(productURL) // 리팩토링 필요. (async await로 변경예정)
+      // 210816 변경 맨 처음 데이터를 가져올 대표 아이템만 POST로 요청하여 recommend 테이블의 visit에 +1 하도록 
+      axios.post(productURL, this.userData) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail = res.data; // 상품 상세 정보
           this.$store.commit('productDetail', res.data); // 상품 상세정보
