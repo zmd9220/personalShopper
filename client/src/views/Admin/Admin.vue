@@ -121,7 +121,7 @@ export default {
 
 .new-product {
   float: right;
-  margin-bottom: 3rem;
+  margin-right: 20em;
 }
 
 </style>
