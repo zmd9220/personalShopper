@@ -102,7 +102,10 @@ export default {
         });
     },
   },
-};
+  mounted: function () {
+    this.createUserData()
+  },
+}
 </script>
 
 <style scoped>

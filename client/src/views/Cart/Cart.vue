@@ -6,13 +6,14 @@
       <div class="product-size">사이즈</div>
       <div class="product-price">가격</div>
       <div class="product-delete">
-        <b-button variant="danger" @click="clearCart()">카트 비우기</b-button>
+        <b-button class="delete-button"
+          variant="danger" @click="clearCart()">카트 비우기</b-button>
       </div>
     </div>
     <CartList/>
     <div class="money-box">
-      <h2 class="cart-text">총 금액</h2>
-      <h2 class="cart-text">{{ totalCartPrice }} 원</h2>
+      <p class="cart-text">총 금액</p>
+      <p class="cart-text">{{ totalCartPrice }} 원</p>
       <Payment/>
     </div>
   </div>
@@ -58,7 +59,7 @@ export default {
   border-radius: 5rem 0 0 5rem;
 }
 
-.card-text {
+.cart-text{
   width: 100%;
 }
 
@@ -89,9 +90,13 @@ export default {
   margin-top: 1.2rem;
 }
 
+.delete-button {
+  font-size: 0.85em;
+}
+
 .money-box {
   width: 30rem;
-  height: 40rem;
+  height: 45rem;
   border: 5px solid rgba(0, 0, 0, 0.3);
   border-radius: 5rem;
   margin-left: 95rem;
