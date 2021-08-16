@@ -130,13 +130,14 @@ def make_status(request):
   
 @api_view(['POST'])     # 카카오페이 결제 승인 요청 
 def kakaoPay_approve(request):
+    # 카카오 페이 api url
     url = "https://kapi.kakao.com"
+    # 헤더 - api key와 타입 지정
     headers = {
         'Authorization': "KakaoAK " + "4595b53acfdd636260c962e7fd4c8dd0", # admin key 처리 해야함
         'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     }
-    print(request.data)
-    # print(request)
+    # 요청에 필요한 파라미터 값 지정
     params = {
         # 가맹점 코드
         'cid': "TC0ONETIME",
@@ -149,15 +150,20 @@ def kakaoPay_approve(request):
         # 결제 승인을 요청하는 토큰
         'pg_token': request.data['pg_token'],
     }
+    # 요청 보냄
     response = requests.post(url+"/v1/payment/approve", params=params, headers=headers)
+    # 응답 코드가 200 = 정상적으로 승인이 완료 되었음 -> DB에 재고 -1, 판매 +1
     if response.status_code == 200:
-        # print(request.data)
+        # 현재 키오스크를 보고 있는 유저 정보
         user_data = request.data['userData']
+        # 현재 구매한 장바구니 상품들
         order_items = request.data['orderItems']
+        # 각 상품 별로 DB에 반영
         for item in order_items:
-            stock = get_object_or_404(Stock, product_id=item['product_id'])
+            # recommend 테이블에 해당 상품 row
             sales = get_object_or_404(Recommend, product_id=item['product_id'])
             age = int(user_data['age'])
+            # 유저의 나이대에 맞추어 해당 제품 판매량 갱신
             if age < 20:
                 sales.week_sale10 += 1
                 sales.month_sale10 += 1
@@ -176,20 +182,23 @@ def kakaoPay_approve(request):
             else:
                 sales.week_sale60 += 1
                 sales.month_sale60 += 1
+            # stock 테이블에 해당 상품 row
+            stock = get_object_or_404(Stock, product_id=item['product_id'])
+            # sizes 딕셔너리를 접근하기 위한 키값 생성 - 'M1, F1, M2, F2, M3, F3, M4, F4' 중 하나 생성됨
             product_type = item['gender']+str(item['product_type'])
-            print(product_type)
+            # M4, F4를 제외하면 경우는 모두 사이즈가 별도로 있으므로 접근하여 -1
             if product_type in sizes:
                 stock.stock[sizes[product_type].index(item['selectedSize'])] -= 1
-            else: # 악세서리 인 경우 프리 스타일
+            else: # 악세서리(M4, F4) 인 경우 프리 스타일이므로 0번 인덱스로 접근
                 stock.stock[0] -= 1
+            # DB에 실제 저장
             sales.save()
             stock.save()
-        print(user_data)
-        print(order_items)
-        
+    # 응답 받은 데이터를 json화
     response_data = json.loads(response.text)
+    # 클라이언트에서 상태 코드를 기반으로 분기를 나누기 때문에 상태 코드를 추가
     response_data['status_code'] = response.status_code
-    print(response_data)
+    # 클라이언트에 전달
     return Response(response_data)
 
 
