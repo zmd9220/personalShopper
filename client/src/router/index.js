@@ -27,10 +27,16 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/:age/:gen',  // 메인 페이지
+    path: '/:age(\\d+)/:gen',  // 메인 페이지
     name: 'Main',
     component: Main,
     props: true,
+  },
+  {
+    path: '/',  // 메인 페이지
+    name: 'Main',
+    component: Main,
+    props: {age:'25', gen:'F'},
   },
   {
     path: '/Admin',  // 메인 페이지
@@ -68,9 +74,10 @@ const routes = [
     component: PersonalShopper
   },
   {
-    path: '/ProductDetail', // 상품 상세정보 페이지
+    path: '/ProductDetail/:barcode?', // 상품 상세정보 페이지
     name: 'ProductDetail',
-    component: ProductDetail
+    component: ProductDetail,
+    props:true,
   },
   {
     path: '/ProductSizeChart', // 상품 사이즈표 페이지

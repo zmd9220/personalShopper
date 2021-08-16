@@ -157,6 +157,9 @@ export default {
     FooterAd,
     Nav,
   },
+  props: {
+    barcode:String,
+  },
   data: function() {
     return {
       productDetail: '',  // 상품정보
@@ -302,6 +305,9 @@ export default {
   }, 
   created: function () { // created로 선언하여 데이터를 갱신한다.
     // this.productId = '201';
+    if (this.barcode){
+      this.$store.commit('selectedProductID', Number(this.barcode.slice(10,13))) 
+    }
     this.getProduct(); // 상품정보
     this.getStock(); // 재고정보
   },
