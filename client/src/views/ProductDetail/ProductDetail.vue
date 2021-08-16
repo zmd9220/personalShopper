@@ -88,9 +88,15 @@
           <!-- <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2> -->
           <b-button variant="primary" class="button-size" @click="buyNow(productDetail)">바로 구매</b-button>
           <b-button variant="primary" class="button-size" @click="addToCart(productDetail); $bvToast.show('toast') ">카트 추가</b-button>
-          <b-toast id="toast" title="장바구니 알림" static>
+          <b-toast size="xl" id="toast" title="장바구니 알림" class="button-toast" static no-auto-hide>
             상품이 장바구니에 추가되었습니다.
           </b-toast>
+          
+          <!-- <b-button variant="primary" class="button-size" id="popover-target-1" @click="addToCart(productDetail);">카트 추가</b-button>
+          <b-popover target="popover-target-1" triggers="hover" placement="top" size="xl">
+            <template #title>Popover Title</template>
+            I am popover <b>component</b> content!
+          </b-popover> -->
           <b-button @click="goToSizeRecommend()" v-if="this.$store.state.productDetail.product_type == 1 || this.$store.state.productDetail.product_type == 2" 
             variant="primary" class="button-size">사이즈 추천 받기</b-button>
           <!-- <h2 @click="goToSizeChart()">사이즈표</h2> -->
@@ -280,42 +286,12 @@ export default {
     },
     addToCart(productDetail) {
       this.$store.dispatch('cart/addItem', productDetail);
-      this.showToast();
     },
     buyNow(productDetail) {
       this.$store.dispatch('cart/addItem', productDetail);
       this.$router.push({name:'Cart'})
     },
-    showToast() {
-      // Use a shorter name for this.$createElement
-      const h = this.$createElement
-      // Create the message
-      const vNodesMsg = h(
-        'p',
-        { class: ['text-center', 'mb-0'] },
-        [
-          h('b-spinner', { props: { type: 'grow', small: true } }),
-          h('strong', '상품이 장바구니에 추가되었습니다.'),
-          h('b-spinner', { props: { type: 'grow', small: true } })
-        ]
-      )
-      // Create the title
-      const vNodesTitle = h(
-        'div',
-        { class: ['d-flex', 'flex-grow-1', 'align-items-baseline', 'mr-2'] },
-        [
-          h('strong', { class: 'mr-2' }, '장바구니 알림'),
-        ]
-      )
-      // Pass the VNodes as an array for message and title
-      this.$bvToast.toast([vNodesMsg], {
-        title: [vNodesTitle],
-        solid: true,
-        variant: 'info',
-      })
-    }
   },
-  
   created: function () { // created로 선언하여 데이터를 갱신한다.
     // this.productId = '201';
     this.getProduct(); // 상품정보
@@ -437,4 +413,12 @@ export default {
   font-size: 3em;
 }
 
+
+.button-toast {
+  font-size: 3rem;
+}
+
+.b-toast .toast {
+  font-size: 3rem !important;
+}
 </style>

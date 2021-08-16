@@ -2438,6 +2438,4446 @@
     "product_link": "https://www.zara.com/kr/ko/%ED%95%98%EC%9D%B4%EC%9B%A8%EC%9D%B4%EC%8A%A4%ED%8A%B8-%EB%B2%A8%ED%8B%B0%EB%93%9C-%ED%8C%AC%EC%B8%A0-p08034811.html?v1=123839745&v2=1883520",
     "location": "D"
     }
-  }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 101,
+      "stock": [
+        5,
+        9,
+        6,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 102,
+      "stock": [
+        7,
+        8,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 103,
+      "stock": [
+        8,
+        1,
+        4,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 104,
+      "stock": [
+        1,
+        8,
+        3,
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 105,
+      "stock": [
+        9,
+        8,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 106,
+      "stock": [
+        1,
+        6,
+        6,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 107,
+      "stock": [
+        1,
+        9,
+        7,
+        8,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 108,
+      "stock": [
+        2,
+        7,
+        8,
+        8,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 109,
+      "stock": [
+        0,
+        4,
+        6,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 110,
+      "stock": [
+        9,
+        3,
+        4,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 111,
+      "stock": [
+        5,
+        5,
+        1,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 112,
+      "stock": [
+        5,
+        1,
+        8,
+        9,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 113,
+      "stock": [
+        8,
+        3,
+        1,
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 114,
+      "stock": [
+        6,
+        2,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 115,
+      "stock": [
+        1,
+        4,
+        2,
+        8,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 116,
+      "stock": [
+        4,
+        8,
+        6,
+        4,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 117,
+      "stock": [
+        8,
+        9,
+        6,
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 118,
+      "stock": [
+        3,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 119,
+      "stock": [
+        1,
+        1,
+        3,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 120,
+      "stock": [
+        1,
+        7,
+        4,
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 121,
+      "stock": [
+        0,
+        1,
+        6,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 122,
+      "stock": [
+        9,
+        9,
+        8,
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 123,
+      "stock": [
+        8,
+        3,
+        0,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 124,
+      "stock": [
+        1,
+        3,
+        3,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 201,
+      "stock": [
+        4,
+        7,
+        4,
+        6,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 202,
+      "stock": [
+        3,
+        7,
+        4,
+        4,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 203,
+      "stock": [
+        0,
+        1,
+        2,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 204,
+      "stock": [
+        9,
+        9,
+        0,
+        8,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 205,
+      "stock": [
+        2,
+        1,
+        5,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 206,
+      "stock": [
+        9,
+        5,
+        4,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 207,
+      "stock": [
+        0,
+        9,
+        7,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 208,
+      "stock": [
+        9,
+        4,
+        0,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 209,
+      "stock": [
+        2,
+        4,
+        5,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 210,
+      "stock": [
+        7,
+        3,
+        5,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 211,
+      "stock": [
+        2,
+        0,
+        6,
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 212,
+      "stock": [
+        5,
+        0,
+        5,
+        7,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 213,
+      "stock": [
+        0,
+        5,
+        0,
+        7,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 214,
+      "stock": [
+        6,
+        8,
+        0,
+        7,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 215,
+      "stock": [
+        3,
+        3,
+        2,
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 216,
+      "stock": [
+        3,
+        9,
+        5,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 217,
+      "stock": [
+        0,
+        8,
+        8,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 218,
+      "stock": [
+        1,
+        4,
+        3,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 219,
+      "stock": [
+        4,
+        6,
+        1,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 220,
+      "stock": [
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 221,
+      "stock": [
+        1,
+        0,
+        4,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 222,
+      "stock": [
+        1,
+        5,
+        3,
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 223,
+      "stock": [
+        7,
+        1,
+        0,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 224,
+      "stock": [
+        7,
+        0,
+        8,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 301,
+      "stock": [
+        3,
+        2,
+        4,
+        9,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 302,
+      "stock": [
+        4,
+        2,
+        4,
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 303,
+      "stock": [
+        3,
+        7,
+        0,
+        3,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 304,
+      "stock": [
+        5,
+        5,
+        3,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 305,
+      "stock": [
+        2,
+        9,
+        0,
+        7,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 306,
+      "stock": [
+        9,
+        2,
+        6,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 307,
+      "stock": [
+        6,
+        6,
+        9,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 308,
+      "stock": [
+        9,
+        5,
+        1,
+        1,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 309,
+      "stock": [
+        4,
+        3,
+        3,
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 310,
+      "stock": [
+        2,
+        1,
+        0,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 311,
+      "stock": [
+        6,
+        3,
+        5,
+        5,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 312,
+      "stock": [
+        1,
+        3,
+        0,
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 313,
+      "stock": [
+        3,
+        2,
+        0,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 314,
+      "stock": [
+        5,
+        4,
+        8,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 315,
+      "stock": [
+        3,
+        5,
+        3,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 316,
+      "stock": [
+        7,
+        1,
+        7,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 317,
+      "stock": [
+        7,
+        5,
+        4,
+        7,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 318,
+      "stock": [
+        0,
+        7,
+        3,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 319,
+      "stock": [
+        8,
+        5,
+        4,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 320,
+      "stock": [
+        4,
+        1,
+        8,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 321,
+      "stock": [
+        9,
+        1,
+        2,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 322,
+      "stock": [
+        0,
+        0,
+        6,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 323,
+      "stock": [
+        2,
+        6,
+        0,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 324,
+      "stock": [
+        3,
+        3,
+        4,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 401,
+      "stock": [
+        7,
+        1,
+        1,
+        8,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 402,
+      "stock": [
+        1,
+        4,
+        7,
+        9,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 403,
+      "stock": [
+        4,
+        9,
+        5,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 404,
+      "stock": [
+        7,
+        4,
+        7,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 405,
+      "stock": [
+        9,
+        6,
+        0,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 406,
+      "stock": [
+        6,
+        0,
+        0,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 407,
+      "stock": [
+        6,
+        1,
+        1,
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 408,
+      "stock": [
+        4,
+        8,
+        5,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 409,
+      "stock": [
+        4,
+        3,
+        2,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 410,
+      "stock": [
+        0,
+        7,
+        1,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 411,
+      "stock": [
+        9,
+        4,
+        0,
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 412,
+      "stock": [
+        1,
+        0,
+        5,
+        0,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 413,
+      "stock": [
+        2,
+        5,
+        5,
+        2,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 414,
+      "stock": [
+        5,
+        5,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 415,
+      "stock": [
+        4,
+        1,
+        0,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 416,
+      "stock": [
+        9,
+        7,
+        4,
+        8,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 417,
+      "stock": [
+        4,
+        1,
+        1,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 418,
+      "stock": [
+        1,
+        5,
+        5,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 419,
+      "stock": [
+        6,
+        6,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 420,
+      "stock": [
+        6,
+        5,
+        8,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 421,
+      "stock": [
+        6,
+        7,
+        1,
+        7,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 422,
+      "stock": [
+        3,
+        0,
+        9,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 423,
+      "stock": [
+        1,
+        1,
+        6,
+        9,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 424,
+      "stock": [
+        5,
+        1,
+        7,
+        8,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 501,
+      "stock": [
+        2,
+        4,
+        2,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 502,
+      "stock": [
+        7,
+        4,
+        9,
+        0,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 503,
+      "stock": [
+        3,
+        2,
+        5,
+        9,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 504,
+      "stock": [
+        3,
+        2,
+        6,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 505,
+      "stock": [
+        5,
+        4,
+        7,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 506,
+      "stock": [
+        3,
+        9,
+        9,
+        0,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 507,
+      "stock": [
+        1,
+        7,
+        4,
+        5,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 508,
+      "stock": [
+        6,
+        7,
+        7,
+        5,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 509,
+      "stock": [
+        3,
+        4,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 510,
+      "stock": [
+        3,
+        2,
+        0,
+        9,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 511,
+      "stock": [
+        1,
+        4,
+        0,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 512,
+      "stock": [
+        0,
+        8,
+        2,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 513,
+      "stock": [
+        1,
+        9,
+        4,
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 514,
+      "stock": [
+        5,
+        9,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 515,
+      "stock": [
+        9,
+        3,
+        6,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 516,
+      "stock": [
+        5,
+        7,
+        6,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 517,
+      "stock": [
+        8,
+        6,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 518,
+      "stock": [
+        4,
+        3,
+        3,
+        8,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 519,
+      "stock": [
+        9,
+        4,
+        0,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 520,
+      "stock": [
+        1,
+        2,
+        5,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 521,
+      "stock": [
+        0,
+        5,
+        0,
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 522,
+      "stock": [
+        7,
+        7,
+        2,
+        9,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 523,
+      "stock": [
+        2,
+        9,
+        4,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 524,
+      "stock": [
+        5,
+        7,
+        7,
+        2,
+        0
+      ]
+    }
+  },
 
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 101,
+      "week_sale10": 89,
+      "month_sale10": 595,
+      "visit10": 31,
+      "week_sale20": 52,
+      "month_sale20": 455,
+      "visit20": 40,
+      "week_sale30": 11,
+      "month_sale30": 387,
+      "visit30": 19,
+      "week_sale40": 36,
+      "month_sale40": 117,
+      "visit40": 30,
+      "week_sale50": 40,
+      "month_sale50": 586,
+      "visit50": 4,
+      "week_sale60": 47,
+      "month_sale60": 646,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 102,
+      "week_sale10": 4,
+      "month_sale10": 581,
+      "visit10": 19,
+      "week_sale20": 65,
+      "month_sale20": 212,
+      "visit20": 2,
+      "week_sale30": 69,
+      "month_sale30": 284,
+      "visit30": 4,
+      "week_sale40": 74,
+      "month_sale40": 119,
+      "visit40": 2,
+      "week_sale50": 17,
+      "month_sale50": 355,
+      "visit50": 41,
+      "week_sale60": 81,
+      "month_sale60": 340,
+      "visit60": 17
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 103,
+      "week_sale10": 67,
+      "month_sale10": 681,
+      "visit10": 23,
+      "week_sale20": 54,
+      "month_sale20": 883,
+      "visit20": 50,
+      "week_sale30": 17,
+      "month_sale30": 512,
+      "visit30": 6,
+      "week_sale40": 57,
+      "month_sale40": 115,
+      "visit40": 37,
+      "week_sale50": 1,
+      "month_sale50": 691,
+      "visit50": 16,
+      "week_sale60": 15,
+      "month_sale60": 426,
+      "visit60": 33
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 104,
+      "week_sale10": 55,
+      "month_sale10": 529,
+      "visit10": 25,
+      "week_sale20": 38,
+      "month_sale20": 252,
+      "visit20": 42,
+      "week_sale30": 61,
+      "month_sale30": 124,
+      "visit30": 46,
+      "week_sale40": 23,
+      "month_sale40": 713,
+      "visit40": 20,
+      "week_sale50": 75,
+      "month_sale50": 797,
+      "visit50": 23,
+      "week_sale60": 49,
+      "month_sale60": 859,
+      "visit60": 21
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 105,
+      "week_sale10": 55,
+      "month_sale10": 823,
+      "visit10": 39,
+      "week_sale20": 82,
+      "month_sale20": 252,
+      "visit20": 50,
+      "week_sale30": 15,
+      "month_sale30": 726,
+      "visit30": 28,
+      "week_sale40": 44,
+      "month_sale40": 301,
+      "visit40": 25,
+      "week_sale50": 61,
+      "month_sale50": 757,
+      "visit50": 42,
+      "week_sale60": 16,
+      "month_sale60": 35,
+      "visit60": 28
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 106,
+      "week_sale10": 99,
+      "month_sale10": 534,
+      "visit10": 34,
+      "week_sale20": 58,
+      "month_sale20": 422,
+      "visit20": 24,
+      "week_sale30": 35,
+      "month_sale30": 319,
+      "visit30": 17,
+      "week_sale40": 2,
+      "month_sale40": 6,
+      "visit40": 14,
+      "week_sale50": 25,
+      "month_sale50": 980,
+      "visit50": 35,
+      "week_sale60": 28,
+      "month_sale60": 797,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 107,
+      "week_sale10": 4,
+      "month_sale10": 966,
+      "visit10": 35,
+      "week_sale20": 20,
+      "month_sale20": 588,
+      "visit20": 32,
+      "week_sale30": 4,
+      "month_sale30": 499,
+      "visit30": 13,
+      "week_sale40": 82,
+      "month_sale40": 447,
+      "visit40": 1,
+      "week_sale50": 55,
+      "month_sale50": 909,
+      "visit50": 42,
+      "week_sale60": 59,
+      "month_sale60": 182,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 108,
+      "week_sale10": 1,
+      "month_sale10": 703,
+      "visit10": 44,
+      "week_sale20": 41,
+      "month_sale20": 172,
+      "visit20": 32,
+      "week_sale30": 80,
+      "month_sale30": 303,
+      "visit30": 30,
+      "week_sale40": 70,
+      "month_sale40": 953,
+      "visit40": 38,
+      "week_sale50": 16,
+      "month_sale50": 891,
+      "visit50": 7,
+      "week_sale60": 1,
+      "month_sale60": 936,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 109,
+      "week_sale10": 15,
+      "month_sale10": 798,
+      "visit10": 12,
+      "week_sale20": 31,
+      "month_sale20": 68,
+      "visit20": 18,
+      "week_sale30": 25,
+      "month_sale30": 417,
+      "visit30": 38,
+      "week_sale40": 66,
+      "month_sale40": 982,
+      "visit40": 24,
+      "week_sale50": 17,
+      "month_sale50": 154,
+      "visit50": 34,
+      "week_sale60": 24,
+      "month_sale60": 664,
+      "visit60": 42
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 110,
+      "week_sale10": 39,
+      "month_sale10": 56,
+      "visit10": 11,
+      "week_sale20": 58,
+      "month_sale20": 520,
+      "visit20": 22,
+      "week_sale30": 75,
+      "month_sale30": 947,
+      "visit30": 31,
+      "week_sale40": 13,
+      "month_sale40": 797,
+      "visit40": 16,
+      "week_sale50": 91,
+      "month_sale50": 705,
+      "visit50": 49,
+      "week_sale60": 33,
+      "month_sale60": 170,
+      "visit60": 42
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 111,
+      "week_sale10": 53,
+      "month_sale10": 253,
+      "visit10": 20,
+      "week_sale20": 79,
+      "month_sale20": 477,
+      "visit20": 35,
+      "week_sale30": 99,
+      "month_sale30": 783,
+      "visit30": 49,
+      "week_sale40": 95,
+      "month_sale40": 476,
+      "visit40": 12,
+      "week_sale50": 84,
+      "month_sale50": 783,
+      "visit50": 31,
+      "week_sale60": 15,
+      "month_sale60": 726,
+      "visit60": 33
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 112,
+      "week_sale10": 65,
+      "month_sale10": 139,
+      "visit10": 47,
+      "week_sale20": 62,
+      "month_sale20": 849,
+      "visit20": 3,
+      "week_sale30": 53,
+      "month_sale30": 928,
+      "visit30": 33,
+      "week_sale40": 77,
+      "month_sale40": 531,
+      "visit40": 32,
+      "week_sale50": 53,
+      "month_sale50": 864,
+      "visit50": 24,
+      "week_sale60": 60,
+      "month_sale60": 511,
+      "visit60": 17
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 113,
+      "week_sale10": 13,
+      "month_sale10": 665,
+      "visit10": 11,
+      "week_sale20": 49,
+      "month_sale20": 320,
+      "visit20": 46,
+      "week_sale30": 42,
+      "month_sale30": 574,
+      "visit30": 39,
+      "week_sale40": 70,
+      "month_sale40": 575,
+      "visit40": 28,
+      "week_sale50": 64,
+      "month_sale50": 602,
+      "visit50": 19,
+      "week_sale60": 97,
+      "month_sale60": 26,
+      "visit60": 26
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 114,
+      "week_sale10": 91,
+      "month_sale10": 939,
+      "visit10": 44,
+      "week_sale20": 24,
+      "month_sale20": 682,
+      "visit20": 28,
+      "week_sale30": 10,
+      "month_sale30": 788,
+      "visit30": 22,
+      "week_sale40": 80,
+      "month_sale40": 147,
+      "visit40": 38,
+      "week_sale50": 30,
+      "month_sale50": 946,
+      "visit50": 8,
+      "week_sale60": 71,
+      "month_sale60": 637,
+      "visit60": 38
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 115,
+      "week_sale10": 69,
+      "month_sale10": 798,
+      "visit10": 10,
+      "week_sale20": 32,
+      "month_sale20": 915,
+      "visit20": 26,
+      "week_sale30": 28,
+      "month_sale30": 932,
+      "visit30": 36,
+      "week_sale40": 21,
+      "month_sale40": 674,
+      "visit40": 16,
+      "week_sale50": 37,
+      "month_sale50": 247,
+      "visit50": 43,
+      "week_sale60": 90,
+      "month_sale60": 924,
+      "visit60": 15
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 116,
+      "week_sale10": 35,
+      "month_sale10": 652,
+      "visit10": 38,
+      "week_sale20": 1,
+      "month_sale20": 925,
+      "visit20": 1,
+      "week_sale30": 100,
+      "month_sale30": 260,
+      "visit30": 6,
+      "week_sale40": 9,
+      "month_sale40": 496,
+      "visit40": 48,
+      "week_sale50": 53,
+      "month_sale50": 693,
+      "visit50": 23,
+      "week_sale60": 5,
+      "month_sale60": 209,
+      "visit60": 3
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 117,
+      "week_sale10": 95,
+      "month_sale10": 955,
+      "visit10": 30,
+      "week_sale20": 50,
+      "month_sale20": 144,
+      "visit20": 40,
+      "week_sale30": 49,
+      "month_sale30": 646,
+      "visit30": 24,
+      "week_sale40": 28,
+      "month_sale40": 489,
+      "visit40": 46,
+      "week_sale50": 55,
+      "month_sale50": 869,
+      "visit50": 32,
+      "week_sale60": 39,
+      "month_sale60": 468,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 118,
+      "week_sale10": 74,
+      "month_sale10": 872,
+      "visit10": 19,
+      "week_sale20": 13,
+      "month_sale20": 212,
+      "visit20": 3,
+      "week_sale30": 47,
+      "month_sale30": 381,
+      "visit30": 11,
+      "week_sale40": 20,
+      "month_sale40": 58,
+      "visit40": 3,
+      "week_sale50": 4,
+      "month_sale50": 182,
+      "visit50": 28,
+      "week_sale60": 47,
+      "month_sale60": 650,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 119,
+      "week_sale10": 34,
+      "month_sale10": 82,
+      "visit10": 33,
+      "week_sale20": 83,
+      "month_sale20": 898,
+      "visit20": 36,
+      "week_sale30": 30,
+      "month_sale30": 961,
+      "visit30": 11,
+      "week_sale40": 79,
+      "month_sale40": 809,
+      "visit40": 34,
+      "week_sale50": 28,
+      "month_sale50": 748,
+      "visit50": 37,
+      "week_sale60": 82,
+      "month_sale60": 760,
+      "visit60": 32
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 120,
+      "week_sale10": 7,
+      "month_sale10": 985,
+      "visit10": 46,
+      "week_sale20": 90,
+      "month_sale20": 908,
+      "visit20": 11,
+      "week_sale30": 90,
+      "month_sale30": 485,
+      "visit30": 38,
+      "week_sale40": 21,
+      "month_sale40": 99,
+      "visit40": 31,
+      "week_sale50": 70,
+      "month_sale50": 939,
+      "visit50": 50,
+      "week_sale60": 78,
+      "month_sale60": 445,
+      "visit60": 35
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 121,
+      "week_sale10": 96,
+      "month_sale10": 918,
+      "visit10": 9,
+      "week_sale20": 25,
+      "month_sale20": 388,
+      "visit20": 24,
+      "week_sale30": 75,
+      "month_sale30": 180,
+      "visit30": 8,
+      "week_sale40": 94,
+      "month_sale40": 49,
+      "visit40": 24,
+      "week_sale50": 41,
+      "month_sale50": 872,
+      "visit50": 27,
+      "week_sale60": 34,
+      "month_sale60": 74,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 122,
+      "week_sale10": 28,
+      "month_sale10": 491,
+      "visit10": 24,
+      "week_sale20": 23,
+      "month_sale20": 238,
+      "visit20": 48,
+      "week_sale30": 75,
+      "month_sale30": 281,
+      "visit30": 47,
+      "week_sale40": 63,
+      "month_sale40": 188,
+      "visit40": 12,
+      "week_sale50": 100,
+      "month_sale50": 839,
+      "visit50": 7,
+      "week_sale60": 79,
+      "month_sale60": 862,
+      "visit60": 36
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 123,
+      "week_sale10": 56,
+      "month_sale10": 947,
+      "visit10": 11,
+      "week_sale20": 21,
+      "month_sale20": 496,
+      "visit20": 16,
+      "week_sale30": 100,
+      "month_sale30": 241,
+      "visit30": 31,
+      "week_sale40": 44,
+      "month_sale40": 849,
+      "visit40": 39,
+      "week_sale50": 2,
+      "month_sale50": 550,
+      "visit50": 8,
+      "week_sale60": 54,
+      "month_sale60": 839,
+      "visit60": 3
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 124,
+      "week_sale10": 80,
+      "month_sale10": 131,
+      "visit10": 39,
+      "week_sale20": 78,
+      "month_sale20": 899,
+      "visit20": 4,
+      "week_sale30": 4,
+      "month_sale30": 280,
+      "visit30": 43,
+      "week_sale40": 83,
+      "month_sale40": 775,
+      "visit40": 6,
+      "week_sale50": 27,
+      "month_sale50": 444,
+      "visit50": 41,
+      "week_sale60": 70,
+      "month_sale60": 334,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 201,
+      "week_sale10": 21,
+      "month_sale10": 970,
+      "visit10": 22,
+      "week_sale20": 98,
+      "month_sale20": 225,
+      "visit20": 38,
+      "week_sale30": 35,
+      "month_sale30": 685,
+      "visit30": 39,
+      "week_sale40": 66,
+      "month_sale40": 201,
+      "visit40": 6,
+      "week_sale50": 20,
+      "month_sale50": 813,
+      "visit50": 44,
+      "week_sale60": 76,
+      "month_sale60": 340,
+      "visit60": 29
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 202,
+      "week_sale10": 68,
+      "month_sale10": 79,
+      "visit10": 12,
+      "week_sale20": 20,
+      "month_sale20": 994,
+      "visit20": 30,
+      "week_sale30": 100,
+      "month_sale30": 142,
+      "visit30": 10,
+      "week_sale40": 33,
+      "month_sale40": 275,
+      "visit40": 7,
+      "week_sale50": 13,
+      "month_sale50": 440,
+      "visit50": 19,
+      "week_sale60": 20,
+      "month_sale60": 675,
+      "visit60": 4
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 203,
+      "week_sale10": 84,
+      "month_sale10": 344,
+      "visit10": 22,
+      "week_sale20": 61,
+      "month_sale20": 786,
+      "visit20": 28,
+      "week_sale30": 60,
+      "month_sale30": 9,
+      "visit30": 19,
+      "week_sale40": 89,
+      "month_sale40": 104,
+      "visit40": 44,
+      "week_sale50": 55,
+      "month_sale50": 691,
+      "visit50": 36,
+      "week_sale60": 20,
+      "month_sale60": 973,
+      "visit60": 48
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 204,
+      "week_sale10": 97,
+      "month_sale10": 394,
+      "visit10": 39,
+      "week_sale20": 64,
+      "month_sale20": 57,
+      "visit20": 36,
+      "week_sale30": 20,
+      "month_sale30": 360,
+      "visit30": 16,
+      "week_sale40": 60,
+      "month_sale40": 942,
+      "visit40": 5,
+      "week_sale50": 84,
+      "month_sale50": 467,
+      "visit50": 49,
+      "week_sale60": 73,
+      "month_sale60": 716,
+      "visit60": 18
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 205,
+      "week_sale10": 10,
+      "month_sale10": 254,
+      "visit10": 27,
+      "week_sale20": 75,
+      "month_sale20": 96,
+      "visit20": 16,
+      "week_sale30": 76,
+      "month_sale30": 607,
+      "visit30": 48,
+      "week_sale40": 60,
+      "month_sale40": 925,
+      "visit40": 49,
+      "week_sale50": 61,
+      "month_sale50": 717,
+      "visit50": 18,
+      "week_sale60": 55,
+      "month_sale60": 262,
+      "visit60": 23
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 206,
+      "week_sale10": 87,
+      "month_sale10": 875,
+      "visit10": 9,
+      "week_sale20": 81,
+      "month_sale20": 373,
+      "visit20": 38,
+      "week_sale30": 25,
+      "month_sale30": 854,
+      "visit30": 45,
+      "week_sale40": 40,
+      "month_sale40": 776,
+      "visit40": 41,
+      "week_sale50": 3,
+      "month_sale50": 716,
+      "visit50": 28,
+      "week_sale60": 37,
+      "month_sale60": 383,
+      "visit60": 15
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 207,
+      "week_sale10": 7,
+      "month_sale10": 363,
+      "visit10": 26,
+      "week_sale20": 89,
+      "month_sale20": 843,
+      "visit20": 41,
+      "week_sale30": 96,
+      "month_sale30": 651,
+      "visit30": 48,
+      "week_sale40": 85,
+      "month_sale40": 991,
+      "visit40": 6,
+      "week_sale50": 46,
+      "month_sale50": 800,
+      "visit50": 48,
+      "week_sale60": 84,
+      "month_sale60": 507,
+      "visit60": 35
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 208,
+      "week_sale10": 70,
+      "month_sale10": 652,
+      "visit10": 37,
+      "week_sale20": 59,
+      "month_sale20": 494,
+      "visit20": 15,
+      "week_sale30": 88,
+      "month_sale30": 661,
+      "visit30": 5,
+      "week_sale40": 87,
+      "month_sale40": 788,
+      "visit40": 5,
+      "week_sale50": 82,
+      "month_sale50": 611,
+      "visit50": 49,
+      "week_sale60": 72,
+      "month_sale60": 418,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 209,
+      "week_sale10": 69,
+      "month_sale10": 744,
+      "visit10": 20,
+      "week_sale20": 70,
+      "month_sale20": 100,
+      "visit20": 21,
+      "week_sale30": 52,
+      "month_sale30": 889,
+      "visit30": 47,
+      "week_sale40": 30,
+      "month_sale40": 849,
+      "visit40": 2,
+      "week_sale50": 65,
+      "month_sale50": 472,
+      "visit50": 50,
+      "week_sale60": 31,
+      "month_sale60": 197,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 210,
+      "week_sale10": 64,
+      "month_sale10": 147,
+      "visit10": 37,
+      "week_sale20": 86,
+      "month_sale20": 228,
+      "visit20": 11,
+      "week_sale30": 87,
+      "month_sale30": 154,
+      "visit30": 27,
+      "week_sale40": 88,
+      "month_sale40": 685,
+      "visit40": 45,
+      "week_sale50": 60,
+      "month_sale50": 854,
+      "visit50": 3,
+      "week_sale60": 55,
+      "month_sale60": 889,
+      "visit60": 19
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 211,
+      "week_sale10": 57,
+      "month_sale10": 483,
+      "visit10": 37,
+      "week_sale20": 62,
+      "month_sale20": 792,
+      "visit20": 34,
+      "week_sale30": 74,
+      "month_sale30": 378,
+      "visit30": 39,
+      "week_sale40": 96,
+      "month_sale40": 292,
+      "visit40": 37,
+      "week_sale50": 70,
+      "month_sale50": 543,
+      "visit50": 37,
+      "week_sale60": 37,
+      "month_sale60": 685,
+      "visit60": 27
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 212,
+      "week_sale10": 26,
+      "month_sale10": 521,
+      "visit10": 48,
+      "week_sale20": 5,
+      "month_sale20": 203,
+      "visit20": 14,
+      "week_sale30": 78,
+      "month_sale30": 196,
+      "visit30": 43,
+      "week_sale40": 57,
+      "month_sale40": 186,
+      "visit40": 19,
+      "week_sale50": 48,
+      "month_sale50": 363,
+      "visit50": 21,
+      "week_sale60": 9,
+      "month_sale60": 954,
+      "visit60": 40
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 213,
+      "week_sale10": 33,
+      "month_sale10": 814,
+      "visit10": 32,
+      "week_sale20": 47,
+      "month_sale20": 614,
+      "visit20": 9,
+      "week_sale30": 7,
+      "month_sale30": 320,
+      "visit30": 34,
+      "week_sale40": 39,
+      "month_sale40": 274,
+      "visit40": 39,
+      "week_sale50": 88,
+      "month_sale50": 255,
+      "visit50": 40,
+      "week_sale60": 37,
+      "month_sale60": 659,
+      "visit60": 16
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 214,
+      "week_sale10": 97,
+      "month_sale10": 801,
+      "visit10": 5,
+      "week_sale20": 32,
+      "month_sale20": 75,
+      "visit20": 9,
+      "week_sale30": 13,
+      "month_sale30": 866,
+      "visit30": 20,
+      "week_sale40": 65,
+      "month_sale40": 818,
+      "visit40": 47,
+      "week_sale50": 41,
+      "month_sale50": 910,
+      "visit50": 33,
+      "week_sale60": 6,
+      "month_sale60": 396,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 215,
+      "week_sale10": 61,
+      "month_sale10": 19,
+      "visit10": 36,
+      "week_sale20": 38,
+      "month_sale20": 959,
+      "visit20": 8,
+      "week_sale30": 74,
+      "month_sale30": 54,
+      "visit30": 20,
+      "week_sale40": 81,
+      "month_sale40": 21,
+      "visit40": 4,
+      "week_sale50": 99,
+      "month_sale50": 760,
+      "visit50": 15,
+      "week_sale60": 6,
+      "month_sale60": 672,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 216,
+      "week_sale10": 96,
+      "month_sale10": 366,
+      "visit10": 10,
+      "week_sale20": 52,
+      "month_sale20": 323,
+      "visit20": 39,
+      "week_sale30": 25,
+      "month_sale30": 943,
+      "visit30": 3,
+      "week_sale40": 93,
+      "month_sale40": 757,
+      "visit40": 32,
+      "week_sale50": 93,
+      "month_sale50": 580,
+      "visit50": 29,
+      "week_sale60": 57,
+      "month_sale60": 879,
+      "visit60": 43
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 217,
+      "week_sale10": 7,
+      "month_sale10": 952,
+      "visit10": 26,
+      "week_sale20": 48,
+      "month_sale20": 613,
+      "visit20": 26,
+      "week_sale30": 15,
+      "month_sale30": 634,
+      "visit30": 4,
+      "week_sale40": 40,
+      "month_sale40": 731,
+      "visit40": 26,
+      "week_sale50": 47,
+      "month_sale50": 204,
+      "visit50": 1,
+      "week_sale60": 8,
+      "month_sale60": 288,
+      "visit60": 12
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 218,
+      "week_sale10": 32,
+      "month_sale10": 323,
+      "visit10": 34,
+      "week_sale20": 51,
+      "month_sale20": 430,
+      "visit20": 34,
+      "week_sale30": 81,
+      "month_sale30": 55,
+      "visit30": 20,
+      "week_sale40": 95,
+      "month_sale40": 545,
+      "visit40": 18,
+      "week_sale50": 85,
+      "month_sale50": 688,
+      "visit50": 13,
+      "week_sale60": 74,
+      "month_sale60": 325,
+      "visit60": 30
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 219,
+      "week_sale10": 2,
+      "month_sale10": 400,
+      "visit10": 45,
+      "week_sale20": 87,
+      "month_sale20": 892,
+      "visit20": 36,
+      "week_sale30": 38,
+      "month_sale30": 703,
+      "visit30": 15,
+      "week_sale40": 16,
+      "month_sale40": 794,
+      "visit40": 45,
+      "week_sale50": 16,
+      "month_sale50": 214,
+      "visit50": 9,
+      "week_sale60": 38,
+      "month_sale60": 831,
+      "visit60": 40
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 220,
+      "week_sale10": 100,
+      "month_sale10": 159,
+      "visit10": 3,
+      "week_sale20": 8,
+      "month_sale20": 749,
+      "visit20": 27,
+      "week_sale30": 64,
+      "month_sale30": 355,
+      "visit30": 11,
+      "week_sale40": 59,
+      "month_sale40": 890,
+      "visit40": 22,
+      "week_sale50": 39,
+      "month_sale50": 569,
+      "visit50": 5,
+      "week_sale60": 93,
+      "month_sale60": 911,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 221,
+      "week_sale10": 77,
+      "month_sale10": 91,
+      "visit10": 11,
+      "week_sale20": 80,
+      "month_sale20": 154,
+      "visit20": 30,
+      "week_sale30": 13,
+      "month_sale30": 374,
+      "visit30": 47,
+      "week_sale40": 43,
+      "month_sale40": 205,
+      "visit40": 14,
+      "week_sale50": 94,
+      "month_sale50": 271,
+      "visit50": 22,
+      "week_sale60": 36,
+      "month_sale60": 343,
+      "visit60": 34
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 222,
+      "week_sale10": 19,
+      "month_sale10": 274,
+      "visit10": 13,
+      "week_sale20": 31,
+      "month_sale20": 998,
+      "visit20": 15,
+      "week_sale30": 57,
+      "month_sale30": 963,
+      "visit30": 29,
+      "week_sale40": 54,
+      "month_sale40": 76,
+      "visit40": 43,
+      "week_sale50": 34,
+      "month_sale50": 62,
+      "visit50": 41,
+      "week_sale60": 34,
+      "month_sale60": 932,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 223,
+      "week_sale10": 86,
+      "month_sale10": 178,
+      "visit10": 26,
+      "week_sale20": 66,
+      "month_sale20": 370,
+      "visit20": 6,
+      "week_sale30": 39,
+      "month_sale30": 662,
+      "visit30": 19,
+      "week_sale40": 38,
+      "month_sale40": 145,
+      "visit40": 10,
+      "week_sale50": 70,
+      "month_sale50": 461,
+      "visit50": 23,
+      "week_sale60": 53,
+      "month_sale60": 438,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 224,
+      "week_sale10": 11,
+      "month_sale10": 229,
+      "visit10": 6,
+      "week_sale20": 57,
+      "month_sale20": 631,
+      "visit20": 9,
+      "week_sale30": 65,
+      "month_sale30": 208,
+      "visit30": 20,
+      "week_sale40": 7,
+      "month_sale40": 207,
+      "visit40": 2,
+      "week_sale50": 26,
+      "month_sale50": 646,
+      "visit50": 2,
+      "week_sale60": 54,
+      "month_sale60": 769,
+      "visit60": 49
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 301,
+      "week_sale10": 95,
+      "month_sale10": 101,
+      "visit10": 24,
+      "week_sale20": 84,
+      "month_sale20": 503,
+      "visit20": 40,
+      "week_sale30": 19,
+      "month_sale30": 608,
+      "visit30": 5,
+      "week_sale40": 99,
+      "month_sale40": 398,
+      "visit40": 23,
+      "week_sale50": 66,
+      "month_sale50": 482,
+      "visit50": 39,
+      "week_sale60": 66,
+      "month_sale60": 426,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 302,
+      "week_sale10": 63,
+      "month_sale10": 390,
+      "visit10": 31,
+      "week_sale20": 97,
+      "month_sale20": 335,
+      "visit20": 49,
+      "week_sale30": 20,
+      "month_sale30": 518,
+      "visit30": 3,
+      "week_sale40": 62,
+      "month_sale40": 921,
+      "visit40": 38,
+      "week_sale50": 99,
+      "month_sale50": 808,
+      "visit50": 32,
+      "week_sale60": 47,
+      "month_sale60": 750,
+      "visit60": 45
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 303,
+      "week_sale10": 72,
+      "month_sale10": 699,
+      "visit10": 25,
+      "week_sale20": 96,
+      "month_sale20": 590,
+      "visit20": 34,
+      "week_sale30": 74,
+      "month_sale30": 436,
+      "visit30": 48,
+      "week_sale40": 46,
+      "month_sale40": 337,
+      "visit40": 13,
+      "week_sale50": 11,
+      "month_sale50": 564,
+      "visit50": 36,
+      "week_sale60": 98,
+      "month_sale60": 337,
+      "visit60": 31
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 304,
+      "week_sale10": 98,
+      "month_sale10": 810,
+      "visit10": 29,
+      "week_sale20": 52,
+      "month_sale20": 801,
+      "visit20": 34,
+      "week_sale30": 62,
+      "month_sale30": 527,
+      "visit30": 6,
+      "week_sale40": 88,
+      "month_sale40": 582,
+      "visit40": 44,
+      "week_sale50": 46,
+      "month_sale50": 276,
+      "visit50": 13,
+      "week_sale60": 69,
+      "month_sale60": 389,
+      "visit60": 9
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 305,
+      "week_sale10": 100,
+      "month_sale10": 120,
+      "visit10": 21,
+      "week_sale20": 76,
+      "month_sale20": 662,
+      "visit20": 45,
+      "week_sale30": 8,
+      "month_sale30": 917,
+      "visit30": 48,
+      "week_sale40": 99,
+      "month_sale40": 721,
+      "visit40": 5,
+      "week_sale50": 41,
+      "month_sale50": 230,
+      "visit50": 38,
+      "week_sale60": 92,
+      "month_sale60": 628,
+      "visit60": 43
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 306,
+      "week_sale10": 59,
+      "month_sale10": 578,
+      "visit10": 13,
+      "week_sale20": 70,
+      "month_sale20": 414,
+      "visit20": 1,
+      "week_sale30": 37,
+      "month_sale30": 595,
+      "visit30": 8,
+      "week_sale40": 60,
+      "month_sale40": 71,
+      "visit40": 28,
+      "week_sale50": 18,
+      "month_sale50": 493,
+      "visit50": 15,
+      "week_sale60": 28,
+      "month_sale60": 40,
+      "visit60": 36
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 307,
+      "week_sale10": 80,
+      "month_sale10": 920,
+      "visit10": 44,
+      "week_sale20": 52,
+      "month_sale20": 349,
+      "visit20": 10,
+      "week_sale30": 53,
+      "month_sale30": 53,
+      "visit30": 44,
+      "week_sale40": 26,
+      "month_sale40": 79,
+      "visit40": 16,
+      "week_sale50": 6,
+      "month_sale50": 217,
+      "visit50": 30,
+      "week_sale60": 98,
+      "month_sale60": 942,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 308,
+      "week_sale10": 90,
+      "month_sale10": 167,
+      "visit10": 17,
+      "week_sale20": 79,
+      "month_sale20": 534,
+      "visit20": 1,
+      "week_sale30": 31,
+      "month_sale30": 304,
+      "visit30": 48,
+      "week_sale40": 90,
+      "month_sale40": 314,
+      "visit40": 14,
+      "week_sale50": 30,
+      "month_sale50": 891,
+      "visit50": 5,
+      "week_sale60": 44,
+      "month_sale60": 806,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 309,
+      "week_sale10": 88,
+      "month_sale10": 733,
+      "visit10": 34,
+      "week_sale20": 86,
+      "month_sale20": 400,
+      "visit20": 41,
+      "week_sale30": 54,
+      "month_sale30": 526,
+      "visit30": 5,
+      "week_sale40": 69,
+      "month_sale40": 253,
+      "visit40": 22,
+      "week_sale50": 66,
+      "month_sale50": 810,
+      "visit50": 13,
+      "week_sale60": 24,
+      "month_sale60": 896,
+      "visit60": 32
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 310,
+      "week_sale10": 31,
+      "month_sale10": 755,
+      "visit10": 1,
+      "week_sale20": 89,
+      "month_sale20": 695,
+      "visit20": 13,
+      "week_sale30": 76,
+      "month_sale30": 973,
+      "visit30": 38,
+      "week_sale40": 62,
+      "month_sale40": 786,
+      "visit40": 13,
+      "week_sale50": 48,
+      "month_sale50": 864,
+      "visit50": 11,
+      "week_sale60": 64,
+      "month_sale60": 882,
+      "visit60": 35
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 311,
+      "week_sale10": 76,
+      "month_sale10": 197,
+      "visit10": 43,
+      "week_sale20": 86,
+      "month_sale20": 442,
+      "visit20": 13,
+      "week_sale30": 56,
+      "month_sale30": 132,
+      "visit30": 45,
+      "week_sale40": 24,
+      "month_sale40": 974,
+      "visit40": 7,
+      "week_sale50": 1,
+      "month_sale50": 419,
+      "visit50": 42,
+      "week_sale60": 89,
+      "month_sale60": 599,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 312,
+      "week_sale10": 49,
+      "month_sale10": 761,
+      "visit10": 30,
+      "week_sale20": 61,
+      "month_sale20": 344,
+      "visit20": 44,
+      "week_sale30": 51,
+      "month_sale30": 532,
+      "visit30": 29,
+      "week_sale40": 13,
+      "month_sale40": 455,
+      "visit40": 36,
+      "week_sale50": 12,
+      "month_sale50": 534,
+      "visit50": 35,
+      "week_sale60": 98,
+      "month_sale60": 536,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 313,
+      "week_sale10": 53,
+      "month_sale10": 496,
+      "visit10": 31,
+      "week_sale20": 39,
+      "month_sale20": 471,
+      "visit20": 18,
+      "week_sale30": 86,
+      "month_sale30": 23,
+      "visit30": 38,
+      "week_sale40": 43,
+      "month_sale40": 542,
+      "visit40": 36,
+      "week_sale50": 79,
+      "month_sale50": 136,
+      "visit50": 45,
+      "week_sale60": 95,
+      "month_sale60": 259,
+      "visit60": 12
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 314,
+      "week_sale10": 9,
+      "month_sale10": 508,
+      "visit10": 29,
+      "week_sale20": 89,
+      "month_sale20": 972,
+      "visit20": 42,
+      "week_sale30": 85,
+      "month_sale30": 106,
+      "visit30": 19,
+      "week_sale40": 84,
+      "month_sale40": 604,
+      "visit40": 23,
+      "week_sale50": 27,
+      "month_sale50": 490,
+      "visit50": 4,
+      "week_sale60": 99,
+      "month_sale60": 402,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 315,
+      "week_sale10": 59,
+      "month_sale10": 755,
+      "visit10": 42,
+      "week_sale20": 72,
+      "month_sale20": 427,
+      "visit20": 8,
+      "week_sale30": 34,
+      "month_sale30": 928,
+      "visit30": 42,
+      "week_sale40": 57,
+      "month_sale40": 681,
+      "visit40": 12,
+      "week_sale50": 57,
+      "month_sale50": 989,
+      "visit50": 18,
+      "week_sale60": 41,
+      "month_sale60": 566,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 316,
+      "week_sale10": 8,
+      "month_sale10": 564,
+      "visit10": 44,
+      "week_sale20": 4,
+      "month_sale20": 699,
+      "visit20": 22,
+      "week_sale30": 35,
+      "month_sale30": 857,
+      "visit30": 6,
+      "week_sale40": 60,
+      "month_sale40": 642,
+      "visit40": 6,
+      "week_sale50": 37,
+      "month_sale50": 283,
+      "visit50": 1,
+      "week_sale60": 59,
+      "month_sale60": 737,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 317,
+      "week_sale10": 69,
+      "month_sale10": 943,
+      "visit10": 29,
+      "week_sale20": 11,
+      "month_sale20": 382,
+      "visit20": 12,
+      "week_sale30": 77,
+      "month_sale30": 909,
+      "visit30": 17,
+      "week_sale40": 3,
+      "month_sale40": 975,
+      "visit40": 48,
+      "week_sale50": 18,
+      "month_sale50": 466,
+      "visit50": 3,
+      "week_sale60": 21,
+      "month_sale60": 445,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 318,
+      "week_sale10": 62,
+      "month_sale10": 36,
+      "visit10": 22,
+      "week_sale20": 21,
+      "month_sale20": 243,
+      "visit20": 21,
+      "week_sale30": 44,
+      "month_sale30": 401,
+      "visit30": 34,
+      "week_sale40": 60,
+      "month_sale40": 350,
+      "visit40": 47,
+      "week_sale50": 97,
+      "month_sale50": 114,
+      "visit50": 44,
+      "week_sale60": 28,
+      "month_sale60": 921,
+      "visit60": 1
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 319,
+      "week_sale10": 38,
+      "month_sale10": 167,
+      "visit10": 43,
+      "week_sale20": 36,
+      "month_sale20": 628,
+      "visit20": 45,
+      "week_sale30": 71,
+      "month_sale30": 334,
+      "visit30": 2,
+      "week_sale40": 34,
+      "month_sale40": 538,
+      "visit40": 43,
+      "week_sale50": 98,
+      "month_sale50": 59,
+      "visit50": 14,
+      "week_sale60": 48,
+      "month_sale60": 762,
+      "visit60": 37
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 320,
+      "week_sale10": 49,
+      "month_sale10": 161,
+      "visit10": 18,
+      "week_sale20": 38,
+      "month_sale20": 646,
+      "visit20": 25,
+      "week_sale30": 69,
+      "month_sale30": 818,
+      "visit30": 21,
+      "week_sale40": 66,
+      "month_sale40": 975,
+      "visit40": 43,
+      "week_sale50": 62,
+      "month_sale50": 251,
+      "visit50": 9,
+      "week_sale60": 69,
+      "month_sale60": 747,
+      "visit60": 42
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 321,
+      "week_sale10": 49,
+      "month_sale10": 984,
+      "visit10": 13,
+      "week_sale20": 3,
+      "month_sale20": 927,
+      "visit20": 43,
+      "week_sale30": 16,
+      "month_sale30": 132,
+      "visit30": 49,
+      "week_sale40": 8,
+      "month_sale40": 409,
+      "visit40": 14,
+      "week_sale50": 85,
+      "month_sale50": 3,
+      "visit50": 34,
+      "week_sale60": 50,
+      "month_sale60": 597,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 322,
+      "week_sale10": 22,
+      "month_sale10": 675,
+      "visit10": 43,
+      "week_sale20": 28,
+      "month_sale20": 288,
+      "visit20": 13,
+      "week_sale30": 53,
+      "month_sale30": 714,
+      "visit30": 12,
+      "week_sale40": 7,
+      "month_sale40": 443,
+      "visit40": 38,
+      "week_sale50": 77,
+      "month_sale50": 278,
+      "visit50": 26,
+      "week_sale60": 95,
+      "month_sale60": 443,
+      "visit60": 44
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 323,
+      "week_sale10": 72,
+      "month_sale10": 413,
+      "visit10": 34,
+      "week_sale20": 6,
+      "month_sale20": 508,
+      "visit20": 8,
+      "week_sale30": 52,
+      "month_sale30": 187,
+      "visit30": 29,
+      "week_sale40": 65,
+      "month_sale40": 828,
+      "visit40": 10,
+      "week_sale50": 87,
+      "month_sale50": 191,
+      "visit50": 50,
+      "week_sale60": 12,
+      "month_sale60": 23,
+      "visit60": 6
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 324,
+      "week_sale10": 12,
+      "month_sale10": 726,
+      "visit10": 12,
+      "week_sale20": 31,
+      "month_sale20": 336,
+      "visit20": 27,
+      "week_sale30": 23,
+      "month_sale30": 181,
+      "visit30": 47,
+      "week_sale40": 60,
+      "month_sale40": 625,
+      "visit40": 19,
+      "week_sale50": 49,
+      "month_sale50": 626,
+      "visit50": 40,
+      "week_sale60": 40,
+      "month_sale60": 904,
+      "visit60": 27
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 401,
+      "week_sale10": 90,
+      "month_sale10": 593,
+      "visit10": 40,
+      "week_sale20": 24,
+      "month_sale20": 739,
+      "visit20": 50,
+      "week_sale30": 74,
+      "month_sale30": 809,
+      "visit30": 36,
+      "week_sale40": 86,
+      "month_sale40": 895,
+      "visit40": 17,
+      "week_sale50": 62,
+      "month_sale50": 454,
+      "visit50": 41,
+      "week_sale60": 3,
+      "month_sale60": 981,
+      "visit60": 8
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 402,
+      "week_sale10": 95,
+      "month_sale10": 592,
+      "visit10": 7,
+      "week_sale20": 56,
+      "month_sale20": 498,
+      "visit20": 27,
+      "week_sale30": 65,
+      "month_sale30": 127,
+      "visit30": 41,
+      "week_sale40": 43,
+      "month_sale40": 803,
+      "visit40": 37,
+      "week_sale50": 9,
+      "month_sale50": 322,
+      "visit50": 25,
+      "week_sale60": 51,
+      "month_sale60": 57,
+      "visit60": 34
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 403,
+      "week_sale10": 68,
+      "month_sale10": 996,
+      "visit10": 46,
+      "week_sale20": 43,
+      "month_sale20": 518,
+      "visit20": 4,
+      "week_sale30": 65,
+      "month_sale30": 281,
+      "visit30": 50,
+      "week_sale40": 44,
+      "month_sale40": 967,
+      "visit40": 5,
+      "week_sale50": 4,
+      "month_sale50": 912,
+      "visit50": 36,
+      "week_sale60": 11,
+      "month_sale60": 768,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 404,
+      "week_sale10": 75,
+      "month_sale10": 316,
+      "visit10": 33,
+      "week_sale20": 79,
+      "month_sale20": 357,
+      "visit20": 22,
+      "week_sale30": 44,
+      "month_sale30": 383,
+      "visit30": 3,
+      "week_sale40": 45,
+      "month_sale40": 899,
+      "visit40": 32,
+      "week_sale50": 58,
+      "month_sale50": 809,
+      "visit50": 45,
+      "week_sale60": 3,
+      "month_sale60": 660,
+      "visit60": 8
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 405,
+      "week_sale10": 97,
+      "month_sale10": 746,
+      "visit10": 35,
+      "week_sale20": 8,
+      "month_sale20": 254,
+      "visit20": 39,
+      "week_sale30": 93,
+      "month_sale30": 613,
+      "visit30": 34,
+      "week_sale40": 6,
+      "month_sale40": 637,
+      "visit40": 22,
+      "week_sale50": 52,
+      "month_sale50": 954,
+      "visit50": 25,
+      "week_sale60": 89,
+      "month_sale60": 67,
+      "visit60": 26
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 406,
+      "week_sale10": 44,
+      "month_sale10": 917,
+      "visit10": 50,
+      "week_sale20": 63,
+      "month_sale20": 690,
+      "visit20": 38,
+      "week_sale30": 4,
+      "month_sale30": 918,
+      "visit30": 26,
+      "week_sale40": 32,
+      "month_sale40": 974,
+      "visit40": 34,
+      "week_sale50": 63,
+      "month_sale50": 760,
+      "visit50": 23,
+      "week_sale60": 98,
+      "month_sale60": 220,
+      "visit60": 19
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 407,
+      "week_sale10": 80,
+      "month_sale10": 126,
+      "visit10": 32,
+      "week_sale20": 11,
+      "month_sale20": 188,
+      "visit20": 42,
+      "week_sale30": 2,
+      "month_sale30": 126,
+      "visit30": 47,
+      "week_sale40": 26,
+      "month_sale40": 626,
+      "visit40": 34,
+      "week_sale50": 91,
+      "month_sale50": 259,
+      "visit50": 20,
+      "week_sale60": 76,
+      "month_sale60": 916,
+      "visit60": 28
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 408,
+      "week_sale10": 9,
+      "month_sale10": 145,
+      "visit10": 31,
+      "week_sale20": 99,
+      "month_sale20": 595,
+      "visit20": 22,
+      "week_sale30": 40,
+      "month_sale30": 459,
+      "visit30": 40,
+      "week_sale40": 62,
+      "month_sale40": 417,
+      "visit40": 44,
+      "week_sale50": 34,
+      "month_sale50": 226,
+      "visit50": 7,
+      "week_sale60": 75,
+      "month_sale60": 109,
+      "visit60": 16
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 409,
+      "week_sale10": 8,
+      "month_sale10": 870,
+      "visit10": 7,
+      "week_sale20": 59,
+      "month_sale20": 825,
+      "visit20": 44,
+      "week_sale30": 29,
+      "month_sale30": 649,
+      "visit30": 21,
+      "week_sale40": 44,
+      "month_sale40": 737,
+      "visit40": 17,
+      "week_sale50": 93,
+      "month_sale50": 320,
+      "visit50": 14,
+      "week_sale60": 48,
+      "month_sale60": 893,
+      "visit60": 23
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 410,
+      "week_sale10": 97,
+      "month_sale10": 641,
+      "visit10": 18,
+      "week_sale20": 82,
+      "month_sale20": 338,
+      "visit20": 1,
+      "week_sale30": 32,
+      "month_sale30": 796,
+      "visit30": 37,
+      "week_sale40": 18,
+      "month_sale40": 894,
+      "visit40": 41,
+      "week_sale50": 14,
+      "month_sale50": 402,
+      "visit50": 42,
+      "week_sale60": 86,
+      "month_sale60": 884,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 411,
+      "week_sale10": 63,
+      "month_sale10": 247,
+      "visit10": 39,
+      "week_sale20": 91,
+      "month_sale20": 439,
+      "visit20": 5,
+      "week_sale30": 59,
+      "month_sale30": 881,
+      "visit30": 42,
+      "week_sale40": 69,
+      "month_sale40": 224,
+      "visit40": 26,
+      "week_sale50": 40,
+      "month_sale50": 406,
+      "visit50": 32,
+      "week_sale60": 57,
+      "month_sale60": 366,
+      "visit60": 31
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 412,
+      "week_sale10": 53,
+      "month_sale10": 718,
+      "visit10": 14,
+      "week_sale20": 31,
+      "month_sale20": 59,
+      "visit20": 42,
+      "week_sale30": 3,
+      "month_sale30": 112,
+      "visit30": 38,
+      "week_sale40": 52,
+      "month_sale40": 919,
+      "visit40": 35,
+      "week_sale50": 56,
+      "month_sale50": 799,
+      "visit50": 29,
+      "week_sale60": 66,
+      "month_sale60": 993,
+      "visit60": 22
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 413,
+      "week_sale10": 37,
+      "month_sale10": 454,
+      "visit10": 43,
+      "week_sale20": 3,
+      "month_sale20": 191,
+      "visit20": 19,
+      "week_sale30": 48,
+      "month_sale30": 219,
+      "visit30": 22,
+      "week_sale40": 33,
+      "month_sale40": 947,
+      "visit40": 21,
+      "week_sale50": 1,
+      "month_sale50": 220,
+      "visit50": 9,
+      "week_sale60": 100,
+      "month_sale60": 378,
+      "visit60": 49
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 414,
+      "week_sale10": 57,
+      "month_sale10": 121,
+      "visit10": 20,
+      "week_sale20": 13,
+      "month_sale20": 663,
+      "visit20": 42,
+      "week_sale30": 68,
+      "month_sale30": 139,
+      "visit30": 1,
+      "week_sale40": 88,
+      "month_sale40": 880,
+      "visit40": 24,
+      "week_sale50": 48,
+      "month_sale50": 295,
+      "visit50": 41,
+      "week_sale60": 47,
+      "month_sale60": 652,
+      "visit60": 11
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 415,
+      "week_sale10": 6,
+      "month_sale10": 4,
+      "visit10": 19,
+      "week_sale20": 83,
+      "month_sale20": 93,
+      "visit20": 46,
+      "week_sale30": 5,
+      "month_sale30": 858,
+      "visit30": 38,
+      "week_sale40": 63,
+      "month_sale40": 269,
+      "visit40": 6,
+      "week_sale50": 98,
+      "month_sale50": 573,
+      "visit50": 50,
+      "week_sale60": 37,
+      "month_sale60": 571,
+      "visit60": 24
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 416,
+      "week_sale10": 2,
+      "month_sale10": 713,
+      "visit10": 35,
+      "week_sale20": 76,
+      "month_sale20": 758,
+      "visit20": 45,
+      "week_sale30": 79,
+      "month_sale30": 799,
+      "visit30": 14,
+      "week_sale40": 25,
+      "month_sale40": 963,
+      "visit40": 22,
+      "week_sale50": 48,
+      "month_sale50": 368,
+      "visit50": 41,
+      "week_sale60": 86,
+      "month_sale60": 158,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 417,
+      "week_sale10": 20,
+      "month_sale10": 77,
+      "visit10": 15,
+      "week_sale20": 8,
+      "month_sale20": 162,
+      "visit20": 36,
+      "week_sale30": 81,
+      "month_sale30": 552,
+      "visit30": 5,
+      "week_sale40": 6,
+      "month_sale40": 347,
+      "visit40": 3,
+      "week_sale50": 4,
+      "month_sale50": 715,
+      "visit50": 29,
+      "week_sale60": 81,
+      "month_sale60": 124,
+      "visit60": 19
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 418,
+      "week_sale10": 87,
+      "month_sale10": 923,
+      "visit10": 3,
+      "week_sale20": 22,
+      "month_sale20": 510,
+      "visit20": 20,
+      "week_sale30": 39,
+      "month_sale30": 941,
+      "visit30": 12,
+      "week_sale40": 74,
+      "month_sale40": 22,
+      "visit40": 10,
+      "week_sale50": 72,
+      "month_sale50": 731,
+      "visit50": 2,
+      "week_sale60": 23,
+      "month_sale60": 897,
+      "visit60": 38
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 419,
+      "week_sale10": 76,
+      "month_sale10": 305,
+      "visit10": 41,
+      "week_sale20": 26,
+      "month_sale20": 108,
+      "visit20": 8,
+      "week_sale30": 26,
+      "month_sale30": 657,
+      "visit30": 29,
+      "week_sale40": 69,
+      "month_sale40": 750,
+      "visit40": 7,
+      "week_sale50": 25,
+      "month_sale50": 165,
+      "visit50": 40,
+      "week_sale60": 41,
+      "month_sale60": 558,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 420,
+      "week_sale10": 3,
+      "month_sale10": 524,
+      "visit10": 44,
+      "week_sale20": 55,
+      "month_sale20": 235,
+      "visit20": 6,
+      "week_sale30": 23,
+      "month_sale30": 768,
+      "visit30": 1,
+      "week_sale40": 31,
+      "month_sale40": 440,
+      "visit40": 8,
+      "week_sale50": 69,
+      "month_sale50": 595,
+      "visit50": 15,
+      "week_sale60": 4,
+      "month_sale60": 191,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 421,
+      "week_sale10": 69,
+      "month_sale10": 803,
+      "visit10": 12,
+      "week_sale20": 62,
+      "month_sale20": 155,
+      "visit20": 15,
+      "week_sale30": 54,
+      "month_sale30": 450,
+      "visit30": 40,
+      "week_sale40": 51,
+      "month_sale40": 829,
+      "visit40": 46,
+      "week_sale50": 66,
+      "month_sale50": 563,
+      "visit50": 49,
+      "week_sale60": 92,
+      "month_sale60": 300,
+      "visit60": 23
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 422,
+      "week_sale10": 26,
+      "month_sale10": 15,
+      "visit10": 10,
+      "week_sale20": 17,
+      "month_sale20": 786,
+      "visit20": 27,
+      "week_sale30": 65,
+      "month_sale30": 644,
+      "visit30": 37,
+      "week_sale40": 31,
+      "month_sale40": 124,
+      "visit40": 16,
+      "week_sale50": 97,
+      "month_sale50": 95,
+      "visit50": 14,
+      "week_sale60": 97,
+      "month_sale60": 894,
+      "visit60": 16
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 423,
+      "week_sale10": 50,
+      "month_sale10": 322,
+      "visit10": 43,
+      "week_sale20": 19,
+      "month_sale20": 326,
+      "visit20": 2,
+      "week_sale30": 96,
+      "month_sale30": 288,
+      "visit30": 48,
+      "week_sale40": 36,
+      "month_sale40": 149,
+      "visit40": 23,
+      "week_sale50": 67,
+      "month_sale50": 563,
+      "visit50": 25,
+      "week_sale60": 90,
+      "month_sale60": 260,
+      "visit60": 22
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 424,
+      "week_sale10": 35,
+      "month_sale10": 221,
+      "visit10": 10,
+      "week_sale20": 89,
+      "month_sale20": 809,
+      "visit20": 17,
+      "week_sale30": 41,
+      "month_sale30": 32,
+      "visit30": 34,
+      "week_sale40": 42,
+      "month_sale40": 410,
+      "visit40": 1,
+      "week_sale50": 63,
+      "month_sale50": 993,
+      "visit50": 40,
+      "week_sale60": 46,
+      "month_sale60": 681,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 501,
+      "week_sale10": 54,
+      "month_sale10": 817,
+      "visit10": 9,
+      "week_sale20": 4,
+      "month_sale20": 175,
+      "visit20": 46,
+      "week_sale30": 58,
+      "month_sale30": 805,
+      "visit30": 38,
+      "week_sale40": 50,
+      "month_sale40": 329,
+      "visit40": 22,
+      "week_sale50": 28,
+      "month_sale50": 865,
+      "visit50": 23,
+      "week_sale60": 39,
+      "month_sale60": 398,
+      "visit60": 14
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 502,
+      "week_sale10": 74,
+      "month_sale10": 70,
+      "visit10": 2,
+      "week_sale20": 61,
+      "month_sale20": 511,
+      "visit20": 40,
+      "week_sale30": 69,
+      "month_sale30": 836,
+      "visit30": 24,
+      "week_sale40": 24,
+      "month_sale40": 763,
+      "visit40": 8,
+      "week_sale50": 93,
+      "month_sale50": 315,
+      "visit50": 31,
+      "week_sale60": 21,
+      "month_sale60": 498,
+      "visit60": 36
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 503,
+      "week_sale10": 31,
+      "month_sale10": 77,
+      "visit10": 22,
+      "week_sale20": 36,
+      "month_sale20": 430,
+      "visit20": 28,
+      "week_sale30": 55,
+      "month_sale30": 638,
+      "visit30": 47,
+      "week_sale40": 50,
+      "month_sale40": 680,
+      "visit40": 37,
+      "week_sale50": 78,
+      "month_sale50": 41,
+      "visit50": 20,
+      "week_sale60": 93,
+      "month_sale60": 168,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 504,
+      "week_sale10": 58,
+      "month_sale10": 484,
+      "visit10": 14,
+      "week_sale20": 6,
+      "month_sale20": 924,
+      "visit20": 15,
+      "week_sale30": 82,
+      "month_sale30": 125,
+      "visit30": 18,
+      "week_sale40": 10,
+      "month_sale40": 216,
+      "visit40": 45,
+      "week_sale50": 57,
+      "month_sale50": 777,
+      "visit50": 5,
+      "week_sale60": 50,
+      "month_sale60": 138,
+      "visit60": 6
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 505,
+      "week_sale10": 64,
+      "month_sale10": 201,
+      "visit10": 24,
+      "week_sale20": 62,
+      "month_sale20": 958,
+      "visit20": 50,
+      "week_sale30": 55,
+      "month_sale30": 103,
+      "visit30": 45,
+      "week_sale40": 21,
+      "month_sale40": 973,
+      "visit40": 41,
+      "week_sale50": 81,
+      "month_sale50": 882,
+      "visit50": 26,
+      "week_sale60": 3,
+      "month_sale60": 4,
+      "visit60": 9
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 506,
+      "week_sale10": 38,
+      "month_sale10": 713,
+      "visit10": 20,
+      "week_sale20": 23,
+      "month_sale20": 219,
+      "visit20": 13,
+      "week_sale30": 61,
+      "month_sale30": 52,
+      "visit30": 18,
+      "week_sale40": 33,
+      "month_sale40": 814,
+      "visit40": 15,
+      "week_sale50": 88,
+      "month_sale50": 10,
+      "visit50": 2,
+      "week_sale60": 50,
+      "month_sale60": 892,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 507,
+      "week_sale10": 5,
+      "month_sale10": 812,
+      "visit10": 23,
+      "week_sale20": 61,
+      "month_sale20": 357,
+      "visit20": 9,
+      "week_sale30": 72,
+      "month_sale30": 209,
+      "visit30": 24,
+      "week_sale40": 7,
+      "month_sale40": 33,
+      "visit40": 11,
+      "week_sale50": 18,
+      "month_sale50": 75,
+      "visit50": 7,
+      "week_sale60": 60,
+      "month_sale60": 120,
+      "visit60": 10
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 508,
+      "week_sale10": 37,
+      "month_sale10": 772,
+      "visit10": 22,
+      "week_sale20": 12,
+      "month_sale20": 276,
+      "visit20": 6,
+      "week_sale30": 34,
+      "month_sale30": 362,
+      "visit30": 4,
+      "week_sale40": 38,
+      "month_sale40": 227,
+      "visit40": 48,
+      "week_sale50": 77,
+      "month_sale50": 166,
+      "visit50": 15,
+      "week_sale60": 50,
+      "month_sale60": 105,
+      "visit60": 21
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 509,
+      "week_sale10": 63,
+      "month_sale10": 944,
+      "visit10": 37,
+      "week_sale20": 99,
+      "month_sale20": 208,
+      "visit20": 4,
+      "week_sale30": 85,
+      "month_sale30": 375,
+      "visit30": 6,
+      "week_sale40": 48,
+      "month_sale40": 709,
+      "visit40": 41,
+      "week_sale50": 40,
+      "month_sale50": 326,
+      "visit50": 37,
+      "week_sale60": 67,
+      "month_sale60": 244,
+      "visit60": 28
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 510,
+      "week_sale10": 9,
+      "month_sale10": 96,
+      "visit10": 20,
+      "week_sale20": 1,
+      "month_sale20": 508,
+      "visit20": 28,
+      "week_sale30": 44,
+      "month_sale30": 549,
+      "visit30": 7,
+      "week_sale40": 70,
+      "month_sale40": 13,
+      "visit40": 27,
+      "week_sale50": 66,
+      "month_sale50": 223,
+      "visit50": 4,
+      "week_sale60": 72,
+      "month_sale60": 182,
+      "visit60": 44
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 511,
+      "week_sale10": 84,
+      "month_sale10": 451,
+      "visit10": 36,
+      "week_sale20": 46,
+      "month_sale20": 625,
+      "visit20": 31,
+      "week_sale30": 34,
+      "month_sale30": 383,
+      "visit30": 15,
+      "week_sale40": 14,
+      "month_sale40": 257,
+      "visit40": 8,
+      "week_sale50": 32,
+      "month_sale50": 656,
+      "visit50": 15,
+      "week_sale60": 30,
+      "month_sale60": 513,
+      "visit60": 24
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 512,
+      "week_sale10": 26,
+      "month_sale10": 552,
+      "visit10": 45,
+      "week_sale20": 33,
+      "month_sale20": 517,
+      "visit20": 38,
+      "week_sale30": 11,
+      "month_sale30": 981,
+      "visit30": 11,
+      "week_sale40": 79,
+      "month_sale40": 849,
+      "visit40": 20,
+      "week_sale50": 85,
+      "month_sale50": 616,
+      "visit50": 6,
+      "week_sale60": 78,
+      "month_sale60": 422,
+      "visit60": 32
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 513,
+      "week_sale10": 97,
+      "month_sale10": 654,
+      "visit10": 26,
+      "week_sale20": 54,
+      "month_sale20": 350,
+      "visit20": 43,
+      "week_sale30": 24,
+      "month_sale30": 521,
+      "visit30": 27,
+      "week_sale40": 86,
+      "month_sale40": 524,
+      "visit40": 7,
+      "week_sale50": 78,
+      "month_sale50": 33,
+      "visit50": 44,
+      "week_sale60": 18,
+      "month_sale60": 240,
+      "visit60": 27
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 514,
+      "week_sale10": 76,
+      "month_sale10": 87,
+      "visit10": 29,
+      "week_sale20": 22,
+      "month_sale20": 46,
+      "visit20": 44,
+      "week_sale30": 39,
+      "month_sale30": 982,
+      "visit30": 46,
+      "week_sale40": 67,
+      "month_sale40": 731,
+      "visit40": 5,
+      "week_sale50": 12,
+      "month_sale50": 786,
+      "visit50": 11,
+      "week_sale60": 8,
+      "month_sale60": 436,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 515,
+      "week_sale10": 35,
+      "month_sale10": 281,
+      "visit10": 21,
+      "week_sale20": 91,
+      "month_sale20": 933,
+      "visit20": 35,
+      "week_sale30": 11,
+      "month_sale30": 370,
+      "visit30": 30,
+      "week_sale40": 31,
+      "month_sale40": 396,
+      "visit40": 2,
+      "week_sale50": 41,
+      "month_sale50": 340,
+      "visit50": 17,
+      "week_sale60": 32,
+      "month_sale60": 361,
+      "visit60": 4
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 516,
+      "week_sale10": 68,
+      "month_sale10": 967,
+      "visit10": 43,
+      "week_sale20": 46,
+      "month_sale20": 434,
+      "visit20": 47,
+      "week_sale30": 65,
+      "month_sale30": 243,
+      "visit30": 2,
+      "week_sale40": 2,
+      "month_sale40": 629,
+      "visit40": 33,
+      "week_sale50": 28,
+      "month_sale50": 212,
+      "visit50": 20,
+      "week_sale60": 56,
+      "month_sale60": 893,
+      "visit60": 21
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 517,
+      "week_sale10": 27,
+      "month_sale10": 940,
+      "visit10": 8,
+      "week_sale20": 31,
+      "month_sale20": 718,
+      "visit20": 7,
+      "week_sale30": 30,
+      "month_sale30": 581,
+      "visit30": 19,
+      "week_sale40": 98,
+      "month_sale40": 43,
+      "visit40": 45,
+      "week_sale50": 17,
+      "month_sale50": 680,
+      "visit50": 27,
+      "week_sale60": 71,
+      "month_sale60": 711,
+      "visit60": 6
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 518,
+      "week_sale10": 19,
+      "month_sale10": 715,
+      "visit10": 11,
+      "week_sale20": 38,
+      "month_sale20": 235,
+      "visit20": 40,
+      "week_sale30": 65,
+      "month_sale30": 376,
+      "visit30": 34,
+      "week_sale40": 57,
+      "month_sale40": 168,
+      "visit40": 35,
+      "week_sale50": 90,
+      "month_sale50": 975,
+      "visit50": 34,
+      "week_sale60": 15,
+      "month_sale60": 840,
+      "visit60": 15
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 519,
+      "week_sale10": 38,
+      "month_sale10": 473,
+      "visit10": 8,
+      "week_sale20": 84,
+      "month_sale20": 876,
+      "visit20": 50,
+      "week_sale30": 48,
+      "month_sale30": 606,
+      "visit30": 8,
+      "week_sale40": 68,
+      "month_sale40": 166,
+      "visit40": 13,
+      "week_sale50": 92,
+      "month_sale50": 432,
+      "visit50": 7,
+      "week_sale60": 99,
+      "month_sale60": 360,
+      "visit60": 9
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 520,
+      "week_sale10": 64,
+      "month_sale10": 677,
+      "visit10": 37,
+      "week_sale20": 81,
+      "month_sale20": 458,
+      "visit20": 44,
+      "week_sale30": 92,
+      "month_sale30": 42,
+      "visit30": 20,
+      "week_sale40": 32,
+      "month_sale40": 368,
+      "visit40": 13,
+      "week_sale50": 38,
+      "month_sale50": 133,
+      "visit50": 43,
+      "week_sale60": 11,
+      "month_sale60": 878,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 521,
+      "week_sale10": 35,
+      "month_sale10": 106,
+      "visit10": 12,
+      "week_sale20": 23,
+      "month_sale20": 898,
+      "visit20": 28,
+      "week_sale30": 34,
+      "month_sale30": 309,
+      "visit30": 14,
+      "week_sale40": 41,
+      "month_sale40": 193,
+      "visit40": 18,
+      "week_sale50": 52,
+      "month_sale50": 127,
+      "visit50": 30,
+      "week_sale60": 67,
+      "month_sale60": 876,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 522,
+      "week_sale10": 76,
+      "month_sale10": 243,
+      "visit10": 7,
+      "week_sale20": 37,
+      "month_sale20": 14,
+      "visit20": 34,
+      "week_sale30": 87,
+      "month_sale30": 629,
+      "visit30": 29,
+      "week_sale40": 6,
+      "month_sale40": 582,
+      "visit40": 6,
+      "week_sale50": 19,
+      "month_sale50": 62,
+      "visit50": 5,
+      "week_sale60": 26,
+      "month_sale60": 250,
+      "visit60": 49
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 523,
+      "week_sale10": 94,
+      "month_sale10": 140,
+      "visit10": 44,
+      "week_sale20": 84,
+      "month_sale20": 843,
+      "visit20": 40,
+      "week_sale30": 4,
+      "month_sale30": 591,
+      "visit30": 31,
+      "week_sale40": 16,
+      "month_sale40": 245,
+      "visit40": 32,
+      "week_sale50": 79,
+      "month_sale50": 113,
+      "visit50": 18,
+      "week_sale60": 63,
+      "month_sale60": 602,
+      "visit60": 45
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 524,
+      "week_sale10": 10,
+      "month_sale10": 978,
+      "visit10": 41,
+      "week_sale20": 51,
+      "month_sale20": 241,
+      "visit20": 17,
+      "week_sale30": 38,
+      "month_sale30": 73,
+      "visit30": 20,
+      "week_sale40": 71,
+      "month_sale40": 191,
+      "visit40": 31,
+      "week_sale50": 25,
+      "month_sale50": 626,
+      "visit50": 15,
+      "week_sale60": 76,
+      "month_sale60": 393,
+      "visit60": 47
+    }
+  }
 ]

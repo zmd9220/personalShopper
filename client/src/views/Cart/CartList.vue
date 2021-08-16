@@ -5,7 +5,7 @@
         <div class="container">
           <div class="product-name">{{ item.product_name }}</div>
           <div class="product-size">
-            <b-form-select v-model="item.selectedSize" :options="item.options"></b-form-select>
+            <b-form-select v-model="item.selectedSize" :options="item.options" @change="changeSelectSizeCnt(item.selectedSize)"></b-form-select>
           </div>
           <div class="product-price">{{ item.price }}</div>
           <div class="products-delete"><b-icon icon="trash" variant="danger" @click="delItem(item.product_id)"></b-icon></div>
@@ -21,14 +21,21 @@ import {mapState} from 'vuex';
 
 export default {
   computed: {
-    ...mapState('cart', {
-      cartItems: state => state.items
+    ...mapState('cart', { // cartItems : 장바구니 아이템 목록
+      cartItems: state => state.items,
     })
   },
   methods: {
-    delItem(product_id) {
+    delItem(product_id) { // 단일아이템 제거 함수
       this.$store.dispatch('cart/delItem', product_id);
     },
+    changeSelectSizeCnt(selectedSize) {
+      if (selectedSize === null){
+        this.$store.commit('cart/minusCounter');
+      } else {
+        this.$store.commit('cart/plusCounter');
+      }
+    }
   }
 }
 </script>
