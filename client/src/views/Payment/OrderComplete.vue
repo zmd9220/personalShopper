@@ -3,6 +3,7 @@
     <Nav/>
     <p>주문이 완료되었습니다 !</p>
     <p>주문 번호는 {{ orderNumber }}입니다.</p>
+    <p>{{ $route.params.responseData }}</p>
     <b-button @click="goToMain()" variant="primary">메인으로</b-button>
   </div>
 </template>
@@ -20,17 +21,22 @@ export default {
   },
   methods: {
     goToMain () {
+      this.$store.dispatch('cart/clearCart')
       this.$router.push('/')
     },
   },
   mounted: function () {
-    if (!localStorage.getItem('orderNumber')) {
-      localStorage.setItem('orderNumber', 0)
-      this.orderNumber = 0
-    } else {
-      this.orderNumber = Number(localStorage.getItem('orderNumber')) + 1
-      localStorage.setItem('orderNumber', this.orderNumber)  
-    }
+    // if (!localStorage.getItem('orderNumber')) {
+    //   localStorage.setItem('orderNumber', 0)
+    //   this.orderNumber = 0
+    // } else {
+    //   this.orderNumber = Number(localStorage.getItem('orderNumber')) + 1
+    //   localStorage.setItem('orderNumber', this.orderNumber)  
+    // }
+    this.orderNumber = localStorage.getItem('orderNumber')
+    setTimeout(() => {
+      this.goToMain()
+    }, 10000)
   },
 }
 </script>
