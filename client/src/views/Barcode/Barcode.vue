@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav/>
+    <Nav />
     <div>
       <div class="blank-box"></div>
       <p class="barcode-text">상품의 바코드를</p>
@@ -8,20 +8,28 @@
       <div class="blank-box"></div>
     </div>
     <div class="footer-row">
-      <br>
-      <FooterAd :productRecommend1="productRecommend1" :productRecommend2="productRecommend2" :productRecommend3="productRecommend3" :productId1="productId1" :productId2="productId2" :productId3="productId3" @selectedProductId="changeProductId"/>
+      <p>PersonalShopper의 추천</p>
+      <br />
+      <FooterAd
+        :productRecommend1="productRecommend1"
+        :productRecommend2="productRecommend2"
+        :productRecommend3="productRecommend3"
+        :productId1="productId1"
+        :productId2="productId2"
+        :productId3="productId3"
+        @selectedProductId="changeProductId"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import FooterAd from '@/views/FooterAd/FooterAd'
-import Nav from '@/views/Nav/Nav'
-import axios from 'axios'
-
+import FooterAd from "@/views/FooterAd/FooterAdBarcode";
+import Nav from "@/views/Nav/Nav";
+import axios from "axios";
 
 export default {
-  name: 'Barcode',
+  name: "Barcode",
   components: {
     FooterAd,
     Nav,
@@ -29,30 +37,30 @@ export default {
   mounted() {
     // 바코드 페이지 렌더링이 끝나고 나서, makeStatus를 통해 서버에 barcode.txt 파일을 생성하도록 요청하고
     // 해당 파일이 생성되면 임베디드 python 코드에서 인식해서 barcode_scan 함수를 실행시킴
-    const postURL = 'http://127.0.0.1:8000/makeStatus/'
-    axios.get(postURL)
-      .then((res) => {
-        console.log(res.status)
-      })
+    const postURL = "http://127.0.0.1:8000/makeStatus/";
+    axios.get(postURL).then((res) => {
+      console.log(res.status);
+    });
   },
-  data: function() {
+  data: function () {
     return {
-      productRecommend1: '',
-      productRecommend2: '',
-      productRecommend3: '',
-    }
+      productRecommend1: "",
+      productRecommend2: "",
+      productRecommend3: "",
+    };
   },
   methods: {
-    changeProductId(payload){
-      console.log(payload)
+    changeProductId(payload) {
+      console.log(payload);
       this.$router.push({
-        name:'ProductDetail', 
+        name: "ProductDetail",
         params: {
           passProductID: payload,
-      }});
-    }
-  }
-}
+        },
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -63,5 +71,4 @@ export default {
 .barcode-text {
   font-size: 4em;
 }
-
 </style>

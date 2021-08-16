@@ -1,21 +1,31 @@
 <template>
   <div class="container">
     <div class="main-column">
-      <img src="@/assets/logo.png" alt="logo" class="main-logo">
+      <img src="@/assets/logo.png" alt="logo" class="main-logo" />
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="goToBarcode()">
-            <img class="img-Barcode" alt="Barcode" src="https://www.pngkey.com/png/full/11-115159_barcode-no-digits-barcode-transparent.png" />
+          <button
+            class="button button-main"
+            button
+            @click="recommendDataBarcode()"
+          >
+            <img
+              class="img-Barcode"
+              alt="Barcode"
+              src="https://www.pngkey.com/png/full/11-115159_barcode-no-digits-barcode-transparent.png"
+            />
           </button>
         </div>
-          바코드로 상품 찾기
+        바코드로 상품 찾기
       </div>
       <!-- 유저 정보 출력 테스트 -->
       <p>나이, 성별 출력 테스트</p>
       <p>나이 - {{ age }}, 성별 - {{ gen }}</p>
       <div class="button-text">
         <div>
-          <button class="button button-main" button @click="[recommendData(), goToPersonalShopper()]">Personal<br />Shopper</button>
+          <button class="button button-main" button @click="recommendData()">
+            Personal<br />Shopper
+          </button>
         </div>
         상품 추천 서비스
       </div>
@@ -24,35 +34,34 @@
 </template>
 
 <script>
-import { mapState  } from 'vuex'
-import axios from 'axios';
+import { mapState } from "vuex";
+import axios from "axios";
 
 export default {
-
-  name: 'MainTest',
+  name: "MainTest",
   // age - 나이, gen - 성별
   props: {
     age: String,
     gen: String,
   },
-  data: function() {
+  data: function () {
     return {
-      userData: [{age: this.age}, {gen: this.gen}],
+      userData: [{ age: this.age }, { gen: this.gen }],
       recomendData: [],
-    }
+    };
   },
   computed: {
-    ...mapState (['personalData']),
+    ...mapState(["personalData"]),
+  },
+  methods: {
+    goToBarcode() {
+      this.$router.push("/Barcode");
     },
-  methods:{
-    goToBarcode(){
-      this.$router.push('/Barcode'); 
+    goToPersonalShopper() {
+      this.$router.push("/PersonalShopper");
     },
-    goToPersonalShopper(){
-      this.$router.push('/PersonalShopper'); 
-    },
-    createUserData:function () {
-      this.$store.dispatch('createUserData', {age: this.age, gen: this.gen})
+    createUserData: function () {
+      this.$store.dispatch("createUserData", this.userData);
     },
     recommendData() {
       const localURL = "http://127.0.0.1:8000/recommended/";
@@ -68,6 +77,28 @@ export default {
         })
         .catch((error) => {
           console.log(error);
+        })
+        .finally(() => {
+          this.goToPersonalShopper();
+        });
+    },
+    recommendDataBarcode() {
+      const localURL = "http://127.0.0.1:8000/recommended/";
+      const fm = new FormData();
+      fm.append("age", this.age);
+      fm.append("gen", this.gen);
+
+      axios
+        .post(localURL, fm)
+        .then((res) => {
+          console.log(res);
+          localStorage.setItem("recommendData", res.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {
+          this.goToBarcode();
         });
     },
   },
@@ -78,7 +109,6 @@ export default {
 </script>
 
 <style scoped>
-
 .main-column {
   display: flex;
   flex-direction: column;

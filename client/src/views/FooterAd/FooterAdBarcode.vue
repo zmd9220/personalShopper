@@ -1,58 +1,65 @@
 <template>
   <div>
-    <h4>PersonalShopper</h4>
-    <!-- <div>{{this.$store.state.user}}</div> -->
+    <div class="footer">
+      <div class="footer-text">
+        <p>PersonalShopper의 추천</p>
+      </div>
+      <div class="footer-row">
+        <div class="column">
+          <img
+            class="product-detail-img"
+            :src="this.productDetail1.product_image"
+            alt="personal1"
+            style="width: 100%"
+          />
+        </div>
 
-    <img
-      class="product-detail-img"
-      :src="this.productDetail1.style_image"
-      alt="personal1"
-      style="width: 50%"
-    />
-    <img
-      class="product-detail-img"
-      :src="this.productDetail2.style_image"
-      alt="personal1"
-      style="width: 50%"
-    />
-    <img
-      class="product-detail-img"
-      :src="this.productDetail3.style_image"
-      alt="personal1"
-      style="width: 50%"
-    />
-    <img
-      class="product-detail-img"
-      :src="this.productDetail4.style_image"
-      alt="personal1"
-      style="width: 50%"
-    />
+        <div class="column">
+          <img
+            class="product-detail-img"
+            :src="this.productDetail2.product_image"
+            alt="personal2"
+            style="width: 100%"
+          />
+        </div>
 
-    <!-- <video autoplay >
-      <source src="@/assets/ad/y2mate.com - ZARA WOMAN  Spring Summer 2021 Campaign_1080p.mp4">
-    </video> -->
-
-    <div></div>
+        <div class="column">
+          <img
+            class="product-detail-img"
+            :src="this.productDetail3.product_image"
+            alt="personal3"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import axios from "axios";
 
 export default {
+  props: {},
   data: function () {
     return {
       productDetail1: "", // 상품정보
       productDetail2: "", // 상품정보
       productDetail3: "", // 상품정보
-      productDetail4: "", // 상품정보
       recommendProductId: JSON.parse(localStorage.getItem("recommendData")),
     };
   },
   computed: {
-    videoElement() {
-      return this.$refs.video;
-    },
+    ...mapState({
+      selectedProductID: (state) => state.selectedProductID,
+      productRecommend_1: (state) => state.productRecommend_1,
+      productRecommend_2: (state) => state.productRecommend_2,
+      productRecommend_3: (state) => state.productRecommend_3,
+      productId_1: (state) => state.productId_1,
+      productId_2: (state) => state.productId_2,
+      productId_3: (state) => state.productId_3,
+    }),
   },
   methods: {
     getProduct: function () {
@@ -95,19 +102,6 @@ export default {
         .catch(() => {
           // console.log(err)
         });
-
-      const localURL4 = "http://127.0.0.1:8000/product/"; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL4 = localURL4 + this.recommendProductId["D"] + "/"; //
-
-      axios
-        .get(productURL4) // 리팩토링 필요. (async await로 변경예정)
-        .then((res) => {
-          this.productDetail4 = res.data; // 상품 상세 정보
-          this.$store.commit("productDetail", res.data); // 상품 상세정보
-        })
-        .catch(() => {
-          // console.log(err)
-        });
     },
   },
   created: function () {
@@ -118,5 +112,35 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.footer {
+  display: contents;
+}
+
+.footer-text {
+  font-size: 5rem;
+  position: fixed;
+  bottom: 30%;
+  left: 0%;
+  right: 0%;
+}
+
+.footer-row {
+  display: flex;
+  /* content: ""; */
+  /* clear: both; */
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  font-size: 5em;
+  /* left: 0%;
+  right: 0%; */
+}
+
+.column {
+  display: inline;
+  float: left;
+  margin: 0 0.3rem;
+  width: 33.3%;
+}
 </style>
