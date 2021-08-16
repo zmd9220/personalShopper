@@ -12,8 +12,15 @@ from rest_framework.decorators import authentication_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
-ages = ['10', '20', '30', '40', '50', '60']
-# sizes = []
+
+sizes = {
+    'M1': ['XS (KR 90)', 'S (KR 95)', 'M (KR 95-100)', 'L (KR 100-105)', 'XL (KR 105-110)'],
+    'F1': ['XS (KR 44)', 'S (KR 55)', 'M (KR 66)', 'L (KR 77)', 'XL (KR 88)'],
+    'M2': ['XS (KR 28)', 'S (KR 30)', 'M (KR 31)', 'L (KR 32)', 'XL (KR 34)'],
+    'F2': ['XS (KR 24)', 'S (KR 26)', 'M (KR 28)', 'L (KR 30)', 'XL (KR 32)'],
+    'M3': ['KR 250', 'KR 260', 'KR 270', 'KR 280', 'KR 290'],
+    'F3': ['KR 230', 'KR 240', 'KR 250', 'KR 260', 'KR 270'],
+}
 
 @api_view(['GET'])       # 전체 상품 조회
 def products(request):
@@ -46,7 +53,7 @@ def kakaoPay_ready(request):
         'Authorization': "KakaoAK " + "4595b53acfdd636260c962e7fd4c8dd0", # admin key 처리 해야함
         'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     }
-    # print(request.data)
+    print(request.data)
     # print(request)
     params = {
         'cid': "TC0ONETIME",
@@ -98,7 +105,7 @@ def kakaoPay_approve(request):
         'Authorization': "KakaoAK " + "4595b53acfdd636260c962e7fd4c8dd0", # admin key 처리 해야함
         'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     }
-    # print(request.data)
+    print(request.data)
     # print(request)
     params = {
         # 가맹점 코드
@@ -114,39 +121,45 @@ def kakaoPay_approve(request):
     }
     response = requests.post(url+"/v1/payment/approve", params=params, headers=headers)
     if response.status_code == 200:
-        print(request.data)
+        # print(request.data)
         user_data = request.data['userData']
         order_items = request.data['orderItems']
         for item in order_items:
             stock = get_object_or_404(Stock, product_id=item['product_id'])
             sales = get_object_or_404(Recommend, product_id=item['product_id'])
-            if user_data['age'] in ages:
-                age = user_data['age']
-                if age == 10:
-                    sales.week_sale10 += 1
-                    sales.month_sale10 += 1
-                elif age == 20:
-                    sales.week_sale20 += 1
-                    sales.month_sale20 += 1
-                elif age == 30:
-                    sales.week_sale30 += 1
-                    sales.month_sale30 += 1
-                elif age == 40:
-                    sales.week_sale40 += 1
-                    sales.month_sale40 += 1
-                elif age == 50:
-                    sales.week_sale50 += 1
-                    sales.month_sale50 += 1
-                else:
-                    sales.week_sale60 += 1
-                    sales.month_sale60 += 1
+            age = int(user_data['age'])
+            if age < 20:
+                sales.week_sale10 += 1
+                sales.month_sale10 += 1
+            elif age < 30:
+                sales.week_sale20 += 1
+                sales.month_sale20 += 1
+            elif age < 40:
+                sales.week_sale30 += 1
+                sales.month_sale30 += 1
+            elif age < 50:
+                sales.week_sale40 += 1
+                sales.month_sale40 += 1
+            elif age < 60:
+                sales.week_sale50 += 1
+                sales.month_sale50 += 1
+            else:
+                sales.week_sale60 += 1
+                sales.month_sale60 += 1
+            product_type = item['gender']+str(item['product_type'])
+            print(product_type)
+            if product_type in sizes:
+                stock.stock[sizes[product_type].index(item['selectedSize'])] -= 1
+            else: # 악세서리 인 경우 프리 스타일
+                stock.stock[0] -= 1
             sales.save()
+            stock.save()
         print(user_data)
         print(order_items)
         
     response_data = json.loads(response.text)
     response_data['status_code'] = response.status_code
-    # print(response_data)
+    print(response_data)
     return Response(response_data)
 
 

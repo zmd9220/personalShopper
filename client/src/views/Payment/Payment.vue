@@ -115,6 +115,8 @@ export default {
           if (!localStorage.getItem('orderNumber')) {
             localStorage.setItem('orderNumber', 0)
           }
+          localStorage.setItem('items', JSON.stringify(this.orderItems))
+          localStorage.setItem('user', JSON.stringify(this.userData))
           let requestData = {
             product_name: (this.orderItems.length > 1) ? this.orderItems[0].product_name + ' 외 ' + String(this.orderItems.length-1) + '건' : this.orderItems[0].product_name,
             price: this.totalCartPrice,
@@ -128,6 +130,7 @@ export default {
           }).then((res) =>{
               let payUrl = res.data.next_redirect_pc_url
               localStorage.setItem('tid', res.data.tid)
+
               // localStorage.setItem('orderedProduct', productData)
               console.log(res)
               console.log(payUrl)

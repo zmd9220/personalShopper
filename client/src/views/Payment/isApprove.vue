@@ -55,10 +55,10 @@ export default {
     },
     makeData () {
       return new Promise( () => {
-        let nowTid = localStorage.getItem('tid')
-        let nowOrderNumber = localStorage.getItem('orderNumber')
-        this.paymentData.tid = nowTid
-        this.paymentData.orderNumber = nowOrderNumber
+        this.paymentData.tid = localStorage.getItem('tid')
+        this.paymentData.orderNumber = Number(localStorage.getItem('orderNumber')) + 1
+        this.$store.dispatch("createUserData", JSON.parse(localStorage.getItem('user'))) 
+        this.$store.dispatch("cart/cartReload", JSON.parse(localStorage.getItem('items')))
       })
     },
   },
