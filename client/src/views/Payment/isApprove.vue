@@ -58,7 +58,7 @@ export default {
         let nowTid = localStorage.getItem('tid')
         let nowOrderNumber = localStorage.getItem('orderNumber')
         this.paymentData.tid = nowTid
-        this.paymentData.orderNumber = nowOrderNumber
+        this.paymentData.orderNumber = Number(nowOrderNumber) + 1
       })
     },
   },
