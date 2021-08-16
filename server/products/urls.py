@@ -11,7 +11,7 @@ urlpatterns = [
     path('makeStatus/', views.make_status), # barcode.txt 파일을 만드는 url
     path('kakaoPayReady/', views.kakaoPay_ready), # 카카오페이 결제 준비
     path('kakaoPayApprove/', views.kakaoPay_approve), # 카카오페이 결제 승인 확인
-    path('recommended/', views.recommended), # 추천
+    path('recommended/', views.recommended), # 상품추천 알고리즘
     
     path('product/create/', views.product_list_create),
     path('product/<int:product_pk>/update/', views.product_update_delete),

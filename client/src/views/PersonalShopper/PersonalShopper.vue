@@ -1,19 +1,12 @@
 <template>
   <div>
-    <h4>PersonalShopper</h4>
-    <!-- <div>{{this.$store.state.user}}</div> -->
-
-    <img class="product-detail-img" :src=" this.productDetail1.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail1()"> 
-    <img class="product-detail-img" :src=" this.productDetail2.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail2()">
-    <img class="product-detail-img" :src=" this.productDetail3.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail3()">
-    <img class="product-detail-img" :src=" this.productDetail4.style_image" alt="personal1" style="width:50%" @click="goToPersonalShopperDetail4()">
-
-    <!-- <video autoplay >
-      <source src="@/assets/ad/y2mate.com - ZARA WOMAN  Spring Summer 2021 Campaign_1080p.mp4">
-    </video> -->
-
-    <div></div>
+    <h4 class="title">PersonalShopper</h4>
+    <img class="product-detail-img" :src=" this.productDetail1.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail1()"> 
+    <img class="product-detail-img" :src=" this.productDetail2.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail2()">
+    <img class="product-detail-img" :src=" this.productDetail3.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail3()">
+    <img class="product-detail-img" :src=" this.productDetail4.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail4()">
   </div>
+
 </template>
 
 <script>
@@ -126,4 +119,12 @@ export default {
 </script>
 
 <style>
+.title {
+  font-size: 5rem;
+}
+
+.product-detail-img {
+  margin: 1rem;
+}
+
 </style>
