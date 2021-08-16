@@ -95,7 +95,11 @@ export default {
     },
     clearCart(state) {
       state.items = [];
-    }
+    },
+    cartReload(state, reloadItems) {
+      state.items = reloadItems
+    },
+
   },
   actions: {
     addItem({ commit }, item) {
@@ -106,7 +110,10 @@ export default {
     },
     clearCart({ commit }) {
       commit('clearCart');
-    }
+    },
+    cartReload({ commit }, reloadItems) {
+      commit('cartReload', reloadItems)
+    },
   },
   getters: {
     totalPrice(state) {
