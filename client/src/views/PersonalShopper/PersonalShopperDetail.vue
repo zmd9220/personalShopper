@@ -12,8 +12,7 @@
       <div>
         <p>
           <b-button class="add-items-cart" variant="primary"
-            @click="addToCart(productDetail); addToCart(productDetail);
-            addToCart(productDetail); addToCart(productDetail);">
+            @click="BuyAllItems()">
             <span class="button-text">룩 세트로 구매 <b-icon icon="credit-card" aria-hidden="true"></b-icon></span></b-button>
         </p>
       </div>
@@ -63,9 +62,6 @@ export default {
     ),
   },
   methods: {
-    addToCart(productDetail) {
-      this.$store.dispatch('cart/addItem', productDetail);
-    },
     getProduct: function() { // 상품정보를 받아오는 axios      
      axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
       .then((res)=>{
@@ -92,6 +88,25 @@ export default {
     goToProductDetail2: function(product_id) {
       this.$store.commit('selectedProductID', product_id);
       this.$router.push('/ProductDetail')
+    },
+    addToCart: function(product_id) { // 상품정보를 받아오는 axios
+      const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const productURL = localURL + product_id + '/'; //
+      
+      axios.get(productURL) // 리팩토링 필요. (async await로 변경예정)
+        .then((res) => {
+          this.$store.dispatch('cart/addItem', res.data);
+        })
+        .catch(() => {
+          // console.log(err)
+        })
+    },
+    BuyAllItems(){
+      this.$store.dispatch('cart/addItem', this.$store.state.productDetail);
+      this.addToCart(this.$store.state.productId_1);
+      this.addToCart(this.$store.state.productId_2);
+      this.addToCart(this.$store.state.productId_3);
+      this.$router.push({name:'Cart'});
     },
   }
 }
