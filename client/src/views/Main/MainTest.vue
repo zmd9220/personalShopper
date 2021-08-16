@@ -52,7 +52,7 @@ export default {
       this.$router.push('/PersonalShopper'); 
     },
     createUserData:function () {
-      this.$store.dispatch('createUserData', this.userData)
+      this.$store.dispatch('createUserData', {age: this.age, gen: this.gen})
     },
     recommendData() {
       const localURL = "http://127.0.0.1:8000/recommended/";
@@ -70,6 +70,9 @@ export default {
           console.log(error);
         });
     },
+  },
+  mounted: function () {
+    this.createUserData()
   },
 }
 </script>

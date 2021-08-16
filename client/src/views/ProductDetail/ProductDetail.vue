@@ -121,9 +121,6 @@
             </template>
           </b-modal>
         </div>
-        <div>
-          <!-- <b-button class="button-size" @click="goToPayment()" variant="primary">구매하기</b-button> -->
-        </div>
       </div>
     </div>
     
