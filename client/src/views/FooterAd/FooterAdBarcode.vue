@@ -11,6 +11,7 @@
             :src="this.productDetail1.product_image"
             alt="personal1"
             style="width: 100%"
+            @click="gotoDetail1()"
           />
         </div>
 
@@ -20,6 +21,7 @@
             :src="this.productDetail2.product_image"
             alt="personal2"
             style="width: 100%"
+            @click="gotoDetail2()" 
           />
         </div>
 
@@ -29,6 +31,7 @@
             :src="this.productDetail3.product_image"
             alt="personal3"
             style="width: 100%"
+            @click="gotoDetail3()" 
           />
         </div>
       </div>
@@ -62,6 +65,18 @@ export default {
     }),
   },
   methods: {
+    gotoDetail1: function() {                
+        this.$store.commit('selectedProductID', this.productDetail1.product_id);
+        this.$router.push({name:'ProductDetail'});
+    },
+    gotoDetail2: function() {                 
+        this.$store.commit('selectedProductID', this.productDetail2.product_id);
+        this.$router.push({name:'ProductDetail'});
+    },
+    gotoDetail3: function() {                 
+        this.$store.commit('selectedProductID', this.productDetail3.product_id);
+        this.$router.push({name:'ProductDetail'});
+    },
     getProduct: function () {
       // 상품정보를 받아오는 axios
       const localURL1 = "http://127.0.0.1:8000/product/"; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
@@ -71,7 +86,7 @@ export default {
         .get(productURL1) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail1 = res.data; // 상품 상세 정보
-          this.$store.commit("1", res.data); // 상품 상세정보
+          this.$store.commit("productDetail1", res.data); // 상품 상세정보
         })
         .catch(() => {
           // console.log(err)
@@ -84,7 +99,7 @@ export default {
         .get(productURL2) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail2 = res.data; // 상품 상세 정보
-          this.$store.commit("productDetail", res.data); // 상품 상세정보
+          this.$store.commit("productDetail2", res.data); // 상품 상세정보
         })
         .catch(() => {
           // console.log(err)
@@ -97,7 +112,7 @@ export default {
         .get(productURL3) // 리팩토링 필요. (async await로 변경예정)
         .then((res) => {
           this.productDetail3 = res.data; // 상품 상세 정보
-          this.$store.commit("productDetail", res.data); // 상품 상세정보
+          this.$store.commit("productDetail3", res.data); // 상품 상세정보
         })
         .catch(() => {
           // console.log(err)

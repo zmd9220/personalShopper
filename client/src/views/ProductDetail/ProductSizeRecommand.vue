@@ -191,7 +191,7 @@ export default {
 
 .ProductDetailImg {
   margin-right: 5em;
-  width: 60%;
+  width: 45%;
 }
 
 .TextBox {

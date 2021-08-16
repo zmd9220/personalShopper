@@ -88,8 +88,14 @@
           <!-- <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2> -->
           <b-button variant="primary" class="button-size" @click="buyNow(productDetail)">바로 구매</b-button>
           <b-button variant="primary" class="button-size" @click="addToCart(productDetail); $bvToast.show('toast') ">카트 추가</b-button>
-          <b-toast size="xl" id="toast" title="장바구니 알림" class="button-toast" static no-auto-hide>
-            상품이 장바구니에 추가되었습니다.
+          <!-- <b-button variant="primary" class="button-size" @click="addToCart(productDetail); ">카트 추가</b-button> -->
+          <b-toast id="toast" static toast-class="toast-modal" class="toast-modal">
+            <div class="toast-header">
+              <span class="toast-header-text">장바구니 알림</span> 
+            </div>
+            <div class="toast-body">
+              <span class="toast-body-text">상품이 장바구니에 추가되었습니다.</span> 
+            </div>
           </b-toast>
           
           <!-- <b-button variant="primary" class="button-size" id="popover-target-1" @click="addToCart(productDetail);">카트 추가</b-button>
@@ -291,7 +297,7 @@ export default {
       this.$store.dispatch('cart/addItem', productDetail);
       this.$router.push({name:'Cart'})
     },
-  },
+  }, 
   created: function () { // created로 선언하여 데이터를 갱신한다.
     // this.productId = '201';
     this.getProduct(); // 상품정보
@@ -380,15 +386,34 @@ export default {
   background-image: url("../../assets/location/totalShop.png");
   background-size: 100% 100%;
 }
+
+.modal-h2 {
+  margin-top: 1em;
+  font-size: 3em;
+  text-align: center;
+}
+
 .shop-map {
   width: 100%;
   position: absolute;
 }
 
-.modal-h2 {
+.toast-body-text {
+  font-size: 2.5em;
+}
+
+.toast-header-text {
+  font-size: 3em;
+}
+
+.b-toast:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.mr-2 {
   text-align: center;
   font-size: 2.5em;
-  /* font-weight: bold; */
+  font-weight: bold; 
 }
 
 .blink-shop-map{

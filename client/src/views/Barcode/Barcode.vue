@@ -8,9 +8,9 @@
       <div class="blank-box"></div>
     </div>
     <div class="footer-row">
-      <p>PersonalShopper의 추천</p>
+      <!-- <p>PersonalShopper의 추천</p> -->
       <br />
-      <FooterAd
+      <FooterAdBarcode
         :productRecommend1="productRecommend1"
         :productRecommend2="productRecommend2"
         :productRecommend3="productRecommend3"
@@ -24,14 +24,14 @@
 </template>
 
 <script>
-import FooterAd from "@/views/FooterAd/FooterAdBarcode";
+import FooterAdBarcode from "@/views/FooterAd/FooterAdBarcode";
 import Nav from "@/views/Nav/Nav";
 import axios from "axios";
 
 export default {
   name: "Barcode",
   components: {
-    FooterAd,
+    FooterAdBarcode,
     Nav,
   },
   mounted() {
