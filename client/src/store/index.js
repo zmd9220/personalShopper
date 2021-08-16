@@ -19,7 +19,10 @@ export default new Vuex.Store({
     productDetail: {},
     productLocation: 'E',
     stock: [],
-    user: [],
+    user: {
+      age: String,
+      gen: String,
+    },
   },
   mutations: {
     selectProductID: function (state, payload) {
@@ -53,7 +56,9 @@ export default new Vuex.Store({
       state.stock = payload;
     },
     createData: function(state, userData) {
-      state.user.push(userData)
+      console.log(userData)
+      state.user.age = userData.age
+      state.user.gen = userData.gen
     },
   },
   actions: {

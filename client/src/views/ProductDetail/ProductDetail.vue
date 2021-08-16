@@ -92,7 +92,7 @@
             variant="primary" class="button-size">사이즈 추천 받기</b-button>
           <!-- <h2 @click="goToSizeChart()">사이즈표</h2> -->
           <!-- <h2 @click="goToLocation()">상품 위치 정보</h2> -->
-          <b-button v-b-modal.modal-xl variant="primary" class="button-location" @click="show=true">상품 위치</b-button>
+          <b-button v-b-modal.modal-xl variant="primary" class="button-size" @click="show=true">상품 위치</b-button>
           <b-modal v-model="show" id="modal-xl" header="test"
             centered size="xl" class="location-modal">
             <template #modal-header>
@@ -120,9 +120,6 @@
               </div>
             </template>
           </b-modal>
-        </div>
-        <div>
-          <b-button @click="goToPayment()" variant="primary">구매하기</b-button>
         </div>
       </div>
     </div>
@@ -278,9 +275,6 @@ export default {
       this.getProduct();
       this.getStock();
     },
-    goToPayment: function () {
-      this.$router.push({name:'Payment', params: {product: this.productDetail}})
-    },
     addToCart(productDetail) {
       this.$store.dispatch('cart/addItem', productDetail);
     },
@@ -322,12 +316,6 @@ export default {
   text-align: center;
   width: 40%;
 }
-
-/* .title-text-area1 {
-}
-
-.size-box {
-} */
 
 .size-stock {
   display: flex;
@@ -373,11 +361,6 @@ export default {
   margin: 0 0 2em 0;
   font-size: 2em;
   width: 40%;
-}
-
-.button-location {
-  font-size: 2em;
-  width: 30%;
 }
 
 .text-box .text-box-title {

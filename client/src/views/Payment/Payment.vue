@@ -1,14 +1,17 @@
 <template>
   <div>
-    <Nav/>
+    <!-- <Nav/> -->
     <span>{{ $route.params.product }}</span>
 
 
-    <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="">최초 결제</b-button>
-    <b-button @click="pay()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button">원래 하던 결제</b-button>
-    <b-button @click="pay2()" variant="primary">장바구니 결제 연결</b-button>
-    <span>{{ orderItems }}</span>
-    <span>{{ totalCartPrice }}</span>
+    <!-- <b-button @click="show=true" variant="wihte"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="">최초 결제</b-button> -->
+    <!-- <b-button @click="pay()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button">원래 하던 결제</b-button> -->
+    <b-button @click="pay2()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
+    <p class="pay-text">카카오 페이로 결제</p>
+    <!-- <div>
+      <span>{{ orderItems }}</span>
+      <span>{{ totalCartPrice }}</span>
+    </div> -->
     <b-modal
       v-model="show"
       title="결제하기"
@@ -54,17 +57,18 @@
           </b-button>
         </div>
       </template>
-    </b-modal>
+    </b-modal> -->
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import Nav from '../Nav/Nav.vue'
+// import Nav from '../Nav/Nav.vue'
 import {mapState, mapGetters} from 'vuex'
 
 export default {
-  components: { Nav },
+  // components: { Nav },
+  components: {  },
   name: 'Payment',
   props: {
     product: Object,
@@ -110,15 +114,13 @@ export default {
           let baseUrl = "http://127.0.0.1:8000/"
           if (!localStorage.getItem('orderNumber')) {
             localStorage.setItem('orderNumber', 0)
-          } else {
-            localStorage.setItem('orderNumber', Number(localStorage.getItem('orderNumber')) + 1)  
-          } 
+          }
           let requestData = {
             product_name: (this.orderItems.length > 1) ? this.orderItems[0].product_name + ' 외 ' + String(this.orderItems.length-1) + '건' : this.orderItems[0].product_name,
             price: this.totalCartPrice,
             orderNumber: 0,
           }
-          requestData.orderNumber = Number(localStorage.getItem('orderNumber'))
+          requestData.orderNumber = Number(localStorage.getItem('orderNumber')) + 1
           axios({
             method: 'POST',
             url: baseUrl + "kakaoPayReady/",
@@ -140,6 +142,10 @@ export default {
           })
       }
   },
+  mounted: function () {
+    console.log(this.orderItems)
+    console.log(this.userData)
+  },
   computed: {
     ...mapGetters('cart',{
       totalCartPrice: 'totalPrice',
@@ -147,6 +153,18 @@ export default {
     ...mapState('cart',{
       orderItems: 'items',
     }),
+    ...mapState({
+      userData: 'user',
+    }),
   }
 }
 </script>
+
+<style>
+
+.pay-text {
+  margin-top: 0.5em;
+  font-size: 3em;
+}
+
+</style>

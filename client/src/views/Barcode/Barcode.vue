@@ -3,8 +3,8 @@
     <Nav />
     <div>
       <div class="blank-box"></div>
-      <h4>상품의 바코드를</h4>
-      <h4>인식기에 보여주세요</h4>
+      <p class="barcode-text">상품의 바코드를</p>
+      <p class="barcode-text">인식기에 보여주세요</p>
       <div class="blank-box"></div>
     </div>
     <div class="footer-row">
@@ -65,6 +65,10 @@ export default {
 
 <style scoped>
 .blank-box {
-  height: 15rem;
+  height: 20rem;
+}
+
+.barcode-text {
+  font-size: 4em;
 }
 </style>
