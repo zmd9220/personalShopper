@@ -63,20 +63,6 @@ export default {
     },
   methods:{
     goToBarcode(){
-      // const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      // const productURL = localURL + this.$store.state.selectedProductID + '/'; //
-
-      // axios.get(localURL)
-      //   .then((res) => {
-      //     // console.log(res);
-      //     // localStorage.setItem("recommendData", res.data);
-      //   })
-      //   .catch((error) => {
-      //     console.log(error);
-      //   })
-      //   .finally(()=>{
-      //     this.goToPersonalShopper()
-      //   })
       this.$router.push('/Barcode'); 
     },
     goToPersonalShopper() {

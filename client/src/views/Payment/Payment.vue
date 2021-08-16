@@ -111,6 +111,8 @@ export default {
           })
       },
       pay2(){
+        if (this.$store.state.cart.selectSizeCnt === this.$store.state.cart.items.length) {
+
           let baseUrl = "http://127.0.0.1:8000/"
           if (!localStorage.getItem('orderNumber')) {
             localStorage.setItem('orderNumber', 0)
@@ -128,7 +130,7 @@ export default {
             url: baseUrl + "kakaoPayReady/",
             data: requestData,
           }).then((res) =>{
-              let payUrl = res.data.next_redirect_pc_url
+            let payUrl = res.data.next_redirect_pc_url
               localStorage.setItem('tid', res.data.tid)
 
               // localStorage.setItem('orderedProduct', productData)
@@ -139,10 +141,13 @@ export default {
               // window.open(payUrl, '_parent', 'width=800, height=600')
           })
           .catch((error) =>{
-              alert("에러가 발생했습니다. 다시 시도해주세요")
+            alert("에러가 발생했습니다. 다시 시도해주세요")
               console.log(error)
               // this.$router.push('/')
           })
+        } else {
+          alert("사이즈를 선택해주세요.")
+        }
       }
   },
   mounted: function () {

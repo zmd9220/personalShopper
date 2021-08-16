@@ -4,6 +4,7 @@ export default {
   namespaced: true,
   state: {
     items: [],
+    selectSizeCnt: 0,
   },
   mutations: {
     addItem(state, item) {
@@ -96,10 +97,12 @@ export default {
     clearCart(state) {
       state.items = [];
     },
-    cartReload(state, reloadItems) {
-      state.items = reloadItems
+    plusCounter(state) {
+      return state.selectSizeCnt++;
     },
-
+    minusCounter(state) {
+      return state.selectSizeCnt--;
+    }
   },
   actions: {
     addItem({ commit }, item) {

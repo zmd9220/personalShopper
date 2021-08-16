@@ -33,12 +33,12 @@ export default {
     Payment,
   },
   methods: {
-    clearCart() {
+    clearCart() { //장바구니 비우는 함수
       this.$store.dispatch('cart/clearCart');
     }
   },
   computed: {
-    ...mapGetters('cart',{
+    ...mapGetters('cart',{ // 장바구니의 총합을 계산하는 함수
       totalCartPrice: 'totalPrice',
     }),
   }

@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Main from '@/views/Main/Main'
-import MainTest from '@/views/Main/MainTest'
 import Ad from '@/views/Ad/Ad'
 import Admin from '@/views/Admin/Admin'
 import ProductForm from '@/views/Admin/ProductForm'
@@ -28,14 +27,9 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',  // 메인 페이지
+    path: '/:age/:gen',  // 메인 페이지
     name: 'Main',
-    component: Main
-  },
-  {
-    path: '/:age/:gen',  // 메인 페이지 + 나이, 성별 정보
-    name: 'MainTest',
-    component: MainTest,
+    component: Main,
     props: true,
   },
   {

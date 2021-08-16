@@ -204,11 +204,11 @@ def kakaoPay_approve(request):
 
 @api_view(['POST']) # 추천 알고리즘
 def recommended(request):
-    age = request.POST.get('age')
-    gen = request.POST.get('gen')
+    age = request.POST.get('age')  # veu에서 나이 데이터 불러오기
+    gen = request.POST.get('gen') # veu에서 성별 데이터 불러오기
     
     if int(age) < 20:
-        recommend_age = Recommend.objects.all().order_by('-week_sale10','-month_sale10','-visit10')
+        recommend_age = Recommend.objects.all().order_by('-week_sale10','-month_sale10','-visit10')  # 받은 데이터의 나이를 기준으로 나이에 대한 주간, 원간, 방문 데이터 내림차순 정렬
     elif 20 <= int(age) < 30:
         recommend_age = Recommend.objects.all().order_by('-week_sale20','-month_sale20','-visit20')
     elif 30 <= int(age) < 40:
@@ -220,17 +220,33 @@ def recommended(request):
     else :
         recommend_age = Recommend.objects.all().order_by('-week_sale60','-month_sale60','-visit60')
 
-    products_gen = Product.objects.filter(gender=gen)    
+    products_gen = Product.objects.filter(gender=gen)   # 해당되는 성별만 필터링
     result = []
-    for i in recommend_age:
+
+    for i in recommend_age:         # 필터링한 성별과 내림차순 한 데이터에서 교집합 되는 부분 찾기
         for j in products_gen:
             if i.product_id == j.product_id:
-                result.append(str(j.product_id))
-    recommend_data = {
-        "A": result[0],
-        "B": result[1],
-        "C": result[2],
-        "D": result[3],
+                result.append([str(j.product_id),str(j.style_image)]) # 상품 아이디 값과 스타일 이미지 값 저장
+
+    res = [] # 최종 상품 아이디가 담길 변수
+    style = [] # 중복 스타일 추천 방지를 위한 변수 
+    res.append(result[0][0])
+    style.append(result[0][1])
+
+
+    for i in range(1,len(result)):
+        if len(res) == 4:
+            break
+        if result[i][1] not in style: # 중복 스타일 추천 방지를 위한 코드
+            res.append(result[i][0])
+            style.append(result[i][1])
+        
+
+    recommend_data = {  # 추천 알고리즘 사용하여 선별된 상위 4개 항목 vue로 전달
+        "A": res[0],
+        "B": res[1],
+        "C": res[2],
+        "D": res[3],
     }
     response = json.dumps(recommend_data)
     return Response(response)
