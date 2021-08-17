@@ -2,8 +2,8 @@
   <div>
     <Nav/>
   <div>
-    <video class="iframe" autoplay >
-      <source src="@/assets/ad/y2mate.com - Adidas Orignals Superpower  1st vertical mobile ad commercial_1080p.mp4">
+    <video class="iframe" autoplay muted ="true" loop="true" >
+      <source src="@/assets/ad/y2mate.com - Adidas Orignals Superpower  1st vertical mobile ad commercial_480p.mp4">
     </video>
   </div>
   </div>
@@ -12,6 +12,7 @@
 <script>
 
 import Nav from '@/views/Nav/Nav'
+
 
 export default {
   name: 'AdClient',
