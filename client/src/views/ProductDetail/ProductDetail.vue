@@ -4,7 +4,6 @@
     <div class="product-box" :key="selectedProductID">
       <img class="product-detail-img" :src=" this.$store.state.productDetail.product_image " alt="item1">
       <div class="text-box">
-        <!-- 상품이름 연동필요 -->
         <div >
           <p class="text-box-title">{{ this.$store.state.productDetail.product_name }}</p> 
           <h2 style="margin-bottom: 0.5em">재고정보</h2>
@@ -85,10 +84,8 @@
   
         </div>
         <div class="button-box">
-          <!-- <h2 @click="goToSizeRecommend()" v-if="productDetail.product_type == 1 || productDetail.product_type == 2">사이즈 추천받기</h2> -->
           <b-button variant="primary" class="button-size" @click="buyNow(productDetail)">바로 구매</b-button>
           <b-button variant="primary" class="button-size" @click="addToCart(productDetail); $bvToast.show('toast') ">카트 추가</b-button>
-          <!-- <b-button variant="primary" class="button-size" @click="addToCart(productDetail); ">카트 추가</b-button> -->
           <b-toast id="toast" static toast-class="toast-modal" class="toast-modal">
             <div class="toast-header">
               <span class="toast-header-text">장바구니 알림</span> 
@@ -97,16 +94,8 @@
               <span class="toast-body-text">상품이 장바구니에 추가되었습니다.</span> 
             </div>
           </b-toast>
-          
-          <!-- <b-button variant="primary" class="button-size" id="popover-target-1" @click="addToCart(productDetail);">카트 추가</b-button>
-          <b-popover target="popover-target-1" triggers="hover" placement="top" size="xl">
-            <template #title>Popover Title</template>
-            I am popover <b>component</b> content!
-          </b-popover> -->
           <b-button @click="goToSizeRecommend()" v-if="this.$store.state.productDetail.product_type == 1 || this.$store.state.productDetail.product_type == 2" 
             variant="primary" class="button-size">사이즈 추천 받기</b-button>
-          <!-- <h2 @click="goToSizeChart()">사이즈표</h2> -->
-          <!-- <h2 @click="goToLocation()">상품 위치 정보</h2> -->
           <b-button v-b-modal.modal-xl variant="primary" class="button-size" @click="show=true">상품 위치</b-button>
           <b-modal v-model="show" id="modal-xl" header="test"
             centered size="xl" class="location-modal">
@@ -117,7 +106,6 @@
             </template>
 
             <div class="modal-img-box">
-              <!-- <img src="@/assets/location/totalShop.png" alt="shopMap" class="shop-map background-shop-map"> -->
               <img :src="`${ this.locationPicture}`" alt="specificLocation" class="shop-map blink-shop-map blinking">
             </div>
             <p class="modal-h2">해당 상품은 {{this.$store.state.productLocation}}구역에있습니다.</p>
@@ -157,12 +145,15 @@ export default {
     FooterAd,
     Nav,
   },
+  props: {
+    barcode:String,
+  },
   data: function() {
     return {
       productDetail: '',  // 상품정보
       productImage: '',  // 상품 이미지
       stocks: '',       // 상품 재고
-      productRecommend1: '',    // 리팩토링 필요 (slice => split, props 넘겨주는걸 Array), 추천 1, 2, 3 항목에 해당.
+      productRecommend1: '',    
       productRecommend2: '',
       productRecommend3: '',
       manTopSize: ['XS (KR 90)', 'S (KR 95)', 'M (KR 95-100)', 'L (KR 100-105)', 'XL (KR 105-110)'], // 사이즈별 데이터
@@ -211,47 +202,36 @@ export default {
           productDetail: this.productDetail,
         }});
     },
-    goToSizeChart(){
-      this.$store.commit('selectedProductID', '301');
-      // this.$router.push('/ProductSizeChart'); 
-    },
     goToLocation(){
       this.$router.push('/ProductDetailLocation'); 
     },
     getProduct: function() { // 상품정보를 받아오는 axios
-      const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL = 'http://127.0.0.1:8000/product/'; 
       const productURL = localURL + this.$store.state.selectedProductID + '/'; //
       
       // 210816 변경 맨 처음 데이터를 가져올 대표 아이템만 POST로 요청하여 recommend 테이블의 visit에 +1 하도록 
-      axios.post(productURL, this.userData) // 리팩토링 필요. (async await로 변경예정)
+      axios.post(productURL, this.userData) 
         .then((res) => {
           this.productDetail = res.data; // 상품 상세 정보
           this.$store.commit('productDetail', res.data); // 상품 상세정보
           this.$store.commit('productLocation', res.data.location);
           this.locationPicture = require('@/assets/location/' + this.$store.state.productLocation + '.png'); // 상품 위치정보에 쓸 매장 지도
 
-          // this.productRecommend1 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/'; // api 호출에 쓸 연관 추천 상품 주소
-          this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/');
 
-          // this.productRecommend2 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/';
+          this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(0,3) + '/');  // api 호출에 쓸 연관 추천 상품 주소
           this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(5,8) + '/');
-          
-          // this.productRecommend3 = 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/';
           this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + res.data.style_products.slice(10,14) + '/');
         })
         .then(()=>{ 
-          axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
+          axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.
           .then((res)=>{
-            // this.productId1 = res.data.product_id;
             this.$store.commit('productId_1', res.data.product_id);
             this.$store.commit('productRecommend_1', res.data.product_image);
           })
         })
-        .then(()=>{                         // 두번째 아이템 호출(리팩토링예정)
+        .then(()=>{                         // 두번째 아이템 호출
           axios.get(this.$store.state.productRecommend_2)
           .then((res)=>{
-            // this.productId2 = res.data.product_id;
-            // this.productRecommend2 = res.data.product_image;
             this.$store.commit('productId_2', res.data.product_id);
             this.$store.commit('productRecommend_2', res.data.product_image);
           })
@@ -259,11 +239,9 @@ export default {
             // console.log(err)
           })
         })
-        .then(()=>{                   // 세번쨰 아이템 호출(리팩토링예정)
+        .then(()=>{                   // 세번쨰 아이템 호출
           axios.get(this.$store.state.productRecommend_3)
           .then((res)=>{
-            // this.productId3 = res.data.product_id;
-            // this.productRecommend3 = res.data.product_image;
             this.$store.commit('productId_3', res.data.product_id);
             this.$store.commit('productRecommend_3', res.data.product_image);
           })
@@ -276,11 +254,10 @@ export default {
         })
     },
     getStock: function() { // 재고정보를 받아오는 axios
-      const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL = 'http://127.0.0.1:8000/product/'; 
       const stockURL = localURL + this.$store.state.selectedProductID + '/' + 'stocks' +'/';
       axios.get(stockURL)
         .then((res) => {
-          // this.stocks = res.data.stock;       // stock모델은 size가 필요없다. 바꿔야한다.
           this.$store.commit('stock', res.data.stock);
         })
         .catch((err) => {
@@ -301,7 +278,9 @@ export default {
     },
   }, 
   created: function () { // created로 선언하여 데이터를 갱신한다.
-    // this.productId = '201';
+    if (this.barcode){
+      this.$store.commit('selectedProductID', Number(this.barcode.slice(10,13))) 
+    }
     this.getProduct(); // 상품정보
     this.getStock(); // 재고정보
   },
@@ -328,7 +307,6 @@ export default {
 .text-box {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   text-align: center;
   width: 40%;
@@ -340,7 +318,6 @@ export default {
   list-style:none;
   padding-left:0px;
   font-size: 2.5em;
-  /* align-self:center; */
   text-align: center;
   margin-bottom: 1em;
 }
@@ -356,7 +333,6 @@ export default {
 .size-text-box {
   display: flex;
   justify-content: space-between;
-  /* width: 90%; */
   margin: 0 1.5em 0.5em 1.5em;
 }
 

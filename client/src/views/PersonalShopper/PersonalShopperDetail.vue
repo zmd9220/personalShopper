@@ -24,7 +24,6 @@
         <img class="look-item" @click="goToProductDetail2(productId_3)" :src="this.$store.state.productRecommend_3" alt="item4">
       </div>
     </div>
-    <!-- <FooterAd/> -->
   </div>
 </template>
 
@@ -39,7 +38,6 @@ export default {
     Nav,
   },
   created: function () { // created로 선언하여 데이터를 갱신한다.
-    // this.productId = '201';
     this.getProduct(); // 상품정보
   },
   data: function() {
@@ -63,7 +61,7 @@ export default {
   },
   methods: {
     getProduct: function() { // 상품정보를 받아오는 axios      
-     axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.(리팩토링예정)
+     axios.get(this.$store.state.productRecommend_1) // 상품 추천 첫번쨰 아이템 위의 주소를 사용해 id와 이미지 저장.
       .then((res)=>{
         this.$store.commit('productId_1', res.data.product_id);
         this.$store.commit('productRecommend_1', res.data.product_image);
@@ -90,10 +88,10 @@ export default {
       this.$router.push('/ProductDetail')
     },
     addToCart: function(product_id) { // 상품정보를 받아오는 axios
-      const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL = 'http://127.0.0.1:8000/product/'; 
       const productURL = localURL + product_id + '/'; //
       
-      axios.get(productURL) // 리팩토링 필요. (async await로 변경예정)
+      axios.get(productURL) 
         .then((res) => {
           this.$store.dispatch('cart/addItem', res.data);
         })
@@ -189,6 +187,5 @@ export default {
   display: inline;
   float: left;
   width: 25%;
-  /* margin: 0 0 0 0.2em; */
 }
 </style>
