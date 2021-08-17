@@ -1,14 +1,15 @@
 <template>
   <div>
     <Nav />
+    <!-- 바코드 입력 페이지 -->
     <div>
       <div class="blank-box"></div>
       <p class="barcode-text">상품의 바코드를</p>
       <p class="barcode-text">인식기에 보여주세요</p>
       <div class="blank-box"></div>
     </div>
+    <!-- 입력받은 고객 연령/성별 데이터에 기반하여 footer에 상품 추천 -->
     <div class="footer-row">
-      <!-- <p>PersonalShopper의 추천</p> -->
       <br />
       <FooterAdBarcode
         :productRecommend1="productRecommend1"
@@ -42,15 +43,17 @@ export default {
       console.log(res.status);
     });
   },
+  // 받을 데이터 변수 설정
   data: function () {
-    return {
+    return { 
       productRecommend1: "",
       productRecommend2: "",
       productRecommend3: "",
     };
   },
   methods: {
-    changeProductId(payload) {
+    // footer에서 상품 선택 시 선택한 상품의 상세 페이지로 이동
+    changeProductId(payload) { 
       console.log(payload);
       this.$router.push({
         name: "ProductDetail",

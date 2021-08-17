@@ -1,28 +1,20 @@
 <template>
   <div>
-    <section>
-      <VideoDetail :selectedVideo="selectedVideo"/>
-    </section>
-      <!-- 자동재생, 전체화면을 위한 iframe -->
-      <iframe
-        id="ytplayer"
-        src="https://www.youtube.com/embed/gKCmezkfWbE?autoplay=1&loop=1&playlist=gKCmezkfWbE"
-        type="text/html"
-        frameborder="0"
-        width="640" height="360" allowfullscreen  allow=autoplay>
-      </iframe>
+    <!-- 자동재생, 전체화면을 위한 iframe -->
+    <iframe
+      id="ytplayer"
+      src="https://www.youtube.com/embed/gKCmezkfWbE?autoplay=1&loop=1&playlist=gKCmezkfWbE"
+      type="text/html"
+      frameborder="0"
+      width="640" height="360" allowfullscreen  allow=autoplay>
+    </iframe>
   </div>
 </template>
 
 <script>
 export default {
-  props: {
-    selectedVideoURL : { // 추천 1,2,3
-      type: String,
-    },
-  },
-  mounted: {
-    removeData: function() {
+  mounted: { // 이용자 부재 시 local 데이터 삭제
+    removeData: function() { 
       localStorage.clear()
     }
   }
