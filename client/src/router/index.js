@@ -9,7 +9,6 @@ import AdClient from '@/views/Ad/AdClient'
 import Barcode from '@/views/Barcode/Barcode' 
 import PersonalShopper from '@/views/PersonalShopper/PersonalShopper' 
 import ProductDetail from '@/views/ProductDetail/ProductDetail'
-import ProductSizeChart from '@/views/ProductDetail/ProductSizeChart' 
 import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
 import Signup from '@/views/accounts/Signup'
@@ -19,7 +18,6 @@ import OrderComplete from '@/views/Payment/OrderComplete'
 import isApprove from '@/views/Payment/isApprove'
 import PersonalShopperDetail from '@/views/PersonalShopper/PersonalShopperDetail'
 import Cart from '@/views/Cart/Cart'
-import PaymentPage from '@/views/Payment/PaymentPage'
 
 
 
@@ -80,11 +78,6 @@ const routes = [
     props:true,
   },
   {
-    path: '/ProductSizeChart', // 상품 사이즈표 페이지
-    name: 'ProductSizeChart',
-    component: ProductSizeChart
-  },
-  {
     path: '/ProductDetailLocation', // 상품 위치 페이지
     name: 'ProductDetailLocation',
     component: ProductDetailLocation  
@@ -110,11 +103,7 @@ const routes = [
     name: 'OrderComplete',
     component: OrderComplete,
   },
-  {
-    path: '/PaymentPage', // 카카오페이 결제
-    name: 'PaymentPage',
-    component: PaymentPage,
-  },
+
   {
     path: '/accounts/signup',
     name: 'Signup',

@@ -5,23 +5,18 @@
         <p>PersonalShopper의 추천</p>
       </div>
       <div class="footer-row">
-        
         <div class="column">
-          <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
+          <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail(this.$store.state.productId_1)" >
         </div>
-
         <div class="column">
-          <img :src="this.$store.state.productRecommend_2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
+          <img :src="this.$store.state.productRecommend_2" alt="item3" style="width: 100%" @click="gotoDetail(this.$store.state.productId_2)" >
         </div>
-
         <div class="column">
-          <img :src="this.$store.state.productRecommend_3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
+          <img :src="this.$store.state.productRecommend_3" alt="item3" style="width: 100%" @click="gotoDetail(this.$store.state.productId_3)" >
         </div>
-
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -47,31 +42,13 @@ export default {
     })
   },
   methods:{
-    gotoDetail1: function() {                
+    gotoDetail: function(product_id) {                
       if (this.$route.path !== '/ProductDetail' ) {
-        this.$store.commit('selectedProductID', this.$store.state.productId_1);
+        this.$store.commit('selectedProductID', product_id);
         this.$router.push({name:'ProductDetail'});
       } else {
-        this.$store.commit('selectedProductID', this.$store.state.productId_1);
-        this.$emit('selectedProductId', this.$store.state.productId_1);
-      }
-    },
-    gotoDetail2: function() {                 
-      if (this.$route.path !== '/ProductDetail' ) {
-        this.$store.commit('selectedProductID', this.$store.state.productId_2);
-        this.$router.push({name:'ProductDetail'});
-      } else {
-        this.$store.commit('selectedProductID', this.$store.state.productId_2);
-        this.$emit('selectedProductId', this.$store.state.productId_2);
-      }
-    },
-    gotoDetail3: function() {                 
-      if (this.$route.path !== '/ProductDetail' ) {
-        this.$store.commit('selectedProductID', this.$store.state.productId_3);
-        this.$router.push({name:'ProductDetail'});
-      } else {
-        this.$store.commit('selectedProductID', this.$store.state.productId_3);
-        this.$emit('selectedProductId', this.$store.state.productId_3);
+        this.$store.commit('selectedProductID', product_id);
+        this.$emit('selectedProductId', product_id);
       }
     },
   },
@@ -95,14 +72,10 @@ export default {
 
 .footer-row {
   display: flex;
-  /* content: ""; */
-  /* clear: both; */
   width: 100%;
   position: fixed;
   bottom: 0%;
   font-size: 5em;
-  /* left: 0%;
-  right: 0%; */
 }
 
 .column {

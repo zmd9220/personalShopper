@@ -34,10 +34,10 @@ export default {
     },
   methods: {
     getProduct: function() { // 상품정보를 받아오는 axios
-      const localURL1 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL1 = 'http://127.0.0.1:8000/product/'; 
       const productURL1 = localURL1 + this.selectedProductID + '/'; //
       
-      axios.get(productURL1) // 리팩토링 필요. (async await로 변경예정)
+      axios.get(productURL1) 
         .then((res) => {
           this.productDetail1 = res.data; // 상품 상세 정보
         })
@@ -45,10 +45,10 @@ export default {
           // console.log(err)
         });
 
-      const localURL2 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL2 = 'http://127.0.0.1:8000/product/'; 
       const productURL2 = localURL2 + this.productId_1 + '/'; //
       
-      axios.get(productURL2) // 리팩토링 필요. (async await로 변경예정)
+      axios.get(productURL2) 
         .then((res) => {
           this.productDetail2 = res.data; // 상품 상세 정보
         })
@@ -56,10 +56,10 @@ export default {
           // console.log(err)
         });
 
-      const localURL3 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL3 = localURL3 + this.productId_2 + '/'; //
+      const localURL3 = 'http://127.0.0.1:8000/product/'; 
+      const productURL3 = localURL3 + this.productId_2 + '/'; 
       
-      axios.get(productURL3) // 리팩토링 필요. (async await로 변경예정)
+      axios.get(productURL3) 
         .then((res) => {
           this.productDetail3 = res.data; // 상품 상세 정보
         })
@@ -67,10 +67,10 @@ export default {
           // console.log(err)
         });
 
-      const localURL4 = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const productURL4 = localURL4 + this.productId_3 + '/'; //
+      const localURL4 = 'http://127.0.0.1:8000/product/'; 
+      const productURL4 = localURL4 + this.productId_3 + '/'; 
       
-      axios.get(productURL4) // 리팩토링 필요. (async await로 변경예정)
+      axios.get(productURL4) 
         .then((res) => {
           this.productDetail4 = res.data; // 상품 상세 정보
         })
@@ -111,8 +111,6 @@ export default {
     },
   },
   created: function () {
-    // created로 선언하여 데이터를 갱신한다.
-    // this.productId = '201';
     this.getProduct(); // 상품정보
   },
 };
