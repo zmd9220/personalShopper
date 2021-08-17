@@ -19,11 +19,6 @@ export default {
   components: {
     Nav,
   },
-  data: function() {
-    return {
-      productId : '301',
-    }
-  },
   mounted: { // 이용자 부재 시 local 데이터 삭제
     removeData: function() { 
       localStorage.clear()

@@ -5,14 +5,16 @@
         <p>PersonalShopper의 추천</p>
       </div>
       <div class="footer-row">
-        <div class="column">
-          <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail(this.$store.state.productId_1)" >
+         <div class="column">
+          <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
         </div>
+
         <div class="column">
-          <img :src="this.$store.state.productRecommend_2" alt="item3" style="width: 100%" @click="gotoDetail(this.$store.state.productId_2)" >
+          <img :src="this.$store.state.productRecommend_2" alt="item3" style="width: 100%" @click="gotoDetail2()" >
         </div>
+
         <div class="column">
-          <img :src="this.$store.state.productRecommend_3" alt="item3" style="width: 100%" @click="gotoDetail(this.$store.state.productId_3)" >
+          <img :src="this.$store.state.productRecommend_3" alt="item3" style="width: 100%" @click="gotoDetail3()" >
         </div>
       </div>
     </div>
@@ -42,13 +44,31 @@ export default {
     })
   },
   methods:{
-    gotoDetail: function(product_id) {                
+    gotoDetail1: function() {                
       if (this.$route.path !== '/ProductDetail' ) {
-        this.$store.commit('selectedProductID', product_id);
+        this.$store.commit('selectedProductID', this.$store.state.productId_1);
         this.$router.push({name:'ProductDetail'});
       } else {
-        this.$store.commit('selectedProductID', product_id);
-        this.$emit('selectedProductId', product_id);
+        this.$store.commit('selectedProductID', this.$store.state.productId_1);
+        this.$emit('selectedProductId', this.$store.state.productId_1);
+      }
+    },
+    gotoDetail2: function() {                 
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectedProductID', this.$store.state.productId_2);
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectedProductID', this.$store.state.productId_2);
+        this.$emit('selectedProductId', this.$store.state.productId_2);
+      }
+    },
+    gotoDetail3: function() {                 
+      if (this.$route.path !== '/ProductDetail' ) {
+        this.$store.commit('selectedProductID', this.$store.state.productId_3);
+        this.$router.push({name:'ProductDetail'});
+      } else {
+        this.$store.commit('selectedProductID', this.$store.state.productId_3);
+        this.$emit('selectedProductId', this.$store.state.productId_3);
       }
     },
   },

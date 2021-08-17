@@ -157,6 +157,7 @@ def kakaoPay_approve(request):
         # 현재 구매한 장바구니 상품들
         order_items = request.data['orderItems']
         # 각 상품 별로 DB에 반영
+
         for item in order_items:
             # recommend 테이블에 해당 상품 row
             sales = get_object_or_404(Recommend, product_id=item['product_id'])
