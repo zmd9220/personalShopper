@@ -118,7 +118,7 @@ def make_status(request):
     # module_dir까지의 경로/barcode.txt 로 경로 문자열 생성
     file_path = os.path.join(module_dir, 'barcode.txt')
     # txt 파일 생성 후 저장
-    with open(file_path, 'a+', encoding='utf-8') as txtfile:
+    with open(file_path, 'w', encoding='utf-8') as txtfile:
         tmp_str = '생성 완료'
         txtfile.write(tmp_str)
     # os.remove(file_path)

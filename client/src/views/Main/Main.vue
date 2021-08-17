@@ -64,7 +64,8 @@ export default {
       this.$router.push("/PersonalShopper");
     },
     createUserData: function () { // 사용자 정보 vuex로 담는 함수
-      this.$store.dispatch("createUserData", {age: this.age , gen: this.gen});
+      this.$store.dispatch("createUserData", {age: this.age , gen: this.gen})
+      localStorage.setItem('user', JSON.stringify({age: this.age , gen: this.gen}))
     },
     recommendData() { // django로 사용자 정보 보내서 django 내부에 추천알고리즘 통하여 추천상품 ID 값들 요청하는 함수
       const localURL = "http://127.0.0.1:8000/recommended/";
