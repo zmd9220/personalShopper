@@ -39,9 +39,7 @@ python manage.py makemigrations
 python manage.py migrate
 
 모델(빈꽉) 에 더미데이터를채워넣는다
-python manage.py loaddata dummydatalist.json
-
-python manage.py loaddata dummystock.json
+python manage.py loaddata dummydata.json
 ```
 
 장고 서버 실행
@@ -54,23 +52,46 @@ python manage.py runserver
 
 
 
-## 더미데이터
+## ERD 구조
 
-* fixtures/dummydatalist.json <= 전체 상품 더미 데이터
+![Copy of sub2](README.assets/Copy of sub2.png)
 
-* fixtures/dummystock.json <= 재고 더미 데이터 
 
-### 상품 카테고리별 사이즈 분류표
 
-| Name       | Column                  | 열       |
-| ---------- | ----------------------- | -------- |
-| 악세서리   | 999                     | freesize |
-| 상의(남성) | 90, 95, 100, 105, 110   | S ~ XL   |
-| 상의(여성) | 44, 55, 66, 77, 88      | XS ~ XL  |
-| 하의(남성) | 28, 30, 32, 34, 36, 38  | S ~ XL   |
-| 하의(여성) | 24, 26, 28, 30, 32, 34  | XS ~ XL  |
-| 신발(여성) | 230, 240, 250, 260, 270 |          |
-| 신발(남성) | 250, 260, 270, 280, 290 |          |
+## Backend
+
+* django 사용하여 구성
+* Front에서 axios 요청보내오면 요청 받은 데이터를 보내주고 필요에 따라 값을 변화시킨다. 
+
+
+
+### model 설명 
+
+* Product
+  * 상품 ID, 바코드, 상품 이미지, 관련 상품 ID 등의 정보를 담는 모델이다.
+* Recommend
+  * Product 모델의 외래키로 연결되어 있으며 나이별 상품 판매량 조회수 등의 정보를 담는 모델이다.
+* Customer
+  * 사용자의 성별과 나이를 담는 모델이다.
+* Stock
+  * Product 모델의 외래키로 연결되어 있으며 해당 상품의 재고정보를 담는 모델이다.
+
+
+
+### views.py 함수 설명
+
+* products : 전체 상품 조회
+* product_detail : product_id를 통해 특정 상품 조회
+* product_stock: product_id를 통해 특정 상품 재고 조회
+* kakaoPay_ready: 카카오페이 결제 준비
+* make_status: 바코드 인식 기능 사용할 때 파일 생성해주는 기능
+* kakaoPay_approve: 카카오페이 결제 승인 요청 (요청 후 정상 작동되면 재고내용 변동)
+* recommended: 나이, 성별을 이용한 상품 추천 알고리즘
+* product_list_create: 관리자가 상품을 생성하고 목록을 확인하는 기능
+* product_update_delete: 관리자가 상품을 수정하고 삭제하는 기능
+* signup: 관리자 등록
+
+
 
 ## 문제해결
 
@@ -91,6 +112,5 @@ python manage.py runserver
 > https://code.djangoproject.com/wiki/JSON1Extension
 >
 > 다운로드 받은 파일 위 페이지 참고하여 본인 환경에 맞는 경로로 넣어주기
-
 
 

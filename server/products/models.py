@@ -2,7 +2,7 @@ from django.db import models
 from django.db.models.fields import IntegerField
 
 # Create your models here.
-class Product(models.Model):
+class Product(models.Model):        # 상품 상세 정보
     product_id = models.IntegerField(primary_key=True)
     barcode = models.IntegerField()
     product_name = models.CharField(max_length=50)
@@ -20,7 +20,7 @@ class Product(models.Model):
     location = models.CharField(max_length=1)
 
 
-class Recommend(models.Model):
+class Recommend(models.Model):      # 판매정보
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     week_sale10 = IntegerField()
     month_sale10 = IntegerField()
@@ -42,13 +42,12 @@ class Recommend(models.Model):
     visit60 = IntegerField()
 
 
-class Customer(models.Model):
+class Customer(models.Model):       # 고객정보
     gender = models.CharField(max_length=1)
     age = models.IntegerField()
 
 
 
-class Stock(models.Model):
+class Stock(models.Model):      # 재고정보
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    # size = models.JSONField() # 프론트에서 바꿔준다. ex) 신발 의류 바지 사이즈가 다양하기 떄문
     stock = models.JSONField()

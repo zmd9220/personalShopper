@@ -1,6 +1,5 @@
 import os
 from django.shortcuts import get_object_or_404
-from requests.api import get
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import ProductSerializer, StockSerializer
@@ -9,9 +8,6 @@ import json, requests
 
 from rest_framework import status
 
-from rest_framework.decorators import authentication_classes
-from rest_framework.permissions import IsAuthenticated
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 # stock 테이블에 사이즈 접근을 위한 dictionary
 sizes = {
@@ -111,6 +107,7 @@ def kakaoPay_ready(request):
     response = json.loads(response.text)
     return Response(response)
 
+
 @api_view(['GET'])
 def make_status(request):
     # /server 에서 장고를 실행했을 때, 정상적으로 돌아감.. 안그러면 문제가 발생
@@ -128,6 +125,7 @@ def make_status(request):
     else:
         return Response(status=404)
   
+
 @api_view(['POST'])     # 카카오페이 결제 승인 요청 
 def kakaoPay_approve(request):
     # 카카오 페이 api url
@@ -254,10 +252,8 @@ def recommended(request):
 
 @api_view(['GET', 'POST'])
 # JWT 을 활용한 인증을 할 때 JWT 자체를 검증한 인증 여부와 상관 없이 JWT가 유효한 지 여부만 파악
-# @authentication_classes([JSONWebTokenAuthentication])
 # # 인증이 되지 않은 상태로 요청이 없으면
 # # "자격 인증 데이터가 제공되지 않았습니다"와 같은 메세지를 응답함
-# @permission_classes([IsAuthenticated])
 def product_list_create(request):
     if request.method == 'GET':
         # products = product.objects.all()
@@ -272,8 +268,6 @@ def product_list_create(request):
 
 
 @api_view(['PUT', 'DELETE'])
-# @authentication_classes([JSONWebTokenAuthentication])
-# @permission_classes([IsAuthenticated])
 def product_update_delete(request, product_pk):
     product = get_object_or_404(Product, pk=product_pk)
 
