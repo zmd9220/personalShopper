@@ -11,7 +11,7 @@
             :src="this.productDetail1.product_image"
             alt="personal1"
             style="width: 100%"
-            @click="gotoDetail(this.productDetail1)"
+            @click="gotoDetail1()"
           />
         </div>
 
@@ -21,7 +21,7 @@
             :src="this.productDetail2.product_image"
             alt="personal2"
             style="width: 100%"
-            @click="gotoDetail(this.productDetail2)" 
+            @click="gotoDetail2()" 
           />
         </div>
 
@@ -31,7 +31,7 @@
             :src="this.productDetail3.product_image"
             alt="personal3"
             style="width: 100%"
-            @click="gotoDetail(this.productDetail3)" 
+            @click="gotoDetail3()" 
           />
         </div>
       </div>
@@ -65,8 +65,16 @@ export default {
     }),
   },
   methods: {
-    gotoDetail: function(productDetail) { // selectedProductID를 변경하고 Detail page로 보내기
-        this.$store.commit('selectedProductID', productDetail.product_id);
+    gotoDetail1: function() { // selectedProductID를 변경하고 Detail page로 보내기
+        this.$store.commit('selectedProductID', this.productDetail1.product_id);
+        this.$router.push({name:'ProductDetail'});
+    },
+    gotoDetail2: function() { // selectedProductID를 변경하고 Detail page로 보내기
+        this.$store.commit('selectedProductID', this.productDetail2.product_id);
+        this.$router.push({name:'ProductDetail'});
+    },
+    gotoDetail3: function() { // selectedProductID를 변경하고 Detail page로 보내기
+        this.$store.commit('selectedProductID', this.productDetail3.product_id);
         this.$router.push({name:'ProductDetail'});
     },
     getProduct: function () {
