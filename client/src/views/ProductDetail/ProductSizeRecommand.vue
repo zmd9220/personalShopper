@@ -142,15 +142,11 @@ export default {
     changeProductId(payload) { // 연관 상품 조회시 그 상품 조회 페이지로 이동.
       this.PassProductId = payload
       console.log(this.PassProductId)
-      // this.PassProductId = selectedProductId;
       this.$router.push({
         name:'ProductDetail', 
         params: {
-      //     // console.log()
           passProductID: this.PassProductId,
-
         }});
-
     }
   },
   mounted : function(){
@@ -204,7 +200,6 @@ export default {
 
 .modal-info-box {
   width: 100%;
-  /* height: 20vh; */
 }
 
 .size-modal-button {

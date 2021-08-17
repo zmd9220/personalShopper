@@ -1,9 +1,5 @@
 <template>
   <div>
-    <!-- <p>{{ $route.query }}</p>
-    <p>{{ paymentData.pg_token }}</p>
-    <p>{{ paymentData.tid }} </p>
-    <p>{{ paymentData.orderNumber }} </p> -->
   </div>
 </template>
 

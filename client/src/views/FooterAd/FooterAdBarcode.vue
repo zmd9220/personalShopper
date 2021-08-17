@@ -65,17 +65,17 @@ export default {
     }),
   },
   methods: {
-    gotoDetail: function(productDetail) {                
+    gotoDetail: function(productDetail) { // selectedProductID를 변경하고 Detail page로 보내기
         this.$store.commit('selectedProductID', productDetail.product_id);
         this.$router.push({name:'ProductDetail'});
     },
     getProduct: function () {
       // 상품정보를 받아오는 axios
-      const localURL1 = "http://127.0.0.1:8000/product/"; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL1 = "http://127.0.0.1:8000/product/"; 
       const productURL1 = localURL1 + this.recommendProductId["A"] + "/"; //
 
       axios
-        .get(productURL1) // 리팩토링 필요. (async await로 변경예정)
+        .get(productURL1) 
         .then((res) => {
           this.productDetail1 = res.data; // 상품 상세 정보
           this.$store.commit("productDetail1", res.data); // 상품 상세정보
@@ -84,11 +84,11 @@ export default {
           // console.log(err)
         });
 
-      const localURL2 = "http://127.0.0.1:8000/product/"; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL2 = "http://127.0.0.1:8000/product/"; 
       const productURL2 = localURL2 + this.recommendProductId["B"] + "/"; //
 
       axios
-        .get(productURL2) // 리팩토링 필요. (async await로 변경예정)
+        .get(productURL2) 
         .then((res) => {
           this.productDetail2 = res.data; // 상품 상세 정보
           this.$store.commit("productDetail2", res.data); // 상품 상세정보
@@ -97,11 +97,11 @@ export default {
           // console.log(err)
         });
 
-      const localURL3 = "http://127.0.0.1:8000/product/"; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
+      const localURL3 = "http://127.0.0.1:8000/product/"; 
       const productURL3 = localURL3 + this.recommendProductId["C"] + "/"; //
 
       axios
-        .get(productURL3) // 리팩토링 필요. (async await로 변경예정)
+        .get(productURL3) 
         .then((res) => {
           this.productDetail3 = res.data; // 상품 상세 정보
           this.$store.commit("productDetail3", res.data); // 상품 상세정보
@@ -113,7 +113,6 @@ export default {
   },
   created: function () {
     // created로 선언하여 데이터를 갱신한다.
-    // this.productId = '201';
     this.getProduct(); // 상품정보
   },
 };
@@ -134,14 +133,10 @@ export default {
 
 .footer-row {
   display: flex;
-  /* content: ""; */
-  /* clear: both; */
   width: 100%;
   position: fixed;
   bottom: 0%;
   font-size: 5em;
-  /* left: 0%;
-  right: 0%; */
 }
 
 .column {
