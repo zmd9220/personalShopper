@@ -158,7 +158,7 @@ export default {
     Nav,
   },
   props: {
-    barcode:String,
+    barcode: String,
   },
   data: function() {
     return {
@@ -306,7 +306,8 @@ export default {
   created: function () { // created로 선언하여 데이터를 갱신한다.
     // this.productId = '201';
     if (this.barcode){
-      this.$store.commit('selectedProductID', Number(this.barcode.slice(10,13))) 
+      this.$store.dispatch("createUserData", JSON.parse(localStorage.getItem('user'))) 
+      this.$store.commit('selectedProductID', Number(this.barcode)) 
     }
     this.getProduct(); // 상품정보
     this.getStock(); // 재고정보
