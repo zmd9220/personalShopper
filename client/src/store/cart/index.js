@@ -18,8 +18,8 @@ export default {
       const womanShoesSize = ['KR 230', 'KR 240', 'KR 250', 'KR 260','KR 270'];
 
       const localURL = 'http://127.0.0.1:8000/product/'; // 리팩토링 필요. 따로 파일 설정해서 관리할수있게
-      const stockURL = localURL + item.product_id + '/' + 'stocks' +'/';
-      axios.get(stockURL)
+      const stockURL = localURL + item.product_id + '/' + 'stocks' +'/'; // 재고 URL
+      axios.get(stockURL) // 재고 데이터 받아오기
       .then((res) => {
         const options = [{ value: null, text: '사이즈 선택' },];
         item.stock = res.data.stock;
@@ -85,41 +85,41 @@ export default {
       .catch((err) => {
         console.log(err)
       })
-      .finally(()=>{
+      .finally(()=>{ // 장바구니에 넣기
         if (cartItems.length === 0) {
           state.items.push(item);
         }
       })
     },
-    delItem(state, product_id) {
+    delItem(state, product_id) { // 장바구니에서 특정 상품 삭제하기
       state.items = state.items.filter(item => item.product_id !== product_id);
     },
-    clearCart(state) {
+    clearCart(state) { // 장바구니 비우기
       state.items = [];
     },
-    plusCounter(state) {
+    plusCounter(state) { // 장바구니에 담은 상품 삭제 시 해당 사이즈 재고 +1
       return state.selectSizeCnt++;
     },
-    minusCounter(state) {
+    minusCounter(state) { // 장바구니에 상품 담을 시 해당 사이즈 재고 -1
       return state.selectSizeCnt--;
     }
   },
   actions: {
-    addItem({ commit }, item) {
+    addItem({ commit }, item) { // 장바구니에 상품 추가 함수 설정
       commit('addItem', item);
     },
-    delItem({ commit }, product_id) {
+    delItem({ commit }, product_id) {  // 장바구니에 상품 삭제 함수 설정
       commit('delItem', product_id);
     },
-    clearCart({ commit }) {
+    clearCart({ commit }) { // 장바구니 비우는 함수 설정
       commit('clearCart');
     },
-    cartReload({ commit }, reloadItems) {
+    cartReload({ commit }, reloadItems) {  // 장바구니 불러오는 함수 설정
       commit('cartReload', reloadItems)
     },
   },
   getters: {
-    totalPrice(state) {
+    totalPrice(state) { // 장바구니 상품 가격 계산
       return state.items.reduce((sum, item) => sum + Number(item.price), 0);
     },
   }

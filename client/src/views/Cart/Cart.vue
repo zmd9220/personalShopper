@@ -1,6 +1,7 @@
 <template>
   <div>
     <Nav/>
+    <!-- 장바구니 정보 표시 -->
     <div class="table-header">
       <div class="product-name">이름</div>
       <div class="product-size">사이즈</div>
@@ -11,6 +12,7 @@
       </div>
     </div>
     <CartList/>
+    <!-- 결제 정보 표시 -->
     <div class="money-box">
       <p class="cart-text">총 금액</p>
       <p class="cart-text">{{ totalCartPrice }} 원</p>

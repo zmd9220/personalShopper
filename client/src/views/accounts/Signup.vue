@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Signup</h1>
+    <!-- 관리자 회원 가입 페이지 -->
     <div>
       <label for="username">사용자 이름: </label>
       <input type="text" id="username" v-model="credentials.username">
@@ -20,13 +21,11 @@
 <script>
 import axios from 'axios'
 
-// const SERVER_URL = process.env.VUE_APP_SERVER_URL
-
 export default {
   name: 'Signup',
   data: function () {
     return {
-      credentials: {
+      credentials: { // 회원가입 시 필요 정보
         username: null,
         password: null,
         passwordConfirmation: null,
@@ -34,13 +33,13 @@ export default {
     }
   },
   methods: {
-    signup: function () {
-      axios({
+    signup: function () { // 회원 가입 함수 정의
+      axios({ // post 방식으로 credential 데이터 전달
         method: 'post',
         url: 'http://127.0.0.1:8000/accounts/signup/',
         data: this.credentials,
       })
-        .then(res => {
+        .then(res => { // 회원 가입 시 로그인 페이지로 이동
           console.log(res)
           this.$router.push({ name: 'Login'})
         })

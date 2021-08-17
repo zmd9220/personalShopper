@@ -1,14 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-// import createPersistedState from "vuex-persistedstate"
 import cart from './cart/index';
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  // plugins: [
-  //   createPersistedState(),
-  // ],
-  state: {
+  state: { // 기본 데이터 설정
     selectedProductID: '301',
     productRecommend_1: 'https://static.zara.net/photos///2021/I/0/1/p/8612/743/020/2/w/563/8612743020_6_1_1.jpg?ts=1627914450425',
     productRecommend_2: 'https://static.zara.net/photos///2021/I/1/1/p/6314/810/100/2/w/563/6314810100_6_1_1.jpg?ts=1626859235465',
@@ -24,7 +20,7 @@ export default new Vuex.Store({
       gen: String,
     },
   },
-  mutations: {
+  mutations: { // vuex에 데이터 저장
     selectedProductID: function (state, payload) {
       state.selectedProductID = payload;
     },
@@ -61,7 +57,7 @@ export default new Vuex.Store({
       state.user.gen = userData.gen
     },
   },
-  actions: {
+  actions: { // 유저 데이터 저장
     createUserData: function({ commit }, userData) {
       commit('createData', userData)
     }

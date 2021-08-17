@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Main from '@/views/Main/Main'
-import Ad from '@/views/Ad/Ad'
 import Admin from '@/views/Admin/Admin'
 import ProductForm from '@/views/Admin/ProductForm'
-import ProductUpdateForm from '@/views/Admin/ProductUpdateForm'
 import AdClient from '@/views/Ad/AdClient'
 import Barcode from '@/views/Barcode/Barcode' 
 import PersonalShopper from '@/views/PersonalShopper/PersonalShopper' 
@@ -41,16 +39,6 @@ const routes = [
     path: '/ProductForm',  // 메인 페이지
     name: 'ProductForm',
     component: ProductForm
-  },
-  {
-    path: '/ProductUpdateForm',  // 메인 페이지
-    name: 'ProductUpdateForm',
-    component: ProductUpdateForm
-  },
-  {
-    path: '/Ad', // 매장관리용 광고 검색 페이지
-    name: 'Ad',
-    component: Ad
   },
   {
     path: '/AdClient', // 고객용 광고 페이지
@@ -109,22 +97,22 @@ const routes = [
     component: PaymentPage,
   },
   {
-    path: '/accounts/signup',
+    path: '/accounts/signup', // 관리자용 가입 페이지
     name: 'Signup',
     component: Signup,
   },
   {
-    path: '/accounts/login',
+    path: '/accounts/login', // 관리자용 로그인 페이지
     name: 'Login',
     component: Login, 
   },
   {
-    path: '/PersonalShopperDetail',
+    path: '/PersonalShopperDetail', // 퍼스널 쇼퍼 룩의 상세 페이지
     name: 'PersonalShopperDetail',
     component: PersonalShopperDetail,
   },
   {
-    path: '/Cart',
+    path: '/Cart', // 장바구니 페이지
     name: 'Cart',
     component: Cart,
   },

@@ -1,10 +1,12 @@
 <template>
   <div>
     <Nav/> 
+    <!-- 상품 등록 페이지 -->
     <div class="product-form">
       <h2>상품 등록</h2>
       <br>
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+        <!-- 상품 id 입력창 -->
         <b-form-group
           id="input-group-1"
           label="Product ID"
@@ -18,7 +20,7 @@
             required
           ></b-form-input>
         </b-form-group>
-        
+        <!-- 상품 바코드 아이디 입력창 -->
         <b-form-group
           id="input-group-2"
           label="Product barcode"
@@ -32,7 +34,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 이름 입력창 -->
         <b-form-group id="input-group-3" label="Product Name " label-for="input-3">
           <b-form-input
             id="input-3"
@@ -41,7 +43,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 타겟 성별 입력 창 -->
         <b-form-group id="input-group-4" label="Gender " label-for="input-4">
           <b-form-select
             id="input-4"
@@ -50,7 +52,7 @@
             required
           ></b-form-select>
         </b-form-group>
-
+        <!-- 상품 look 이미지 입력창 -->
         <b-form-group id="input-group-5" label="style_image " label-for="input-5">
           <b-form-input
             id="input-5"
@@ -59,7 +61,7 @@
             required
           ></b-form-input>
         </b-form-group>
-        
+        <!-- 상품 이미지 입력창 -->
         <b-form-group id="input-group-6" label="product_image " label-for="input-6">
           <b-form-input
             id="input-6"
@@ -68,7 +70,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 색상 입력창 -->
         <b-form-group id="input-group-7" label="color " label-for="input-7">
           <b-form-input
             id="input-7"
@@ -77,7 +79,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 시즌 입력창 -->
         <b-form-group id="input-group-8" label="season " label-for="input-8">
           <b-form-select
             id="input-8"
@@ -86,7 +88,7 @@
             required
           ></b-form-select>
         </b-form-group>
-
+        <!-- 상품의 연관 상품 리스트 입력창 -->
         <b-form-group id="input-group-9" label="style_products " label-for="input-9">
           <b-form-input
             id="input-9"
@@ -95,7 +97,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 설명 입력창 -->
         <b-form-group id="input-group-10" label="product_description " label-for="input-10">
           <b-form-input
             id="input-10"
@@ -104,7 +106,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 타입 입력창 -->
         <b-form-group id="input-group-11" label="product_type " label-for="input-11">
           <b-form-select
             id="input-11"
@@ -113,7 +115,7 @@
             required
           ></b-form-select>
         </b-form-group>
-
+        <!-- 상품 가격 정보 입력창 -->
         <b-form-group id="input-group-12" label="price " label-for="input-12">
           <b-form-input
             id="input-12"
@@ -122,7 +124,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 테마 입력창 -->
         <b-form-group id="input-group-13" label="usage " label-for="input-13">
           <b-form-input
             id="input-13"
@@ -131,7 +133,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 링크 입력창 -->
         <b-form-group id="input-group-14" label="product_link " label-for="input-14">
           <b-form-input
             id="input-14"
@@ -140,7 +142,7 @@
             required
           ></b-form-input>
         </b-form-group>
-
+        <!-- 상품 위치 정보 입력창 -->
         <b-form-group id="input-group-15" label="location " label-for="input-15">
           <b-form-select
             id="input-15"
@@ -153,6 +155,7 @@
         <b-button type="submit" variant="primary">Submit</b-button>
         <b-button type="reset" variant="danger">Reset</b-button>
       </b-form>
+      <!-- 입력 정보 미리보기 -->
       <b-card class="mt-3" header="Form Data Result">
         <pre class="m-0">{{ form }}</pre>
       </b-card>
@@ -170,7 +173,7 @@ export default {
   },
   data() {
     return {
-      form: {
+      form: { // 입력될 데이터 변수 설정
         product_id: '',
         barcode: '',
         product_name: '',
@@ -195,33 +198,26 @@ export default {
     }
   },
   methods: {
-    setToken: function () {
+    setToken: function () { // token을 통해 접근 제한
       const token = localStorage.getItem('jwt')
       const config = {
         headers: {
           Authorization: `JWT ${token}`
-          // "Access-Control-Allow-Headers": "*",
         }
       }
       return config
     },
-    onSubmit(event) {
+    onSubmit(event) { // 입력한 상품 정보 리스트에 등록
       event.preventDefault()
-      // alert(JSON.stringify(this.form))
-      // post로 등록 
       const localURL = "http://127.0.0.1:8000/product/create/" 
-      // const newProduct = JSON.stringify(this.form)
       const newProduct = this.form
     
-
-      console.log(newProduct)
-      axios({
+      axios({ // post로 상품 데이터 등록
           method: 'post',
           url: localURL,
           data: newProduct,
-          // headers: this.setToken()
         })
-        .then((res) => {
+        .then((res) => { // 상품 등록 후 리스트 페이지로 이동
           console.log(res)
           this.$router.push({ name: 'Admin' })
         })
@@ -229,9 +225,8 @@ export default {
           console.log(err)
         })
     },
-    onReset(event) {
+    onReset(event) { // form에 입력된 정보들 reset
       event.preventDefault()
-      // Reset our form values
       this.form.product_id = ''
       this.form.barcode = ''
       this.form.product_name = ''
@@ -247,23 +242,18 @@ export default {
       this.form.usage = ''
       this.form.location = null
 
-      // Trick to reset/clear native browser form validation state
       this.show = false
       this.$nextTick(() => {
         this.show = true
       })
     }
   },
-  // created: function () {
-  // const token = localStorage.getItem('jwt')
-  // }
 }
 </script>
 
 <style scoped>
 
 .product-form {
-  /* display: block; */
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;

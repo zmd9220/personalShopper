@@ -1,11 +1,12 @@
 <template>
+  <!-- 장바구니 페이지에 표시할 상품 리스트 -->
   <div>
-    <b-card  v-for="item in cartItems" :key="item.product_id" :img-src="item.product_image" img-alt="Card image" img-left class="mb-3">
+    <b-card v-for="item in cartItems" :key="item.product_id" :img-src="item.product_image" img-alt="Card image" img-left class="mb-3">
       <b-card-text>
         <div class="container">
           <div class="product-name">{{ item.product_name }}</div>
-          <div class="product-size">
-            <b-form-select v-model="item.selectedSize" :options="item.options" @change="changeSelectSizeCnt(item.selectedSize)"></b-form-select>
+          <div >
+            <b-form-select class="product-size" v-model="item.selectedSize" :options="item.options" @change="changeSelectSizeCnt(item.selectedSize)"></b-form-select>
           </div>
           <div class="product-price">{{ item.price }}</div>
           <div class="products-delete"><b-icon icon="trash" variant="danger" @click="delItem(item.product_id)"></b-icon></div>
@@ -29,7 +30,7 @@ export default {
     delItem(product_id) { // 단일아이템 제거 함수
       this.$store.dispatch('cart/delItem', product_id);
     },
-    changeSelectSizeCnt(selectedSize) {
+    changeSelectSizeCnt(selectedSize) { // 사이즈 선택 시 재고 변동
       if (selectedSize === null){
         this.$store.commit('cart/minusCounter');
       } else {
@@ -68,12 +69,14 @@ export default {
   flex: 5;
 }
 .product-size {
-  flex: 3
+  flex: 3;
+  font-size: 0.75em;
 }
 .product-price {
   flex: 3
 }
 .products-delete {
-  flex: 3
+  flex: 3;
+  font-size: 2em;
 }
 </style>

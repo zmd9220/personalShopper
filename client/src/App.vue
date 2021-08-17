@@ -3,18 +3,14 @@
     <!-- 개발용 라우터 뷰 -->
     <div id="nav">
       <router-link to="/">Main</router-link> |
-      <router-link to="/Ad">Ad</router-link> |
       <router-link to="/AdClient">AdClient</router-link> |
       <router-link to="/Barcode">Barcode</router-link> |
       <router-link to="/ProductDetail">ProductDetail</router-link> |
-      <!-- <router-link to="/ProductSizeChart">ProductSizeChart</router-link> |  -->
-      <!-- <router-link to="/ProductDetailLocation">ProductDetailLocation</router-link> |  -->
       <router-link to="/ProductSizeRecommand">ProductSizeRecommand</router-link> | 
       <router-link to="/PersonalShopper">PersonalShopper</router-link> | 
       <!-- <span v-if="isLogin"> -->
       <router-link to="/Admin">Admin</router-link> | 
       <router-link to="/ProductForm">ProductForm</router-link> | 
-      <!-- <router-link to="/ProductUpdateForm">ProductUpdateForm</router-link> |  -->
       <router-link @click.native="logout" to="#">Logout</router-link> |
       <!-- </span> -->
       <!-- <span v-else> -->
