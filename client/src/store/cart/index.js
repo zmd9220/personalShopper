@@ -102,7 +102,10 @@ export default {
     },
     minusCounter(state) { // 장바구니에 상품 담을 시 해당 사이즈 재고 -1
       return state.selectSizeCnt--;
-    }
+    },
+    cartReload(state, reloadItems) {
+      state.items = reloadItems
+    },
   },
   actions: {
     addItem({ commit }, item) { // 장바구니에 상품 추가 함수 설정
