@@ -3,9 +3,9 @@
     <Nav/>
     <p class="title">"Look" 4 U</p>  
     <div class="image-area">
-      <b-icon class="img-switch-prev" icon="arrow-left-circle-fill" aria-hidden="true"></b-icon>
+      <!-- <b-icon class="img-switch-prev" icon="arrow-left-circle-fill" aria-hidden="true"></b-icon> -->
       <img :src="productDetail.style_image" alt="look1" class="look-detail">
-      <b-icon class="img-switch-next" icon="arrow-right-circle-fill" aria-hidden="true"></b-icon>
+      <!-- <b-icon class="img-switch-next" icon="arrow-right-circle-fill" aria-hidden="true"></b-icon> -->
     </div>
     <div class="look-items-area">
       <p>룩 완성하기</p>
@@ -148,38 +148,40 @@ export default {
 
 <style>
 .title {
-  font-size: 4em;
+  font-size: 1.5em;
   font-weight: bold;
+  margin-bottom: 0.25em;
 }
 
 .img-switch-prev {
-  margin: 0 2em 0 0;
-  font-size: 5.5em;
+  margin: 0 0.5em 0 0;
+  font-size: 1.5em;
 }
 
 .img-switch-next {
-  margin: 0 0 0 2em;
-  font-size: 5.5em;
+  margin: 0 0 0 0.5em;
+  font-size: 1.5em;
 }
 
 .look-detail {
-  width: 60%;
+  width: 55%;
 }
 
 .add-items-cart {
-  width: 25%;
+  width: 30%;
   position: fixed;
-  right: 10%;
+  right: 5%;
+  bottom: 24.5%;
 }
 
 .button-text {
-  font-size: 3.25em;
+  font-size: 0.8em;
 }
 
 .look-items-area {
   position: fixed;
   bottom: 0%;
-  font-size: 4em;
+  font-size: 1em;
   font-weight: bold;
 }
 

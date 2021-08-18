@@ -132,7 +132,7 @@ export default {
 }
 
 .footer-text {
-  font-size: 5rem;
+  font-size: 1.5em;
   position: fixed;
   bottom: 30%;
   left: 0%;
@@ -144,13 +144,13 @@ export default {
   width: 100%;
   position: fixed;
   bottom: 0%;
-  font-size: 5em;
+  /* font-size: 5sem; */
 }
 
 .column {
   display: inline;
   float: left;
-  margin: 0 0.3rem;
   width: 33.3%;
+  margin: 0 0.05em;
 }
 </style>

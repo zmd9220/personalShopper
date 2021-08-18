@@ -44,39 +44,51 @@ export default {
 <style scoped>
 
 .mb-3 {
-  width: 80%;
+  width: 90%;
   margin: auto;
-  border: 5px solid rgba(0, 0, 0, 0.3);
+  border: 2.5px solid rgba(0, 0, 0, 0.3);
   border-radius: 5rem;
   font-size: 3rem;
+  align-items: center;
 }
 
 .card-img-left {
   border-radius: 5rem 0 0 5rem;
-  height: 30rem;
+  height: 2em;
 }
 
 .card-body {
-  margin-top: 3rem;
+  padding: 0px;
 }
 
 .container {
+  padding: 0px;
   display: flex;
-  height: 20rem;
+  height: 3rem;
   align-items: center;
 }
+
 .product-name {
   flex: 5;
+  font-size: 0.25em;
 }
+
 .product-size {
   flex: 3;
-  font-size: 0.75em;
+  font-size: 0.2em;
+  margin-right: 0.3em;
 }
+
 .product-price {
-  flex: 3
+  flex: 3;
+  font-size: 0.3em;
+  margin-right: 0.3em;
 }
+
 .products-delete {
   flex: 3;
-  font-size: 2em;
+  font-size: 0.5em;
+  margin-right: 0.3em;
 }
+
 </style>

@@ -51,6 +51,7 @@ export default {
 .mb-3 {
   width: 80%;
   margin: auto;
+  /* margin-bottom: 0.1em; */
   border: 5px solid rgba(0, 0, 0, 0.3);
   border-radius: 5rem;
   font-size: 3rem;
@@ -67,46 +68,49 @@ export default {
 
 .table-header {
   display: flex;
-  width: 1718px;
+  width: 90%;
   margin: auto;
-  margin-bottom: 1rem;
-  border: 5px solid rgba(0, 0, 0, 0.3);
-  border-radius: 5rem;
-  font-size: 3rem;
-  height: 8rem; 
+  margin-bottom: 1em;
+  border: 2.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2.5rem;
+  font-size: 0.5em;
+  align-items: center;
+  /* height: 8rem;  */
 }
 .product-name {
-  margin-left: 38rem;
-  margin-top: 2rem;
+  margin-left: 16em;
 }
 .product-size {
-  margin-left: 13rem;
-  margin-top: 2rem;
+  margin-left: 4rem;
 }
 .product-price {
-  margin-left: 7rem;
-  margin-top: 2rem;
+  margin-left: 3rem;
 }
 .product-delete {
-  margin-left: 8rem;
-  margin-top: 1.2rem;
+  margin-left: 2rem;
 }
 
 .delete-button {
   font-size: 0.85em;
+  margin-left: 0.9em;
+  /* margin-right: 0.1em; */
+  border-radius: 2.5rem;
 }
 
 .money-box {
-  width: 30rem;
-  height: 45rem;
-  border: 5px solid rgba(0, 0, 0, 0.3);
-  border-radius: 5rem;
-  margin-left: 95rem;
-  margin-top: 6rem;
+  width: 10rem;
+  height: 10rem;
+  border: 2.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  align-items: center;
 }
 
 .cart-text {
-  font-size: 5rem;
-  margin: 4.5rem 0;
+  display: block;
+  font-size: 1rem;
+  padding-top: 0.5em;
 }
 </style>

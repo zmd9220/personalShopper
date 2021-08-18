@@ -121,10 +121,12 @@ export default {
 .main-column {
   display: flex;
   flex-direction: column;
+  /* width: 30rem; */
 }
 
 .main-logo {
-  width: 200% !important;
+  width: 100%;
+  margin-top: 20%;
 }
 
 .button {
@@ -134,22 +136,36 @@ export default {
 
 .button-main {
   background-color: #e7e7e7;
-  font-size: 5rem;
-  height: 25rem;
-  width: 100%;
+  font-size: 1.25rem;
+  height: 5rem;
+  width: 40%;
+  position: relative;
+  border-radius: 0.75em;
+  margin-top: 4em;
 }
 
 .button-text {
-  margin-bottom: 90px;
+  margin-bottom: 4%;
+  font-size: 1em;
 }
 
 .img-Barcode {
   height: 30%;
   width: 50%;
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
+}
+
+.PS-btn-text {
+  margin-bottom: 0;
 }
 
 .button-under-text {
-  font-size: 5rem;
+  font-size: 1.25rem;
 }
 
 .main-logo {

@@ -6,7 +6,7 @@
       <div class="text-box">
         <div >
           <p class="text-box-title">{{ this.$store.state.productDetail.product_name }}</p> 
-          <h2 style="margin-bottom: 0.5em">재고정보</h2>
+          <p style="margin-bottom: 0.5em">재고정보</p>
         </div>
         <div class="size-box">
 
@@ -293,16 +293,16 @@ export default {
 <style scoped>
 .product-box {
   display: flex;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   position: absolute;
-  bottom: 35%;
-  left: 5%;
-  width: 90%;
+  /* bottom: 10%; */
+  left: 10%;
+  height: 45%;
 }
 
 .product-detail-img {
-  margin-right: 5em;
-  width: 60%;
+  margin-right: 1em;
+  width: 12.5em;
 }
 
 .text-box {
@@ -310,7 +310,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 40%;
+  width: 12.5em;
 }
 
 .size-stock {
@@ -318,7 +318,8 @@ export default {
   flex-direction: column;
   list-style:none;
   padding-left:0px;
-  font-size: 2.5em;
+  font-size: 0.75em;
+  /* align-self:center; */
   text-align: center;
   margin-bottom: 1em;
 }
@@ -352,14 +353,14 @@ export default {
 }
 
 .button-size {
-  margin: 0 0 2em 0;
-  font-size: 2em;
-  width: 40%;
+  margin: 0 0 1.5em 0;
+  font-size: 0.5em;
+  width: 60%;
 }
 
 .text-box .text-box-title {
   font-weight: bold;
-  font-size: 5em;
+  font-size: 1.5em;
 }
 .modal-img-box{
   background-image: url("../../assets/location/totalShop.png");
@@ -367,9 +368,10 @@ export default {
 }
 
 .modal-h2 {
-  margin-top: 1em;
-  font-size: 3em;
+  margin-top: 0.25em;
   text-align: center;
+  font-size: 1.5em;
+  /* font-weight: bold; */
 }
 
 .shop-map {
@@ -378,15 +380,15 @@ export default {
 }
 
 .toast-body-text {
-  font-size: 2.5em;
+  font-size: 1em;
 }
 
 .toast-header-text {
-  font-size: 3em;
+  font-size: 1em;
 }
 
 .b-toast:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 0.5em;
 }
 
 .mr-2 {
@@ -409,20 +411,18 @@ export default {
 }
 
 .mx-auto {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 .modal-close {
-  font-size: 3em;
+  font-size: 1.5em;
+  /* align-items: center; */
 }
 
 
 .button-toast {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
-.b-toast .toast {
-  font-size: 3rem !important;
-}
 </style>

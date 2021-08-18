@@ -2,7 +2,7 @@
   <div id="app">
     <!-- 개발용 라우터 뷰 -->
     <div id="nav">
-      <router-link to="/">Main</router-link> |
+      <!-- <router-link to="/">Main</router-link> |
       <router-link to="/AdClient">AdClient</router-link> |
       <router-link to="/Barcode">Barcode</router-link> |
       <router-link to="/ProductDetail">ProductDetail</router-link> |
@@ -15,7 +15,7 @@
       <router-link :to="{ name: 'Login' }">Login</router-link> |
       <router-link to="/Payment">Payment</router-link> | 
       <router-link :to="{ name: 'PersonalShopperDetail' }">PersonalShopperDetail</router-link> |
-      <router-link :to="{ name: 'Cart' }">Cart</router-link> |
+      <router-link :to="{ name: 'Cart' }">Cart</router-link> | -->
     </div>
     <router-view/>
   </div>
@@ -56,9 +56,9 @@ export default {
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
+// #nav {
+//   padding: 30px;
+// }
 
 #nav a {
   font-weight: bold;

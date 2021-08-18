@@ -173,21 +173,22 @@ export default {
 .ProductBox {
   display: flex;
   margin-bottom: 5em;
-  position: absolute;
-  bottom: 40%;
+  position: fixed;
+  /* bottom: 40%; */
   left: 5%;
   width: 90%;
+  font-size: 0.25em;
 }
 
 .text-box-title {
   font-weight: bold;
-  font-size: 5em;
   margin-bottom: 3em;
+  font-size: 1.2em;
 }
 
 .ProductDetailImg {
   margin-right: 5em;
-  width: 45%;
+  width: 50%;
 }
 
 .TextBox {
@@ -195,7 +196,7 @@ export default {
 }
 
 .size-header {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .modal-info-box {
@@ -203,13 +204,14 @@ export default {
 }
 
 .size-modal-button {
-  width: 40%;
-  font-size: 2.5em;
+  width: 60%;
+  font-size: 3em;
 }
 
 .modal-button {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .slider {
@@ -221,16 +223,16 @@ export default {
 
 .height-area {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .weight-area {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .question-text {
-  font-size: 6em;
+  font-size: 5em;
   margin-bottom: 1em;
 }
 
@@ -258,7 +260,7 @@ export default {
 .button-option {
   border-color: rgb(255, 255, 255);
   border-width: 0.2em;
-  width: 8em;
+  width: 7.5em;
   font-size: 0.75em;
 }
 

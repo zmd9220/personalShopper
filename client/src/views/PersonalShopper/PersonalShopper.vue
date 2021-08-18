@@ -1,15 +1,17 @@
 <template>
   <div>
-    <h4 class="title">PersonalShopper</h4>
-    <img class="product-detail-img" :src=" this.productDetail1.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail1()"> 
-    <img class="product-detail-img" :src=" this.productDetail2.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail2()">
-    <img class="product-detail-img" :src=" this.productDetail3.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail3()">
-    <img class="product-detail-img" :src=" this.productDetail4.style_image" alt="personal1" style="width:47%" @click="goToPersonalShopperDetail4()">
+    <Nav/>
+    <p class="page-title">PersonalShopper</p>
+    <img class="product-detail-img" :src=" this.productDetail1.style_image" alt="personal1" @click="goToPersonalShopperDetail1()"> 
+    <img class="product-detail-img" :src=" this.productDetail2.style_image" alt="personal1" @click="goToPersonalShopperDetail2()">
+    <img class="product-detail-img" :src=" this.productDetail3.style_image" alt="personal1" @click="goToPersonalShopperDetail3()">
+    <img class="product-detail-img" :src=" this.productDetail4.style_image" alt="personal1" @click="goToPersonalShopperDetail4()">
   </div>
 
 </template>
 
 <script>
+import Nav from '@/views/Nav/Nav'
 import axios from 'axios'
 import { mapState  } from 'vuex'
 
@@ -21,6 +23,9 @@ export default {
       productDetail3: '',  // 상품정보
       productDetail4: '',  // 상품정보
     }
+  },
+  components : {
+    Nav,
   },
   computed: {
     ...mapState ({
@@ -117,12 +122,22 @@ export default {
 </script>
 
 <style>
-.title {
-  font-size: 5rem;
+
+.page-title {
+  text-align: end;
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .product-detail-img {
-  margin: 1rem;
+  width: 44%;
+  margin: 0.25em;
+}
+
+.footer-text {
+  font-size: 1em;
+  margin-top: 1em;
 }
 
 </style>
