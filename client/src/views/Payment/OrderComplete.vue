@@ -1,9 +1,7 @@
 <template>
   <div>
     <Nav/>
-    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-        For what reason would it be advisable for me to think about business content? That might be little bit risky to have crew member like them.
-    </div>
+    <!-- 결제 성공, 결제와 관련된 내용 출력 -->
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
             <td align="center">
@@ -119,14 +117,20 @@ export default {
   },
   methods: {
     goToMain () {
+      // vuex에 장바구니 데이터 삭제
       this.$store.dispatch('cart/clearCart')
+      // 로컬저장소 결제 관련 데이터 삭제
       localStorage.removeItem('paymentData')
+      // 로컬저장소 장바구니 데이터 삭제
       localStorage.removeItem('items')
+      // 메인으로 이동
       this.$router.push('/')
     },
   },
   mounted: function () {
+    // 주문 번호 가져오기
     this.orderNumber = localStorage.getItem('orderNumber')
+    // 10초 후에 자동으로 함수 실행
     setTimeout(() => {
       this.goToMain()
     }, 10000)
@@ -135,7 +139,6 @@ export default {
     ...mapState('cart',{
       orderItems: 'items',
     }),
-    
   }
 }
 </script>

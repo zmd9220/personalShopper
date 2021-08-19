@@ -92,7 +92,7 @@ $ sudo nano /etc/default/im-config
 
 
 
-### PyQt5 + pyWebview
+### PyQt5 + pyWebview + GTK
 
 ```bash
 pi@raspberrypi:~ $ sudo apt-get install python3-pyqt5
@@ -102,15 +102,33 @@ pi@raspberrypi:~ $ sudo apt-get install python3-pyqt5.qtwebkit # pywebview는 �
 
 - python3-pyqt5를 설치 (pip3 install pyqt5는 먹히지 않았음)
 - https://www.piwheels.org/simple/pywebview/ 에서 최신버전 pywebview 다운로드
-
 - https://chmodi.tistory.com/114 를 참고하여 whl 파일 설치
 - 설치하고 나서 실행해보니 실행 엔진이 없어서 python3-pyqt5.qtwebkit 설치
+- 추후에 qtwebkit은 버전 업데이트가 안된 오래된 엔진이라 로컬저장소를 지원하지 못해 최신 버전의 엔진이 필요해짐
+  - qtwebengine은 라즈베리파이4와 같은 arm 프로세서를 지원하지 않기 때문에 개별적으로 컴파일을 진행해야했지만, 어려워서 사용하지 못했음.
+  - 대안으로 GTK webkit2 엔진을 사용해서 진행
+  - [Installation | pywebview (flowrl.com)](https://pywebview.flowrl.com/guide/installation.html) 에서 Linux 탭의 PyGObject에 기반한 GTK 설치
+
+```sh
+$ sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-webkit2-4.0
+```
 
 
 
 ### OpenCV
 
+- https://webnautes.tistory.com/916 를 참고하여 설치하였음 (cmake build)
 
+
+
+### 더미 바코드 생성
+
+- [바코드 생성](barcode/바코드 생성 프로그램 - 병진.md) 문서를 참고하여 바코드 생성
+- 필요시 카메라를 통해 스캔하여 활용
+
+
+
+### 작업 내역 기록
 
 - 210723 작업내역
   - 라즈베리파이 os 설치
