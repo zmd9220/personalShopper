@@ -3,9 +3,7 @@
     <Nav/>
     <p class="title">"Look" 4 U</p>  
     <div class="image-area">
-      <!-- <b-icon class="img-switch-prev" icon="arrow-left-circle-fill" aria-hidden="true"></b-icon> -->
       <img :src="productDetail.style_image" alt="look1" class="look-detail">
-      <!-- <b-icon class="img-switch-next" icon="arrow-right-circle-fill" aria-hidden="true"></b-icon> -->
     </div>
     <div class="look-items-area">
       <p>룩 완성하기</p>

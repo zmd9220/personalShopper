@@ -144,7 +144,6 @@ export default {
   width: 100%;
   position: fixed;
   bottom: 0%;
-  /* font-size: 5sem; */
 }
 
 .column {

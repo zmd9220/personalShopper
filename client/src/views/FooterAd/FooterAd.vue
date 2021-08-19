@@ -95,9 +95,6 @@ export default {
   width: 100%;
   position: fixed;
   bottom: 0%;
-  /* font-size: 2em; */
-  /* left: 0%;
-  right: 0%; */
 }
 
 .column {

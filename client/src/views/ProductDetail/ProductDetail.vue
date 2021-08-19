@@ -298,7 +298,6 @@ export default {
   display: flex;
   margin-bottom: 2em;
   position: fixed;
-  /* bottom: 10%; */
   left: 5%;
   right: 5%;
 }
@@ -323,7 +322,6 @@ export default {
   list-style:none;
   padding-left:0px;
   font-size: 1em;
-  /* align-self:center; */
   text-align: center;
   margin-bottom: 1em;
 }
@@ -375,7 +373,6 @@ export default {
   margin-top: 0.25em;
   text-align: center;
   font-size: 1.5em;
-  /* font-weight: bold; */
 }
 
 .shop-map {
@@ -421,7 +418,6 @@ export default {
 
 .modal-close {
   font-size: 1.5em;
-  /* align-items: center; */
 }
 
 

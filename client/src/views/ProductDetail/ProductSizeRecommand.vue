@@ -1,7 +1,6 @@
 <template>
   <div>
     <Nav/>
-    <!-- 상품이름 연동필요 -->
     <p class="text-box-title">{{ productDetail.product_name }}</p>
     <div class="ProductBox">
       <img class="ProductDetailImg" :src=" productDetail.product_image " alt="item1">
@@ -174,7 +173,6 @@ export default {
   display: flex;
   margin-bottom: 5em;
   position: fixed;
-  /* bottom: 40%; */
   left: 5%;
   width: 90%;
   font-size: 0.25em;

@@ -121,7 +121,6 @@ export default {
 .main-column {
   display: flex;
   flex-direction: column;
-  /* width: 30rem; */
 }
 
 .main-logo {
