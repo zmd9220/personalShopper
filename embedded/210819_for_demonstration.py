@@ -32,10 +32,15 @@ def on_release(key):
     if key == pynput.keyboard.Key.shift:
         webview.windows[0].load_url('http://localhost:8080/AdClient')
 
+def on_release_start(key):
+    if key == pynput.keyboard.Key.space:
+        photo_shot()
+        clova_face_recognition()
+
 # 캡쳐
 def photo_shot():
     print('photo_shot')
-    cap = cv2.VideoCapture(0)	# OpenCV 사진 캡쳐
+    cap = cv2.VideoCapture(1)	# OpenCV 사진 캡쳐
     ret, frame = cap.read()
     cv2.imwrite('test.jpg', frame)	# 사진의 데이터 test.jpg 저장
     cap.release()
@@ -51,21 +56,24 @@ def clova_face_recognition():
     files = {'image': open('test.jpg', 'rb')}
     response = requests.post(url, files=files, headers=headers)
     rescode = response.status_code
-    
     json_data = response.json()
-    print(json_data)
-    gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender']['confidence'] # 성별
-    age, age_confidence = json_data['faces'][0]['age']['value'], json_data['faces'][0]['age']['confidence']  # 나이
-    
-    
-    print(gender, gen_confidence)
-    print(age[0:2], age_confidence)
-    if gender == "female":
-        gender = "F"
-    else:
-        gender = "M"
 
-    webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(age[:2], gender))
+    if json_data['faces']:
+        print(json_data)
+        gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender']['confidence'] # 성별
+        age, age_confidence = json_data['faces'][0]['age']['value'], json_data['faces'][0]['age']['confidence']  # 나이
+    
+        print(gender, gen_confidence)
+        print(age[0:2], age_confidence)
+        if gender == "female":
+            gender = "F"
+        else:
+            gender = "M"
+
+        webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(age[:2], gender))
+
+    else :
+        webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(20, "M"))
     
     #print(webview.windows[0].get_current_url())
     
@@ -79,7 +87,7 @@ def clova_face_recognition():
 # 바코드 스캔
 def barcode_scan():
     # OpenCV 사진 캡쳐
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
 
     i = 0
     while (cap.isOpened()):
@@ -128,6 +136,8 @@ def on_loaded():
     # unsubscribe event listener
     webview.windows[0].loaded -= on_loaded
     listener = pynput.keyboard.Listener(on_press=on_press, on_release=on_release)
+    listener.start()
+    listener = pynput.keyboard.Listener(on_press=on_press, on_release=on_release_start)
     listener.start()
     
     is_ad = False		# 사람 인식 후 광고로 돌아가기 위한 플래그
@@ -193,9 +203,9 @@ def on_loaded():
             #         webview.windows[0].load_url('http://localhost:8080/AdClient')
 
             print(webview.windows[0].get_current_url())
-            if webview.windows[0].get_current_url() == 'http://localhost:8080/AdClient':
-                photo_shot()
-                clova_face_recognition()
+            #if webview.windows[0].get_current_url() == 'http://localhost:8080/AdClient':
+                #photo_shot()
+                #clova_face_recognition()
 
             # 사람이 키오스크 앞에 3초 서 있는 상황
 #             if cnt == 3:
