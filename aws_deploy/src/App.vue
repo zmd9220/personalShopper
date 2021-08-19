@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <video controls class="iframe" controlsList="nodownload">
-      <source src="@/assets/UCC 초안.mp4">
+      <source src="@/assets/공통프로젝트 UCC(최종).mp4">
     </video>
-    <img class="ppt-image" alt="Personal-Shopper-PPT" src="./assets/Personal-Shopper-PPT.jpg">
+    <img class="ppt-image" alt="Personal-Shopper-PPT" src="./assets/Personal-Shopper-PPT_2.jpg">
   </div>
 </template>
 
