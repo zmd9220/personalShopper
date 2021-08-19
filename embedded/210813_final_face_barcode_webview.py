@@ -36,28 +36,32 @@ def clova_face_recognition():
     client_secret = "d9yEBBJ1rU"
     url = "https://openapi.naver.com/v1/vision/face"  # 얼굴감지
 
+    # API 요청을 위한 헤더 양식
     headers = {'X-Naver-Client-Id': client_id, 'X-Naver-Client-Secret': client_secret}
+    # 같이 보낼 image 파일 설정
     files = {'image': open('test.jpg', 'rb')}
+    # API server에 POST요청을 보내고 응답을 받은 결과물이 들어 있는 response 객체
     response = requests.post(url, files=files, headers=headers)
+    # 응답 코드를 보기 위한 rescode
     rescode = response.status_code
-    
-    json_data = response.json()
-    print(json_data)
-    gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender']['confidence'] # 성별
-    age, age_confidence = json_data['faces'][0]['age']['value'], json_data['faces'][0]['age']['confidence']  # 나이
-    
-    
-    print(gender, gen_confidence)
-    print(age[0:2], age_confidence)
-    if gender == "female":
-        gender = "F"
-    else:
-        gender = "M"
 
-    webview.windows[0].load_url('http://localhost:8080/{}/{}'.format("20","M"))
-    
-    #print(webview.windows[0].get_current_url())
-    
+    # 얼굴 인식을 했다면 faces 안에 데이터가 들어있음
+    if json_data['faces']:
+        gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender'][
+            'confidence']  # 성별
+        age, age_confidence = json_data['faces'][0]['age']['value'], json_data['faces'][0]['age']['confidence']  # 나이
+        
+        # 남, 여 param 생성
+        if gender == "female":
+            gender = "F"
+        else:
+            gender = "M"
+
+        webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(age[:2], gender))
+
+    else:
+        webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(20, "M"))
+
     if rescode == 200:
         return response.text
     else:
@@ -102,7 +106,6 @@ def barcode_scan():
         if len(barcode_data)==13:
             break;
         # cv2.imshow('img', img)
-        
 
     cap.release()
     cv2.destroyAllWindows()
@@ -110,7 +113,6 @@ def barcode_scan():
     # 입력 받은 바코드 데이터를 파라미터 값으로 전달
     webview.windows[0].load_url('http://localhost:8080/ProductDetail/{}'.format(barcode_data[9:12]))
     print(barcode_data[9:12])
-    #print(webview.windows[0].get_current_url())
 
 # webview 켜진 후 이벤트
 def on_loaded():
@@ -144,54 +146,35 @@ def on_loaded():
             distance = time_interval * 17000
             distance = round(distance, 2)
 
-            # url check
-            # print(webview.windows[0].get_current_url())
-            
-            # 예제 Textfile
-            file = './status/barcode.txt'  
-
+            # 바코드 페이지를 들어갔는지 체크하는 바코드 파일 경로
+            file = './status/barcode.txt'
             if os.path.isfile(file):
-                #print("Yes. it is a file")
                 # 바코드 스캔
                 barcode_scan()
                 # 바코드 스캔 후 파일 제거
                 os.remove(file)
 
-            # print("Distance => ", distance, "cm")
             # 50cm 안에 사람이 있을 경우 cnt++
             if distance <= 50:
                 cnt += 1
                 print("거리 => ", distance, "범위 이내 Count : ", cnt)
             # 사람이 인식되지 않을 경우 cnt 초기화
             else:
-                #print(is_ad)
                 print("거리 => ", distance, "범위 초과")
                 cnt = 0
-                
-                #if os.path.isfile(file):
-                #    os.remove(file);
-                
                 # 사람이 있다가 떠나면 다시 광고 페이지 호출
                 if is_ad:
                     is_ad = False
-                    #print(is_ad)
-                    # 광고 페이지(구글)
-                    # webview.windows[0].load_url('http://localhost:8080/Ad')
-                   
+                    # 광고 페이지로 이동
                     webview.windows[0].load_url('http://localhost:8080/AdClient')
 
             # 사람이 키오스크 앞에 3초 서 있는 상황
             if cnt == 3:
-                
                 is_ad = True
-                # 메인 페이지 호출 (네이버)
-#                webview.windows[0].load_url('http://localhost:8080')
-#                 webview.windows[0].load_url('https://naver.com')
                 # 사진 찍는 코드
                 photo_shot()
                 # 측정하는 코드
                 arr = clova_face_recognition()
-                
                 pprint(arr)
             else:
                 # 여기는 초기화 하는 코드
@@ -208,11 +191,14 @@ def on_loaded():
 
 
 if __name__ == '__main__':
+    # 시작시 바코드 파일이 남아있다면 삭제 후 프로그램 기동
+    file = './status/barcode.txt'
+    if os.path.isfile(file):
+       os.remove(file);
     # Create a standard webview window
     # 켜지는 중 (없어도 상관x) shown 이벤트에서 호출 됨
     window = webview.create_window('Test browser', 'http://localhost:8080/AdClient'
                                    , fullscreen=True
                                    )
-
     window.loaded += on_loaded		# 열린 후 이벤트
     webview.start()				# 웹 창 켜기

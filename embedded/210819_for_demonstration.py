@@ -58,6 +58,7 @@ def clova_face_recognition():
     rescode = response.status_code
     json_data = response.json()
 
+    # 얼굴 인식을 했다면 faces 안에 데이터가 들어있음
     if json_data['faces']:
         print(json_data)
         gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender']['confidence'] # 성별
@@ -65,6 +66,7 @@ def clova_face_recognition():
     
         print(gender, gen_confidence)
         print(age[0:2], age_confidence)
+        # 남, 여 param 생성
         if gender == "female":
             gender = "F"
         else:
