@@ -2,7 +2,7 @@
   <div>
     <span>{{ $route.params.product }}</span>
     <b-button @click="pay2()" variant="white"><img class="pay-btn" src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
-    <p class="pay-text">카카오 페이로 결제</p>
+    <!-- <p class="pay-text">카카오 페이로 결제</p> -->
     <b-modal
       v-model="show"
       title="결제하기"
@@ -48,7 +48,7 @@
           </b-button>
         </div>
       </template>
-    </b-modal> -->
+    </b-modal> 
   </div>
 </template>
 
@@ -153,11 +153,11 @@ export default {
 
 .pay-text {
   margin-top: 0.5em;
-  font-size: 3em;
+  font-size: 1em;
 }
 
 .pay-btn {
-  width: 50%
+  width: 75%
 }
 
 </style>

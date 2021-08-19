@@ -14,8 +14,8 @@
     <CartList/>
     <!-- 결제 정보 표시 -->
     <div class="money-box">
-      <p class="cart-text">총 금액</p>
-      <p class="cart-text">{{ totalCartPrice }} 원</p>
+      <span class="cart-text">총 금액</span>
+      <span class="cart-text">{{ totalCartPrice }} 원</span>
       <Payment/>
     </div>
   </div>
@@ -73,21 +73,21 @@ export default {
   margin-bottom: 1em;
   border: 2.5px solid rgba(0, 0, 0, 0.3);
   border-radius: 2.5rem;
-  font-size: 0.5em;
+  font-size: 1.5em;
   align-items: center;
   /* height: 8rem;  */
 }
 .product-name {
-  margin-left: 16em;
+  margin-left: 10em;
 }
 .product-size {
-  margin-left: 4rem;
+  margin-left: 8rem;
 }
 .product-price {
-  margin-left: 3rem;
+  margin-left: 8rem;
 }
 .product-delete {
-  margin-left: 2rem;
+  margin-left: 8rem;
 }
 
 .delete-button {
@@ -98,19 +98,19 @@ export default {
 }
 
 .money-box {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   border: 2.5px solid rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
   position: fixed;
-  bottom: 1%;
-  right: 1%;
+  bottom: 10%;
+  right: 10%;
   align-items: center;
 }
 
 .cart-text {
   display: block;
-  font-size: 1rem;
+  font-size:2rem;
   padding-top: 0.5em;
 }
 </style>

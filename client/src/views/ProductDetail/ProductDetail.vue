@@ -12,8 +12,7 @@
 
           <!-- 남자 상의 -->
           <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'M' && `${this.$store.state.productDetail.product_type }` == 1">
-            <li :style="[this.$store.state.stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" 
-              v-for="stock, i in stocks" :key="i" class="size-text">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <!-- 삼항연산자 stock(재고)유무에 따라 css속성을 바꾼다. 있으면 앞, 없으면 뒤 -->
               <div class="size-text-box">
                 <span >{{manTopSize[i]}}</span>
@@ -291,18 +290,23 @@ export default {
 
 
 <style scoped>
+. {
+  width: 100em;
+}
+
 .product-box {
   display: flex;
   margin-bottom: 2em;
-  position: absolute;
+  position: fixed;
   /* bottom: 10%; */
-  left: 10%;
-  height: 45%;
+  left: 5%;
+  right: 5%;
 }
 
 .product-detail-img {
   margin-right: 1em;
-  width: 12.5em;
+  width: 40em;
+  height: 45em;
 }
 
 .text-box {
@@ -310,7 +314,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 12.5em;
+  width: 22.5em;
 }
 
 .size-stock {
@@ -318,7 +322,7 @@ export default {
   flex-direction: column;
   list-style:none;
   padding-left:0px;
-  font-size: 0.75em;
+  font-size: 1em;
   /* align-self:center; */
   text-align: center;
   margin-bottom: 1em;
@@ -354,7 +358,7 @@ export default {
 
 .button-size {
   margin: 0 0 1.5em 0;
-  font-size: 0.5em;
+  font-size: 1em;
   width: 60%;
 }
 

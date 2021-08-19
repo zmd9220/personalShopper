@@ -126,7 +126,7 @@ export default {
 
 .main-logo {
   width: 100%;
-  margin-top: 20%;
+  margin-top: 5%;
 }
 
 .button {
@@ -141,7 +141,6 @@ export default {
   width: 40%;
   position: relative;
   border-radius: 0.75em;
-  margin-top: 4em;
 }
 
 .button-text {
@@ -170,7 +169,7 @@ export default {
 
 .main-logo {
   display: flex;
-  width: 20rem;
+  width:60em;
   align-self: center;
 }
 </style>

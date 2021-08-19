@@ -183,7 +183,7 @@ export default {
 .text-box-title {
   font-weight: bold;
   margin-bottom: 3em;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 .ProductDetailImg {

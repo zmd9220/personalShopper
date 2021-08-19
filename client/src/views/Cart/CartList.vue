@@ -54,7 +54,7 @@ export default {
 
 .card-img-left {
   border-radius: 5rem 0 0 5rem;
-  height: 2em;
+  height: 5em;
 }
 
 .card-body {
@@ -69,25 +69,25 @@ export default {
 }
 
 .product-name {
-  flex: 5;
-  font-size: 0.25em;
+  flex: 3.5;
+  font-size: 0.5em;
 }
 
 .product-size {
   flex: 3;
-  font-size: 0.2em;
+  font-size: 0.4em;
   margin-right: 0.3em;
 }
 
 .product-price {
   flex: 3;
-  font-size: 0.3em;
-  margin-right: 0.3em;
+  font-size: 0.5em;
+  margin-right: 0.1em;
 }
 
 .products-delete {
   flex: 3;
-  font-size: 0.5em;
+  font-size: 0.75em;
   margin-right: 0.3em;
 }
 

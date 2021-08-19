@@ -25,7 +25,7 @@ GPIO.setup(ECHO, GPIO.IN)			# 24번 핀 in 으로 설정
 
 # 캡쳐
 def photo_shot():
-    cap = cv2.VideoCapture(0)	# OpenCV 사진 캡쳐
+    cap = cv2.VideoCapture(1)	# OpenCV 사진 캡쳐
     ret, frame = cap.read()
     cv2.imwrite('test.jpg', frame)	# 사진의 데이터 test.jpg 저장
     cap.release()
@@ -41,19 +41,20 @@ def clova_face_recognition():
     response = requests.post(url, files=files, headers=headers)
     rescode = response.status_code
     
-    json_data = json.loads(response.text)
-
-    gender, gen_confidence = json_data['faces'][0]['gender'].values()  # 성별
-    age, age_confidence = json_data['faces'][0]['age'].values()  # 나이
+    json_data = response.json()
+    print(json_data)
+    gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender']['confidence'] # 성별
+    age, age_confidence = json_data['faces'][0]['age']['value'], json_data['faces'][0]['age']['confidence']  # 나이
     
-    #print(gender)
-    #print(age[0:2])
+    
+    print(gender, gen_confidence)
+    print(age[0:2], age_confidence)
     if gender == "female":
         gender = "F"
     else:
         gender = "M"
 
-    webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(age[0:2],gender))
+    webview.windows[0].load_url('http://localhost:8080/{}/{}'.format("20","M"))
     
     #print(webview.windows[0].get_current_url())
     
@@ -67,7 +68,7 @@ def clova_face_recognition():
 # 바코드 스캔
 def barcode_scan():
     # OpenCV 사진 캡쳐
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
 
     i = 0
     while (cap.isOpened()):
@@ -107,8 +108,8 @@ def barcode_scan():
     cv2.destroyAllWindows()
     
     # 입력 받은 바코드 데이터를 파라미터 값으로 전달
-    webview.windows[0].load_url('http://localhost:8080/ProductDetail/{}'.format(barcode_data[10:13]))
-    print(barcode_data[10:13])
+    webview.windows[0].load_url('http://localhost:8080/ProductDetail/{}'.format(barcode_data[9:12]))
+    print(barcode_data[9:12])
     #print(webview.windows[0].get_current_url())
 
 # webview 켜진 후 이벤트
@@ -158,7 +159,7 @@ def on_loaded():
 
             # print("Distance => ", distance, "cm")
             # 50cm 안에 사람이 있을 경우 cnt++
-            if distance <= 50:
+            if distance <= 150:
                 cnt += 1
                 print("거리 => ", distance, "범위 이내 Count : ", cnt)
             # 사람이 인식되지 않을 경우 cnt 초기화
