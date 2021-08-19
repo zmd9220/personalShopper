@@ -2,6 +2,7 @@
   <div>
     <Nav/>
     <p class="page-title">PersonalShopper</p>
+    <!-- 퍼스널 쇼퍼 아이템들 -->
     <img class="product-detail-img" :src=" this.productDetail1.style_image" alt="personal1" @click="goToPersonalShopperDetail1()"> 
     <img class="product-detail-img" :src=" this.productDetail2.style_image" alt="personal1" @click="goToPersonalShopperDetail2()">
     <img class="product-detail-img" :src=" this.productDetail3.style_image" alt="personal1" @click="goToPersonalShopperDetail3()">
@@ -30,7 +31,7 @@ export default {
   computed: {
     ...mapState ({
 
-      selectedProductID: state => state.selectedProductID,
+      selectedProductID: state => state.selectedProductID, // 메인 제품
       productId_1: state => state.productId_1,
       productId_2: state => state.productId_2,
       productId_3: state => state.productId_3,
@@ -83,14 +84,14 @@ export default {
           // console.log(err)
         });
     },
-    goToPersonalShopperDetail1(){
+    goToPersonalShopperDetail1(){ // 선택항목을 고를시 Detail 페이지로 이동. 추천아이템들을 변경해준다.
       this.$router.push('/PersonalShopperDetail'); 
       this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail1.style_products.slice(0,3) + '/');
       this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail1.style_products.slice(5,8) + '/');
       this.$store.commit('productRecommend_3', 'http://127.0.0.1:8000/product/' + this.productDetail1.style_products.slice(10,14) + '/');
       this.$store.commit('productDetail', this.productDetail1); // 상품 상세정보
     },
-    goToPersonalShopperDetail2(){
+    goToPersonalShopperDetail2(){ // 선택항목을 고를시 Detail 페이지로 이동. 추천아이템들을 변경해준다.
       this.$router.push('/PersonalShopperDetail'); 
       this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail2.style_products.slice(0,3) + '/');     
       this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail2.style_products.slice(5,8) + '/');    
@@ -98,7 +99,7 @@ export default {
       this.$store.commit('productDetail', this.productDetail2); // 상품 상세정보
       this.$store.commit('selectedProductID', this.productDetail2.product_id);
     },
-    goToPersonalShopperDetail3(){
+    goToPersonalShopperDetail3(){ // 선택항목을 고를시 Detail 페이지로 이동. 추천아이템들을 변경해준다.
       this.$router.push('/PersonalShopperDetail'); 
       this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail3.style_products.slice(0,3) + '/');         
       this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail3.style_products.slice(5,8) + '/');    
@@ -106,7 +107,7 @@ export default {
       this.$store.commit('productDetail', this.productDetail3); // 상품 상세정보
       this.$store.commit('selectedProductID', this.productDetail3.product_id);
     },
-    goToPersonalShopperDetail4(){
+    goToPersonalShopperDetail4(){ // 선택항목을 고를시 Detail 페이지로 이동. 추천아이템들을 변경해준다.
       this.$router.push('/PersonalShopperDetail'); 
       this.$store.commit('productRecommend_1', 'http://127.0.0.1:8000/product/' + this.productDetail4.style_products.slice(0,3) + '/');         
       this.$store.commit('productRecommend_2', 'http://127.0.0.1:8000/product/' + this.productDetail4.style_products.slice(5,8) + '/');    

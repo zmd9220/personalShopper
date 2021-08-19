@@ -1,21 +1,6 @@
 <template>
   <div id="app">
-    <!-- 개발용 라우터 뷰 -->
     <div id="nav">
-      <!-- <router-link to="/">Main</router-link> |
-      <router-link to="/AdClient">AdClient</router-link> |
-      <router-link to="/Barcode">Barcode</router-link> |
-      <router-link to="/ProductDetail">ProductDetail</router-link> |
-      <router-link to="/ProductSizeRecommand">ProductSizeRecommand</router-link> | 
-      <router-link to="/PersonalShopper">PersonalShopper</router-link> | 
-      <router-link to="/Admin">Admin</router-link> | 
-      <router-link to="/ProductForm">ProductForm</router-link> | 
-      <router-link @click.native="logout" to="#">Logout</router-link> |
-      <router-link :to="{ name: 'Signup' }">Signup</router-link> |
-      <router-link :to="{ name: 'Login' }">Login</router-link> |
-      <router-link to="/Payment">Payment</router-link> | 
-      <router-link :to="{ name: 'PersonalShopperDetail' }">PersonalShopperDetail</router-link> |
-      <router-link :to="{ name: 'Cart' }">Cart</router-link> | -->
     </div>
     <router-view/>
   </div>
@@ -30,13 +15,13 @@ export default {
     }
   },
   methods: {
-    logout: function () {
+    logout: function () { // 로그아웃
       this.isLogin = false
       localStorage.removeItem('jwt')
       this.$router.push({ name: 'Login' })
     }
   },
-  created: function () {
+  created: function () { // 로그인
     const token = localStorage.getItem('jwt')
     if (token) {
       this.isLogin = true
@@ -55,10 +40,6 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-// #nav {
-//   padding: 30px;
-// }
 
 #nav a {
   font-weight: bold;
