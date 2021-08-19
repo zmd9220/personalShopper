@@ -1,0 +1,6883 @@
+
+[
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 101,
+    "barcode": 2021081101101,
+    "product_name": "더블 브레스트 수트 블레이저",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/4501/722/800/2/w/750/4501722800_6_1_1.jpg?ts=1626435130888",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/4501/722/800/13/w/750/4501722800_1_1_1.jpg?ts=1626266663806",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "102, 103, 104",
+    "product_description": "피크 라펠 칼라 블레이저. 긴소매 디자인. 골반 부분 파이핑 포켓. 내부 포켓 디테일. 더블 브레스트 스타일 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "169000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%8D%94%EB%B8%94-%EB%B8%8C%EB%A0%88%EC%8A%A4%ED%8A%B8-%EC%88%98%ED%8A%B8-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p04501722.html?v1=124501826&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 102,  
+    "barcode": 2021081101102,
+    "product_name": "헤비웨이트 베이직 티셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0526/310/800/2/w/750/0526310800_6_1_1.jpg?ts=1623232662629",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/4501/722/800/13/w/750/4501722800_1_1_1.jpg?ts=1626266663806",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "101, 103, 104",
+    "product_description": "컴팩트 면 소재의 와이드핏 티셔츠. 라운드넥 반소매 디자인.",
+    "product_type": 1,
+    "price": "25000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%97%A4%EB%B9%84%EC%9B%A8%EC%9D%B4%ED%8A%B8-%EB%B2%A0%EC%9D%B4%EC%A7%81-%ED%8B%B0%EC%85%94%EC%B8%A0-p00526310.html?v1=118607060&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 103,  
+    "barcode": 2021081101103,
+    "product_name": "수트 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/4502/722/800/2/w/750/4502722800_6_1_1.jpg?ts=1626435212603",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/4501/722/800/13/w/750/4501722800_1_1_1.jpg?ts=1626266663806",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "101, 102, 104",
+    "product_description": "신축성 있는 스트럭처 소재의 슬림핏 팬츠. 앞면 포켓과 뒷면 파이핑 포켓 디테일. 앞면 지퍼와 버튼 여밈.",
+    "product_type": 2,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p04502722.html?v1=115792981&v2=1886922",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 104,  
+    "barcode": 2021081101104,
+    "product_name": "CHUNKY LEATHER SHOES",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/2408/820/040/2/w/750/2408820040_6_3_1.jpg?ts=1626875720632",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/4501/722/800/13/w/750/4501722800_1_1_1.jpg?ts=1626266663806",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "101, 102, 103",
+    "product_description": "BLACK LEATHER SHOES. FOUR-EYELET FACING. BACK PULL TAB. CHUNKY SOLE WITH RAISED TRACK OUTSOLE. ROUNDED TOE. URBAN-SPORTY LOOK.",
+    "product_type": 3,
+    "price": "129000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p12408820.html?v1=126286843&v2=1886922",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 105,  
+    "barcode": 2021081101105,
+    "product_name": "릴렉스핏 수트 블레이저",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/5642/515/800/2/w/750/5642515800_6_1_1.jpg?ts=1626099361787",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5642/515/800/2/w/750/5642515800_2_1_1.jpg?ts=1626293790150",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "106, 107, 108",
+    "product_description": "노치드 라펠 칼라 릴렉스핏 블레이저. 긴소매 디자인. 골반 부분 파이핑 포켓. 중앙 밑단에 트임이 있음. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "169000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%B4%EB%A0%89%EC%8A%A4%ED%95%8F-%EC%88%98%ED%8A%B8-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p05642515.html?v1=125068480&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 106,  
+    "barcode": 2021081101106,
+    "product_name": "미디엄 웨이트 베이직 티셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/0/2/p/0381/400/800/82/w/750/0381400800_6_1_1.jpg?ts=1619773576515",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5642/515/800/2/w/750/5642515800_2_1_1.jpg?ts=1626293790150",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "105, 107, 108",
+    "product_description": "실켓 마감 소재의 레귤러핏 티셔츠. 리브드 마감 라운드넥 반소매 디자인.",
+    "product_type": 1,
+    "price": "19000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%AF%B8%EB%94%94%EC%97%84-%EC%9B%A8%EC%9D%B4%ED%8A%B8-%EB%B2%A0%EC%9D%B4%EC%A7%81-%ED%8B%B0%EC%85%94%EC%B8%A0-p00381300.html?v1=115793967&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 107,  
+    "barcode": 2021081101107,
+    "product_name": "릴렉스핏 수트 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/5713/515/800/2/w/750/5713515800_6_1_1.jpg?ts=1626176171776",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5642/515/800/2/w/750/5642515800_2_1_1.jpg?ts=1626293790150",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "105, 106, 108",
+    "product_description": "허리 앞면에 셔링 디테일이 있는 릴렉스핏 팬츠. 옆면 포켓. 파이핑 처리된 뒷면 포켓 디테일. 앞면 지퍼와 버튼 여밈.",
+    "product_type": 2,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%B4%EB%A0%89%EC%8A%A4%ED%95%8F-%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p05713515.html?v1=120158486&v2=1886922",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 108,  
+    "barcode": 2021081101108,
+    "product_name": "트랙 첼시 부츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/2006/820/040/2/w/750/2006820040_6_2_1.jpg?ts=1620834063979",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5642/515/800/2/w/750/5642515800_2_1_1.jpg?ts=1626293790150",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "105, 106, 107",
+    "product_description": "블랙 컬러 첼시 스타일 앵클부츠. 나파 마감. 쉬운 착용을 돕는 옆면 엘라스틱 밴드. 앞부분과 뒤꿈치 풀탭 디테일. 톤온톤 밴드 디테일 볼륨 있는 트랙솔. 세미 포인티드 토.",
+    "product_type": 3,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%8A%B8%EB%9E%99-%EC%B2%BC%EC%8B%9C-%EB%B6%80%EC%B8%A0-p12006820.html?v1=125067343&v2=1886922",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 109,  
+    "barcode": 2021081101109,
+    "product_name": "턱시도 수트 블레이저",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/380/800/2/w/750/0706380800_6_1_1.jpg?ts=1625053933686",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/380/800/2/w/750/0706380800_1_1_1.jpg?ts=1625066025159",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "110, 111, 112",
+    "product_description": "톤온톤 소재가 매치된 숄 라펠 칼라 블레이저. 버튼 디테일 커프스 마감 긴소매 디자인. 가슴 부분 앞면 파이핑 포켓과 골반 부분 플랩 포켓. 내부 포켓 디테일. 뒷면 하단에 트임이 있음. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "169000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%84%B1%EC%8B%9C%EB%8F%84-%EC%88%98%ED%8A%B8-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p00706380.html?v1=123919512&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 110,  
+    "barcode": 2021081101110,
+    "product_name": "슬랜트 스트럭처 셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/4607/308/250/2/w/750/4607308250_6_1_1.jpg?ts=1626689098027",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/380/800/2/w/750/0706380800_1_1_1.jpg?ts=1625066025159",
+    "color": "화이트",
+    "season": "FW",
+    "style_products": "109, 111, 112",
+    "product_description": "버튼이 달린 커프스 마감 긴소매 라펠 칼라 슬림핏 셔츠. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%AC%EB%9E%9C%ED%8A%B8-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EC%85%94%EC%B8%A0-p04607308.html?v1=123838680&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 111,  
+    "barcode": 2021081101111,
+    "product_name": "턱시도 수트 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/381/800/2/w/750/0706381800_6_1_1.jpg?ts=1625053928759",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/380/800/2/w/750/0706380800_1_1_1.jpg?ts=1625066025159",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "109, 110, 112",
+    "product_description": "슬림핏 팬츠. 앞면 포켓과 뒷면 파이핑 포켓. 다리 옆면 밴드 아플리케. 앞면 지퍼와 버튼 여밈.",
+    "product_type": 2,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%84%B1%EC%8B%9C%EB%8F%84-%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p00706381.html?v1=114779315&v2=1886922",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 112,  
+    "barcode": 2021081101112,
+    "product_name": "앤틱 레더 슈즈",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/2411/820/040/2/w/750/2411820040_6_2_1.jpg?ts=1620125620170",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/380/800/2/w/750/0706380800_1_1_1.jpg?ts=1625066025159",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "109, 110, 111",
+    "product_description": "앤틱 마감된 가죽 소재의 블루처 스타일 슈즈. 블랙과 브라운 컬러 중 선택 가능. 끈을 넣는 구멍이 4개씩 있음. 클래식한 스타일.",
+    "product_type": 3,
+    "price": "129000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%95%A4%ED%8B%B1-%EB%A0%88%EB%8D%94-%EC%8A%88%EC%A6%88-p12411820.html?v1=125044568&v2=1886922",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 113,  
+    "barcode": 2021081101113,
+    "product_name": "체크 수트 블레이저",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/354/718/2/w/750/0706354718_6_1_1.jpg?ts=1625817847589",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/354/718/2/w/750/0706354718_1_1_1.jpg?ts=1625831581385",
+    "color": "샌드/브라운",
+    "season": "FW",
+    "style_products": "114, 115, 116",
+    "product_description": "BLAZER WITH A NOTCHED LAPEL COLLAR. LONG SLEEVES WITH BUTTONED CUFFS. HIP FLAP POCKETS AND AN INSIDE POCKET. CENTRAL BACK VENT AT THE HEM. FRONT BUTTON FASTENING.",
+    "product_type": 1,
+    "price": "169000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%B2%B4%ED%81%AC-%EC%88%98%ED%8A%B8-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p00706354.html?v1=127776429&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 114,  
+    "barcode": 2021081101114,
+    "product_name": "스트럭처 셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/0/2/p/5588/313/250/2/w/750/5588313250_6_1_1.jpg?ts=1619017264238",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/354/718/2/w/750/0706354718_1_1_1.jpg?ts=1625831581385",
+    "color": "화이트",
+    "season": "FW",
+    "style_products": "113, 115, 116",
+    "product_description": "버튼이 달린 커프스 마감 긴소매 라펠 칼라 슬림핏 셔츠. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EC%85%94%EC%B8%A0-p05588313.html?v1=123838674&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 115,  
+    "barcode": 2021081101115,
+    "product_name": "체크 수트 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/355/718/2/w/750/0706355718_6_1_1.jpg?ts=1625817862658",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/354/718/2/w/750/0706354718_1_1_1.jpg?ts=1625831581385",
+    "color": "샌드/브라운",
+    "season": "FW",
+    "style_products": "113, 114, 116",
+    "product_description": "SLIM FIT TROUSERS FEATURING FRONT POCKETS AND BUTTONED WELT POCKETS AT THE BACK. FRONT ZIP AND TOP BUTTON FASTENING.",
+    "product_type": 2,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%B2%B4%ED%81%AC-%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p00706355.html?v1=125045057&v2=1886922",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 116,  
+    "barcode": 2021081101116,
+    "product_name": "소프트 레더 슈즈",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/1/2/p/2454/720/040/2/w/750/2454720040_6_2_1.jpg?ts=1614078037638",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/354/718/2/w/750/0706354718_1_1_1.jpg?ts=1625831581385",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "113, 114, 115",
+    "product_description": "블랙 컬러의 가죽 슈즈. 전체 스티치 디테일. 끈을 넣는 구멍이 4개씩 있음. 라운드 토. 블랙 컬러의 밑창.",
+    "product_type": 3,
+    "price": "129000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%86%8C%ED%94%84%ED%8A%B8-%EB%A0%88%EB%8D%94-%EC%8A%88%EC%A6%88-p12454720.html?v1=125067836&v2=1886922",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 117,  
+    "barcode": 2021081101117,
+    "product_name": "CHECK SUIT BLAZER",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/328/802/2/w/750/0706328802_6_1_1.jpg?ts=1627313221820",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/328/802/2/w/750/0706328802_1_1_1.jpg?ts=1627484394920",
+    "color": "그레이",
+    "season": "FW",
+    "style_products": "118, 119, 120",
+    "product_description": "BLAZER WITH A NOTCHED LAPEL COLLAR. LONG SLEEVES WITH BUTTONED CUFFS. HIP PATCH POCKETS AND AN INSIDE POCKET. CENTRAL BACK VENT AT THE HEM. FRONT BUTTON FASTENING.",
+    "product_type": 1,
+    "price": "149000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p00706328.html?v1=127774881&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 118,  
+    "barcode": 2021081101118,
+    "product_name": "헤비웨이트 베이직 티셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0526/310/811/2/w/750/0526310811_6_2_1.jpg?ts=1623248590007",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/328/802/2/w/750/0706328802_1_1_1.jpg?ts=1627484394920",
+    "color": "라이트 그레이",
+    "season": "SS",
+    "style_products": "117, 119, 120",
+    "product_description": "컴팩트 면 소재의 와이드핏 티셔츠. 라운드넥 반소매 디자인.",
+    "product_type": 1,
+    "price": "25000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%97%A4%EB%B9%84%EC%9B%A8%EC%9D%B4%ED%8A%B8-%EB%B2%A0%EC%9D%B4%EC%A7%81-%ED%8B%B0%EC%85%94%EC%B8%A0-p00526310.html?v1=124526107&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 119,  
+    "barcode": 2021081101119,
+    "product_name": "CHECK SUIT TROUSERS",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/329/802/2/w/750/0706329802_6_1_1.jpg?ts=1627313208854",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/328/802/2/w/750/0706328802_1_1_1.jpg?ts=1627484394920",
+    "color": "그레이",
+    "season": "FW",
+    "style_products": "117, 118, 120",
+    "product_description": [
+      "SLIM FIT TROUSERS WITH FRONT POCKETS",
+      "REAR WELT POCKETS AND ZIP FLY AND TOP BUTTON FASTENING."
+    ],
+    "product_type": 2,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p00706329.html?v1=116405222&v2=1886922",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 120,  
+    "barcode": 2021081101120,
+    "product_name": "CHUNKY SOLE SHOES",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/2406/820/040/2/w/750/2406820040_6_3_1.jpg?ts=1625579186850",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/328/802/2/w/750/0706328802_1_1_1.jpg?ts=1627484394920",
+    "color": "블랙",
+    "season": "FW",
+    "style_products": "117, 118, 119",
+    "product_description": "BLACK LACE-UP SHOES WITH FOUR EYELET FACING. BACK PULL TAB. CHUNKY TRACK SOLE. ROUNDED TOE. URBAN-SPORTY LOOK.",
+    "product_type": 3,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p12406820.html?v1=129561590&v2=1886922",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 121,  
+    "barcode": 2021081101121,
+    "product_name": "CHECK SUIT BLAZER",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/1564/382/401/2/w/750/1564382401_6_1_1.jpg?ts=1627313118544",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/1564/382/401/2/w/750/1564382401_1_1_1.jpg?ts=1627484328780",
+    "color": "네이비",
+    "season": "FW",
+    "style_products": "122, 123, 124",
+    "product_description": "BLAZER WITH A NOTCHED LAPEL COLLAR. LONG SLEEVES WITH BUTTONED CUFFS. CHEST WELT POCKETS AND FLAP HIP POCKETS. INSIDE POCKET DETAIL. BACK VENTS AT THE HEM. FRONT BUTTON FASTENING.",
+    "product_type": 1,
+    "price": "169000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p01564382.html?v1=127776414&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 122,  
+    "barcode": 2021081101122,
+    "product_name": "자카드 티셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0761/300/401/2/w/750/0761300401_6_1_1.jpg?ts=1627456966065",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/1564/382/401/2/w/750/1564382401_1_1_1.jpg?ts=1627484328780",
+    "color": "네이비",
+    "season": "SS",
+    "style_products": "121, 123, 124",
+    "product_description": "라운드넥 반소매 티셔츠.",
+    "product_type": 1,
+    "price": "29000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%9E%90%EC%B9%B4%EB%93%9C-%ED%8B%B0%EC%85%94%EC%B8%A0-p00761300.html?v1=109171322&v2=1886922",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 123,  
+    "barcode": 2021081101123,
+    "product_name": "CHECK SUIT TROUSERS",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/1564/383/401/2/w/750/1564383401_6_1_1.jpg?ts=1627313122795",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/1564/382/401/2/w/750/1564382401_1_1_1.jpg?ts=1627484328780",
+    "color": "네이비",
+    "season": "FW",
+    "style_products": "121, 122, 124",
+    "product_description": "SLIM FIT TROUSERS FEATURING FRONT POCKETS AND BUTTONED WELT POCKETS AT THE BACK. FRONT ZIP AND TOP BUTTON FASTENING.",
+    "product_type": 2,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p01564383.html?v1=114350526&v2=1886922",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 124,  
+    "barcode": 2021081101124,
+    "product_name": "레더 스니커즈",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/1/2/p/2231/720/001/2/w/750/2231720001_6_2_1.jpg?ts=1619015093326",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/1564/382/401/2/w/750/1564382401_1_1_1.jpg?ts=1627484328780",
+    "color": "화이트",
+    "season": "FW",
+    "style_products": "121, 122, 123",
+    "product_description": "화이트 컬러 가죽 스니커즈. 전체 스티치 디테일. 끈을 넣는 구멍이 6개씩 있음. 앞부분에 텍스처가 있는 부드러운 밑창. 레트로 스타일 스니커즈.",
+    "product_type": 3,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A0%88%EB%8D%94-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-p12231720.html?v1=125067338&v2=1886922",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 201,  
+    "barcode": 2101081100201,
+    "product_name": "스트라이프 시어서커 오버셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/9870/416/710/2/w/1870/9870416710_6_1_1.jpg?ts=1625819200724",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/9870/416/710/2/w/1870/9870416710_1_1_1.jpg?ts=1625831450278",
+    "color": "베이지 / 화이트",
+    "season": "SS",
+    "style_products": "202, 203, 204",
+    "product_description": "라펠 칼라 긴소매 릴렉스핏 오버셔츠. 밑단 옆면에서 핏 조절 가능. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "89000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EC%8B%9C%EC%96%B4%EC%84%9C%EC%BB%A4-%EC%98%A4%EB%B2%84%EC%85%94%EC%B8%A0-p09870416.html?v1=123919503&v2=1600213",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 202,  
+    "barcode": 2101081100202,
+    "product_name": "린넨 - 코튼 버뮤다 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/0/2/p/6861/404/052/2/w/750/6861404052_6_1_1.jpg?ts=1614187270522",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/9870/416/710/2/w/1870/9870416710_1_1_1.jpg?ts=1625831450278",
+    "color": "내추럴 / 네이비 / 카키 / 워터그린",
+    "season": "SS",
+    "style_products": "201, 203, 204",
+    "product_description": "린넨 혼방 소재 버뮤다 팬츠. 앞면 포켓과 버튼이 달린 뒷면 플랩 포켓. 앞면 지퍼와 버튼 여밈.",
+    "product_type": 2,
+    "price": "49000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%B0%EB%84%A8---%EC%BD%94%ED%8A%BC-%EB%B2%84%EB%AE%A4%EB%8B%A4-%ED%8C%AC%EC%B8%A0-p06861404.html?v1=116659533&v2=1600213",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 203,  
+    "barcode": 2101081100203,
+    "product_name": "레더 스니커즈",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/1/2/p/2231/720/001/2/w/1870/2231720001_6_2_1.jpg?ts=1619015093326",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/9870/416/710/2/w/1870/9870416710_1_1_1.jpg?ts=1625831450278",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "201, 202, 204",
+    "product_description": "화이트 컬러 가죽 스니커즈. 전체 스티치 디테일. 끈을 넣는 구멍이 6개씩 있음. 앞부분에 텍스처가 있는 부드러운 밑창. 레트로 스타일 스니커즈.",
+    "product_type": 3,
+    "price": "89000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A0%88%EB%8D%94-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-p12231720.html?v1=112314811&v2=1600213",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 204,  
+    "barcode": 2101081100204,
+    "product_name": "베이직 버킷햇",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/9065/481/251/2/w/1870/9065481251_6_1_1.jpg?ts=1621333848741",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/9870/416/710/2/w/1870/9870416710_1_1_1.jpg?ts=1625831450278",
+    "color": "스크래치 화이트 / 라이트 블루 / 블랙 / 워터그린",
+    "season": "SS",
+    "style_products": "201, 202, 203",
+    "product_description": "가벼운 패브릭 소재 모자. 챙 부분에 스티치 장식이 있음.",
+    "product_type": 4,
+    "price": "29000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B2%A0%EC%9D%B4%EC%A7%81-%EB%B2%84%ED%82%B7%ED%96%87-p09065481.html?v1=108980251&v2=1600213",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 205,  
+    "barcode": 2101081100205,
+    "product_name": "THE SIMPSONS ™ 20TH TELEVISION 네온 프린트 티셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/311/800/2/w/1870/0977311800_6_1_1.jpg?ts=1627024340766",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/311/800/2/w/1870/0977311800_1_1_1.jpg?ts=1627035602816",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "206, 207, 208",
+    "product_description": "라운드넥 반소매 루즈핏 티셔츠. 앞면과 뒷면 THE SIMPSONS™ 20TH TELEVISION 프린트.",
+    "product_type": 1,
+    "price": "39000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/the-simpsons---20th-television-%EB%84%A4%EC%98%A8-%ED%94%84%EB%A6%B0%ED%8A%B8-%ED%8B%B0%EC%85%94%EC%B8%A0-p00977311.html?v1=118121366&v2=1600213",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 206,  
+    "barcode": 2101081100206,
+    "product_name": "레더 하이탑 스니커즈",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/2108/720/010/2/w/750/2108720010_6_3_1.jpg?ts=1626789071239",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/311/800/2/w/1870/0977311800_1_1_1.jpg?ts=1627035602816",
+    "color": "마린 블루",
+    "season": "SS",
+    "style_products": "205, 207, 208",
+    "product_description": "스플릿 스웨이드 마감 가죽 소재의 하이탑 스니커즈. 다양한 색상 선택 가능. 끈을 넣는 구멍이 9개씩 있음. 웰트 부분에 배색된 밴드가 매치된 아이보리 컬러 밑창.",
+    "product_type": 3,
+    "price": "79000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A0%88%EB%8D%94-%ED%95%98%EC%9D%B4%ED%83%91-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-p12108720.html?v1=116004760&v2=1600213",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 207,  
+    "barcode": 2101081100207,
+    "product_name": "BASIC DENIM JACKET",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/7227/300/800/2/w/1870/7227300800_6_1_1.jpg?ts=1626423049103",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/311/800/2/w/1870/0977311800_1_1_1.jpg?ts=1627035602816",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "205, 206, 208",
+    "product_description": "COLLARED DENIM JACKET FEATURING LONG SLEEVES WITH BUTTONED CUFFS. CHEST FLAP POCKETS AND HIP WELT POCKETS. FADED EFFECT. BUTTON-UP FRONT.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/-p01620310.html?v1=123425619&v2=1600213",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 208,  
+    "barcode": 2101081100208,
+    "product_name": "텍스트 자수 캡",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/9065/305/505/2/w/750/9065305505_6_2_1.jpg?ts=1626261644346",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/311/800/2/w/1870/0977311800_1_1_1.jpg?ts=1627035602816",
+    "color": "카키",
+    "season": "SS",
+    "style_products": "205, 206, 207",
+    "product_description": "챙이 달린 캡. 배색된 앞면 텍스트 자수 디테일. 조절 가능한 여밈.",
+    "product_type": 4,
+    "price": "29000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9E%90%EC%88%98-%EC%BA%A1-p09065305.html?v1=110271388&v2=1885866",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 209,  
+    "barcode": 2101081100209,
+    "product_name": "하이테크 트렌치 코트",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/321/505/2/w/750/0706321505_6_1_1.jpg?ts=1627571512842",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/321/505/16/w/750/0706321505_1_1_1.jpg?ts=1628074161764",
+    "color": "카키",
+    "season": "FW",
+    "style_products": "210, 211, 212",
+    "product_description": "탭 디테일 라펠 칼라 와이드핏 트렌치 코트. 긴소매 디자인. 골반 부분 파이핑 포켓. 뒷면 중앙 밑단에 트임이 있음. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "129000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%95%98%EC%9D%B4%ED%85%8C%ED%81%AC-%ED%8A%B8%EB%A0%8C%EC%B9%98-%EC%BD%94%ED%8A%B8-p00706321.html?v1=129199115&v2=1886951",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 210,  
+    "barcode": 2101081100210,
+    "product_name": "트윌 스트럭처 셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/7545/448/250/2/w/750/7545448250_6_1_1.jpg?ts=1628180880501",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/321/505/16/w/750/0706321505_1_1_1.jpg?ts=1628074161764",
+    "color": "화이트",
+    "season": "FW",
+    "style_products": "211, 212, 209",
+    "product_description": "버튼이 달린 커프스 마감 긴소매 라펠 칼라 슬림핏 셔츠. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%8A%B8%EC%9C%8C-%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EC%85%94%EC%B8%A0-p07545448.html?v1=122212295&v2=1886951",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 211,  
+    "barcode": 2101081100211,
+    "product_name": "JEANS RELAXED FIT",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/6688/390/407/2/w/750/6688390407_6_1_1.jpg?ts=1628250897810",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/321/505/16/w/750/0706321505_1_1_1.jpg?ts=1628074161764",
+    "color": "블루",
+    "season": "FW",
+    "style_products": "209, 210, 212",
+    "product_description": [
+      "RELAXED FIT JEANS FEATURING A FIVE-POCKET DESIGN",
+      "CONTRAST TOPSTITCHING AND A BUTTON-UP FRONT."
+    ],
+    "product_type": 2,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/jeans-relaxed-fit-p06688390.html?v1=125045365&v2=1886951",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 212,  
+    "barcode": 2101081100212,
+    "product_name": "러버라이즈드 스트랩 지갑",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/3804/820/020/2/w/750/3804820020_6_1_1.jpg?ts=1624892776411",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0706/321/505/16/w/750/0706321505_1_1_1.jpg?ts=1628074161764",
+    "color": "레드 / 카키 그린",
+    "season": "FW",
+    "style_products": "209, 210, 211",
+    "product_description": [
+      "단색 지갑. 러버라이즈드 소재. 지퍼로 여미는 메인 수납공간이 있고",
+      "내부에는 카드 수납공간 3개가 있음. 목에 걸 수 있는 탈부착 가능한 스트랩 1개. 다양한 색상 선택 가능. 세로 X 가로 X 폭: 11.5 X 14.5 X 1CM"
+    ],
+    "product_type": 4,
+    "price": "25000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%9F%AC%EB%B2%84%EB%9D%BC%EC%9D%B4%EC%A6%88%EB%93%9C-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EC%A7%80%EA%B0%91-p13804820.html?v1=129437108&v2=1886951",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 213,  
+    "barcode": 2101081100213,
+    "product_name": "콤비 지퍼 스웨트셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/5372/326/733/2/w/750/5372326733_6_1_1.jpg?ts=1627633044496",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5372/326/733/2/w/750/5372326733_1_1_1.jpg?ts=1627646818274",
+    "color": "크림",
+    "season": "FW",
+    "style_products": "214, 215, 216",
+    "product_description": "하이넥 스웨트셔츠. 배색된 파이핑이 매치된 긴소매 디자인. 지퍼로 여미는 앞면 포켓. 신축성 있게 처리된 밑단. 앞면 지퍼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%BD%A4%EB%B9%84-%EC%A7%80%ED%8D%BC-%EC%8A%A4%EC%9B%A8%ED%8A%B8%EC%85%94%EC%B8%A0-p05372326.html?v1=119035861&v2=1886951",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 214,  
+    "barcode": 2101081100214,
+    "product_name": "콘트라스트 밴드 티셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/5372/330/733/2/w/750/5372330733_6_1_1.jpg?ts=1627633040211",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5372/326/733/2/w/750/5372326733_1_1_1.jpg?ts=1627646818274",
+    "color": "크림",
+    "season": "FW",
+    "style_products": "213, 215, 216",
+    "product_description": "라운드넥 반소매 티셔츠. 배색된 어깨 부분 밴드 아플리케.",
+    "product_type": 1,
+    "price": "35000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%BD%98%ED%8A%B8%EB%9D%BC%EC%8A%A4%ED%8A%B8-%EB%B0%B4%EB%93%9C-%ED%8B%B0%EC%85%94%EC%B8%A0-p05372330.html?v1=119035859&v2=1886951",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 215,  
+    "barcode": 2101081100215,
+    "product_name": "사이드 밴드 조거 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/5372/328/605/2/w/750/5372328605_6_1_1.jpg?ts=1627571589810",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5372/326/733/2/w/750/5372326733_1_1_1.jpg?ts=1627646818274",
+    "color": "석류",
+    "season": "FW",
+    "style_products": "213, 214, 216",
+    "product_description": "신축성 있는 허리 부분에서 끈으로 핏 조절이 가능한 팬츠. 배색된 옆면 파이핑이 매치된 다리 부분. 앞면 포켓과 뒷면 파이핑 포켓 디테일.",
+    "product_type": 2,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%B0%B4%EB%93%9C-%EC%A1%B0%EA%B1%B0-%ED%8C%AC%EC%B8%A0-p05372328.html?v1=119035863&v2=1886951",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 216,  
+    "barcode": 2101081100216,
+    "product_name": "텍스처 솔 스니커즈",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/2211/820/001/2/w/750/2211820001_6_3_1.jpg?ts=1624884884321",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/5372/326/733/2/w/750/5372326733_1_1_1.jpg?ts=1627646818274",
+    "color": "화이트",
+    "season": "FW",
+    "style_products": "213, 214, 215",
+    "product_description": "WHITE LACE-UP SNEAKERS WITH A TUMBLED FINISH. SEVEN-EYELET FACING WITH CHUNKY WHITE SOLE.",
+    "product_type": 3,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%85%8D%EC%8A%A4%EC%B2%98-%EC%86%94-%EC%8A%A4%EB%8B%88%EC%BB%A4%EC%A6%88-p12211820.html?v1=124501197&v2=1886951",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 217,  
+    "barcode": 2101081100217,
+    "product_name": "스트럭처 티셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/313/707/2/w/750/0977313707_6_1_1.jpg?ts=1628180796379",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/313/707/2/w/750/0977313707_1_1_1.jpg?ts=1628091251580",
+    "color": "샌드 / 스크래치 화이트 / 네이비",
+    "season": "SS",
+    "style_products": "218, 219, 220",
+    "product_description": [
+      "LOOSE-FITTING T-SHIRT WITH A ROUND NECKLINE",
+      "SHORT SLEEVES AND RIBBED TRIMS."
+    ],
+    "product_type": 1,
+    "price": "39000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%ED%8B%B0%EC%85%94%EC%B8%A0-p00977313.html?v1=116169010&v2=1886951",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 218,  
+    "barcode": 2101081100218,
+    "product_name": "수트 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/4502/722/800/2/w/750/4502722800_6_1_1.jpg?ts=1626435212603",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/313/707/2/w/750/0977313707_1_1_1.jpg?ts=1628091251580",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "217, 219, 220",
+    "product_description": "신축성 있는 스트럭처 소재의 슬림핏 팬츠. 앞면 포켓과 뒷면 파이핑 포켓 디테일. 앞면 지퍼와 버튼 여밈.",
+    "product_type": 2,
+    "price": "89000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%88%98%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p04502722.html?v1=115792981&v2=1886951",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 219,  
+    "barcode": 2101081100219,
+    "product_name": "GREY RETRO RUNNING TRAINERS",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/1/2/p/2305/822/004/2/w/750/2305822004_6_3_1.jpg?ts=1625755901301",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/313/707/2/w/750/0977313707_1_1_1.jpg?ts=1628091251580",
+    "color": "그레이",
+    "season": "SS",
+    "style_products": "217, 218, 220",
+    "product_description": "다양한 그레이 톤이 매치된 스니커즈. 가죽 피스를 포함한 다양한 소재가 매치된 외피 디자인. 끈을 넣는 구멍이 7개씩 있음. 바닥이 블랙 컬러로 마감된 화이트 밑창.",
+    "product_type": 3,
+    "price": "79000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/-p12305822.html?v1=125067339&v2=1886951",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 220,  
+    "barcode": 2101081100220,
+    "product_name": "레더 벨트",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/0/2/p/2823/404/800/2/w/750/2823404800_6_1_1.jpg?ts=1619183821808",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/0977/313/707/2/w/750/0977313707_1_1_1.jpg?ts=1628091251580",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "217, 218, 219",
+    "product_description": "가죽 벨트. 가장자리 스티치 디테일. 메탈 버클과 고리로 여밈.",
+    "product_type": 4,
+    "price": "45000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A0%88%EB%8D%94-%EB%B2%A8%ED%8A%B8-p02823404.html?v1=111010692&v2=1886951",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 221,  
+    "barcode": 2101081100221,
+    "product_name": "린넨-코튼 폴로 셔츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/7545/315/250/2/w/750/7545315250_6_1_1.jpg?ts=1625054119544",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/7545/315/250/2/w/750/7545315250_1_1_1.jpg?ts=1625063845276",
+    "color": "화이트 / 내추럴 / 라이트 그린 / 블랙",
+    "season": "SS",
+    "style_products": "222, 223, 224",
+    "product_description": "RELAXED FIT COLLARED SHIRT WITH FRONT BUTTON FASTENING AND SHORT SLEEVES. CHEST PATCH POCKET.",
+    "product_type": 1,
+    "price": "49000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%B0%EB%84%A8-%EC%BD%94%ED%8A%BC-%ED%8F%B4%EB%A1%9C-%EC%85%94%EC%B8%A0-p07545315.html?v1=123837971&v2=1600213",
+    "location": "A"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 222,  
+    "barcode": 2101081100222,
+    "product_name": "니트 조거 버뮤다 팬츠",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/4231/300/800/2/w/750/4231300800_6_1_1.jpg?ts=1622014145348",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/7545/315/250/2/w/750/7545315250_1_1_1.jpg?ts=1625063845276",
+    "color": "블랙 / 카키 / 크림",
+    "season": "SS",
+    "style_products": "221, 223, 224",
+    "product_description": "허리 부분에서 끈으로 핏 조절이 가능한 버뮤다 팬츠. 앞면과 뒷면 파이핑 포켓 디테일.",
+    "product_type": 2,
+    "price": "49000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%8B%88%ED%8A%B8-%EC%A1%B0%EA%B1%B0-%EB%B2%84%EB%AE%A4%EB%8B%A4-%ED%8C%AC%EC%B8%A0-p04231300.html?v1=123838737&v2=1600213",
+    "location": "B"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 223,  
+    "barcode": 2101081100223,
+    "product_name": "레더 더블 스트랩 샌들",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/V/1/2/p/2703/820/102/2/w/750/2703820102_6_2_1.jpg?ts=1618839855700",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/7545/315/250/2/w/750/7545315250_1_1_1.jpg?ts=1625063845276",
+    "color": "베이지 / 카키 그린 / 블랙 / 브라운",
+    "season": "SS",
+    "style_products": "221, 222, 224",
+    "product_description": "장식용 버클 여밈 가죽 샌들. 다양한 색상 선택 가능. 발등 부분에 스웨이드 마감 와이드 스트랩 2개가 있음. 볼륨 있는 브라운 밑창.",
+    "product_type": 3,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A0%88%EB%8D%94-%EB%8D%94%EB%B8%94-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EC%83%8C%EB%93%A4-p12703820.html?v1=125067909&v2=1886993&page=4",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 224,  
+    "barcode": 2101081100224,
+    "product_name": "메탈릭 링크 브레이슬릿",
+    "gender": "M",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/1012/305/808/2/w/750/1012305808_6_2_1.jpg?ts=1622731156953",
+    "style_image": "https://static.zara.net/photos///2021/I/0/2/p/7545/315/250/2/w/750/7545315250_1_1_1.jpg?ts=1625063845276",
+    "color": "실버",
+    "season": "SS",
+    "style_products": "221, 222, 223",
+    "product_description": "유광 마감 메탈릭 링크 팔찌. 카라비너 여밈.",
+    "product_type": 4,
+    "price": "29000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A9%94%ED%83%88%EB%A6%AD-%EB%A7%81%ED%81%AC-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF-p01012305.html?v1=109651538&v2=1885866",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 301,  
+    "barcode": 2021081100301,
+    "product_name": "도트 드레이프 원피스 LIMITED EDITION",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8612/743/020/2/w/563/8612743020_6_1_1.jpg?ts=1627914450425",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8612/743/020/2/w/563/8612743020_1_1_1.jpg?ts=1628607715816",
+    "color": "프린트",
+    "season": "SS",
+    "style_products": "302, 303, 304",
+    "product_description": "신축성 있게 마감된 반소매 플루이드넥 롱 원피스. 옆면 심라인 히든 포켓. 같은 소재의 앞면 리본 디테일. 뒷면 심라인 콘실 지퍼 여밈.",
+    "product_type": 1,
+    "price": "149000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%8F%84%ED%8A%B8-%EB%93%9C%EB%A0%88%EC%9D%B4%ED%94%84-%EC%9B%90%ED%94%BC%EC%8A%A4-limited-edition-p08612743.html?v1=122563149&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 302,  
+    "barcode": 2021081100302,
+    "product_name": "체인 숄더백",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/6314/810/100/2/w/563/6314810100_6_1_1.jpg?ts=1626859235465",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8612/743/020/2/w/563/8612743020_1_1_1.jpg?ts=1628607715816",
+    "color": "브라운",
+    "season": "SS",
+    "style_products": "301, 303, 304",
+    "product_description": "애니멀 패턴 디자인의 숄더백. 두꺼운 체인 숄더 스트랩. 포켓이 달린 내부 안감. 자석이 달린 플랩으로 여밈.",
+    "product_type": 4,
+    "price": "49000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%B2%B4%EC%9D%B8-%EC%88%84%EB%8D%94%EB%B0%B1-p16313810.html?v1=108927269&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 303,  
+    "barcode": 2021081100303,
+    "product_name": "베이직 캡",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/0653/226/800/2/w/563/0653226800_6_2_1.jpg?ts=1623851340774",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8612/743/020/2/w/563/8612743020_1_1_1.jpg?ts=1628607715816",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "301, 302, 304",
+    "product_description": "하드 소재 챙이 달린 캡. 조절 가능한 여밈.",
+    "product_type": 4,
+    "price": "19000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B2%A0%EC%9D%B4%EC%A7%81-%EC%BA%A1-p00653226.html?v1=109311427&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 304,  
+    "barcode": 2021081100304,
+    "product_name": "청키 후프 이어링",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4319/256/303/2/w/563/4319256303_6_1_1.jpg?ts=1627393208546",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8612/743/020/2/w/563/8612743020_1_1_1.jpg?ts=1628607715816",
+    "color": "골드",
+    "season": "SS",
+    "style_products": "301, 302, 303",
+    "product_description": "두꺼운 후프 귀걸이. 클립온 여밈.",
+    "product_type": 4,
+    "price": "19000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%B2%AD%ED%82%A4-%ED%9B%84%ED%94%84-%EC%9D%B4%EC%96%B4%EB%A7%81-p04319256.html?v1=113920964&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 305,  
+    "barcode": 2021081100305,
+    "product_name": "FLOWING HALTER DRESS",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/1198/452/800/2/w/563/1198452800_6_1_1.jpg?ts=1628174826943",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1198/452/800/2/w/563/1198452800_1_1_1.jpg?ts=1628164248159",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "306, 307, 308",
+    "product_description": "FLOWING MIDI DRESS WITH A HALTERNECK.",
+    "product_type": 1,
+    "price": "45000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p01198452.html?v1=124083982&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 306,  
+    "barcode": 2021081100306,
+    "product_name": "매듭 디테일 레더 힐 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/2341/810/040/2/w/563/2341810040_6_1_1.jpg?ts=1626782318922",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1198/452/800/2/w/563/1198452800_1_1_1.jpg?ts=1628164248159",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "305, 307, 308",
+    "product_description": "파인 스트랩이 매치된 샌들 스타일 가죽 힐 슈즈. 스퀘어 토 마감. 발목에서 끈으로 매듭을 지어 여밈.\r\n\r\nAIRFIT®. 더욱 편안한 착용감을 제공하기 위해 디자인된 라텍스 소재의 유연한 기능성 스펀지 안창.\r\n\r\n굽 높이: 9CM",
+    "product_type": 3,
+    "price": "119000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A7%A4%EB%93%AD-%EB%94%94%ED%85%8C%EC%9D%BC-%EB%A0%88%EB%8D%94-%ED%9E%90-%EC%83%8C%EB%93%A4-p12340810.html?v1=123579717&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 307,  
+    "barcode": 2021081100307,
+    "product_name": "린넨 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4886/106/800/2/w/563/4886106800_6_1_1.jpg?ts=1622456356075",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1198/452/800/2/w/563/1198452800_1_1_1.jpg?ts=1628164248159",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "305, 306, 308",
+    "product_description": "린넨 혼방 소재 원피스. 스트레이트 네크라인 슬리브리스 디자인. 옆면 하단 트임 디테일. 심라인 콘실 지퍼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%B0%EB%84%A8-%EC%9B%90%ED%94%BC%EC%8A%A4-p04886249.html?v1=119448540&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 308,  
+    "barcode": 2021081100308,
+    "product_name": "새틴 이펙트 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7385/302/800/2/w/563/7385302800_6_1_1.jpg?ts=1624625053450",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1198/452/800/2/w/563/1198452800_1_1_1.jpg?ts=1628164248159",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "305, 306, 307",
+    "product_description": "라운드넥 미니 원피스. 네크라인 부분에서 라인드 버튼으로 여밈. 뒷면 엘라스틱 디테일. 옆면 심라인 콘실 지퍼 여밈.",
+    "product_type": 1,
+    "price": "49000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%83%88%ED%8B%B4-%EC%9D%B4%ED%8E%99%ED%8A%B8-%EC%9B%90%ED%94%BC%EC%8A%A4-p07385302.html?v1=120292089&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 309,  
+    "barcode": 2021081100309,
+    "product_name": "미니 크로셰 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/262/615/2/w/563/2731262615_6_1_1.jpg?ts=1625827791719",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/262/615/2/w/563/2731262615_1_1_1.jpg?ts=1625232094010",
+    "color": "오렌지",
+    "season": "SS",
+    "style_products": "310, 311, 312",
+    "product_description": "넓은 어깨끈이 달린 스트레이트 네크라인 미니 원피스.\r\n\r\n안감 처리가 되지 않은 디자인.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%AF%B8%EB%8B%88-%ED%81%AC%EB%A1%9C%EC%85%B0-%EC%9B%90%ED%94%BC%EC%8A%A4-p02731262.html?v1=109345865&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 310,  
+    "barcode": 2021081100310,
+    "product_name": "워시드 리브드 티셔츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos//mkt/misc/watermarks/joinlife-ss19-v2/joinlife-large.svg?ts=1587055628000",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/262/615/2/w/563/2731262615_1_1_1.jpg?ts=1625232094010",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "309, 311, 312",
+    "product_description": "라운드넥 반소매 티셔츠. 리브드 마감. JOIN LIFE CARE FOR FIBER: 50% 이상 오가닉 코튼 사용 또는 CARE FOR WATER: 적은 양의 물을 사용하여 제조.",
+    "product_type": 1,
+    "price": "17000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%9B%8C%EC%8B%9C%EB%93%9C-%EB%A6%AC%EB%B8%8C%EB%93%9C-%ED%8B%B0%EC%85%94%EC%B8%A0-p00962152.html?v1=116658040&v2=1882775",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 311,  
+    "barcode": 2021081100311,
+    "product_name": "브레이드 숄더백",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/6602/810/030/2/w/563/6602810030_6_1_1.jpg?ts=1620978774089",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/262/615/2/w/563/2731262615_1_1_1.jpg?ts=1625232094010",
+    "color": "그린",
+    "season": "SS",
+    "style_products": "309, 310, 312",
+    "product_description": "다양한 컬러 중 선택이 가능한 숄더백. 브레이드 디자인. 탈부착 가능한 체인 숄더 스트랩. 내부 안감 처리. 지퍼 여밈.\r\n\r\n세로 X 가로 X 폭: 23 X 34 X 5CM",
+    "product_type": 4,
+    "price": "49000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B8%8C%EB%A0%88%EC%9D%B4%EB%93%9C-%EC%88%84%EB%8D%94%EB%B0%B1-p16600810.html?v1=111362294&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 312,  
+    "barcode": 2021081100312,
+    "product_name": "프린지 레더 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/1609/810/040/2/w/563/1609810040_6_2_1.jpg?ts=1623663925208",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/262/615/2/w/563/2731262615_1_1_1.jpg?ts=1625232094010",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "309, 310, 311",
+    "product_description": [
+      "FLAT SANDALS. WIDE STRAP ACROSS THE FRONT WITH FRINGE DETAIL. WRAPAROUND TIED ANKLE STRAP.\r\n\r\nAIRFIT®. FLEXIBLE TECHNICAL LATEX FOAM INSOLE",
+      "DESIGNED TO OFFER GREATER COMFORT.\r\n\r\nSOLE HEIGHT: 1 CM. / 0.3″"
+    ],
+    "product_type": 3,
+    "price": "109000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%94%84%EB%A6%B0%EC%A7%80-%EB%A0%88%EB%8D%94-%EC%83%8C%EB%93%A4-p11609810.html?v1=108962540&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 313,  
+    "barcode": 2021081100313,
+    "product_name": "파이핑 실크 롱 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2712/513/715/2/w/563/2712513715_6_1_1.jpg?ts=1627998175414",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2712/513/715/4/w/563/2712513715_1_1_1.jpg?ts=1628084802486",
+    "color": "미디움 크림",
+    "season": "SS",
+    "style_products": "314, 315, 316",
+    "product_description": "멀버리 실크 혼방 소재 롱 원피스. 넓은 어깨끈이 달린 브이넥 디자인. 배색된 파이핑 디테일.",
+    "product_type": 1,
+    "price": "199000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%8C%8C%EC%9D%B4%ED%95%91-%EC%8B%A4%ED%81%AC-%EB%A1%B1-%EC%9B%90%ED%94%BC%EC%8A%A4-p02712513.html?v1=129198657&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 314,  
+    "barcode": 2021081100314,
+    "product_name": "파이핑 실크 셔츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2712/508/715/2/w/563/2712508715_6_1_1.jpg?ts=1627998179167",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2712/513/715/4/w/563/2712513715_1_1_1.jpg?ts=1628084802486",
+    "color": "미디움 크림",
+    "season": "SS",
+    "style_products": "313, 315, 316",
+    "product_description": "멀버리 실크 혼방 소재 롱 셔츠. 라펠 칼라 긴소매 디자인. 같은 소재 리본 스타일 벨트. 배색된 파이핑 디테일.",
+    "product_type": 1,
+    "price": "169000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%8C%8C%EC%9D%B4%ED%95%91-%EC%8B%A4%ED%81%AC-%EC%85%94%EC%B8%A0-p02712508.html?v1=129199167&v2=1882775",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 315,  
+    "barcode": 2021081100315,
+    "product_name": "파이핑 실크 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2712/509/715/2/w/563/2712509715_6_1_1.jpg?ts=1628000340219",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2712/513/715/4/w/563/2712513715_1_1_1.jpg?ts=1628084802486",
+    "color": "미디움 크림",
+    "season": "SS",
+    "style_products": "313, 314, 316",
+    "product_description": "멀버리 실크 혼방 소재 하이웨이스트 팬츠. 신축성 있게 마감된 허리 뒷면. 배색된 파이핑 디테일. 와이드 레그 디자인.",
+    "product_type": 2,
+    "price": "169000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%8C%8C%EC%9D%B4%ED%95%91-%EC%8B%A4%ED%81%AC-%ED%8C%AC%EC%B8%A0-p02712509.html?v1=114986656&v2=1882775",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 316,  
+    "barcode": 2021081100316,
+    "product_name": "란제리 스타일 패턴 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7925/852/712/2/w/563/7925852712_1_1_1.jpg?ts=1625568167765",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2712/513/715/4/w/563/2712513715_1_1_1.jpg?ts=1628084802486",
+    "color": "크림",
+    "season": "SS",
+    "style_products": "313, 314, 315",
+    "product_description": "ROUND NECK SATIN CAMISOLE DRESS WITH ADJUSTABLE THIN STRAPS. FLARED HEM.",
+    "product_type": 1,
+    "price": "79000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%9E%80%EC%A0%9C%EB%A6%AC-%EC%8A%A4%ED%83%80%EC%9D%BC-%ED%8C%A8%ED%84%B4-%EC%9B%90%ED%94%BC%EC%8A%A4-p07925852.html?v1=122203824&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 317,  
+    "barcode": 2021081100317,
+    "product_name": "스트랩 리브드 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/1044/632/400/2/w/563/1044632400_6_1_1.jpg?ts=1626949380042",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1044/632/400/2/w/563/1044632400_2_5_1.jpg?ts=1627053300911",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "318, 319, 320",
+    "product_description": "가느다란 어깨끈이 달린 브이넥 와이드핏 원피스.\r\n\r\nJOIN LIFE\r\nCARE FOR FIBER: 50% 이상 오가닉 코튼 사용.",
+    "product_type": 1,
+    "price": "39000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%A6%AC%EB%B8%8C%EB%93%9C-%EC%9B%90%ED%94%BC%EC%8A%A4-p01044632.html?v1=126282480&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 318,  
+    "barcode": 2021081100318,
+    "product_name": "크로셰 탑",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/291/500/2/w/563/2731291500_6_1_1.jpg?ts=1627314508233",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1044/632/400/2/w/563/1044632400_2_5_1.jpg?ts=1627053300911",
+    "color": "초록",
+    "season": "SS",
+    "style_products": "317, 319, 320",
+    "product_description": "브이넥 마감 라펠 칼라 긴소매 탑. 앞면 버튼 여밈.\r\n\r\n안감 처리가 되지 않은 디자인.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%81%AC%EB%A1%9C%EC%85%B0-%ED%83%91-p02731291.html?v1=127774835&v2=1882775",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 319,  
+    "barcode": 2021081100319,
+    "product_name": "스모크 렌즈 선글라스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2727/206/800/2/w/563/2727206800_6_1_1.jpg?ts=1626951072677",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1044/632/400/2/w/563/1044632400_2_5_1.jpg?ts=1627053300911",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "317, 318, 320",
+    "product_description": "스모크 렌즈와 배색된 테가 매치된 선글라스. 케이스 포함.",
+    "product_type": 4,
+    "price": "35000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%EB%AA%A8%ED%81%AC-%EB%A0%8C%EC%A6%88-%EC%84%A0%EA%B8%80%EB%9D%BC%EC%8A%A4-p02727206.html?v1=117067459&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 320,  
+    "barcode": 2021081100320,
+    "product_name": "비즈 네크리스 LIMITED EDITION",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/V/0/2/p/0700/201/600/2/w/563/0700201600_6_1_1.jpg?ts=1622458833231",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/1044/632/400/2/w/563/1044632400_2_5_1.jpg?ts=1627053300911",
+    "color": "레드",
+    "season": "SS",
+    "style_products": "317, 318, 319",
+    "product_description": "톤온톤 비즈가 매치된 면 소재 목걸이. 슬라이드 매듭으로 여밈.",
+    "product_type": 4,
+    "price": "35000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B9%84%EC%A6%88-%EB%84%A4%ED%81%AC%EB%A6%AC%EC%8A%A4-limited-edition-p00700201.html?v1=120291886&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 321,  
+    "barcode": 2021081100321,
+    "product_name": "린넨 미니 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/5216/242/712/2/w/563/5216242712_6_1_1.jpg?ts=1623062353481",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5216/242/712/2/w/563/5216242712_1_1_1.jpg?ts=1623664288279",
+    "color": "크림",
+    "season": "SS",
+    "style_products": "322, 323, 324",
+    "product_description": "린넨 혼방 소재 미니 원피스. 크로스 브이넥 마감 라펠 칼라 7부 소매 디자인. 허니콤 스타일 엘라스틱 디테일. 프릴 마감 밑단.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%B0%EB%84%A8-%EB%AF%B8%EB%8B%88-%EC%9B%90%ED%94%BC%EC%8A%A4-p05216242.html?v1=108988341&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 322,  
+    "barcode": 2021081100322,
+    "product_name": "가죽 우드 뮬",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos//mkt/misc/watermarks/joinlife-ss19-v2/joinlife-large.svg?ts=1587055628000",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5216/242/712/2/w/563/5216242712_1_1_1.jpg?ts=1623664288279",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "321, 323, 324",
+    "product_description": "화이트 컬러 가죽 힐 샌들 스타일 슈즈. 스터드 디테일의 가죽 소재 와이드 스트랩. 나무 소재 힐.\r\n\r\n굽 높이: 7.3CM\r\n\r\nJOIN LIFE\r\nCARE FOR PLANET: JOIN LIFE 탠드 가죽.",
+    "product_type": 3,
+    "price": "79000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EA%B0%80%EC%A3%BD-%EC%9A%B0%EB%93%9C-%EB%AE%AC-p11310810.html?v1=117818254&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 323,  
+    "barcode": 2021081100323,
+    "product_name": "비즈 브레이슬릿 세트",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7243/203/330/2/w/563/7243203330_6_1_1.jpg?ts=1620896130827",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5216/242/712/2/w/563/5216242712_1_1_1.jpg?ts=1623664288279",
+    "color": "멀티컬러",
+    "season": "SS",
+    "style_products": "321, 322, 324",
+    "product_description": "멀티컬러 비즈가 달린 이중 처리된 팔찌 세트.",
+    "product_type": 4,
+    "price": "25000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B9%84%EC%A6%88-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%8A%AC%EB%A6%BF-%EC%84%B8%ED%8A%B8-p07243203.html?v1=108939968&v2=1882775",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 324,  
+    "barcode": 2021081100324,
+    "product_name": "패널 포플린 원피스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8590/894/711/2/w/563/8590894711_6_1_1.jpg?ts=1626422114636",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5216/242/712/2/w/563/5216242712_1_1_1.jpg?ts=1623664288279",
+    "color": "샌드",
+    "season": "SS",
+    "style_products": "321, 322, 323",
+    "product_description": "브이넥 마감 라펠 칼라 셔츠 스타일 원피스. 신축성 있는 벌룬 스타일 반소매 디자인. 프릴 마감 밑단.",
+    "product_type": 1,
+    "price": "49000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%8C%A8%EB%84%90-%ED%8F%AC%ED%94%8C%EB%A6%B0-%EC%9B%90%ED%94%BC%EC%8A%A4-p08446894.html?v1=123410673&v2=1882775",
+    "location": "E"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 401,  
+    "barcode": 2021081100401,
+    "product_name": "자카드 니트 재킷",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/5802/106/070/2/w/850/5802106070_6_1_1.jpg?ts=1628162990296",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5802/106/070/2/w/850/5802106070_1_1_1.jpg?ts=1628245257935",
+    "color": "크림 / 블랙",
+    "season": "FW",
+    "style_products": "402, 403, 404",
+    "product_description": "V-NECK CARDIGAN WITH LONG SLEEVES AND FRONT FASTENING WITH COVERED BUTTONS.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%9E%90%EC%B9%B4%EB%93%9C-%EB%8B%88%ED%8A%B8-%EC%9E%AC%ED%82%B7-p05802106.html?v1=109781960&v2=1882810",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 402,  
+    "barcode": 2021081100402,
+    "product_name": "주트 솔 레더 힐 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/1362/810/040/2/w/850/1362810040_6_2_1.jpg?ts=1627892914860",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5802/106/070/2/w/850/5802106070_1_1_1.jpg?ts=1628245257935",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "401, 403, 404",
+    "product_description": "샌들 스타일 가죽 힐 슈즈. 가죽 소재 스트랩이 달린 외피 디자인. 이중 처리된 스틸레토 힐. 스퀘어 토 마감. 주트로 감싸인 안창. 앵클 스트랩에 달린 버클로 여밈.",
+    "product_type": 3,
+    "price": "109000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%A3%BC%ED%8A%B8-%EC%86%94-%EB%A0%88%EB%8D%94-%ED%9E%90-%EC%83%8C%EB%93%A4-p11327810.html?v1=117059065&v2=1882810",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 403,  
+    "barcode": 2021081100403,
+    "product_name": "COLOURFUL SUNGLASSES",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4646/202/515/2/w/850/4646202515_6_1_1.jpg?ts=1628160034601",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5802/106/070/2/w/850/5802106070_1_1_1.jpg?ts=1628245257935",
+    "color": "올리브",
+    "season": "SS",
+    "style_products": "401, 402, 404",
+    "product_description": "SUNGLASSES WITH A CONTRAST FRAME. CASE INCLUDED.",
+    "product_type": 4,
+    "price": "35000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/-p04646202.html?v1=129437256&v2=1882810",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 404,  
+    "barcode": 2021081100404,
+    "product_name": "THE MUPPETS © DISNEY KNIT CARDIGAN",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/0021/100/712/2/w/850/0021100712_6_1_1.jpg?ts=1627550169038",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/5802/106/070/2/w/850/5802106070_1_1_1.jpg?ts=1628245257935",
+    "color": "크림",
+    "season": "FW",
+    "style_products": "401, 402, 403",
+    "product_description": "V-NECK CARDIGAN WITH LONG SLEEVES. FEATURING CONTRAST PIPING AND EMBROIDERY ON THE BACK IN THE SHAPE OF THE KERMIT THE FROG THE MUPPETS © DISNEY. FASTENS AT THE FRONT WITH COVERED BUTTONS.",
+    "product_type": 1,
+    "price": "89000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/-p00021100.html?v1=129559182&v2=1882810",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 405,  
+    "barcode": 2021081100405,
+    "product_name": "프린트 새틴 탑",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8380/644/112/2/w/850/8380644112_6_1_1.jpg?ts=1627999173773",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8419/644/112/2/w/850/8419644112_1_1_1.jpg?ts=1627993745755",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "406, 407, 408",
+    "product_description": "라운드넥 반소매 탑. 밑단 리본 디테일. 같은 소재의 앞면 라인 버튼 여밈.",
+    "product_type": 1,
+    "price": "39000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%83%88%ED%8B%B4-%ED%83%91-p08380644.html?v1=129389881&v2=1882900",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 406,  
+    "barcode": 2021081100406,
+    "product_name": "새틴 프린트 미니 스커트",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8419/644/112/2/w/850/8419644112_6_1_1.jpg?ts=1627999149740",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8419/644/112/2/w/850/8419644112_1_1_1.jpg?ts=1627993745755",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "405, 407, 408",
+    "product_description": "하이웨이스트 미니 스커트. 앞면 페이크 버튼과 하단 트임. 옆면 심라인 콘실 지퍼 여밈.",
+    "product_type": 2,
+    "price": "45000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%83%88%ED%8B%B4-%ED%94%84%EB%A6%B0%ED%8A%B8-%EB%AF%B8%EB%8B%88-%EC%8A%A4%EC%BB%A4%ED%8A%B8-p08419644.html?v1=121019439&v2=1882900",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 407,  
+    "barcode": 2021081100407,
+    "product_name": "매듭 디테일 레더 힐 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/2341/810/040/2/w/850/2341810040_6_4_1.jpg?ts=1626782323348",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8419/644/112/2/w/850/8419644112_1_1_1.jpg?ts=1627993745755",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "405, 406, 408",
+    "product_description": "파인 스트랩이 매치된 샌들 스타일 가죽 힐 슈즈. 스퀘어 토 마감. 발목에서 끈으로 매듭을 지어 여밈.",
+    "product_type": 3,
+    "price": "119000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A7%A4%EB%93%AD-%EB%94%94%ED%85%8C%EC%9D%BC-%EB%A0%88%EB%8D%94-%ED%9E%90-%EC%83%8C%EB%93%A4-p12340810.html?v1=123579717&v2=1882900",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 408,  
+    "barcode": 2021081100408,
+    "product_name": "플로랄 프린트 스커트 팬츠.",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8372/094/044/2/w/850/8372094044_6_2_1.jpg?ts=1621521452100",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8419/644/112/2/w/850/8419644112_1_1_1.jpg?ts=1627993745755",
+    "color": "블루 /화이트",
+    "season": "SS",
+    "style_products": "405, 406, 407",
+    "product_description": "신축성 있는 허리에 끈이 달린 하이웨이스트 스커트 팬츠. 셔링 디테일.",
+    "product_type": 2,
+    "price": "39000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%94%8C%EB%A1%9C%EB%9E%84-%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%8A%A4%EC%BB%A4%ED%8A%B8-%ED%8C%AC%EC%B8%A0--p08372094.html?v1=114395709&v2=1882900",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 409,  
+    "barcode": 2021081100409,
+    "product_name": "셔링 탑",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/0264/805/420/2/w/850/0264805420_6_1_1.jpg?ts=1625123973736",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/4387/242/098/2/w/850/4387242098_1_1_1.jpg?ts=1626426672167",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "410, 411, 412",
+    "product_description": "디테일이 매치된 스트레이트 네크라인 탑. 네크라인에 리본이 달린 앞면 셔링 디테일.",
+    "product_type": 1,
+    "price": "25000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%85%94%EB%A7%81-%ED%83%91-p00264805.html?v1=123701895&v2=1882900",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 410,  
+    "barcode": 2021081100410,
+    "product_name": "스트럭처 미디 스커트",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4387/242/098/2/w/850/4387242098_6_1_1.jpg?ts=1626419206104",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/4387/242/098/2/w/850/4387242098_1_1_1.jpg?ts=1626426672167",
+    "color": "그린 / 크림",
+    "season": "SS",
+    "style_products": "409, 411, 412",
+    "product_description": "앞면에 패치 포켓이 있는 하이웨이스트 스커트. 앞면에서 크로스 스타일 톤온톤 라인 버튼으로 여밈.",
+    "product_type": 2,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B2%98-%EB%AF%B8%EB%94%94-%EC%8A%A4%EC%BB%A4%ED%8A%B8-p04387242.html?v1=110976074&v2=1882900",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 411,  
+    "barcode": 2021081100411,
+    "product_name": "버클 스트랩 플랫샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/3621/810/002/2/w/850/3621810002_6_2_1.jpg?ts=1626099699213",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/4387/242/098/2/w/850/4387242098_1_1_1.jpg?ts=1626426672167",
+    "color": "크림 화이트",
+    "season": "SS",
+    "style_products": "409, 410, 412",
+    "product_description": "FLAT SANDALS WITH TUBULAR STRAPS. GEOMETRIC SOLE IN A COMBINATION OF MATERIALS AND SQUARE TOE.",
+    "product_type": 3,
+    "price": "79000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B2%84%ED%81%B4-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%ED%94%8C%EB%9E%AB%EC%83%8C%EB%93%A4-p13621810.html?v1=124525464&v2=1882900",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 412,  
+    "barcode": 2021081100412,
+    "product_name": "비즈 스트랩 플랫 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/3656/810/002/2/w/850/3656810002_6_3_1.jpg?ts=1622630048107",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/4387/242/098/2/w/850/4387242098_1_1_1.jpg?ts=1626426672167",
+    "color": "크림 화이트",
+    "season": "SS",
+    "style_products": "409, 410, 411",
+    "product_description": "화이트 컬러의 샌들 스타일 플랫슈즈. 비즈 장식 파인 스트랩이 달린 외피 디자인. 스티치 디테일 밑창. 스퀘어 토 마감",
+    "product_type": 3,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B9%84%EC%A6%88-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%ED%94%8C%EB%9E%AB-%EC%83%8C%EB%93%A4-p13656810.html?v1=117988074&v2=1882900",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 413,  
+    "barcode": 2021081100413,
+    "product_name": "롱 린넨 셔츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4786/274/096/22/w/850/4786274096_6_1_1.jpg?ts=1625667065200",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/270/711/2/w/850/2731270711_1_1_1.jpg?ts=1625566496217",
+    "color": "화이트 / 그레이",
+    "season": "SS",
+    "style_products": "414, 415, 416",
+    "product_description": "100% 린넨 소재 롱 셔츠. 커프스 마감 긴소매 라펠 칼라 디자인. 옆면에 트임이 있는 언밸런스한 디자인의 밑단. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A1%B1-%EB%A6%B0%EB%84%A8-%EC%85%94%EC%B8%A0-p04786274.html?v1=123266565&v2=1882900",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 414,  
+    "barcode": 2021081100414,
+    "product_name": "LINEN BLEND SKIRT WITH RHINESTONES",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/270/711/2/w/850/2731270711_6_1_1.jpg?ts=1625477077436",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/270/711/2/w/850/2731270711_1_1_1.jpg?ts=1625566496217",
+    "color": "샌드",
+    "season": "SS",
+    "style_products": "413, 415, 416",
+    "product_description": "HIGH-WAIST SKIRT IN A LINEN BLEND. RHINESTONE APPLIQUÉ DETAILS. INVISIBLE SIDE ZIP FASTENING.",
+    "product_type": 2,
+    "price": "89000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/-p02731270.html?v1=108971459&v2=1882900",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 415,  
+    "barcode": 2021081100415,
+    "product_name": "가죽 우드 뮬",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/V/1/1/p/1310/810/001/2/w/850/1310810001_6_3_1.jpg?ts=1619535051963",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/270/711/2/w/850/2731270711_1_1_1.jpg?ts=1625566496217",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "413, 414, 416",
+    "product_description": "화이트 컬러 가죽 힐 샌들 스타일 슈즈. 스터드 디테일의 가죽 소재 와이드 스트랩. 나무 소재 힐.",
+    "product_type": 3,
+    "price": "79000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EA%B0%80%EC%A3%BD-%EC%9A%B0%EB%93%9C-%EB%AE%AC-p11310810.html?v1=109002593&v2=1882900",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 416,  
+    "barcode": 2021081100416,
+    "product_name": "플랩포켓 패턴 블라우스",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2143/246/400/2/w/850/2143246400_6_1_1.jpg?ts=1626770989062",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2731/270/711/2/w/850/2731270711_1_1_1.jpg?ts=1625566496217",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "413, 414, 415",
+    "product_description": "커프스 마감 긴소매 라펠 칼라 블라우스. 앞면 플랩 패치 포켓 디테일. 옆면에 트임이 있는 언밸런스한 디자인의 밑단. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%ED%94%8C%EB%9E%A9%ED%8F%AC%EC%BC%93-%ED%8C%A8%ED%84%B4-%EB%B8%94%EB%9D%BC%EC%9A%B0%EC%8A%A4-p02143246.html?v1=126287392&v2=1882900",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 417,  
+    "barcode": 2021081100417,
+    "product_name": "MICKEY MOUSE © DISNEY 프린트 티셔츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/2/p/7878/300/250/2/w/850/7878300250_6_1_1.jpg?ts=1624000541111",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/6045/011/500/17/w/850/6045011500_1_1_1.jpg?ts=1627569150556",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "418, 419, 420",
+    "product_description": "라운드넥 반소매 루즈핏 티셔츠. 앞면 MICKEY MOUSE © DISNEY 그래픽 프린트.",
+    "product_type": 1,
+    "price": "39000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/mickey-mouse---disney-%ED%94%84%EB%A6%B0%ED%8A%B8-%ED%8B%B0%EC%85%94%EC%B8%A0-p07878300.html?v1=108962746&v2=1882892",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 418,  
+    "barcode": 2021081100418,
+    "product_name": "와이드 레그 진",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/6688/012/500/2/w/850/6688012500_6_1_1.jpg?ts=1623341107172",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/6045/011/500/17/w/850/6045011500_1_1_1.jpg?ts=1627569150556",
+    "color": "초록",
+    "season": "SS",
+    "style_products": "417, 419, 420",
+    "product_description": "튼튼한 소재의 하이웨이스트 5포켓 진. 재봉하지 않은 밑단 디자인의 엑스트라 롱 와이드 레그. 지퍼와 메탈 버튼으로 여밈.",
+    "product_type": 2,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EC%99%80%EC%9D%B4%EB%93%9C-%EB%A0%88%EA%B7%B8-%EC%A7%84-p06045011.html?v1=127773979&v2=1882892",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 419,  
+    "barcode": 2021081100419,
+    "product_name": "밴드 디테일 햇",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/0653/204/052/2/w/850/0653204052_6_1_1.jpg?ts=1622714814147",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/6045/011/500/17/w/850/6045011500_1_1_1.jpg?ts=1627569150556",
+    "color": "내추럴",
+    "season": "SS",
+    "style_products": "417, 418, 420",
+    "product_description": "챙을 구부려서 다양하게 연출할 수 있는 브레이드 마감 모자.",
+    "product_type": 4,
+    "price": "39000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B0%B4%EB%93%9C-%EB%94%94%ED%85%8C%EC%9D%BC-%ED%96%87-p00653204.html?v1=123837344&v2=1882892",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 420,  
+    "barcode": 2021081100420,
+    "product_name": "밴드 디테일 햇",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/0653/101/052/2/w/850/0653101052_6_1_1.jpg?ts=1622712240161",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/6045/011/500/17/w/850/6045011500_1_1_1.jpg?ts=1627569150556",
+    "color": "내추럴",
+    "season": "SS",
+    "style_products": "417, 418, 419",
+    "product_description": "WOVEN HAT WITH CONTRASTING ADJUSTABLE DRAWSTRINGS.",
+    "product_type": 4,
+    "price": "45000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B0%B4%EB%93%9C-%EB%94%94%ED%85%8C%EC%9D%BC-%ED%96%87-p00653101.html?v1=118607693&v2=1882892",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 421,  
+    "barcode": 2021081100421,
+    "product_name": "버튼 티셔츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4174/636/800/2/w/850/4174636800_6_1_1.jpg?ts=1627555076630",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2553/246/400/2/w/850/2553246400_1_1_1.jpg?ts=1627490921947",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "422, 423, 424",
+    "product_description": "COLLARED T-SHIRT WITH SHORT SLEEVES AND A BUTTON-UP FRONT.",
+    "product_type": 1,
+    "price": "25000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B2%84%ED%8A%BC-%ED%8B%B0%EC%85%94%EC%B8%A0-p04174636.html?v1=111162226&v2=1882892",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 422,  
+    "barcode": 2021081100422,
+    "product_name": "JEANS ZW THE 90´S FULL LENGTH 슬릿",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2553/246/400/2/w/850/2553246400_6_1_1.jpg?ts=1626950540346",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2553/246/400/2/w/850/2553246400_1_1_1.jpg?ts=1627490921947",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "421, 423, 424",
+    "product_description": "하이웨이스트 5포켓 진. 워싱 이펙트. 옆면에 트임이 있는 재봉 되지 않고 컷 처리된 밑단. 앞면 버튼 여밈.",
+    "product_type": 2,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/jeans-zw-the-90%C2%B4s-full-length-%EC%8A%AC%EB%A6%BF-p02553246.html?v1=127774896&v2=1882892",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 423,  
+    "barcode": 2021081100423,
+    "product_name": "버클 스트랩 플랫샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/3617/810/040/2/w/850/3617810040_6_1_1.jpg?ts=1626109088343",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2553/246/400/2/w/850/2553246400_1_1_1.jpg?ts=1627490921947",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "421, 422, 424",
+    "product_description": "FLAT ROMAN SANDALS. THIN STRAPS AROUND THE LEG AND BUCKLED STRAPS ON THE FRONT. ZIP FASTENING AT THE BACK.",
+    "product_type": 3,
+    "price": "109000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B2%84%ED%81%B4-%EC%8A%A4%ED%8A%B8%EB%9E%A9-%ED%94%8C%EB%9E%AB%EC%83%8C%EB%93%A4-p13617810.html?v1=109636994&v2=1882892",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 424,  
+    "barcode": 2021081100424,
+    "product_name": "JEANS ZW THE DREED FLARE",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/V/0/1/p/6840/071/400/2/w/850/6840071400_6_1_1.jpg?ts=1614679358156",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2553/246/400/2/w/850/2553246400_1_1_1.jpg?ts=1627490921947",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "421, 422, 423",
+    "product_description": "하이웨이스트 5포켓 진. 재봉하지 않고 컷 처리된 A라인 밑단. 앞면 버튼 여밈.",
+    "product_type": 2,
+    "price": "59000",
+    "usage": "casual",
+    "product_link": "https://www.zara.com/kr/ko/jeans-zw-the-dreed-flare-p06840071.html?v1=116659524&v2=1882892",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 501,  
+    "barcode": 2021081100501,
+    "product_name": "라펠리스 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8048/701/712/2/w/850/8048701712_6_1_1.jpg?ts=1627975838309",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8048/701/712/2/w/850/8048701712_1_1_1.jpg?ts=1628094753841",
+    "color": "크림",
+    "season": "SS",
+    "style_products": "502, 503, 504",
+    "product_description": "어깨가 강조된 디자인의 라펠리스 긴소매 블레이저. 앞면 파이핑 포켓. 앞면 메탈 후크 여밈.",
+    "product_type": 1,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%9D%BC%ED%8E%A0%EB%A6%AC%EC%8A%A4-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p08048701.html?v1=116424129&v2=1883520",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 502,  
+    "barcode": 2021081100502,
+    "product_name": "리브드 니트 탑",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/V/0/1/p/3471/015/250/2/w/850/3471015250_6_1_1.jpg?ts=1617102508183",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8048/701/712/2/w/850/8048701712_1_1_1.jpg?ts=1628094753841",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "503, 504, 501",
+    "product_description": "라운드넥 슬리브리스 탑.",
+    "product_type": 1,
+    "price": "25000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A6%AC%EB%B8%8C%EB%93%9C-%EB%8B%88%ED%8A%B8-%ED%83%91-p03471015.html?v1=108980078&v2=1883520",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 503,  
+    "barcode": 2021081100503,
+    "product_name": "라인드 벨트 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4387/430/712/2/w/850/4387430712_6_1_1.jpg?ts=1627976037208",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8048/701/712/2/w/850/8048701712_1_1_1.jpg?ts=1628094753841",
+    "color": "크림",
+    "season": "SS",
+    "style_products": "501, 502, 504",
+    "product_description": [
+      "톤온톤 라인 벨트가 달린 하이웨이스트 팬츠. 앞면 포켓과 뒷면 페이크 파이핑 포켓. 앞면 지퍼",
+      "내부 버튼",
+      "메탈 후크 여밈."
+    ],
+    "product_type": 2,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%9D%BC%EC%9D%B8%EB%93%9C-%EB%B2%A8%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p04387430.html?v1=109655021&v2=1883520",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 504,  
+    "barcode": 2021081100504,
+    "product_name": "퀼티드 플랫 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/1657/810/001/2/w/850/1657810001_6_2_1.jpg?ts=1626688169515",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8048/701/712/2/w/850/8048701712_1_1_1.jpg?ts=1628094753841",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "501, 502, 503",
+    "product_description": "발가락 고정을 위한 스트랩이 있는 샌들 스타일 플랫슈즈. 패딩 마감 스트랩과 안창. 스퀘어 토 마감.",
+    "product_type": 3,
+    "price": "119000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%80%BC%ED%8B%B0%EB%93%9C-%ED%94%8C%EB%9E%AB-%EC%83%8C%EB%93%A4-p11657810.html?v1=111472798&v2=1883520",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 505,  
+    "barcode": 2021081100505,
+    "product_name": "스트레이트 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8312/573/250/2/w/850/8312573250_6_1_1.jpg?ts=1627986249626",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8312/573/250/2/w/850/8312573250_1_1_1.jpg?ts=1628174548653",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "506, 507, 508",
+    "product_description": "라펠 칼라 긴소매 스트레이트 블레이저. 앞면 플랩 포켓과 가슴 부분 파이핑 포켓. 톤온톤 내부 안감이 매치됨. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "149000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%ED%8A%B8-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-limited-edition-p08312573.html?v1=116405235&v2=1882227",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 506,  
+    "barcode": 2021081100506,
+    "product_name": "새틴 미니 스커트",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7883/573/250/2/w/850/7883573250_6_1_1.jpg?ts=1627976122577",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8312/573/250/2/w/850/8312573250_1_1_1.jpg?ts=1628174548653",
+    "color": "화이트",
+    "season": "SS",
+    "style_products": "505, 507, 508",
+    "product_description": "하이웨이스트 새틴 마감 미니 스커트. 앞면 턱 디테일. 언밸런스한 밑단. 옆면 심라인 콘실 지퍼 여밈.",
+    "product_type": 2,
+    "price": "49000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%83%88%ED%8B%B4-%EB%AF%B8%EB%8B%88-%EC%8A%A4%EC%BB%A4%ED%8A%B8-limited-edition-p07883573.html?v1=116396035&v2=1882227",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 507,  
+    "barcode": 2021081100507,
+    "product_name": "키튼힐 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/3305/711/040/2/w/850/3305711040_6_2_1.jpg?ts=1626857886682",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8312/573/250/2/w/850/8312573250_1_1_1.jpg?ts=1628174548653",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "505, 506, 508",
+    "product_description": "키튼힐 샌들 스타일 슈즈. 발가락 고정을 위한 스트랩. 앵클 스트랩 버클로 여밈. 스퀘어 토와 힐 마감.",
+    "product_type": 3,
+    "price": "49000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%82%A4%ED%8A%BC%ED%9E%90-%EC%83%8C%EB%93%A4-p13305711.html?v1=120136559&v2=1882227",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 508,  
+    "barcode": 2021081100508,
+    "product_name": "SUNGLASSES WITH SMOKY LENS",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2727/203/733/2/w/850/2727203733_6_1_1.jpg?ts=1627393170790",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/8312/573/250/2/w/850/8312573250_1_1_1.jpg?ts=1628174548653",
+    "color": "크림",
+    "season": "SS",
+    "style_products": "505, 506, 507",
+    "product_description": "SUNGLASSES WITH A CONTRAST FRAME AND SMOKY LENSES. CASE INCLUDED.",
+    "product_type": 4,
+    "price": "35000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/-p02727203.html?v1=117067452&v2=1882227",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 509,  
+    "barcode": 2021081100509,
+    "product_name": "베이직 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7776/553/644/2/w/850/7776553644_6_1_1.jpg?ts=1627032790231",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7776/553/644/2/w/850/7776553644_2_1_1.jpg?ts=1626954249688",
+    "color": "라이트 로즈",
+    "season": "SS",
+    "style_products": "510, 511, 512",
+    "product_description": "어깨가 강조된 디자인의 라펠 칼라 긴소매 블레이저. 앞면 파이핑 포켓. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B2%A0%EC%9D%B4%EC%A7%81-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p02753553.html?v1=116337028&v2=1882227",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 510,  
+    "barcode": 2021081100510,
+    "product_name": "앵클 크롭 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7775/553/644/2/w/850/7775553644_6_1_1.jpg?ts=1627027378812",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7776/553/644/2/w/850/7776553644_2_1_1.jpg?ts=1626954249688",
+    "color": "라이트 로즈",
+    "season": "SS",
+    "style_products": "509, 511, 512",
+    "product_description": [
+      "앞면 포켓이 달린 미드라이즈 팬츠. 뒷면 페이크 파이핑 포켓 디테일. 양 옆면 하단 트임 디테일. 앞면 지퍼",
+      "내부 버튼",
+      "메탈 후크 여밈."
+    ],
+    "product_type": 2,
+    "price": "39000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%95%B5%ED%81%B4-%ED%81%AC%EB%A1%AD-%ED%8C%AC%EC%B8%A0-p02753253.html?v1=116337026&v2=1882227",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 511,  
+    "barcode": 2021081100511,
+    "product_name": "매듭 레더 플랫 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/V/1/1/p/1617/710/040/2/w/850/1617710040_6_2_1.jpg?ts=1613399650406",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7776/553/644/2/w/850/7776553644_2_1_1.jpg?ts=1626954249688",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "509, 510, 512",
+    "product_description": "블랙 컬러의 가죽 플랫 샌들 스타일 슈즈. 가죽 소재 외피. 발가락 고정을 위한 스트랩. 밑창 주위 볼륨 디테일. 스퀘어 토와 힐 디자인. 케이지 스타일 앵클 스트랩 버클로 여밈.",
+    "product_type": 3,
+    "price": "99000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A7%A4%EB%93%AD-%EB%A0%88%EB%8D%94-%ED%94%8C%EB%9E%AB-%EC%83%8C%EB%93%A4-p11617710.html?v1=115765649&v2=1882227",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 512,  
+    "barcode": 2021081100512,
+    "product_name": "후프 이어링 세트",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/4736/233/303/2/w/850/4736233303_6_1_1.jpg?ts=1624612694785",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7776/553/644/2/w/850/7776553644_2_1_1.jpg?ts=1626954249688",
+    "color": "골드",
+    "season": "SS",
+    "style_products": "509, 510, 511",
+    "product_description": "다양한 크기의 메탈릭 오픈 후프 귀걸이 세트. 클러치로 잠금.",
+    "product_type": 4,
+    "price": "19000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%9B%84%ED%94%84-%EC%9D%B4%EC%96%B4%EB%A7%81-%EC%84%B8%ED%8A%B8-p04736233.html?v1=109468811&v2=1882227",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 513,  
+    "barcode": 2021081100513,
+    "product_name": "포켓 타이트핏 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2761/247/704/2/w/850/2761247704_6_1_1.jpg?ts=1628149009832",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2761/247/704/2/w/850/2761247704_1_1_1.jpg?ts=1628174566482",
+    "color": "샌드",
+    "season": "SS",
+    "style_products": "514, 515, 516",
+    "product_description": "FITTED BLAZER WITH A LAPEL COLLAR AND LONG SLEEVES. FRONT WELT POCKETS WITH FLAPS. MATCHING LINING. BACK VENT. FRONT BUTTON FASTENING.",
+    "product_type": 1,
+    "price": "129000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%8F%AC%EC%BC%93-%ED%83%80%EC%9D%B4%ED%8A%B8%ED%95%8F-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p02761247.html?v1=130186217&v2=1883520",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 514,  
+    "barcode": 2021081100514,
+    "product_name": "FULL LENGTH 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2761/263/704/2/w/850/2761263704_6_1_1.jpg?ts=1628149106372",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2761/247/704/2/w/850/2761247704_1_1_1.jpg?ts=1628174566482",
+    "color": "샌드",
+    "season": "SS",
+    "style_products": "513, 515, 516",
+    "product_description": "FITTED BLAZER WITH A LAPEL COLLAR AND LONG SLEEVES. FRONT WELT POCKETS WITH FLAPS. MATCHING LINING. BACK VENT. FRONT BUTTON FASTENING.",
+    "product_type": 2,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/full-length-%ED%8C%AC%EC%B8%A0-p02761263.html?v1=109007260&v2=1883520",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 515,  
+    "barcode": 2021081100515,
+    "product_name": "키튼힐 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/3305/711/040/2/w/850/3305711040_6_2_1.jpg?ts=1626857886682",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2761/247/704/2/w/850/2761247704_1_1_1.jpg?ts=1628174566482",
+    "color": "블랙",
+    "season": "SS",
+    "style_products": "513, 514, 516",
+    "product_description": "키튼힐 샌들 스타일 슈즈. 발가락 고정을 위한 스트랩. 앵클 스트랩 버클로 여밈. 스퀘어 토와 힐 마감.",
+    "product_type": 3,
+    "price": "49000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%82%A4%ED%8A%BC%ED%9E%90-%EC%83%8C%EB%93%A4-p13305711.html?v1=110508540&v2=1883520",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 516,  
+    "barcode": 2021081100516,
+    "product_name": "새틴 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7901/436/711/2/w/850/7901436711_6_1_1.jpg?ts=1627630967252",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2761/247/704/2/w/850/2761247704_1_1_1.jpg?ts=1628174566482",
+    "color": "샌드",
+    "season": "SS",
+    "style_products": "513, 514, 515",
+    "product_description": "라펠 칼라 긴소매 오픈 블레이저. 앞면 플랩 포켓.",
+    "product_type": 1,
+    "price": "89000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%83%88%ED%8B%B4-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p07901436.html?v1=108944684&v2=1883520",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 517,  
+    "barcode": 2021081100517,
+    "product_name": "플렉트 타이트핏 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2753/133/942/2/w/850/2753133942_6_1_1.jpg?ts=1621944869828",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2753/133/942/2/w/850/2753133942_1_1_1.jpg?ts=1622020493911",
+    "color": "베이지 핑크",
+    "season": "SS",
+    "style_products": "518, 519, 520",
+    "product_description": "어깨가 강조된 디자인의 라펠 칼라 긴소매 블레이저. 앞면 파이핑 포켓. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%94%8C%EB%A0%89%ED%8A%B8-%ED%83%80%EC%9D%B4%ED%8A%B8%ED%95%8F-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p02753133.html?v1=108914077&v2=1883520",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 518,  
+    "barcode": 2021081100518,
+    "product_name": "플렉트 스키니 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/2753/033/942/2/w/850/2753033942_6_1_1.jpg?ts=1621944877134",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2753/133/942/2/w/850/2753133942_1_1_1.jpg?ts=1622020493911",
+    "color": "베이지 핑크",
+    "season": "SS",
+    "style_products": "517, 519, 520",
+    "product_description": [
+      "미드라이즈 팬츠. 앞면 포켓과 뒷면 페이크 파이핑 포켓. 앞면 지퍼",
+      "내부 버튼",
+      "메탈 후크 여밈."
+    ],
+    "product_type": 2,
+    "price": "39000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%94%8C%EB%A0%89%ED%8A%B8-%EC%8A%A4%ED%82%A4%EB%8B%88-%ED%8C%AC%EC%B8%A0-p02753033.html?v1=108914081&v2=1883520",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 519,  
+    "barcode": 2021081100519,
+    "product_name": "레이스업 레더 힐 샌들",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/1/1/p/2311/810/009/2/w/850/2311810009_6_2_1.jpg?ts=1622204021421",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2753/133/942/2/w/850/2753133942_1_1_1.jpg?ts=1622020493911",
+    "color": "블루",
+    "season": "SS",
+    "style_products": "517, 518, 520",
+    "product_description": "다양한 컬러 중 선택이 가능한 가죽 힐 샌들 스타일 슈즈. 앞부분 가죽 소재 파인 스트랩 디테일. 스틸레토 힐. 스퀘어 토와 힐 디자인. 버클이 달린 발목 부분 매듭으로 여밈.",
+    "product_type": 4,
+    "price": "79000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%A0%88%EC%9D%B4%EC%8A%A4%EC%97%85-%EB%A0%88%EB%8D%94-%ED%9E%90-%EC%83%8C%EB%93%A4-p12311810.html?v1=114906369&v2=1883520",
+    "location": "F"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 520,  
+    "barcode": 2021081100520,
+    "product_name": "오버사이즈 플루이드 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7784/587/710/2/w/850/7784587710_6_1_1.jpg?ts=1621442946610",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/2753/133/942/2/w/850/2753133942_1_1_1.jpg?ts=1622020493911",
+    "color": "베이지",
+    "season": "SS",
+    "style_products": "517, 518, 519",
+    "product_description": "라펠 칼라 긴소매 오버사이즈 블레이저. 가슴 부분 파이핑 포켓과 앞면 플랩 포켓. 뒷면 밑단 트임 디테일. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "129000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%98%A4%EB%B2%84%EC%82%AC%EC%9D%B4%EC%A6%88-%ED%94%8C%EB%A3%A8%EC%9D%B4%EB%93%9C-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p07784587.html?v1=113672179&v2=1883520",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 521,  
+    "barcode": 2021081100521,
+    "product_name": "앵클 크롭 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7775/806/406/2/w/850/7775806406_6_1_1.jpg?ts=1620915471725",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7775/806/406/2/w/850/7775806406_1_1_1.jpg?ts=1620991314562",
+    "color": "라이트블루",
+    "season": "SS",
+    "style_products": "522, 523, 524",
+    "product_description": [
+      "앞면 포켓이 달린 미드라이즈 팬츠. 뒷면 페이크 파이핑 포켓 디테일. 양 옆면 하단 트임 디테일. 앞면 지퍼",
+      "내부 버튼",
+      "메탈 후크 여밈."
+    ],
+    "product_type": 2,
+    "price": "39000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%95%B5%ED%81%B4-%ED%81%AC%EB%A1%AD-%ED%8C%AC%EC%B8%A0-p07775806.html?v1=108958331&v2=1883520",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 522,  
+    "barcode": 2021081100522,
+    "product_name": "베이직 블레이저",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/7776/806/406/2/w/850/7776806406_6_1_1.jpg?ts=1620915525999",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7775/806/406/2/w/850/7775806406_1_1_1.jpg?ts=1620991314562",
+    "color": "라이트블루",
+    "season": "SS",
+    "style_products": "521, 523, 524",
+    "product_description": "어깨가 강조된 디자인의 라펠 칼라 긴소매 블레이저. 앞면 파이핑 포켓. 뒷면 밑단 트임 디테일. 앞면 버튼 여밈.",
+    "product_type": 1,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EB%B2%A0%EC%9D%B4%EC%A7%81-%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80-p07776806.html?v1=108958356&v2=1883520",
+    "location": "C"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 523,  
+    "barcode": 2021081100523,
+    "product_name": "조거 웨이스트 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/V/0/1/p/1478/025/406/2/w/850/1478025406_6_1_1.jpg?ts=1617028097760",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7775/806/406/2/w/850/7775806406_1_1_1.jpg?ts=1620991314562",
+    "color": "라이트블루",
+    "season": "SS",
+    "style_products": "521, 522, 524",
+    "product_description": [
+      "허리 뒷부분이 신축성 있게 마감된 미드라이즈 스키니 팬츠. 앞면 포켓과 뒷면 페이크 파이핑 포켓. 옆면 하단 트임 디테일. 앞면 지퍼",
+      "내부 버튼",
+      "메탈 후크 여밈."
+    ],
+    "product_type": 2,
+    "price": "45000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%EC%A1%B0%EA%B1%B0-%EC%9B%A8%EC%9D%B4%EC%8A%A4%ED%8A%B8-%ED%8C%AC%EC%B8%A0-p01608233.html?v1=122263408&v2=1883520",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.product",
+    "fields": {
+    "product_id": 524,  
+    "barcode": 2021081100524,
+    "product_name": "하이웨이스트 벨티드 팬츠",
+    "gender": "F",
+    "product_image": "https://static.zara.net/photos///2021/I/0/1/p/8034/811/406/2/w/850/8034811406_6_1_1.jpg?ts=1623319178527",
+    "style_image": "https://static.zara.net/photos///2021/I/0/1/p/7775/806/406/2/w/850/7775806406_1_1_1.jpg?ts=1620991314562",
+    "color": "라이트블루",
+    "season": "SS",
+    "style_products": "521, 522, 523",
+    "product_description": [
+      "톤온톤 라인 벨트가 달린 하이웨이스트 팬츠. 앞면 포켓과 뒷면 페이크 파이핑 포켓. 앞면 지퍼",
+      "내부 버튼",
+      "메탈 후크 여밈."
+    ],
+    "product_type": 2,
+    "price": "59000",
+    "usage": "formal",
+    "product_link": "https://www.zara.com/kr/ko/%ED%95%98%EC%9D%B4%EC%9B%A8%EC%9D%B4%EC%8A%A4%ED%8A%B8-%EB%B2%A8%ED%8B%B0%EB%93%9C-%ED%8C%AC%EC%B8%A0-p08034811.html?v1=123839745&v2=1883520",
+    "location": "D"
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 101,
+      "stock": [
+        5,
+        9,
+        6,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 102,
+      "stock": [
+        7,
+        8,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 103,
+      "stock": [
+        8,
+        1,
+        4,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 104,
+      "stock": [
+        1,
+        8,
+        3,
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 105,
+      "stock": [
+        9,
+        8,
+        2,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 106,
+      "stock": [
+        1,
+        6,
+        6,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 107,
+      "stock": [
+        1,
+        9,
+        7,
+        8,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 108,
+      "stock": [
+        2,
+        7,
+        8,
+        8,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 109,
+      "stock": [
+        0,
+        4,
+        6,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 110,
+      "stock": [
+        9,
+        3,
+        4,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 111,
+      "stock": [
+        5,
+        5,
+        1,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 112,
+      "stock": [
+        5,
+        1,
+        8,
+        9,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 113,
+      "stock": [
+        8,
+        3,
+        1,
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 114,
+      "stock": [
+        6,
+        2,
+        0,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 115,
+      "stock": [
+        1,
+        4,
+        2,
+        8,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 116,
+      "stock": [
+        4,
+        8,
+        6,
+        4,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 117,
+      "stock": [
+        8,
+        9,
+        6,
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 118,
+      "stock": [
+        3,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 119,
+      "stock": [
+        1,
+        1,
+        3,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 120,
+      "stock": [
+        1,
+        7,
+        4,
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 121,
+      "stock": [
+        0,
+        1,
+        6,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 122,
+      "stock": [
+        9,
+        9,
+        8,
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 123,
+      "stock": [
+        8,
+        3,
+        0,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 124,
+      "stock": [
+        1,
+        3,
+        3,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 201,
+      "stock": [
+        4,
+        7,
+        4,
+        6,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 202,
+      "stock": [
+        3,
+        7,
+        4,
+        4,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 203,
+      "stock": [
+        0,
+        1,
+        2,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 204,
+      "stock": [
+        9,
+        9,
+        0,
+        8,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 205,
+      "stock": [
+        2,
+        1,
+        5,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 206,
+      "stock": [
+        9,
+        5,
+        4,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 207,
+      "stock": [
+        0,
+        9,
+        7,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 208,
+      "stock": [
+        9,
+        4,
+        0,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 209,
+      "stock": [
+        2,
+        4,
+        5,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 210,
+      "stock": [
+        7,
+        3,
+        5,
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 211,
+      "stock": [
+        2,
+        0,
+        6,
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 212,
+      "stock": [
+        5,
+        0,
+        5,
+        7,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 213,
+      "stock": [
+        0,
+        5,
+        0,
+        7,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 214,
+      "stock": [
+        6,
+        8,
+        0,
+        7,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 215,
+      "stock": [
+        3,
+        3,
+        2,
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 216,
+      "stock": [
+        3,
+        9,
+        5,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 217,
+      "stock": [
+        0,
+        8,
+        8,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 218,
+      "stock": [
+        1,
+        4,
+        3,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 219,
+      "stock": [
+        4,
+        6,
+        1,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 220,
+      "stock": [
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 221,
+      "stock": [
+        1,
+        0,
+        4,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 222,
+      "stock": [
+        1,
+        5,
+        3,
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 223,
+      "stock": [
+        7,
+        1,
+        0,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 224,
+      "stock": [
+        7,
+        0,
+        8,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 301,
+      "stock": [
+        3,
+        2,
+        4,
+        9,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 302,
+      "stock": [
+        4,
+        2,
+        4,
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 303,
+      "stock": [
+        3,
+        7,
+        0,
+        3,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 304,
+      "stock": [
+        5,
+        5,
+        3,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 305,
+      "stock": [
+        2,
+        9,
+        0,
+        7,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 306,
+      "stock": [
+        9,
+        2,
+        6,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 307,
+      "stock": [
+        6,
+        6,
+        9,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 308,
+      "stock": [
+        9,
+        5,
+        1,
+        1,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 309,
+      "stock": [
+        4,
+        3,
+        3,
+        1,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 310,
+      "stock": [
+        2,
+        1,
+        0,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 311,
+      "stock": [
+        6,
+        3,
+        5,
+        5,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 312,
+      "stock": [
+        1,
+        3,
+        0,
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 313,
+      "stock": [
+        3,
+        2,
+        0,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 314,
+      "stock": [
+        5,
+        4,
+        8,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 315,
+      "stock": [
+        3,
+        5,
+        3,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 316,
+      "stock": [
+        7,
+        1,
+        7,
+        9,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 317,
+      "stock": [
+        7,
+        5,
+        4,
+        7,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 318,
+      "stock": [
+        0,
+        7,
+        3,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 319,
+      "stock": [
+        8,
+        5,
+        4,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 320,
+      "stock": [
+        4,
+        1,
+        8,
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 321,
+      "stock": [
+        9,
+        1,
+        2,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 322,
+      "stock": [
+        0,
+        0,
+        6,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 323,
+      "stock": [
+        2,
+        6,
+        0,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 324,
+      "stock": [
+        3,
+        3,
+        4,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 401,
+      "stock": [
+        7,
+        1,
+        1,
+        8,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 402,
+      "stock": [
+        1,
+        4,
+        7,
+        9,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 403,
+      "stock": [
+        4,
+        9,
+        5,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 404,
+      "stock": [
+        7,
+        4,
+        7,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 405,
+      "stock": [
+        9,
+        6,
+        0,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 406,
+      "stock": [
+        6,
+        0,
+        0,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 407,
+      "stock": [
+        6,
+        1,
+        1,
+        9,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 408,
+      "stock": [
+        4,
+        8,
+        5,
+        8,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 409,
+      "stock": [
+        4,
+        3,
+        2,
+        8,
+        7
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 410,
+      "stock": [
+        0,
+        7,
+        1,
+        3,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 411,
+      "stock": [
+        9,
+        4,
+        0,
+        5,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 412,
+      "stock": [
+        1,
+        0,
+        5,
+        0,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 413,
+      "stock": [
+        2,
+        5,
+        5,
+        2,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 414,
+      "stock": [
+        5,
+        5,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 415,
+      "stock": [
+        4,
+        1,
+        0,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 416,
+      "stock": [
+        9,
+        7,
+        4,
+        8,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 417,
+      "stock": [
+        4,
+        1,
+        1,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 418,
+      "stock": [
+        1,
+        5,
+        5,
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 419,
+      "stock": [
+        6,
+        6,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 420,
+      "stock": [
+        6,
+        5,
+        8,
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 421,
+      "stock": [
+        6,
+        7,
+        1,
+        7,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 422,
+      "stock": [
+        3,
+        0,
+        9,
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 423,
+      "stock": [
+        1,
+        1,
+        6,
+        9,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 424,
+      "stock": [
+        5,
+        1,
+        7,
+        8,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 501,
+      "stock": [
+        2,
+        4,
+        2,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 502,
+      "stock": [
+        7,
+        4,
+        9,
+        0,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 503,
+      "stock": [
+        3,
+        2,
+        5,
+        9,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 504,
+      "stock": [
+        3,
+        2,
+        6,
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 505,
+      "stock": [
+        5,
+        4,
+        7,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 506,
+      "stock": [
+        3,
+        9,
+        9,
+        0,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 507,
+      "stock": [
+        1,
+        7,
+        4,
+        5,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 508,
+      "stock": [
+        6,
+        7,
+        7,
+        5,
+        0
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 509,
+      "stock": [
+        3,
+        4,
+        0,
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 510,
+      "stock": [
+        3,
+        2,
+        0,
+        9,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 511,
+      "stock": [
+        1,
+        4,
+        0,
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 512,
+      "stock": [
+        0,
+        8,
+        2,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 513,
+      "stock": [
+        1,
+        9,
+        4,
+        5,
+        8
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 514,
+      "stock": [
+        5,
+        9,
+        4,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 515,
+      "stock": [
+        9,
+        3,
+        6,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 516,
+      "stock": [
+        5,
+        7,
+        6,
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 517,
+      "stock": [
+        8,
+        6,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 518,
+      "stock": [
+        4,
+        3,
+        3,
+        8,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 519,
+      "stock": [
+        9,
+        4,
+        0,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 520,
+      "stock": [
+        1,
+        2,
+        5,
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 521,
+      "stock": [
+        0,
+        5,
+        0,
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 522,
+      "stock": [
+        7,
+        7,
+        2,
+        9,
+        5
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 523,
+      "stock": [
+        2,
+        9,
+        4,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "products.stock",
+    "fields": {
+      "product_id": 524,
+      "stock": [
+        5,
+        7,
+        7,
+        2,
+        0
+      ]
+    }
+  },
+
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 101,
+      "week_sale10": 89,
+      "month_sale10": 595,
+      "visit10": 31,
+      "week_sale20": 52,
+      "month_sale20": 455,
+      "visit20": 40,
+      "week_sale30": 11,
+      "month_sale30": 387,
+      "visit30": 19,
+      "week_sale40": 36,
+      "month_sale40": 117,
+      "visit40": 30,
+      "week_sale50": 40,
+      "month_sale50": 586,
+      "visit50": 4,
+      "week_sale60": 47,
+      "month_sale60": 646,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 102,
+      "week_sale10": 4,
+      "month_sale10": 581,
+      "visit10": 19,
+      "week_sale20": 65,
+      "month_sale20": 212,
+      "visit20": 2,
+      "week_sale30": 69,
+      "month_sale30": 284,
+      "visit30": 4,
+      "week_sale40": 74,
+      "month_sale40": 119,
+      "visit40": 2,
+      "week_sale50": 17,
+      "month_sale50": 355,
+      "visit50": 41,
+      "week_sale60": 81,
+      "month_sale60": 340,
+      "visit60": 17
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 103,
+      "week_sale10": 67,
+      "month_sale10": 681,
+      "visit10": 23,
+      "week_sale20": 54,
+      "month_sale20": 883,
+      "visit20": 50,
+      "week_sale30": 17,
+      "month_sale30": 512,
+      "visit30": 6,
+      "week_sale40": 57,
+      "month_sale40": 115,
+      "visit40": 37,
+      "week_sale50": 1,
+      "month_sale50": 691,
+      "visit50": 16,
+      "week_sale60": 15,
+      "month_sale60": 426,
+      "visit60": 33
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 104,
+      "week_sale10": 55,
+      "month_sale10": 529,
+      "visit10": 25,
+      "week_sale20": 38,
+      "month_sale20": 252,
+      "visit20": 42,
+      "week_sale30": 61,
+      "month_sale30": 124,
+      "visit30": 46,
+      "week_sale40": 23,
+      "month_sale40": 713,
+      "visit40": 20,
+      "week_sale50": 75,
+      "month_sale50": 797,
+      "visit50": 23,
+      "week_sale60": 49,
+      "month_sale60": 859,
+      "visit60": 21
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 105,
+      "week_sale10": 55,
+      "month_sale10": 823,
+      "visit10": 39,
+      "week_sale20": 82,
+      "month_sale20": 252,
+      "visit20": 50,
+      "week_sale30": 15,
+      "month_sale30": 726,
+      "visit30": 28,
+      "week_sale40": 44,
+      "month_sale40": 301,
+      "visit40": 25,
+      "week_sale50": 61,
+      "month_sale50": 757,
+      "visit50": 42,
+      "week_sale60": 16,
+      "month_sale60": 35,
+      "visit60": 28
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 106,
+      "week_sale10": 99,
+      "month_sale10": 534,
+      "visit10": 34,
+      "week_sale20": 58,
+      "month_sale20": 422,
+      "visit20": 24,
+      "week_sale30": 35,
+      "month_sale30": 319,
+      "visit30": 17,
+      "week_sale40": 2,
+      "month_sale40": 6,
+      "visit40": 14,
+      "week_sale50": 25,
+      "month_sale50": 980,
+      "visit50": 35,
+      "week_sale60": 28,
+      "month_sale60": 797,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 107,
+      "week_sale10": 4,
+      "month_sale10": 966,
+      "visit10": 35,
+      "week_sale20": 20,
+      "month_sale20": 588,
+      "visit20": 32,
+      "week_sale30": 4,
+      "month_sale30": 499,
+      "visit30": 13,
+      "week_sale40": 82,
+      "month_sale40": 447,
+      "visit40": 1,
+      "week_sale50": 55,
+      "month_sale50": 909,
+      "visit50": 42,
+      "week_sale60": 59,
+      "month_sale60": 182,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 108,
+      "week_sale10": 1,
+      "month_sale10": 703,
+      "visit10": 44,
+      "week_sale20": 41,
+      "month_sale20": 172,
+      "visit20": 32,
+      "week_sale30": 80,
+      "month_sale30": 303,
+      "visit30": 30,
+      "week_sale40": 70,
+      "month_sale40": 953,
+      "visit40": 38,
+      "week_sale50": 16,
+      "month_sale50": 891,
+      "visit50": 7,
+      "week_sale60": 1,
+      "month_sale60": 936,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 109,
+      "week_sale10": 15,
+      "month_sale10": 798,
+      "visit10": 12,
+      "week_sale20": 31,
+      "month_sale20": 68,
+      "visit20": 18,
+      "week_sale30": 25,
+      "month_sale30": 417,
+      "visit30": 38,
+      "week_sale40": 66,
+      "month_sale40": 982,
+      "visit40": 24,
+      "week_sale50": 17,
+      "month_sale50": 154,
+      "visit50": 34,
+      "week_sale60": 24,
+      "month_sale60": 664,
+      "visit60": 42
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 110,
+      "week_sale10": 39,
+      "month_sale10": 56,
+      "visit10": 11,
+      "week_sale20": 58,
+      "month_sale20": 520,
+      "visit20": 22,
+      "week_sale30": 75,
+      "month_sale30": 947,
+      "visit30": 31,
+      "week_sale40": 13,
+      "month_sale40": 797,
+      "visit40": 16,
+      "week_sale50": 91,
+      "month_sale50": 705,
+      "visit50": 49,
+      "week_sale60": 33,
+      "month_sale60": 170,
+      "visit60": 42
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 111,
+      "week_sale10": 53,
+      "month_sale10": 253,
+      "visit10": 20,
+      "week_sale20": 79,
+      "month_sale20": 477,
+      "visit20": 35,
+      "week_sale30": 99,
+      "month_sale30": 783,
+      "visit30": 49,
+      "week_sale40": 95,
+      "month_sale40": 476,
+      "visit40": 12,
+      "week_sale50": 84,
+      "month_sale50": 783,
+      "visit50": 31,
+      "week_sale60": 15,
+      "month_sale60": 726,
+      "visit60": 33
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 112,
+      "week_sale10": 65,
+      "month_sale10": 139,
+      "visit10": 47,
+      "week_sale20": 62,
+      "month_sale20": 849,
+      "visit20": 3,
+      "week_sale30": 53,
+      "month_sale30": 928,
+      "visit30": 33,
+      "week_sale40": 77,
+      "month_sale40": 531,
+      "visit40": 32,
+      "week_sale50": 53,
+      "month_sale50": 864,
+      "visit50": 24,
+      "week_sale60": 60,
+      "month_sale60": 511,
+      "visit60": 17
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 113,
+      "week_sale10": 13,
+      "month_sale10": 665,
+      "visit10": 11,
+      "week_sale20": 49,
+      "month_sale20": 320,
+      "visit20": 46,
+      "week_sale30": 42,
+      "month_sale30": 574,
+      "visit30": 39,
+      "week_sale40": 70,
+      "month_sale40": 575,
+      "visit40": 28,
+      "week_sale50": 64,
+      "month_sale50": 602,
+      "visit50": 19,
+      "week_sale60": 97,
+      "month_sale60": 26,
+      "visit60": 26
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 114,
+      "week_sale10": 91,
+      "month_sale10": 939,
+      "visit10": 44,
+      "week_sale20": 24,
+      "month_sale20": 682,
+      "visit20": 28,
+      "week_sale30": 10,
+      "month_sale30": 788,
+      "visit30": 22,
+      "week_sale40": 80,
+      "month_sale40": 147,
+      "visit40": 38,
+      "week_sale50": 30,
+      "month_sale50": 946,
+      "visit50": 8,
+      "week_sale60": 71,
+      "month_sale60": 637,
+      "visit60": 38
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 115,
+      "week_sale10": 69,
+      "month_sale10": 798,
+      "visit10": 10,
+      "week_sale20": 32,
+      "month_sale20": 915,
+      "visit20": 26,
+      "week_sale30": 28,
+      "month_sale30": 932,
+      "visit30": 36,
+      "week_sale40": 21,
+      "month_sale40": 674,
+      "visit40": 16,
+      "week_sale50": 37,
+      "month_sale50": 247,
+      "visit50": 43,
+      "week_sale60": 90,
+      "month_sale60": 924,
+      "visit60": 15
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 116,
+      "week_sale10": 35,
+      "month_sale10": 652,
+      "visit10": 38,
+      "week_sale20": 1,
+      "month_sale20": 925,
+      "visit20": 1,
+      "week_sale30": 100,
+      "month_sale30": 260,
+      "visit30": 6,
+      "week_sale40": 9,
+      "month_sale40": 496,
+      "visit40": 48,
+      "week_sale50": 53,
+      "month_sale50": 693,
+      "visit50": 23,
+      "week_sale60": 5,
+      "month_sale60": 209,
+      "visit60": 3
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 117,
+      "week_sale10": 95,
+      "month_sale10": 955,
+      "visit10": 30,
+      "week_sale20": 50,
+      "month_sale20": 144,
+      "visit20": 40,
+      "week_sale30": 49,
+      "month_sale30": 646,
+      "visit30": 24,
+      "week_sale40": 28,
+      "month_sale40": 489,
+      "visit40": 46,
+      "week_sale50": 55,
+      "month_sale50": 869,
+      "visit50": 32,
+      "week_sale60": 39,
+      "month_sale60": 468,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 118,
+      "week_sale10": 74,
+      "month_sale10": 872,
+      "visit10": 19,
+      "week_sale20": 13,
+      "month_sale20": 212,
+      "visit20": 3,
+      "week_sale30": 47,
+      "month_sale30": 381,
+      "visit30": 11,
+      "week_sale40": 20,
+      "month_sale40": 58,
+      "visit40": 3,
+      "week_sale50": 4,
+      "month_sale50": 182,
+      "visit50": 28,
+      "week_sale60": 47,
+      "month_sale60": 650,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 119,
+      "week_sale10": 34,
+      "month_sale10": 82,
+      "visit10": 33,
+      "week_sale20": 83,
+      "month_sale20": 898,
+      "visit20": 36,
+      "week_sale30": 30,
+      "month_sale30": 961,
+      "visit30": 11,
+      "week_sale40": 79,
+      "month_sale40": 809,
+      "visit40": 34,
+      "week_sale50": 28,
+      "month_sale50": 748,
+      "visit50": 37,
+      "week_sale60": 82,
+      "month_sale60": 760,
+      "visit60": 32
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 120,
+      "week_sale10": 7,
+      "month_sale10": 985,
+      "visit10": 46,
+      "week_sale20": 90,
+      "month_sale20": 908,
+      "visit20": 11,
+      "week_sale30": 90,
+      "month_sale30": 485,
+      "visit30": 38,
+      "week_sale40": 21,
+      "month_sale40": 99,
+      "visit40": 31,
+      "week_sale50": 70,
+      "month_sale50": 939,
+      "visit50": 50,
+      "week_sale60": 78,
+      "month_sale60": 445,
+      "visit60": 35
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 121,
+      "week_sale10": 96,
+      "month_sale10": 918,
+      "visit10": 9,
+      "week_sale20": 25,
+      "month_sale20": 388,
+      "visit20": 24,
+      "week_sale30": 75,
+      "month_sale30": 180,
+      "visit30": 8,
+      "week_sale40": 94,
+      "month_sale40": 49,
+      "visit40": 24,
+      "week_sale50": 41,
+      "month_sale50": 872,
+      "visit50": 27,
+      "week_sale60": 34,
+      "month_sale60": 74,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 122,
+      "week_sale10": 28,
+      "month_sale10": 491,
+      "visit10": 24,
+      "week_sale20": 23,
+      "month_sale20": 238,
+      "visit20": 48,
+      "week_sale30": 75,
+      "month_sale30": 281,
+      "visit30": 47,
+      "week_sale40": 63,
+      "month_sale40": 188,
+      "visit40": 12,
+      "week_sale50": 100,
+      "month_sale50": 839,
+      "visit50": 7,
+      "week_sale60": 79,
+      "month_sale60": 862,
+      "visit60": 36
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 123,
+      "week_sale10": 56,
+      "month_sale10": 947,
+      "visit10": 11,
+      "week_sale20": 21,
+      "month_sale20": 496,
+      "visit20": 16,
+      "week_sale30": 100,
+      "month_sale30": 241,
+      "visit30": 31,
+      "week_sale40": 44,
+      "month_sale40": 849,
+      "visit40": 39,
+      "week_sale50": 2,
+      "month_sale50": 550,
+      "visit50": 8,
+      "week_sale60": 54,
+      "month_sale60": 839,
+      "visit60": 3
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 124,
+      "week_sale10": 80,
+      "month_sale10": 131,
+      "visit10": 39,
+      "week_sale20": 78,
+      "month_sale20": 899,
+      "visit20": 4,
+      "week_sale30": 4,
+      "month_sale30": 280,
+      "visit30": 43,
+      "week_sale40": 83,
+      "month_sale40": 775,
+      "visit40": 6,
+      "week_sale50": 27,
+      "month_sale50": 444,
+      "visit50": 41,
+      "week_sale60": 70,
+      "month_sale60": 334,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 201,
+      "week_sale10": 21,
+      "month_sale10": 970,
+      "visit10": 22,
+      "week_sale20": 98,
+      "month_sale20": 225,
+      "visit20": 38,
+      "week_sale30": 35,
+      "month_sale30": 685,
+      "visit30": 39,
+      "week_sale40": 66,
+      "month_sale40": 201,
+      "visit40": 6,
+      "week_sale50": 20,
+      "month_sale50": 813,
+      "visit50": 44,
+      "week_sale60": 76,
+      "month_sale60": 340,
+      "visit60": 29
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 202,
+      "week_sale10": 68,
+      "month_sale10": 79,
+      "visit10": 12,
+      "week_sale20": 20,
+      "month_sale20": 994,
+      "visit20": 30,
+      "week_sale30": 100,
+      "month_sale30": 142,
+      "visit30": 10,
+      "week_sale40": 33,
+      "month_sale40": 275,
+      "visit40": 7,
+      "week_sale50": 13,
+      "month_sale50": 440,
+      "visit50": 19,
+      "week_sale60": 20,
+      "month_sale60": 675,
+      "visit60": 4
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 203,
+      "week_sale10": 84,
+      "month_sale10": 344,
+      "visit10": 22,
+      "week_sale20": 61,
+      "month_sale20": 786,
+      "visit20": 28,
+      "week_sale30": 60,
+      "month_sale30": 9,
+      "visit30": 19,
+      "week_sale40": 89,
+      "month_sale40": 104,
+      "visit40": 44,
+      "week_sale50": 55,
+      "month_sale50": 691,
+      "visit50": 36,
+      "week_sale60": 20,
+      "month_sale60": 973,
+      "visit60": 48
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 204,
+      "week_sale10": 97,
+      "month_sale10": 394,
+      "visit10": 39,
+      "week_sale20": 64,
+      "month_sale20": 57,
+      "visit20": 36,
+      "week_sale30": 20,
+      "month_sale30": 360,
+      "visit30": 16,
+      "week_sale40": 60,
+      "month_sale40": 942,
+      "visit40": 5,
+      "week_sale50": 84,
+      "month_sale50": 467,
+      "visit50": 49,
+      "week_sale60": 73,
+      "month_sale60": 716,
+      "visit60": 18
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 205,
+      "week_sale10": 10,
+      "month_sale10": 254,
+      "visit10": 27,
+      "week_sale20": 75,
+      "month_sale20": 96,
+      "visit20": 16,
+      "week_sale30": 76,
+      "month_sale30": 607,
+      "visit30": 48,
+      "week_sale40": 60,
+      "month_sale40": 925,
+      "visit40": 49,
+      "week_sale50": 61,
+      "month_sale50": 717,
+      "visit50": 18,
+      "week_sale60": 55,
+      "month_sale60": 262,
+      "visit60": 23
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 206,
+      "week_sale10": 87,
+      "month_sale10": 875,
+      "visit10": 9,
+      "week_sale20": 81,
+      "month_sale20": 373,
+      "visit20": 38,
+      "week_sale30": 25,
+      "month_sale30": 854,
+      "visit30": 45,
+      "week_sale40": 40,
+      "month_sale40": 776,
+      "visit40": 41,
+      "week_sale50": 3,
+      "month_sale50": 716,
+      "visit50": 28,
+      "week_sale60": 37,
+      "month_sale60": 383,
+      "visit60": 15
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 207,
+      "week_sale10": 7,
+      "month_sale10": 363,
+      "visit10": 26,
+      "week_sale20": 89,
+      "month_sale20": 843,
+      "visit20": 41,
+      "week_sale30": 96,
+      "month_sale30": 651,
+      "visit30": 48,
+      "week_sale40": 85,
+      "month_sale40": 991,
+      "visit40": 6,
+      "week_sale50": 46,
+      "month_sale50": 800,
+      "visit50": 48,
+      "week_sale60": 84,
+      "month_sale60": 507,
+      "visit60": 35
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 208,
+      "week_sale10": 70,
+      "month_sale10": 652,
+      "visit10": 37,
+      "week_sale20": 59,
+      "month_sale20": 494,
+      "visit20": 15,
+      "week_sale30": 88,
+      "month_sale30": 661,
+      "visit30": 5,
+      "week_sale40": 87,
+      "month_sale40": 788,
+      "visit40": 5,
+      "week_sale50": 82,
+      "month_sale50": 611,
+      "visit50": 49,
+      "week_sale60": 72,
+      "month_sale60": 418,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 209,
+      "week_sale10": 69,
+      "month_sale10": 744,
+      "visit10": 20,
+      "week_sale20": 70,
+      "month_sale20": 100,
+      "visit20": 21,
+      "week_sale30": 52,
+      "month_sale30": 889,
+      "visit30": 47,
+      "week_sale40": 30,
+      "month_sale40": 849,
+      "visit40": 2,
+      "week_sale50": 65,
+      "month_sale50": 472,
+      "visit50": 50,
+      "week_sale60": 31,
+      "month_sale60": 197,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 210,
+      "week_sale10": 64,
+      "month_sale10": 147,
+      "visit10": 37,
+      "week_sale20": 86,
+      "month_sale20": 228,
+      "visit20": 11,
+      "week_sale30": 87,
+      "month_sale30": 154,
+      "visit30": 27,
+      "week_sale40": 88,
+      "month_sale40": 685,
+      "visit40": 45,
+      "week_sale50": 60,
+      "month_sale50": 854,
+      "visit50": 3,
+      "week_sale60": 55,
+      "month_sale60": 889,
+      "visit60": 19
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 211,
+      "week_sale10": 57,
+      "month_sale10": 483,
+      "visit10": 37,
+      "week_sale20": 62,
+      "month_sale20": 792,
+      "visit20": 34,
+      "week_sale30": 74,
+      "month_sale30": 378,
+      "visit30": 39,
+      "week_sale40": 96,
+      "month_sale40": 292,
+      "visit40": 37,
+      "week_sale50": 70,
+      "month_sale50": 543,
+      "visit50": 37,
+      "week_sale60": 37,
+      "month_sale60": 685,
+      "visit60": 27
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 212,
+      "week_sale10": 26,
+      "month_sale10": 521,
+      "visit10": 48,
+      "week_sale20": 5,
+      "month_sale20": 203,
+      "visit20": 14,
+      "week_sale30": 78,
+      "month_sale30": 196,
+      "visit30": 43,
+      "week_sale40": 57,
+      "month_sale40": 186,
+      "visit40": 19,
+      "week_sale50": 48,
+      "month_sale50": 363,
+      "visit50": 21,
+      "week_sale60": 9,
+      "month_sale60": 954,
+      "visit60": 40
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 213,
+      "week_sale10": 33,
+      "month_sale10": 814,
+      "visit10": 32,
+      "week_sale20": 47,
+      "month_sale20": 614,
+      "visit20": 9,
+      "week_sale30": 7,
+      "month_sale30": 320,
+      "visit30": 34,
+      "week_sale40": 39,
+      "month_sale40": 274,
+      "visit40": 39,
+      "week_sale50": 88,
+      "month_sale50": 255,
+      "visit50": 40,
+      "week_sale60": 37,
+      "month_sale60": 659,
+      "visit60": 16
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 214,
+      "week_sale10": 97,
+      "month_sale10": 801,
+      "visit10": 5,
+      "week_sale20": 32,
+      "month_sale20": 75,
+      "visit20": 9,
+      "week_sale30": 13,
+      "month_sale30": 866,
+      "visit30": 20,
+      "week_sale40": 65,
+      "month_sale40": 818,
+      "visit40": 47,
+      "week_sale50": 41,
+      "month_sale50": 910,
+      "visit50": 33,
+      "week_sale60": 6,
+      "month_sale60": 396,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 215,
+      "week_sale10": 61,
+      "month_sale10": 19,
+      "visit10": 36,
+      "week_sale20": 38,
+      "month_sale20": 959,
+      "visit20": 8,
+      "week_sale30": 74,
+      "month_sale30": 54,
+      "visit30": 20,
+      "week_sale40": 81,
+      "month_sale40": 21,
+      "visit40": 4,
+      "week_sale50": 99,
+      "month_sale50": 760,
+      "visit50": 15,
+      "week_sale60": 6,
+      "month_sale60": 672,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 216,
+      "week_sale10": 96,
+      "month_sale10": 366,
+      "visit10": 10,
+      "week_sale20": 52,
+      "month_sale20": 323,
+      "visit20": 39,
+      "week_sale30": 25,
+      "month_sale30": 943,
+      "visit30": 3,
+      "week_sale40": 93,
+      "month_sale40": 757,
+      "visit40": 32,
+      "week_sale50": 93,
+      "month_sale50": 580,
+      "visit50": 29,
+      "week_sale60": 57,
+      "month_sale60": 879,
+      "visit60": 43
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 217,
+      "week_sale10": 7,
+      "month_sale10": 952,
+      "visit10": 26,
+      "week_sale20": 48,
+      "month_sale20": 613,
+      "visit20": 26,
+      "week_sale30": 15,
+      "month_sale30": 634,
+      "visit30": 4,
+      "week_sale40": 40,
+      "month_sale40": 731,
+      "visit40": 26,
+      "week_sale50": 47,
+      "month_sale50": 204,
+      "visit50": 1,
+      "week_sale60": 8,
+      "month_sale60": 288,
+      "visit60": 12
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 218,
+      "week_sale10": 32,
+      "month_sale10": 323,
+      "visit10": 34,
+      "week_sale20": 51,
+      "month_sale20": 430,
+      "visit20": 34,
+      "week_sale30": 81,
+      "month_sale30": 55,
+      "visit30": 20,
+      "week_sale40": 95,
+      "month_sale40": 545,
+      "visit40": 18,
+      "week_sale50": 85,
+      "month_sale50": 688,
+      "visit50": 13,
+      "week_sale60": 74,
+      "month_sale60": 325,
+      "visit60": 30
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 219,
+      "week_sale10": 2,
+      "month_sale10": 400,
+      "visit10": 45,
+      "week_sale20": 87,
+      "month_sale20": 892,
+      "visit20": 36,
+      "week_sale30": 38,
+      "month_sale30": 703,
+      "visit30": 15,
+      "week_sale40": 16,
+      "month_sale40": 794,
+      "visit40": 45,
+      "week_sale50": 16,
+      "month_sale50": 214,
+      "visit50": 9,
+      "week_sale60": 38,
+      "month_sale60": 831,
+      "visit60": 40
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 220,
+      "week_sale10": 100,
+      "month_sale10": 159,
+      "visit10": 3,
+      "week_sale20": 8,
+      "month_sale20": 749,
+      "visit20": 27,
+      "week_sale30": 64,
+      "month_sale30": 355,
+      "visit30": 11,
+      "week_sale40": 59,
+      "month_sale40": 890,
+      "visit40": 22,
+      "week_sale50": 39,
+      "month_sale50": 569,
+      "visit50": 5,
+      "week_sale60": 93,
+      "month_sale60": 911,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 221,
+      "week_sale10": 77,
+      "month_sale10": 91,
+      "visit10": 11,
+      "week_sale20": 80,
+      "month_sale20": 154,
+      "visit20": 30,
+      "week_sale30": 13,
+      "month_sale30": 374,
+      "visit30": 47,
+      "week_sale40": 43,
+      "month_sale40": 205,
+      "visit40": 14,
+      "week_sale50": 94,
+      "month_sale50": 271,
+      "visit50": 22,
+      "week_sale60": 36,
+      "month_sale60": 343,
+      "visit60": 34
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 222,
+      "week_sale10": 19,
+      "month_sale10": 274,
+      "visit10": 13,
+      "week_sale20": 31,
+      "month_sale20": 998,
+      "visit20": 15,
+      "week_sale30": 57,
+      "month_sale30": 963,
+      "visit30": 29,
+      "week_sale40": 54,
+      "month_sale40": 76,
+      "visit40": 43,
+      "week_sale50": 34,
+      "month_sale50": 62,
+      "visit50": 41,
+      "week_sale60": 34,
+      "month_sale60": 932,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 223,
+      "week_sale10": 86,
+      "month_sale10": 178,
+      "visit10": 26,
+      "week_sale20": 66,
+      "month_sale20": 370,
+      "visit20": 6,
+      "week_sale30": 39,
+      "month_sale30": 662,
+      "visit30": 19,
+      "week_sale40": 38,
+      "month_sale40": 145,
+      "visit40": 10,
+      "week_sale50": 70,
+      "month_sale50": 461,
+      "visit50": 23,
+      "week_sale60": 53,
+      "month_sale60": 438,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 224,
+      "week_sale10": 11,
+      "month_sale10": 229,
+      "visit10": 6,
+      "week_sale20": 57,
+      "month_sale20": 631,
+      "visit20": 9,
+      "week_sale30": 65,
+      "month_sale30": 208,
+      "visit30": 20,
+      "week_sale40": 7,
+      "month_sale40": 207,
+      "visit40": 2,
+      "week_sale50": 26,
+      "month_sale50": 646,
+      "visit50": 2,
+      "week_sale60": 54,
+      "month_sale60": 769,
+      "visit60": 49
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 301,
+      "week_sale10": 95,
+      "month_sale10": 101,
+      "visit10": 24,
+      "week_sale20": 84,
+      "month_sale20": 503,
+      "visit20": 40,
+      "week_sale30": 19,
+      "month_sale30": 608,
+      "visit30": 5,
+      "week_sale40": 99,
+      "month_sale40": 398,
+      "visit40": 23,
+      "week_sale50": 66,
+      "month_sale50": 482,
+      "visit50": 39,
+      "week_sale60": 66,
+      "month_sale60": 426,
+      "visit60": 47
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 302,
+      "week_sale10": 63,
+      "month_sale10": 390,
+      "visit10": 31,
+      "week_sale20": 97,
+      "month_sale20": 335,
+      "visit20": 49,
+      "week_sale30": 20,
+      "month_sale30": 518,
+      "visit30": 3,
+      "week_sale40": 62,
+      "month_sale40": 921,
+      "visit40": 38,
+      "week_sale50": 99,
+      "month_sale50": 808,
+      "visit50": 32,
+      "week_sale60": 47,
+      "month_sale60": 750,
+      "visit60": 45
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 303,
+      "week_sale10": 72,
+      "month_sale10": 699,
+      "visit10": 25,
+      "week_sale20": 96,
+      "month_sale20": 590,
+      "visit20": 34,
+      "week_sale30": 74,
+      "month_sale30": 436,
+      "visit30": 48,
+      "week_sale40": 46,
+      "month_sale40": 337,
+      "visit40": 13,
+      "week_sale50": 11,
+      "month_sale50": 564,
+      "visit50": 36,
+      "week_sale60": 98,
+      "month_sale60": 337,
+      "visit60": 31
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 304,
+      "week_sale10": 98,
+      "month_sale10": 810,
+      "visit10": 29,
+      "week_sale20": 52,
+      "month_sale20": 801,
+      "visit20": 34,
+      "week_sale30": 62,
+      "month_sale30": 527,
+      "visit30": 6,
+      "week_sale40": 88,
+      "month_sale40": 582,
+      "visit40": 44,
+      "week_sale50": 46,
+      "month_sale50": 276,
+      "visit50": 13,
+      "week_sale60": 69,
+      "month_sale60": 389,
+      "visit60": 9
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 305,
+      "week_sale10": 100,
+      "month_sale10": 120,
+      "visit10": 21,
+      "week_sale20": 76,
+      "month_sale20": 662,
+      "visit20": 45,
+      "week_sale30": 8,
+      "month_sale30": 917,
+      "visit30": 48,
+      "week_sale40": 99,
+      "month_sale40": 721,
+      "visit40": 5,
+      "week_sale50": 41,
+      "month_sale50": 230,
+      "visit50": 38,
+      "week_sale60": 92,
+      "month_sale60": 628,
+      "visit60": 43
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 306,
+      "week_sale10": 59,
+      "month_sale10": 578,
+      "visit10": 13,
+      "week_sale20": 70,
+      "month_sale20": 414,
+      "visit20": 1,
+      "week_sale30": 37,
+      "month_sale30": 595,
+      "visit30": 8,
+      "week_sale40": 60,
+      "month_sale40": 71,
+      "visit40": 28,
+      "week_sale50": 18,
+      "month_sale50": 493,
+      "visit50": 15,
+      "week_sale60": 28,
+      "month_sale60": 40,
+      "visit60": 36
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 307,
+      "week_sale10": 80,
+      "month_sale10": 920,
+      "visit10": 44,
+      "week_sale20": 52,
+      "month_sale20": 349,
+      "visit20": 10,
+      "week_sale30": 53,
+      "month_sale30": 53,
+      "visit30": 44,
+      "week_sale40": 26,
+      "month_sale40": 79,
+      "visit40": 16,
+      "week_sale50": 6,
+      "month_sale50": 217,
+      "visit50": 30,
+      "week_sale60": 98,
+      "month_sale60": 942,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 308,
+      "week_sale10": 90,
+      "month_sale10": 167,
+      "visit10": 17,
+      "week_sale20": 79,
+      "month_sale20": 534,
+      "visit20": 1,
+      "week_sale30": 31,
+      "month_sale30": 304,
+      "visit30": 48,
+      "week_sale40": 90,
+      "month_sale40": 314,
+      "visit40": 14,
+      "week_sale50": 30,
+      "month_sale50": 891,
+      "visit50": 5,
+      "week_sale60": 44,
+      "month_sale60": 806,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 309,
+      "week_sale10": 88,
+      "month_sale10": 733,
+      "visit10": 34,
+      "week_sale20": 86,
+      "month_sale20": 400,
+      "visit20": 41,
+      "week_sale30": 54,
+      "month_sale30": 526,
+      "visit30": 5,
+      "week_sale40": 69,
+      "month_sale40": 253,
+      "visit40": 22,
+      "week_sale50": 66,
+      "month_sale50": 810,
+      "visit50": 13,
+      "week_sale60": 24,
+      "month_sale60": 896,
+      "visit60": 32
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 310,
+      "week_sale10": 31,
+      "month_sale10": 755,
+      "visit10": 1,
+      "week_sale20": 89,
+      "month_sale20": 695,
+      "visit20": 13,
+      "week_sale30": 76,
+      "month_sale30": 973,
+      "visit30": 38,
+      "week_sale40": 62,
+      "month_sale40": 786,
+      "visit40": 13,
+      "week_sale50": 48,
+      "month_sale50": 864,
+      "visit50": 11,
+      "week_sale60": 64,
+      "month_sale60": 882,
+      "visit60": 35
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 311,
+      "week_sale10": 76,
+      "month_sale10": 197,
+      "visit10": 43,
+      "week_sale20": 86,
+      "month_sale20": 442,
+      "visit20": 13,
+      "week_sale30": 56,
+      "month_sale30": 132,
+      "visit30": 45,
+      "week_sale40": 24,
+      "month_sale40": 974,
+      "visit40": 7,
+      "week_sale50": 1,
+      "month_sale50": 419,
+      "visit50": 42,
+      "week_sale60": 89,
+      "month_sale60": 599,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 312,
+      "week_sale10": 49,
+      "month_sale10": 761,
+      "visit10": 30,
+      "week_sale20": 61,
+      "month_sale20": 344,
+      "visit20": 44,
+      "week_sale30": 51,
+      "month_sale30": 532,
+      "visit30": 29,
+      "week_sale40": 13,
+      "month_sale40": 455,
+      "visit40": 36,
+      "week_sale50": 12,
+      "month_sale50": 534,
+      "visit50": 35,
+      "week_sale60": 98,
+      "month_sale60": 536,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 313,
+      "week_sale10": 53,
+      "month_sale10": 496,
+      "visit10": 31,
+      "week_sale20": 39,
+      "month_sale20": 471,
+      "visit20": 18,
+      "week_sale30": 86,
+      "month_sale30": 23,
+      "visit30": 38,
+      "week_sale40": 43,
+      "month_sale40": 542,
+      "visit40": 36,
+      "week_sale50": 79,
+      "month_sale50": 136,
+      "visit50": 45,
+      "week_sale60": 95,
+      "month_sale60": 259,
+      "visit60": 12
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 314,
+      "week_sale10": 9,
+      "month_sale10": 508,
+      "visit10": 29,
+      "week_sale20": 89,
+      "month_sale20": 972,
+      "visit20": 42,
+      "week_sale30": 85,
+      "month_sale30": 106,
+      "visit30": 19,
+      "week_sale40": 84,
+      "month_sale40": 604,
+      "visit40": 23,
+      "week_sale50": 27,
+      "month_sale50": 490,
+      "visit50": 4,
+      "week_sale60": 99,
+      "month_sale60": 402,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 315,
+      "week_sale10": 59,
+      "month_sale10": 755,
+      "visit10": 42,
+      "week_sale20": 72,
+      "month_sale20": 427,
+      "visit20": 8,
+      "week_sale30": 34,
+      "month_sale30": 928,
+      "visit30": 42,
+      "week_sale40": 57,
+      "month_sale40": 681,
+      "visit40": 12,
+      "week_sale50": 57,
+      "month_sale50": 989,
+      "visit50": 18,
+      "week_sale60": 41,
+      "month_sale60": 566,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 316,
+      "week_sale10": 8,
+      "month_sale10": 564,
+      "visit10": 44,
+      "week_sale20": 4,
+      "month_sale20": 699,
+      "visit20": 22,
+      "week_sale30": 35,
+      "month_sale30": 857,
+      "visit30": 6,
+      "week_sale40": 60,
+      "month_sale40": 642,
+      "visit40": 6,
+      "week_sale50": 37,
+      "month_sale50": 283,
+      "visit50": 1,
+      "week_sale60": 59,
+      "month_sale60": 737,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 317,
+      "week_sale10": 69,
+      "month_sale10": 943,
+      "visit10": 29,
+      "week_sale20": 11,
+      "month_sale20": 382,
+      "visit20": 12,
+      "week_sale30": 77,
+      "month_sale30": 909,
+      "visit30": 17,
+      "week_sale40": 3,
+      "month_sale40": 975,
+      "visit40": 48,
+      "week_sale50": 18,
+      "month_sale50": 466,
+      "visit50": 3,
+      "week_sale60": 21,
+      "month_sale60": 445,
+      "visit60": 41
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 318,
+      "week_sale10": 62,
+      "month_sale10": 36,
+      "visit10": 22,
+      "week_sale20": 21,
+      "month_sale20": 243,
+      "visit20": 21,
+      "week_sale30": 44,
+      "month_sale30": 401,
+      "visit30": 34,
+      "week_sale40": 60,
+      "month_sale40": 350,
+      "visit40": 47,
+      "week_sale50": 97,
+      "month_sale50": 114,
+      "visit50": 44,
+      "week_sale60": 28,
+      "month_sale60": 921,
+      "visit60": 1
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 319,
+      "week_sale10": 38,
+      "month_sale10": 167,
+      "visit10": 43,
+      "week_sale20": 36,
+      "month_sale20": 628,
+      "visit20": 45,
+      "week_sale30": 71,
+      "month_sale30": 334,
+      "visit30": 2,
+      "week_sale40": 34,
+      "month_sale40": 538,
+      "visit40": 43,
+      "week_sale50": 98,
+      "month_sale50": 59,
+      "visit50": 14,
+      "week_sale60": 48,
+      "month_sale60": 762,
+      "visit60": 37
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 320,
+      "week_sale10": 49,
+      "month_sale10": 161,
+      "visit10": 18,
+      "week_sale20": 38,
+      "month_sale20": 646,
+      "visit20": 25,
+      "week_sale30": 69,
+      "month_sale30": 818,
+      "visit30": 21,
+      "week_sale40": 66,
+      "month_sale40": 975,
+      "visit40": 43,
+      "week_sale50": 62,
+      "month_sale50": 251,
+      "visit50": 9,
+      "week_sale60": 69,
+      "month_sale60": 747,
+      "visit60": 42
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 321,
+      "week_sale10": 49,
+      "month_sale10": 984,
+      "visit10": 13,
+      "week_sale20": 3,
+      "month_sale20": 927,
+      "visit20": 43,
+      "week_sale30": 16,
+      "month_sale30": 132,
+      "visit30": 49,
+      "week_sale40": 8,
+      "month_sale40": 409,
+      "visit40": 14,
+      "week_sale50": 85,
+      "month_sale50": 3,
+      "visit50": 34,
+      "week_sale60": 50,
+      "month_sale60": 597,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 322,
+      "week_sale10": 22,
+      "month_sale10": 675,
+      "visit10": 43,
+      "week_sale20": 28,
+      "month_sale20": 288,
+      "visit20": 13,
+      "week_sale30": 53,
+      "month_sale30": 714,
+      "visit30": 12,
+      "week_sale40": 7,
+      "month_sale40": 443,
+      "visit40": 38,
+      "week_sale50": 77,
+      "month_sale50": 278,
+      "visit50": 26,
+      "week_sale60": 95,
+      "month_sale60": 443,
+      "visit60": 44
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 323,
+      "week_sale10": 72,
+      "month_sale10": 413,
+      "visit10": 34,
+      "week_sale20": 6,
+      "month_sale20": 508,
+      "visit20": 8,
+      "week_sale30": 52,
+      "month_sale30": 187,
+      "visit30": 29,
+      "week_sale40": 65,
+      "month_sale40": 828,
+      "visit40": 10,
+      "week_sale50": 87,
+      "month_sale50": 191,
+      "visit50": 50,
+      "week_sale60": 12,
+      "month_sale60": 23,
+      "visit60": 6
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 324,
+      "week_sale10": 12,
+      "month_sale10": 726,
+      "visit10": 12,
+      "week_sale20": 31,
+      "month_sale20": 336,
+      "visit20": 27,
+      "week_sale30": 23,
+      "month_sale30": 181,
+      "visit30": 47,
+      "week_sale40": 60,
+      "month_sale40": 625,
+      "visit40": 19,
+      "week_sale50": 49,
+      "month_sale50": 626,
+      "visit50": 40,
+      "week_sale60": 40,
+      "month_sale60": 904,
+      "visit60": 27
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 401,
+      "week_sale10": 90,
+      "month_sale10": 593,
+      "visit10": 40,
+      "week_sale20": 24,
+      "month_sale20": 739,
+      "visit20": 50,
+      "week_sale30": 74,
+      "month_sale30": 809,
+      "visit30": 36,
+      "week_sale40": 86,
+      "month_sale40": 895,
+      "visit40": 17,
+      "week_sale50": 62,
+      "month_sale50": 454,
+      "visit50": 41,
+      "week_sale60": 3,
+      "month_sale60": 981,
+      "visit60": 8
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 402,
+      "week_sale10": 95,
+      "month_sale10": 592,
+      "visit10": 7,
+      "week_sale20": 56,
+      "month_sale20": 498,
+      "visit20": 27,
+      "week_sale30": 65,
+      "month_sale30": 127,
+      "visit30": 41,
+      "week_sale40": 43,
+      "month_sale40": 803,
+      "visit40": 37,
+      "week_sale50": 9,
+      "month_sale50": 322,
+      "visit50": 25,
+      "week_sale60": 51,
+      "month_sale60": 57,
+      "visit60": 34
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 403,
+      "week_sale10": 68,
+      "month_sale10": 996,
+      "visit10": 46,
+      "week_sale20": 43,
+      "month_sale20": 518,
+      "visit20": 4,
+      "week_sale30": 65,
+      "month_sale30": 281,
+      "visit30": 50,
+      "week_sale40": 44,
+      "month_sale40": 967,
+      "visit40": 5,
+      "week_sale50": 4,
+      "month_sale50": 912,
+      "visit50": 36,
+      "week_sale60": 11,
+      "month_sale60": 768,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 404,
+      "week_sale10": 75,
+      "month_sale10": 316,
+      "visit10": 33,
+      "week_sale20": 79,
+      "month_sale20": 357,
+      "visit20": 22,
+      "week_sale30": 44,
+      "month_sale30": 383,
+      "visit30": 3,
+      "week_sale40": 45,
+      "month_sale40": 899,
+      "visit40": 32,
+      "week_sale50": 58,
+      "month_sale50": 809,
+      "visit50": 45,
+      "week_sale60": 3,
+      "month_sale60": 660,
+      "visit60": 8
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 405,
+      "week_sale10": 97,
+      "month_sale10": 746,
+      "visit10": 35,
+      "week_sale20": 8,
+      "month_sale20": 254,
+      "visit20": 39,
+      "week_sale30": 93,
+      "month_sale30": 613,
+      "visit30": 34,
+      "week_sale40": 6,
+      "month_sale40": 637,
+      "visit40": 22,
+      "week_sale50": 52,
+      "month_sale50": 954,
+      "visit50": 25,
+      "week_sale60": 89,
+      "month_sale60": 67,
+      "visit60": 26
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 406,
+      "week_sale10": 44,
+      "month_sale10": 917,
+      "visit10": 50,
+      "week_sale20": 63,
+      "month_sale20": 690,
+      "visit20": 38,
+      "week_sale30": 4,
+      "month_sale30": 918,
+      "visit30": 26,
+      "week_sale40": 32,
+      "month_sale40": 974,
+      "visit40": 34,
+      "week_sale50": 63,
+      "month_sale50": 760,
+      "visit50": 23,
+      "week_sale60": 98,
+      "month_sale60": 220,
+      "visit60": 19
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 407,
+      "week_sale10": 80,
+      "month_sale10": 126,
+      "visit10": 32,
+      "week_sale20": 11,
+      "month_sale20": 188,
+      "visit20": 42,
+      "week_sale30": 2,
+      "month_sale30": 126,
+      "visit30": 47,
+      "week_sale40": 26,
+      "month_sale40": 626,
+      "visit40": 34,
+      "week_sale50": 91,
+      "month_sale50": 259,
+      "visit50": 20,
+      "week_sale60": 76,
+      "month_sale60": 916,
+      "visit60": 28
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 408,
+      "week_sale10": 9,
+      "month_sale10": 145,
+      "visit10": 31,
+      "week_sale20": 99,
+      "month_sale20": 595,
+      "visit20": 22,
+      "week_sale30": 40,
+      "month_sale30": 459,
+      "visit30": 40,
+      "week_sale40": 62,
+      "month_sale40": 417,
+      "visit40": 44,
+      "week_sale50": 34,
+      "month_sale50": 226,
+      "visit50": 7,
+      "week_sale60": 75,
+      "month_sale60": 109,
+      "visit60": 16
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 409,
+      "week_sale10": 8,
+      "month_sale10": 870,
+      "visit10": 7,
+      "week_sale20": 59,
+      "month_sale20": 825,
+      "visit20": 44,
+      "week_sale30": 29,
+      "month_sale30": 649,
+      "visit30": 21,
+      "week_sale40": 44,
+      "month_sale40": 737,
+      "visit40": 17,
+      "week_sale50": 93,
+      "month_sale50": 320,
+      "visit50": 14,
+      "week_sale60": 48,
+      "month_sale60": 893,
+      "visit60": 23
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 410,
+      "week_sale10": 97,
+      "month_sale10": 641,
+      "visit10": 18,
+      "week_sale20": 82,
+      "month_sale20": 338,
+      "visit20": 1,
+      "week_sale30": 32,
+      "month_sale30": 796,
+      "visit30": 37,
+      "week_sale40": 18,
+      "month_sale40": 894,
+      "visit40": 41,
+      "week_sale50": 14,
+      "month_sale50": 402,
+      "visit50": 42,
+      "week_sale60": 86,
+      "month_sale60": 884,
+      "visit60": 20
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 411,
+      "week_sale10": 63,
+      "month_sale10": 247,
+      "visit10": 39,
+      "week_sale20": 91,
+      "month_sale20": 439,
+      "visit20": 5,
+      "week_sale30": 59,
+      "month_sale30": 881,
+      "visit30": 42,
+      "week_sale40": 69,
+      "month_sale40": 224,
+      "visit40": 26,
+      "week_sale50": 40,
+      "month_sale50": 406,
+      "visit50": 32,
+      "week_sale60": 57,
+      "month_sale60": 366,
+      "visit60": 31
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 412,
+      "week_sale10": 53,
+      "month_sale10": 718,
+      "visit10": 14,
+      "week_sale20": 31,
+      "month_sale20": 59,
+      "visit20": 42,
+      "week_sale30": 3,
+      "month_sale30": 112,
+      "visit30": 38,
+      "week_sale40": 52,
+      "month_sale40": 919,
+      "visit40": 35,
+      "week_sale50": 56,
+      "month_sale50": 799,
+      "visit50": 29,
+      "week_sale60": 66,
+      "month_sale60": 993,
+      "visit60": 22
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 413,
+      "week_sale10": 37,
+      "month_sale10": 454,
+      "visit10": 43,
+      "week_sale20": 3,
+      "month_sale20": 191,
+      "visit20": 19,
+      "week_sale30": 48,
+      "month_sale30": 219,
+      "visit30": 22,
+      "week_sale40": 33,
+      "month_sale40": 947,
+      "visit40": 21,
+      "week_sale50": 1,
+      "month_sale50": 220,
+      "visit50": 9,
+      "week_sale60": 100,
+      "month_sale60": 378,
+      "visit60": 49
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 414,
+      "week_sale10": 57,
+      "month_sale10": 121,
+      "visit10": 20,
+      "week_sale20": 13,
+      "month_sale20": 663,
+      "visit20": 42,
+      "week_sale30": 68,
+      "month_sale30": 139,
+      "visit30": 1,
+      "week_sale40": 88,
+      "month_sale40": 880,
+      "visit40": 24,
+      "week_sale50": 48,
+      "month_sale50": 295,
+      "visit50": 41,
+      "week_sale60": 47,
+      "month_sale60": 652,
+      "visit60": 11
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 415,
+      "week_sale10": 6,
+      "month_sale10": 4,
+      "visit10": 19,
+      "week_sale20": 83,
+      "month_sale20": 93,
+      "visit20": 46,
+      "week_sale30": 5,
+      "month_sale30": 858,
+      "visit30": 38,
+      "week_sale40": 63,
+      "month_sale40": 269,
+      "visit40": 6,
+      "week_sale50": 98,
+      "month_sale50": 573,
+      "visit50": 50,
+      "week_sale60": 37,
+      "month_sale60": 571,
+      "visit60": 24
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 416,
+      "week_sale10": 2,
+      "month_sale10": 713,
+      "visit10": 35,
+      "week_sale20": 76,
+      "month_sale20": 758,
+      "visit20": 45,
+      "week_sale30": 79,
+      "month_sale30": 799,
+      "visit30": 14,
+      "week_sale40": 25,
+      "month_sale40": 963,
+      "visit40": 22,
+      "week_sale50": 48,
+      "month_sale50": 368,
+      "visit50": 41,
+      "week_sale60": 86,
+      "month_sale60": 158,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 417,
+      "week_sale10": 20,
+      "month_sale10": 77,
+      "visit10": 15,
+      "week_sale20": 8,
+      "month_sale20": 162,
+      "visit20": 36,
+      "week_sale30": 81,
+      "month_sale30": 552,
+      "visit30": 5,
+      "week_sale40": 6,
+      "month_sale40": 347,
+      "visit40": 3,
+      "week_sale50": 4,
+      "month_sale50": 715,
+      "visit50": 29,
+      "week_sale60": 81,
+      "month_sale60": 124,
+      "visit60": 19
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 418,
+      "week_sale10": 87,
+      "month_sale10": 923,
+      "visit10": 3,
+      "week_sale20": 22,
+      "month_sale20": 510,
+      "visit20": 20,
+      "week_sale30": 39,
+      "month_sale30": 941,
+      "visit30": 12,
+      "week_sale40": 74,
+      "month_sale40": 22,
+      "visit40": 10,
+      "week_sale50": 72,
+      "month_sale50": 731,
+      "visit50": 2,
+      "week_sale60": 23,
+      "month_sale60": 897,
+      "visit60": 38
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 419,
+      "week_sale10": 76,
+      "month_sale10": 305,
+      "visit10": 41,
+      "week_sale20": 26,
+      "month_sale20": 108,
+      "visit20": 8,
+      "week_sale30": 26,
+      "month_sale30": 657,
+      "visit30": 29,
+      "week_sale40": 69,
+      "month_sale40": 750,
+      "visit40": 7,
+      "week_sale50": 25,
+      "month_sale50": 165,
+      "visit50": 40,
+      "week_sale60": 41,
+      "month_sale60": 558,
+      "visit60": 25
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 420,
+      "week_sale10": 3,
+      "month_sale10": 524,
+      "visit10": 44,
+      "week_sale20": 55,
+      "month_sale20": 235,
+      "visit20": 6,
+      "week_sale30": 23,
+      "month_sale30": 768,
+      "visit30": 1,
+      "week_sale40": 31,
+      "month_sale40": 440,
+      "visit40": 8,
+      "week_sale50": 69,
+      "month_sale50": 595,
+      "visit50": 15,
+      "week_sale60": 4,
+      "month_sale60": 191,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 421,
+      "week_sale10": 69,
+      "month_sale10": 803,
+      "visit10": 12,
+      "week_sale20": 62,
+      "month_sale20": 155,
+      "visit20": 15,
+      "week_sale30": 54,
+      "month_sale30": 450,
+      "visit30": 40,
+      "week_sale40": 51,
+      "month_sale40": 829,
+      "visit40": 46,
+      "week_sale50": 66,
+      "month_sale50": 563,
+      "visit50": 49,
+      "week_sale60": 92,
+      "month_sale60": 300,
+      "visit60": 23
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 422,
+      "week_sale10": 26,
+      "month_sale10": 15,
+      "visit10": 10,
+      "week_sale20": 17,
+      "month_sale20": 786,
+      "visit20": 27,
+      "week_sale30": 65,
+      "month_sale30": 644,
+      "visit30": 37,
+      "week_sale40": 31,
+      "month_sale40": 124,
+      "visit40": 16,
+      "week_sale50": 97,
+      "month_sale50": 95,
+      "visit50": 14,
+      "week_sale60": 97,
+      "month_sale60": 894,
+      "visit60": 16
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 423,
+      "week_sale10": 50,
+      "month_sale10": 322,
+      "visit10": 43,
+      "week_sale20": 19,
+      "month_sale20": 326,
+      "visit20": 2,
+      "week_sale30": 96,
+      "month_sale30": 288,
+      "visit30": 48,
+      "week_sale40": 36,
+      "month_sale40": 149,
+      "visit40": 23,
+      "week_sale50": 67,
+      "month_sale50": 563,
+      "visit50": 25,
+      "week_sale60": 90,
+      "month_sale60": 260,
+      "visit60": 22
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 424,
+      "week_sale10": 35,
+      "month_sale10": 221,
+      "visit10": 10,
+      "week_sale20": 89,
+      "month_sale20": 809,
+      "visit20": 17,
+      "week_sale30": 41,
+      "month_sale30": 32,
+      "visit30": 34,
+      "week_sale40": 42,
+      "month_sale40": 410,
+      "visit40": 1,
+      "week_sale50": 63,
+      "month_sale50": 993,
+      "visit50": 40,
+      "week_sale60": 46,
+      "month_sale60": 681,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 501,
+      "week_sale10": 54,
+      "month_sale10": 817,
+      "visit10": 9,
+      "week_sale20": 4,
+      "month_sale20": 175,
+      "visit20": 46,
+      "week_sale30": 58,
+      "month_sale30": 805,
+      "visit30": 38,
+      "week_sale40": 50,
+      "month_sale40": 329,
+      "visit40": 22,
+      "week_sale50": 28,
+      "month_sale50": 865,
+      "visit50": 23,
+      "week_sale60": 39,
+      "month_sale60": 398,
+      "visit60": 14
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 502,
+      "week_sale10": 74,
+      "month_sale10": 70,
+      "visit10": 2,
+      "week_sale20": 61,
+      "month_sale20": 511,
+      "visit20": 40,
+      "week_sale30": 69,
+      "month_sale30": 836,
+      "visit30": 24,
+      "week_sale40": 24,
+      "month_sale40": 763,
+      "visit40": 8,
+      "week_sale50": 93,
+      "month_sale50": 315,
+      "visit50": 31,
+      "week_sale60": 21,
+      "month_sale60": 498,
+      "visit60": 36
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 503,
+      "week_sale10": 31,
+      "month_sale10": 77,
+      "visit10": 22,
+      "week_sale20": 36,
+      "month_sale20": 430,
+      "visit20": 28,
+      "week_sale30": 55,
+      "month_sale30": 638,
+      "visit30": 47,
+      "week_sale40": 50,
+      "month_sale40": 680,
+      "visit40": 37,
+      "week_sale50": 78,
+      "month_sale50": 41,
+      "visit50": 20,
+      "week_sale60": 93,
+      "month_sale60": 168,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 504,
+      "week_sale10": 58,
+      "month_sale10": 484,
+      "visit10": 14,
+      "week_sale20": 6,
+      "month_sale20": 924,
+      "visit20": 15,
+      "week_sale30": 82,
+      "month_sale30": 125,
+      "visit30": 18,
+      "week_sale40": 10,
+      "month_sale40": 216,
+      "visit40": 45,
+      "week_sale50": 57,
+      "month_sale50": 777,
+      "visit50": 5,
+      "week_sale60": 50,
+      "month_sale60": 138,
+      "visit60": 6
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 505,
+      "week_sale10": 64,
+      "month_sale10": 201,
+      "visit10": 24,
+      "week_sale20": 62,
+      "month_sale20": 958,
+      "visit20": 50,
+      "week_sale30": 55,
+      "month_sale30": 103,
+      "visit30": 45,
+      "week_sale40": 21,
+      "month_sale40": 973,
+      "visit40": 41,
+      "week_sale50": 81,
+      "month_sale50": 882,
+      "visit50": 26,
+      "week_sale60": 3,
+      "month_sale60": 4,
+      "visit60": 9
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 506,
+      "week_sale10": 38,
+      "month_sale10": 713,
+      "visit10": 20,
+      "week_sale20": 23,
+      "month_sale20": 219,
+      "visit20": 13,
+      "week_sale30": 61,
+      "month_sale30": 52,
+      "visit30": 18,
+      "week_sale40": 33,
+      "month_sale40": 814,
+      "visit40": 15,
+      "week_sale50": 88,
+      "month_sale50": 10,
+      "visit50": 2,
+      "week_sale60": 50,
+      "month_sale60": 892,
+      "visit60": 5
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 507,
+      "week_sale10": 5,
+      "month_sale10": 812,
+      "visit10": 23,
+      "week_sale20": 61,
+      "month_sale20": 357,
+      "visit20": 9,
+      "week_sale30": 72,
+      "month_sale30": 209,
+      "visit30": 24,
+      "week_sale40": 7,
+      "month_sale40": 33,
+      "visit40": 11,
+      "week_sale50": 18,
+      "month_sale50": 75,
+      "visit50": 7,
+      "week_sale60": 60,
+      "month_sale60": 120,
+      "visit60": 10
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 508,
+      "week_sale10": 37,
+      "month_sale10": 772,
+      "visit10": 22,
+      "week_sale20": 12,
+      "month_sale20": 276,
+      "visit20": 6,
+      "week_sale30": 34,
+      "month_sale30": 362,
+      "visit30": 4,
+      "week_sale40": 38,
+      "month_sale40": 227,
+      "visit40": 48,
+      "week_sale50": 77,
+      "month_sale50": 166,
+      "visit50": 15,
+      "week_sale60": 50,
+      "month_sale60": 105,
+      "visit60": 21
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 509,
+      "week_sale10": 63,
+      "month_sale10": 944,
+      "visit10": 37,
+      "week_sale20": 99,
+      "month_sale20": 208,
+      "visit20": 4,
+      "week_sale30": 85,
+      "month_sale30": 375,
+      "visit30": 6,
+      "week_sale40": 48,
+      "month_sale40": 709,
+      "visit40": 41,
+      "week_sale50": 40,
+      "month_sale50": 326,
+      "visit50": 37,
+      "week_sale60": 67,
+      "month_sale60": 244,
+      "visit60": 28
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 510,
+      "week_sale10": 9,
+      "month_sale10": 96,
+      "visit10": 20,
+      "week_sale20": 1,
+      "month_sale20": 508,
+      "visit20": 28,
+      "week_sale30": 44,
+      "month_sale30": 549,
+      "visit30": 7,
+      "week_sale40": 70,
+      "month_sale40": 13,
+      "visit40": 27,
+      "week_sale50": 66,
+      "month_sale50": 223,
+      "visit50": 4,
+      "week_sale60": 72,
+      "month_sale60": 182,
+      "visit60": 44
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 511,
+      "week_sale10": 84,
+      "month_sale10": 451,
+      "visit10": 36,
+      "week_sale20": 46,
+      "month_sale20": 625,
+      "visit20": 31,
+      "week_sale30": 34,
+      "month_sale30": 383,
+      "visit30": 15,
+      "week_sale40": 14,
+      "month_sale40": 257,
+      "visit40": 8,
+      "week_sale50": 32,
+      "month_sale50": 656,
+      "visit50": 15,
+      "week_sale60": 30,
+      "month_sale60": 513,
+      "visit60": 24
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 512,
+      "week_sale10": 26,
+      "month_sale10": 552,
+      "visit10": 45,
+      "week_sale20": 33,
+      "month_sale20": 517,
+      "visit20": 38,
+      "week_sale30": 11,
+      "month_sale30": 981,
+      "visit30": 11,
+      "week_sale40": 79,
+      "month_sale40": 849,
+      "visit40": 20,
+      "week_sale50": 85,
+      "month_sale50": 616,
+      "visit50": 6,
+      "week_sale60": 78,
+      "month_sale60": 422,
+      "visit60": 32
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 513,
+      "week_sale10": 97,
+      "month_sale10": 654,
+      "visit10": 26,
+      "week_sale20": 54,
+      "month_sale20": 350,
+      "visit20": 43,
+      "week_sale30": 24,
+      "month_sale30": 521,
+      "visit30": 27,
+      "week_sale40": 86,
+      "month_sale40": 524,
+      "visit40": 7,
+      "week_sale50": 78,
+      "month_sale50": 33,
+      "visit50": 44,
+      "week_sale60": 18,
+      "month_sale60": 240,
+      "visit60": 27
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 514,
+      "week_sale10": 76,
+      "month_sale10": 87,
+      "visit10": 29,
+      "week_sale20": 22,
+      "month_sale20": 46,
+      "visit20": 44,
+      "week_sale30": 39,
+      "month_sale30": 982,
+      "visit30": 46,
+      "week_sale40": 67,
+      "month_sale40": 731,
+      "visit40": 5,
+      "week_sale50": 12,
+      "month_sale50": 786,
+      "visit50": 11,
+      "week_sale60": 8,
+      "month_sale60": 436,
+      "visit60": 46
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 515,
+      "week_sale10": 35,
+      "month_sale10": 281,
+      "visit10": 21,
+      "week_sale20": 91,
+      "month_sale20": 933,
+      "visit20": 35,
+      "week_sale30": 11,
+      "month_sale30": 370,
+      "visit30": 30,
+      "week_sale40": 31,
+      "month_sale40": 396,
+      "visit40": 2,
+      "week_sale50": 41,
+      "month_sale50": 340,
+      "visit50": 17,
+      "week_sale60": 32,
+      "month_sale60": 361,
+      "visit60": 4
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 516,
+      "week_sale10": 68,
+      "month_sale10": 967,
+      "visit10": 43,
+      "week_sale20": 46,
+      "month_sale20": 434,
+      "visit20": 47,
+      "week_sale30": 65,
+      "month_sale30": 243,
+      "visit30": 2,
+      "week_sale40": 2,
+      "month_sale40": 629,
+      "visit40": 33,
+      "week_sale50": 28,
+      "month_sale50": 212,
+      "visit50": 20,
+      "week_sale60": 56,
+      "month_sale60": 893,
+      "visit60": 21
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 517,
+      "week_sale10": 27,
+      "month_sale10": 940,
+      "visit10": 8,
+      "week_sale20": 31,
+      "month_sale20": 718,
+      "visit20": 7,
+      "week_sale30": 30,
+      "month_sale30": 581,
+      "visit30": 19,
+      "week_sale40": 98,
+      "month_sale40": 43,
+      "visit40": 45,
+      "week_sale50": 17,
+      "month_sale50": 680,
+      "visit50": 27,
+      "week_sale60": 71,
+      "month_sale60": 711,
+      "visit60": 6
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 518,
+      "week_sale10": 19,
+      "month_sale10": 715,
+      "visit10": 11,
+      "week_sale20": 38,
+      "month_sale20": 235,
+      "visit20": 40,
+      "week_sale30": 65,
+      "month_sale30": 376,
+      "visit30": 34,
+      "week_sale40": 57,
+      "month_sale40": 168,
+      "visit40": 35,
+      "week_sale50": 90,
+      "month_sale50": 975,
+      "visit50": 34,
+      "week_sale60": 15,
+      "month_sale60": 840,
+      "visit60": 15
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 519,
+      "week_sale10": 38,
+      "month_sale10": 473,
+      "visit10": 8,
+      "week_sale20": 84,
+      "month_sale20": 876,
+      "visit20": 50,
+      "week_sale30": 48,
+      "month_sale30": 606,
+      "visit30": 8,
+      "week_sale40": 68,
+      "month_sale40": 166,
+      "visit40": 13,
+      "week_sale50": 92,
+      "month_sale50": 432,
+      "visit50": 7,
+      "week_sale60": 99,
+      "month_sale60": 360,
+      "visit60": 9
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 520,
+      "week_sale10": 64,
+      "month_sale10": 677,
+      "visit10": 37,
+      "week_sale20": 81,
+      "month_sale20": 458,
+      "visit20": 44,
+      "week_sale30": 92,
+      "month_sale30": 42,
+      "visit30": 20,
+      "week_sale40": 32,
+      "month_sale40": 368,
+      "visit40": 13,
+      "week_sale50": 38,
+      "month_sale50": 133,
+      "visit50": 43,
+      "week_sale60": 11,
+      "month_sale60": 878,
+      "visit60": 39
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 521,
+      "week_sale10": 35,
+      "month_sale10": 106,
+      "visit10": 12,
+      "week_sale20": 23,
+      "month_sale20": 898,
+      "visit20": 28,
+      "week_sale30": 34,
+      "month_sale30": 309,
+      "visit30": 14,
+      "week_sale40": 41,
+      "month_sale40": 193,
+      "visit40": 18,
+      "week_sale50": 52,
+      "month_sale50": 127,
+      "visit50": 30,
+      "week_sale60": 67,
+      "month_sale60": 876,
+      "visit60": 7
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 522,
+      "week_sale10": 76,
+      "month_sale10": 243,
+      "visit10": 7,
+      "week_sale20": 37,
+      "month_sale20": 14,
+      "visit20": 34,
+      "week_sale30": 87,
+      "month_sale30": 629,
+      "visit30": 29,
+      "week_sale40": 6,
+      "month_sale40": 582,
+      "visit40": 6,
+      "week_sale50": 19,
+      "month_sale50": 62,
+      "visit50": 5,
+      "week_sale60": 26,
+      "month_sale60": 250,
+      "visit60": 49
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 523,
+      "week_sale10": 94,
+      "month_sale10": 140,
+      "visit10": 44,
+      "week_sale20": 84,
+      "month_sale20": 843,
+      "visit20": 40,
+      "week_sale30": 4,
+      "month_sale30": 591,
+      "visit30": 31,
+      "week_sale40": 16,
+      "month_sale40": 245,
+      "visit40": 32,
+      "week_sale50": 79,
+      "month_sale50": 113,
+      "visit50": 18,
+      "week_sale60": 63,
+      "month_sale60": 602,
+      "visit60": 45
+    }
+  },
+  {
+    "model": "products.recommend",
+    "fields": {
+      "product_id": 524,
+      "week_sale10": 10,
+      "month_sale10": 978,
+      "visit10": 41,
+      "week_sale20": 51,
+      "month_sale20": 241,
+      "visit20": 17,
+      "week_sale30": 38,
+      "month_sale30": 73,
+      "visit30": 20,
+      "week_sale40": 71,
+      "month_sale40": 191,
+      "visit40": 31,
+      "week_sale50": 25,
+      "month_sale50": 626,
+      "visit50": 15,
+      "week_sale60": 76,
+      "month_sale60": 393,
+      "visit60": 47
+    }
+  }
+]
