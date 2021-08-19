@@ -167,7 +167,7 @@ def kakaoPay_approve(request):
                 sales.week_sale10 += 1
                 sales.month_sale10 += 1
             elif age < 30:
-                sales.week_sale20 += 10000
+                sales.week_sale20 += 1
                 sales.month_sale20 += 1
             elif age < 40:
                 sales.week_sale30 += 1
