@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <div class="main-column">
+      <!-- 로고 -->
       <img src="@/assets/logo.png" alt="logo" class="main-logo" />
       <div class="button-text">
         <div>
+          <!-- 바코드버튼 -->
           <button
             class="button button-main"
             button
@@ -18,7 +20,7 @@
         </div>
         바코드로 상품 찾기
       </div>
-
+      <!-- 퍼스널쇼퍼 버튼 -->
       <div class="button-text">
         <div>
           <button class="button button-main" button @click="goToPersonalShopper()">Personal<br />Shopper</button>
@@ -107,11 +109,11 @@ export default {
     },
   },
   mounted: function () {
-    this.createUserData()
+    this.createUserData() // 사용자 정보 vuex로 담는 함수
 
     },
   created : function() {
-    this.recommendData();
+    this.recommendData(); // django로 사용자 정보 보내서 django 내부에 추천알고리즘 통하여 추천상품 ID 값들 요청하는 함수
   },
 }
 </script>
@@ -121,7 +123,6 @@ export default {
 .main-column {
   display: flex;
   flex-direction: column;
-  /* width: 30rem; */
 }
 
 .main-logo {

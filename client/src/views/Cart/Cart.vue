@@ -51,7 +51,6 @@ export default {
 .mb-3 {
   width: 80%;
   margin: auto;
-  /* margin-bottom: 0.1em; */
   border: 5px solid rgba(0, 0, 0, 0.3);
   border-radius: 5rem;
   font-size: 3rem;
@@ -75,7 +74,6 @@ export default {
   border-radius: 2.5rem;
   font-size: 1.5em;
   align-items: center;
-  /* height: 8rem;  */
 }
 .product-name {
   margin-left: 10em;
@@ -93,7 +91,6 @@ export default {
 .delete-button {
   font-size: 0.85em;
   margin-left: 0.9em;
-  /* margin-right: 0.1em; */
   border-radius: 2.5rem;
 }
 

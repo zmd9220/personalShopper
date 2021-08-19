@@ -2,21 +2,22 @@
   <div>
     <Nav/>
     <p class="title">"Look" 4 U</p>  
+    <!-- 퍼스널 쇼퍼 모델사진들 -->
     <div class="image-area">
-      <!-- <b-icon class="img-switch-prev" icon="arrow-left-circle-fill" aria-hidden="true"></b-icon> -->
       <img :src="productDetail.style_image" alt="look1" class="look-detail">
-      <!-- <b-icon class="img-switch-next" icon="arrow-right-circle-fill" aria-hidden="true"></b-icon> -->
     </div>
     <div class="look-items-area">
       <p>룩 완성하기</p>
       <div>
         <p>
+          <!-- 세트로 구매하는 버튼 -->
           <b-button class="add-items-cart" variant="primary"
             @click="BuyAllItems()">
             <span class="button-text">룩 세트로 구매 <b-icon icon="credit-card" aria-hidden="true"></b-icon></span></b-button>
         </p>
       </div>
       <br>
+      <!-- 해당모델이 착용하고 있는 아이템 리스트 -->
       <div class="class=look-items">
         <img class="look-item" @click="goToProductDetail1()" :src="productDetail.product_image" alt="item1">
         <img class="look-item" @click="goToProductDetail2(productId_1)" :src="this.$store.state.productRecommend_1" alt="item2">
@@ -47,11 +48,11 @@ export default {
   },
   computed: {
     ...mapState(
-      ['productDetail',
-      'productRecommend_1',
+      ['productDetail', // 메인제품의 상세정보
+      'productRecommend_1', // 추천아이템들
       'productRecommend_2',
       'productRecommend_3',
-      'selectedProductID',
+      'selectedProductID', // 메인제품
       'productId_1',
       'productId_2',
       'productId_3',
@@ -80,10 +81,10 @@ export default {
             // console.log(err)
           })
     },
-    goToProductDetail1: function() {
+    goToProductDetail1: function() { // 디테일 페이지로 이동
       this.$router.push('/ProductDetail')
     },
-    goToProductDetail2: function(product_id) {
+    goToProductDetail2: function(product_id) { // 디테일 페이지로 이동. 메인제품 변경
       this.$store.commit('selectedProductID', product_id);
       this.$router.push('/ProductDetail')
     },
@@ -99,14 +100,14 @@ export default {
           // console.log(err)
         })
     },
-    BuyAllItems(){
+    BuyAllItems(){ // 모델이 착용한 모든 아이템 사기( 장바구니 아이템등록 + 장바구니 화면이동)
       this.$store.dispatch('cart/addItem', this.$store.state.productDetail);
       this.addToCart(this.$store.state.productId_1);
       this.addToCart(this.$store.state.productId_2);
       this.addToCart(this.$store.state.productId_3);
       this.$router.push({name:'Cart'});
     },
-    gotoDetail1: function() {                
+    gotoDetail1: function() {                // 메인제품 바꾸고 화면이동
       if (this.$route.path !== '/ProductDetail' ) {
         this.$store.commit('selectProductID', this.$store.state.productDetail.product_id);
         this.$router.push({name:'ProductDetail'});
@@ -115,7 +116,7 @@ export default {
         this.$emit('selectedProductId', this.$store.state.productDetail.product_id);
       }
     },
-    gotoDetail2: function() {                 
+    gotoDetail2: function() {                 // 메인제품 바꾸고 화면이동
       if (this.$route.path !== '/ProductDetail' ) {
         this.$store.commit('selectProductID', this.$store.state.productId_1);
         this.$router.push({name:'ProductDetail'});
@@ -124,7 +125,7 @@ export default {
         this.$emit('selectedProductId', this.$store.state.productId_1);
       }
     },
-    gotoDetail3: function() {                 
+    gotoDetail3: function() {                 // 메인제품 바꾸고 화면이동
       if (this.$route.path !== '/ProductDetail' ) {
         this.$store.commit('selectProductID', this.$store.state.productId_2);
         this.$router.push({name:'ProductDetail'});
@@ -133,7 +134,7 @@ export default {
         this.$emit('selectedProductId', this.$store.state.productId_2);
       }
     },
-    gotoDetail4: function() {                 
+    gotoDetail4: function() {                 // 메인제품 바꾸고 화면이동
       if (this.$route.path !== '/ProductDetail' ) {
         this.$store.commit('selectProductID', this.$store.state.productId_3);
         this.$router.push({name:'ProductDetail'});
