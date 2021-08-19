@@ -31,7 +31,8 @@ def photo_shot():
     cap.release()
 
 # 얼굴 인식 ( 클로바 )
-def clova_face_recognition():	
+def clova_face_recognition():
+    # Naver Developers에서 발급받은 개인 키 - 지역 변수로 암호화 필요..
     client_id = "h_Dm9g2KyYo6TrZtbkMQ"
     client_secret = "d9yEBBJ1rU"
     url = "https://openapi.naver.com/v1/vision/face"  # 얼굴감지
@@ -44,11 +45,12 @@ def clova_face_recognition():
     response = requests.post(url, files=files, headers=headers)
     # 응답 코드를 보기 위한 rescode
     rescode = response.status_code
+    # 응답 데이터를 딕셔너리 화
+    json_data = response.json()
 
     # 얼굴 인식을 했다면 faces 안에 데이터가 들어있음
     if json_data['faces']:
-        gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender'][
-            'confidence']  # 성별
+        gender, gen_confidence = json_data['faces'][0]['gender']['value'], json_data['faces'][0]['gender']['confidence']  # 성별
         age, age_confidence = json_data['faces'][0]['age']['value'], json_data['faces'][0]['age']['confidence']  # 나이
         
         # 남, 여 param 생성
@@ -104,7 +106,7 @@ def barcode_scan():
         
         # 인식한 바코드의 숫자가 13자리 일 경우 종료
         if len(barcode_data)==13:
-            break;
+            break
         # cv2.imshow('img', img)
 
     cap.release()
@@ -123,8 +125,6 @@ def on_loaded():
     is_ad = False		# 사람 인식 후 광고로 돌아가기 위한 플래그
     cnt = 0		# 사람을 인식한 시간(s)
     try:
-        flag = False
-        arr = []
         while True:
             GPIO.output(TRIG, False)
             time.sleep(0.5)
@@ -174,12 +174,7 @@ def on_loaded():
                 # 사진 찍는 코드
                 photo_shot()
                 # 측정하는 코드
-                arr = clova_face_recognition()
-                pprint(arr)
-            else:
-                # 여기는 초기화 하는 코드
-                arr = []
-                flag = False
+                clova_face_recognition()
 
             time.sleep(1)
 
@@ -194,7 +189,7 @@ if __name__ == '__main__':
     # 시작시 바코드 파일이 남아있다면 삭제 후 프로그램 기동
     file = './status/barcode.txt'
     if os.path.isfile(file):
-       os.remove(file);
+       os.remove(file)
     # Create a standard webview window
     # 켜지는 중 (없어도 상관x) shown 이벤트에서 호출 됨
     window = webview.create_window('Test browser', 'http://localhost:8080/AdClient'

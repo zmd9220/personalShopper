@@ -52,10 +52,15 @@ def clova_face_recognition():
     client_secret = "d9yEBBJ1rU"
     url = "https://openapi.naver.com/v1/vision/face"  # 얼굴감지
 
+    # API 요청을 위한 헤더 양식
     headers = {'X-Naver-Client-Id': client_id, 'X-Naver-Client-Secret': client_secret}
+    # 같이 보낼 image 파일 설정
     files = {'image': open('test.jpg', 'rb')}
+    # API server에 POST요청을 보내고 응답을 받은 결과물이 들어 있는 response 객체
     response = requests.post(url, files=files, headers=headers)
+    # 응답 코드를 보기 위한 rescode
     rescode = response.status_code
+    # 응답 데이터를 딕셔너리 화
     json_data = response.json()
 
     # 얼굴 인식을 했다면 faces 안에 데이터가 들어있음
@@ -71,9 +76,7 @@ def clova_face_recognition():
             gender = "F"
         else:
             gender = "M"
-
         webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(age[:2], gender))
-
     else :
         webview.windows[0].load_url('http://localhost:8080/{}/{}'.format(20, "M"))
     
@@ -121,7 +124,7 @@ def barcode_scan():
         
         # 인식한 바코드의 숫자가 13자리 일 경우 종료
         if len(barcode_data)==13:
-            break;
+            break
         # cv2.imshow('img', img)
         
 
@@ -179,7 +182,7 @@ def on_loaded():
                 # 바코드 스캔
                 barcode_scan()
                 # 바코드 스캔 후 파일 제거
-                os.remove(file);
+                os.remove(file)
 
             # print("Distance => ", distance, "cm")
             # 50cm 안에 사람이 있을 경우 cnt++
