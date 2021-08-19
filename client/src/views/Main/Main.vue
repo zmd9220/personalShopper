@@ -127,6 +127,7 @@ export default {
 .main-logo {
   width: 100%;
   margin-top: 5%;
+  margin-bottom: 18rem;
 }
 
 .button {
@@ -136,16 +137,17 @@ export default {
 
 .button-main {
   background-color: #e7e7e7;
-  font-size: 1.25rem;
-  height: 5rem;
+  font-size: 2.5rem;
+  height: 10rem;
   width: 40%;
   position: relative;
   border-radius: 0.75em;
+  margin-bottom: 2rem ;
 }
 
 .button-text {
-  margin-bottom: 4%;
-  font-size: 1em;
+  margin-bottom: 5rem;
+  font-size: 2em;
 }
 
 .img-Barcode {
@@ -164,7 +166,7 @@ export default {
 }
 
 .button-under-text {
-  font-size: 1.25rem;
+  font-size: 30em;
 }
 
 .main-logo {
