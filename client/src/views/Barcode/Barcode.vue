@@ -68,10 +68,10 @@ export default {
 
 <style scoped>
 .blank-box {
-  height: 20rem;
+  height: 8rem;
 }
 
 .barcode-text {
-  font-size: 4em;
+  font-size: 1.5em;
 }
 </style>

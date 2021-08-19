@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav/>
-    <!-- 상품이름 연동필요 -->
+    <!-- 상품정보 -->
     <p class="text-box-title">{{ productDetail.product_name }}</p>
     <div class="ProductBox">
       <img class="ProductDetailImg" :src=" productDetail.product_image " alt="item1">
@@ -10,6 +10,7 @@
         <label for="range-1" class="question-text">어떤 핏을 원하세요?</label>
         <div class="modal-info-box">
           <div>
+            <!-- 키, 몸무게 입력할수있는 버튼 -->
             <b-button v-b-modal.modal-center variant="info" class="size-modal-button">내 정보 입력하기</b-button>
             <b-modal id="modal-center" size="xl" centered title="알맞은 정보를 선택해주세요">
               <template #modal-header>
@@ -21,6 +22,7 @@
               <div class="height-area">
                 <p>키 정보를 입력해주세요</p>
                 <br>
+                <!-- 키 버튼 -->
                 <div class="modal-button">
                   <b-button-group>
                     <b-button class="button-option" @click="height_change(0)">~{{ this.manHeight }}cm</b-button>
@@ -35,6 +37,7 @@
               <div class="weight-area">
                 <p>몸무게 정보를 입력해주세요</p>
                 <br>
+                <!-- 몸무게 버튼 -->
                 <div class="modal-button">
                   <b-button-group>
                     <b-button class="button-option" @click="weight_change(0)">~{{ this.manWeight }}kg</b-button>
@@ -48,6 +51,7 @@
             </b-modal>
           </div>
         </div>
+        <!-- 옷입는 스타일 슬라이드바 -->
         <b-form-input class="silder-bar" id="range-1" v-model="value" type="range" min="0" max="2"></b-form-input>
         <div v-if="this.value === '0'">
           <div class="size-text-container">
@@ -70,6 +74,7 @@
             <span class="select-text">헐렁하게</span>
           </div>
         </div>
+        <!-- 슬라이드에 선택된 값에따라 추천 사이즈 변경 -->
         <div class="mt-2 selected-size" v-if="this.value === '0'">{{ this.sizeconvert[this.sizeconvertNum -1] }}</div>
         <div class="mt-2 selected-size" v-if="this.value === '1'">{{ this.sizeconvert[this.sizeconvertNum] }}</div>
         <div class="mt-2 selected-size" v-if="this.value === '2'">{{ this.sizeconvert[this.sizeconvertNum +1] }}</div>
@@ -97,16 +102,16 @@ export default {
   },
   computed: {
     ...mapState({
-      selectedProductID: state => state.selectedProductID,
-      productDetail: state => state.productDetail,
-      productLocation: state => state.productLocation,
-      productRecommend_1:  state => state.productRecommend_1,
+      selectedProductID: state => state.selectedProductID, // 메인상품
+      productDetail: state => state.productDetail, // 메인상품 상세정보
+      productLocation: state => state.productLocation, // 메인상품 위치
+      productRecommend_1:  state => state.productRecommend_1, // 추천아이템들
       productRecommend_2:  state => state.productRecommend_2,
       productRecommend_3:  state => state.productRecommend_3,
       productId_1:  state => state.productId_1,
       productId_2:  state => state.productId_2,
       productId_3:  state => state.productId_3,
-      stock: state => state.stock,
+      stock: state => state.stock, // 메인상품 재고정보
     })
   },
   data() {
@@ -124,18 +129,18 @@ export default {
       productId1: this.$store.state.productId_1,
       productId2: this.$store.state.productId_2,
       productId3: this.$store.state.productId_3,
-      manWeight: 50,
-      manHeight: 165,
+      manWeight: 50, // 기본 남자 몸무게
+      manHeight: 165, // 기본 남자 키
       PassProductId: '',
       productDetail: this.$store.state.productDetail,
     }
   },
   methods : {
-    height_change(num){
+    height_change(num){ // 키 변경 함수
       this.height = num
       this.sizeconvertNum = this.sizetable[this.height][this.weight]
     },
-    weight_change(num){
+    weight_change(num){ // 몸무게 변경 함수
       this.weight = num
       this.sizeconvertNum = this.sizetable[this.height][this.weight]
     },
@@ -150,7 +155,7 @@ export default {
     }
   },
   mounted : function(){
-    if (this.productDetail.gender != 'M'){
+    if (this.productDetail.gender != 'M'){ // 성별과 제품타입에 따른 사이즈 표기 변경 함수
       this.manWeight = this.manWeight -10
       this.manHeight = this.manHeight -15
     }
@@ -173,21 +178,21 @@ export default {
 .ProductBox {
   display: flex;
   margin-bottom: 5em;
-  position: absolute;
-  bottom: 40%;
+  position: fixed;
   left: 5%;
   width: 90%;
+  font-size: 0.25em;
 }
 
 .text-box-title {
   font-weight: bold;
-  font-size: 5em;
   margin-bottom: 3em;
+  font-size: 2em;
 }
 
 .ProductDetailImg {
   margin-right: 5em;
-  width: 45%;
+  width: 50%;
 }
 
 .TextBox {
@@ -195,7 +200,7 @@ export default {
 }
 
 .size-header {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .modal-info-box {
@@ -203,13 +208,14 @@ export default {
 }
 
 .size-modal-button {
-  width: 40%;
-  font-size: 2.5em;
+  width: 60%;
+  font-size: 3em;
 }
 
 .modal-button {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .slider {
@@ -221,16 +227,16 @@ export default {
 
 .height-area {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .weight-area {
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .question-text {
-  font-size: 6em;
+  font-size: 5em;
   margin-bottom: 1em;
 }
 
@@ -258,7 +264,7 @@ export default {
 .button-option {
   border-color: rgb(255, 255, 255);
   border-width: 0.2em;
-  width: 8em;
+  width: 7.5em;
   font-size: 0.75em;
 }
 

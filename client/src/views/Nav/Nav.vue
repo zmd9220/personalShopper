@@ -1,4 +1,5 @@
 <template>
+<!-- Sara로고 -->
   <img src="@/assets/logo.png" alt="logo" class="logo" @click="gotoMain()">
 </template>
 
@@ -7,7 +8,7 @@ export default {
   name: 'Nav',
   methods: {
     gotoMain() {
-      this.$router.push('/');
+      this.$router.push('/'); // 메인화면으로 이동
     }
   },
 

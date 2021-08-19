@@ -4,6 +4,7 @@
       <div class="footer-text">
         <p>PersonalShopper의 추천</p>
       </div>
+      <!-- 추천 아이템들 -->
       <div class="footer-row">
         <div class="column">
           <img
@@ -55,8 +56,8 @@ export default {
   },
   computed: {
     ...mapState({
-      selectedProductID: (state) => state.selectedProductID,
-      productRecommend_1: (state) => state.productRecommend_1,
+      selectedProductID: (state) => state.selectedProductID, // 추천 시스템에 활용될 메인 Product
+      productRecommend_1: (state) => state.productRecommend_1, // 추천 아이템들.
       productRecommend_2: (state) => state.productRecommend_2,
       productRecommend_3: (state) => state.productRecommend_3,
       productId_1: (state) => state.productId_1,
@@ -132,7 +133,7 @@ export default {
 }
 
 .footer-text {
-  font-size: 5rem;
+  font-size: 1.5em;
   position: fixed;
   bottom: 30%;
   left: 0%;
@@ -144,13 +145,12 @@ export default {
   width: 100%;
   position: fixed;
   bottom: 0%;
-  font-size: 5em;
 }
 
 .column {
   display: inline;
   float: left;
-  margin: 0 0.3rem;
   width: 33.3%;
+  margin: 0 0.05em;
 }
 </style>

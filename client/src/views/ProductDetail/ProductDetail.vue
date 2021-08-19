@@ -6,14 +6,13 @@
       <div class="text-box">
         <div >
           <p class="text-box-title">{{ this.$store.state.productDetail.product_name }}</p> 
-          <h2 style="margin-bottom: 0.5em">재고정보</h2>
+          <p style="margin-bottom: 0.5em">재고정보</p>
         </div>
         <div class="size-box">
 
           <!-- 남자 상의 -->
           <ul class="size-stock" v-if="`${this.$store.state.productDetail.gender }` == 'M' && `${this.$store.state.productDetail.product_type }` == 1">
-            <li :style="[this.$store.state.stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" 
-              v-for="stock, i in stocks" :key="i" class="size-text">
+            <li :style="[stock== 0 ? {color:'rgba(66, 60, 60, 0.4)'} : {color:'#000000'}]" v-for="stock, i in this.$store.state.stock" :key="i">
               <!-- 삼항연산자 stock(재고)유무에 따라 css속성을 바꾼다. 있으면 앞, 없으면 뒤 -->
               <div class="size-text-box">
                 <span >{{manTopSize[i]}}</span>
@@ -291,18 +290,22 @@ export default {
 
 
 <style scoped>
+. {
+  width: 100em;
+}
+
 .product-box {
   display: flex;
-  margin-bottom: 5em;
-  position: absolute;
-  bottom: 35%;
+  margin-bottom: 2em;
+  position: fixed;
   left: 5%;
-  width: 90%;
+  right: 5%;
 }
 
 .product-detail-img {
-  margin-right: 5em;
-  width: 60%;
+  margin-right: 1em;
+  width: 40em;
+  height: 45em;
 }
 
 .text-box {
@@ -310,7 +313,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 40%;
+  width: 22.5em;
 }
 
 .size-stock {
@@ -318,7 +321,7 @@ export default {
   flex-direction: column;
   list-style:none;
   padding-left:0px;
-  font-size: 2.5em;
+  font-size: 1em;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -352,14 +355,14 @@ export default {
 }
 
 .button-size {
-  margin: 0 0 2em 0;
-  font-size: 2em;
-  width: 40%;
+  margin: 0 0 1.5em 0;
+  font-size: 1em;
+  width: 60%;
 }
 
 .text-box .text-box-title {
   font-weight: bold;
-  font-size: 5em;
+  font-size: 1.5em;
 }
 .modal-img-box{
   background-image: url("../../assets/location/totalShop.png");
@@ -367,9 +370,9 @@ export default {
 }
 
 .modal-h2 {
-  margin-top: 1em;
-  font-size: 3em;
+  margin-top: 0.25em;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .shop-map {
@@ -378,15 +381,15 @@ export default {
 }
 
 .toast-body-text {
-  font-size: 2.5em;
+  font-size: 1em;
 }
 
 .toast-header-text {
-  font-size: 3em;
+  font-size: 1em;
 }
 
 .b-toast:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 0.5em;
 }
 
 .mr-2 {
@@ -409,20 +412,17 @@ export default {
 }
 
 .mx-auto {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 .modal-close {
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 
 .button-toast {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
-.b-toast .toast {
-  font-size: 3rem !important;
-}
 </style>

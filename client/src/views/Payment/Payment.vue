@@ -1,8 +1,7 @@
 <template>
   <div>
     <span>{{ $route.params.product }}</span>
-    <b-button @click="pay2()" variant="white"><img src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
-    <p class="pay-text">카카오 페이로 결제</p>
+    <b-button @click="pay2()" variant="white"><img class="pay-btn" src="@/assets/kakaopay/payment_icon_yellow_large.png" alt="pay button"></b-button>
     <b-modal
       v-model="show"
       title="결제하기"
@@ -48,7 +47,7 @@
           </b-button>
         </div>
       </template>
-    </b-modal> -->
+    </b-modal> 
   </div>
 </template>
 
@@ -108,7 +107,6 @@ export default {
             price: this.totalCartPrice,
             orderNumber: 0,
           }
-          localStorage.setItem('requestData', JSON.stringify(requestData))
           requestData.orderNumber = Number(localStorage.getItem('orderNumber')) + 1
           axios({
             method: 'POST',
@@ -153,7 +151,11 @@ export default {
 
 .pay-text {
   margin-top: 0.5em;
-  font-size: 3em;
+  font-size: 1em;
+}
+
+.pay-btn {
+  width: 75%
 }
 
 </style>

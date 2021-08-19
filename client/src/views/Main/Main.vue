@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <div class="main-column">
+      <!-- 로고 -->
       <img src="@/assets/logo.png" alt="logo" class="main-logo" />
       <div class="button-text">
         <div>
+          <!-- 바코드버튼 -->
           <button
             class="button button-main"
             button
@@ -18,7 +20,7 @@
         </div>
         바코드로 상품 찾기
       </div>
-
+      <!-- 퍼스널쇼퍼 버튼 -->
       <div class="button-text">
         <div>
           <button class="button button-main" button @click="goToPersonalShopper()">Personal<br />Shopper</button>
@@ -107,11 +109,11 @@ export default {
     },
   },
   mounted: function () {
-    this.createUserData()
+    this.createUserData() // 사용자 정보 vuex로 담는 함수
 
     },
   created : function() {
-    this.recommendData();
+    this.recommendData(); // django로 사용자 정보 보내서 django 내부에 추천알고리즘 통하여 추천상품 ID 값들 요청하는 함수
   },
 }
 </script>
@@ -124,7 +126,9 @@ export default {
 }
 
 .main-logo {
-  width: 200% !important;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 18rem;
 }
 
 .button {
@@ -134,27 +138,41 @@ export default {
 
 .button-main {
   background-color: #e7e7e7;
-  font-size: 5rem;
-  height: 25rem;
-  width: 100%;
+  font-size: 2.5rem;
+  height: 10rem;
+  width: 40%;
+  position: relative;
+  border-radius: 0.75em;
+  margin-bottom: 2rem ;
 }
 
 .button-text {
-  margin-bottom: 90px;
+  margin-bottom: 5rem;
+  font-size: 2em;
 }
 
 .img-Barcode {
   height: 30%;
   width: 50%;
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
+}
+
+.PS-btn-text {
+  margin-bottom: 0;
 }
 
 .button-under-text {
-  font-size: 5rem;
+  font-size: 30em;
 }
 
 .main-logo {
   display: flex;
-  width: 20rem;
+  width:60em;
   align-self: center;
 }
 </style>

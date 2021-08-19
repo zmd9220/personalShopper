@@ -7,7 +7,6 @@ import AdClient from '@/views/Ad/AdClient'
 import Barcode from '@/views/Barcode/Barcode' 
 import PersonalShopper from '@/views/PersonalShopper/PersonalShopper' 
 import ProductDetail from '@/views/ProductDetail/ProductDetail'
-import ProductDetailLocation from '@/views/ProductDetail/ProductDetailLocation'  
 import ProductSizeRecommand from '@/views/ProductDetail/ProductSizeRecommand'
 import Signup from '@/views/accounts/Signup'
 import Login from '@/views/accounts/Login'
@@ -66,11 +65,6 @@ const routes = [
     props:true,
   },
   {
-    path: '/ProductDetailLocation', // 상품 위치 페이지
-    name: 'ProductDetailLocation',
-    component: ProductDetailLocation  
-  },
-  {
     path: '/ProductSizeRecommand', // 상품 사이즈 추천 페이지
     name: 'ProductSizeRecommand',
     component: ProductSizeRecommand  
@@ -90,6 +84,7 @@ const routes = [
     path: '/OrderComplete', // 카카오페이 결제 승인까지 완료 (성공적인 구매 완료) 페이지
     name: 'OrderComplete',
     component: OrderComplete,
+    props: true,
   },
 
   {
