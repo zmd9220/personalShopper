@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to 대전 2반 1팀 Vue.js App"/>
+    <video controls class="iframe" controlsList="nodownload">
+      <source src="@/assets/UCC 초안.mp4">
+    </video>
+    <img class="ppt-image" alt="Personal-Shopper-PPT" src="./assets/Personal-Shopper-PPT.jpg">
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html {
+  background-color: rgb(14, 13, 13);
 }
+#app {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.ppt-image {
+  width: 60%;
+}
+
+.iframe {
+width: 60%;
+}
+
 </style>
