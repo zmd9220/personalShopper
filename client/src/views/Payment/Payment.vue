@@ -108,7 +108,7 @@ export default {
             price: this.totalCartPrice,
             orderNumber: 0,
           }
-          localStorage.setItem('requestData', JSON.stringify(requestData))
+          // localStorage.setItem('requestData', JSON.stringify(requestData))
           requestData.orderNumber = Number(localStorage.getItem('orderNumber')) + 1
           axios({
             method: 'POST',

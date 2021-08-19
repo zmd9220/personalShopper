@@ -38,6 +38,7 @@ export default {
         if (responseData.status_code === 200) {
           // 로컬저장소의 주문 번호 완전히 갱신
           localStorage.setItem('orderNumber', Number(localStorage.getItem('orderNumber')) + 1) 
+          localStorage.setItem('paymentData', JSON.stringify(responseData))
           // 주문 완료 페이지로 이동 (결제 관련 정보와 함께) 
           this.$router.push({name: 'OrderComplete', params: {responseData: responseData}})
         } else {

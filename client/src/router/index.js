@@ -90,6 +90,7 @@ const routes = [
     path: '/OrderComplete', // 카카오페이 결제 승인까지 완료 (성공적인 구매 완료) 페이지
     name: 'OrderComplete',
     component: OrderComplete,
+    props: true,
   },
 
   {
