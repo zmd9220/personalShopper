@@ -4,6 +4,7 @@
       <div class="footer-text">
         <p>PersonalShopper의 추천</p>
       </div>
+      <!-- footer items -->
       <div class="footer-row">
          <div class="column">
           <img :src="this.$store.state.productRecommend_1" alt="item3" style="width: 100%" @click="gotoDetail1()" >
@@ -34,8 +35,8 @@ export default {
 
   computed: {
     ...mapState({
-      selectedProductID: state => state.selectedProductID,
-      productRecommend_1: state => state.productRecommend_1,
+      selectedProductID: state => state.selectedProductID, // 추천 시스템에 활용될 메인 Product
+      productRecommend_1: state => state.productRecommend_1, // 추천 아이템들.
       productRecommend_2: state => state.productRecommend_2,
       productRecommend_3: state => state.productRecommend_3,
       productId_1: state => state.productId_1,
@@ -44,7 +45,7 @@ export default {
     })
   },
   methods:{
-    gotoDetail1: function() {                
+    gotoDetail1: function() {                // 1번항목의 라우터와 메인 productID 변경.
       if (this.$route.path !== '/ProductDetail' ) {
         this.$store.commit('selectedProductID', this.$store.state.productId_1);
         this.$router.push({name:'ProductDetail'});
@@ -53,7 +54,7 @@ export default {
         this.$emit('selectedProductId', this.$store.state.productId_1);
       }
     },
-    gotoDetail2: function() {                 
+    gotoDetail2: function() {                  // 2번항목의 라우터와 메인 productID 변경.
       if (this.$route.path !== '/ProductDetail' ) {
         this.$store.commit('selectedProductID', this.$store.state.productId_2);
         this.$router.push({name:'ProductDetail'});
@@ -62,7 +63,7 @@ export default {
         this.$emit('selectedProductId', this.$store.state.productId_2);
       }
     },
-    gotoDetail3: function() {                 
+    gotoDetail3: function() {                  // 3번항목의 라우터와 메인 productID 변경.
       if (this.$route.path !== '/ProductDetail' ) {
         this.$store.commit('selectedProductID', this.$store.state.productId_3);
         this.$router.push({name:'ProductDetail'});
