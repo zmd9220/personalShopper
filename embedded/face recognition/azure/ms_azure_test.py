@@ -23,7 +23,8 @@ for i in range(1 , 26):
     print(i)
     print()
     for face in faces:
-        print(face['faceAttributes'])  # 터미널 창에 속성값들을 출력
+        # print(face['faceAttributes'])  # 터미널 창에 속성값들을 출력
+        print(face)  # 터미널 창에 속성값들을 출력
 
 
 sys.stdout.close()
